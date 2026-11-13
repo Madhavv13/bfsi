@@ -117,6 +117,22 @@
       ],
       "summary": null,
       "url": null
+    },
+    {
+      "first_seen": "2026-11-13",
+      "id": "INC-0378",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-13",
+      "name": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "summary": null,
+      "url": null
     }
   ],
   "bfsi": {
@@ -126,9 +142,9 @@
   "country": "North Korea (DPRK)",
   "counts": {
     "attack_rows": 115,
-    "reviewed_rows": 141,
-    "rows": 256,
-    "techniques": 141
+    "reviewed_rows": 164,
+    "rows": 279,
+    "techniques": 142
   },
   "description": "APT38 is a North Korean state-sponsored threat group that specializes in financial cyber operations; it has been attributed to the Reconnaissance General Bureau. Active since at least 2014, APT38 has targeted banks, financial institutions, casinos, cryptocurrency exchanges, SWIFT system endpoints, and ATMs in at least 38 countries worldwide. Significant operations include the 2016 Bank of Bangladesh heist, Bancomext and Banco de Chile, along with software supply chain compromises and destructive malware attacks.\n\nNorth Korean group definitions are known to have significant overlap, and some security researchers report all North Korean state-sponsored cyber activity under the name Lazarus Group instead of tracking clusters or subgroups.",
   "description_references": [
@@ -10586,6 +10602,887 @@
           "citation": null,
           "source_name": "FBI IC3 Cybersecurity Advisories: North Korean Hackers Use Secretly Recorded Webcam Library of 900+ Tech Workers in $400M “FaceStealer” Crypto Theft Scheme",
           "url": "https://www.ic3.gov/CSA/2026/261112.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“This includes hijacking social media and communications accounts such as Telegram, LinkedIn, Slack, and Discord for extended periods of time, and then accessing the victim's contact list to target the victim's personal and professional circles.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“Last month, Sophos disclosed that an employee's corporate macOS device had been compromised in mid-September 2026 after they cloned a public code repository presented as a job interview coding assignment and opened it as a workspace in VS Code.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.003",
+        "name": "Search Open Websites/Domains: Code Repositories",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“In a post shared on LinkedIn, Alina Krasavina, an engineering manager at Delivery Hero, detailed how she was targeted in October 2026 by two fake recruiters on the same day, 13 minutes apart.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“\"CEOs and founders alone account for 45% of the target set – nearly half.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“\"Here again, they use the deepfake videos in the meetings with targets to gain the target's trust.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1683.002",
+        "name": "Generate Content: Audio-Visual Content",
+        "parent_id": "T1683",
+        "url": "https://attack.mitre.org/techniques/T1683/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "high",
+      "description": "“The goal is to obtain access to the developers' devices and the software repository accounts they control to facilitate software supply chain attacks.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“In an extensive report shared with The Hacker News in July 2026, JUMPSEC revealed how the social engineering operation is built atop a phishing kit designed to impersonate videoconferencing platforms like Zoom and Microsoft Teams.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“The cybersecurity company has characterized FaceStealer as a victim acquisition platform that involves using compromised trusted contacts as a pathway to fuel a self-propagating attack chain via Telegram.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.003",
+        "name": "Phishing: Spearphishing via Service",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“The attacks experiment with multiple delivery methods to convince victims to run malicious code -” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“The payload in question is BeaverTail, a JavaScript loader that's used to deliver a Python backdoor referred to as InvisibleFerret.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.006",
+        "name": "Command and Scripting Interpreter: Python",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“The fix is a ClickFix-style lure that's designed to install malware on the victim's workstation and steal cryptocurrency, as well as abuse the target's privileges to other computer infrastructure.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“- Embedding malware in coding tests, repositories, or packages that victims are asked to run as part of an assessment process.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“- Using Microsoft Visual Studio Code (VS Code) tasks.json configuration files to automatically trigger the execution of malicious code when the project is opened in VS Code.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“Shortly before the scheduled meeting time, the victim's Telegram account is used to send a typosquatted link that masquerades as a meeting URL for Zoom (\"uu01webzoom[.]us\") or Teams (\"teams.livemeet[.]us\").” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "high",
+      "description": "“The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in…” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“- Compromise a victim: This involves harvesting cryptocurrency wallets, seed phrases, and other valuable access; hijacking their Telegram account or other communication app and locking them out; gaining access to their contacts and chat histories; and secretly recording them…” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“This underscores BlueNoroff's singular operational focus: individuals with access to cryptocurrency assets, wallet infrastructure, exchange platforms, or investment decision-making authority.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555",
+        "name": "Credentials from Password Stores",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1555"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“More than 80% of the targets are founders and C-suite executives.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“This results in the deployment of malware that can capture sensitive data from the compromised device, effectively turning the target into the next victim.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1005"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“More than 900 victim webcam video recordings used by the threat actors to impersonate victims in follow-on attacks have been seized by the FBI.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1125",
+        "name": "Video Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1125"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“- Using trojanized installers for macOS utility apps to deliver OtterCookie by means of a shell script downloader.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "low",
+      "description": "“Sophos said the malware ran in memory on the device for about 26 hours, right from its execution on September 14, 2026, until it was rebooted a day later.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1529",
+        "name": "System Shutdown/Reboot",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1529"
+      }
+    },
+    {
+      "attack_ref": "INC-0378",
+      "confidence": "medium",
+      "description": "“The plundered digital assets are used to fund Pyongyang's illicit weapons program, the DoJ added.” — The Hacker News",
+      "provenance": {
+        "article_source": "The Hacker News",
+        "article_url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Hacker News: FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+          "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
         }
       ],
       "tactics": [
