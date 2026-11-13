@@ -6,7 +6,7 @@
       "#fff3e0ff",
       "#e65100ff"
     ],
-    "maxValue": 9,
+    "maxValue": 10,
     "minValue": 0
   },
   "hideDisabled": false,
@@ -391,7 +391,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 3,
+      "score": 4,
       "showSubtechniques": false,
       "techniqueID": "T1204.002"
     },
@@ -636,7 +636,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 1,
+      "score": 2,
       "showSubtechniques": false,
       "techniqueID": "T1585.001"
     },
@@ -692,7 +692,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 9,
+      "score": 10,
       "showSubtechniques": false,
       "techniqueID": "T1657"
     },
@@ -706,7 +706,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 4,
+      "score": 5,
       "showSubtechniques": false,
       "techniqueID": "T1684"
     },

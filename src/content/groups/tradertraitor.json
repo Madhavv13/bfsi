@@ -153,6 +153,22 @@
       ],
       "summary": null,
       "url": null
+    },
+    {
+      "first_seen": "2026-11-13",
+      "id": "INC-0377",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-13",
+      "name": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+          "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+        }
+      ],
+      "summary": null,
+      "url": null
     }
   ],
   "bfsi": {
@@ -162,8 +178,8 @@
   "country": "North Korea (DPRK)",
   "counts": {
     "attack_rows": 0,
-    "reviewed_rows": 132,
-    "rows": 132,
+    "reviewed_rows": 136,
+    "rows": 136,
     "techniques": 98
   },
   "description": "TraderTraitor is the FBI's name for North Korean (DPRK) cyber activity focused on stealing cryptocurrency from exchanges and other crypto-finance firms. The FBI attributed the February 2025 theft of roughly US$1.5 billion from the Bybit exchange to TraderTraitor (the operation manipulated the signing interface of a multisig cold wallet during a transfer), and, together with Japan's National Police Agency, the May 2024 theft of about US$308 million from DMM Bitcoin. Vendor reporting tracks overlapping activity as Jade Sleet, UNC4899 and Slow Pisces; these names overlap with, but are not exact equivalents of, APT38 (BlueNoroff/Sapphire Sleet) and Lazarus Group. MITRE ATT&CK has no TraderTraitor group object, so this page lists only analyst-reviewed mappings from public reporting.",
@@ -5335,6 +5351,158 @@
           "citation": null,
           "source_name": "SecurityWeek cybercrime: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
           "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0377",
+      "confidence": "medium",
+      "description": "“\"Fake recruiters and malicious coding assignments establish the foothold, [while] stolen sessions, cloud credentials, and trusted interfaces turn that foothold into transaction control.” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+          "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0377",
+      "confidence": "medium",
+      "description": "“One developer downloaded a compromised version of Homebrew, an open source package management tool for Macs, while a second developer fell for a fake job interview, during which they were given a software \"assignment\" that compromised his system, according to Binance's…” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+          "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0377",
+      "confidence": "low",
+      "description": "“In addition, cryptocurrency-reliant businesses should ensure that any exchange with which they do business has withdrawal limits and allowlists, isolates their signing systems on computers reserved for that purpose, and constantly trains their engineers against social…” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+          "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0377",
+      "confidence": "medium",
+      "description": "“The same targeting of developers happened during the ByBit Ethereum heist on Feb. 21, 2025, says Avi Sambira, vice president of North America at incident-response firm Sygnia.” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+          "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
         }
       ],
       "tactics": [
