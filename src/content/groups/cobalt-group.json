@@ -1,0 +1,4792 @@
+{
+  "aliases": [
+    "GOLD KINGSWOOD",
+    "Cobalt Gang",
+    "Cobalt Spider"
+  ],
+  "attack_id": "G0080",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0080",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0080",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0080"
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0291",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "A Shortcut to Compromise: Cobalt Gang phishing campaign",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0292",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Group-IB unveils its Graph",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0299",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Silence: Moving into the Darkside",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        },
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0300",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: primarily targeted financial institutions since at least 2016 - ATM systems, card processing, payment systems and SWIFT - including in Southeast Asia.",
+    "tier": 1
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 34,
+    "reviewed_rows": 74,
+    "rows": 108,
+    "techniques": 55
+  },
+  "description": "Cobalt Group is a financially motivated threat group that has primarily targeted financial institutions since at least 2016. The group has conducted intrusions to steal money via targeting ATM systems, card processing, payment systems and SWIFT systems. Cobalt Group has mainly targeted banks in Eastern Europe, Central Asia, and Southeast Asia. One of the alleged leaders was arrested in Spain in early 2018, but the group still appears to be active. The group has been known to target organizations in order to use their access to then compromise additional victims. Reporting indicates there may be links between Cobalt Group and both the malware Carbanak and the group Carbanak.",
+  "description_references": [
+    {
+      "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+      "source_name": "Talos Cobalt Group July 2018",
+      "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+    },
+    {
+      "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+      "source_name": "PTSecurity Cobalt Group Aug 2017",
+      "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+    },
+    {
+      "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+      "source_name": "PTSecurity Cobalt Dec 2016",
+      "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+    },
+    {
+      "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+      "source_name": "Group IB Cobalt Aug 2017",
+      "url": "https://www.group-ib.com/blog/cobalt"
+    },
+    {
+      "citation": "Mesa, M, et al. (2017, June 1). Microsoft Word Intruder Integrates CVE-2017-0199, Utilized by Cobalt Group to Target Financial Institutions. Retrieved October 10, 2018.",
+      "source_name": "Proofpoint Cobalt June 2017",
+      "url": "https://www.proofpoint.com/us/threat-insight/post/microsoft-word-intruder-integrates-cve-2017-0199-utilized-cobalt-group-target"
+    },
+    {
+      "citation": "Klijnsma, Y.. (2017, November 28). Gaffe Reveals Full List of Targets in Spear Phishing Attack Using Cobalt Strike Against Financial Institutions. Retrieved October 10, 2018.",
+      "source_name": "RiskIQ Cobalt Nov 2017",
+      "url": "https://web.archive.org/web/20190508170630/https://www.riskiq.com/blog/labs/cobalt-strike/"
+    },
+    {
+      "citation": "Klijnsma, Y.. (2018, January 16). First Activities of Cobalt Group in 2018: Spear Phishing Russian Banks. Retrieved October 10, 2018.",
+      "source_name": "RiskIQ Cobalt Jan 2018",
+      "url": "https://web.archive.org/web/20190508170147/https://www.riskiq.com/blog/labs/cobalt-group-spear-phishing-russian-banks/"
+    },
+    {
+      "citation": "Europol. (2018, March 26). Mastermind Behind EUR 1 Billion Cyber Bank Robbery Arrested in Spain. Retrieved October 10, 2018.",
+      "source_name": "Europol Cobalt Mar 2018",
+      "url": "https://www.europol.europa.eu/newsroom/news/mastermind-behind-eur-1-billion-cyber-bank-robbery-arrested-in-spain"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/cobalt-group.csv",
+    "navigator_layer": "layers/cobalt-group.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fcobalt-group.json"
+  },
+  "id": "G0080",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "Cobalt Group",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has obtained and used a variety of tools including Mimikatz, PsExec, Cobalt Strike, and SDelete.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7363ed1a-6f75-4ded-9179-2fdba17f6cf1",
+        "relationship_modified": "2026-07-31T18:48:23.045Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has compromised legitimate web browser updates to deliver a backdoor.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--23fe4e74-9a8e-40e6-99c0-25eb00775a89",
+        "relationship_modified": "2026-07-31T18:48:22.870Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Crowdstrike. (2020, March 2). 2020 Global Threat Report. Retrieved December 11, 2020.",
+          "source_name": "Crowdstrike GTR2020 Mar 2020",
+          "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent spearphishing emails with various attachment types to corporate and personal email accounts of victim organizations. Attachment types have included.rtf,.doc,.xls, archives containing LNK files, and password protected archives containing.exe and.scr executables.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--029bdc73-5054-45eb-b9d0-e4281f69d85a",
+        "relationship_modified": "2026-07-31T18:48:22.763Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        },
+        {
+          "citation": "Mesa, M, et al. (2017, June 1). Microsoft Word Intruder Integrates CVE-2017-0199, Utilized by Cobalt Group to Target Financial Institutions. Retrieved October 10, 2018.",
+          "source_name": "Proofpoint Cobalt June 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/microsoft-word-intruder-integrates-cve-2017-0199-utilized-cobalt-group-target"
+        },
+        {
+          "citation": "Klijnsma, Y.. (2017, November 28). Gaffe Reveals Full List of Targets in Spear Phishing Attack Using Cobalt Strike Against Financial Institutions. Retrieved October 10, 2018.",
+          "source_name": "RiskIQ Cobalt Nov 2017",
+          "url": "https://web.archive.org/web/20190508170630/https://www.riskiq.com/blog/labs/cobalt-strike/"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent emails with URLs pointing to malicious documents.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--95618672-6f7f-4055-9c96-29f75e276d5b",
+        "relationship_modified": "2026-07-31T18:48:23.208Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "CTU. (2018, September 27). Cybercriminals Increasingly Trying to Ensnare the Big Financial Fish. Retrieved September 20, 2021.",
+          "source_name": "Secureworks GOLD KINGSWOOD September 2018",
+          "url": "https://www.secureworks.com/blog/cybercriminals-increasingly-trying-to-ensnare-the-big-financial-fish"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has created Windows tasks to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1b1027ff-81d2-4ae9-85ac-0d886dea8a04",
+        "relationship_modified": "2026-07-31T18:48:22.816Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used powershell.exe to download and execute scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--70d1a246-4ff2-452d-babf-ed47bccbf1c4",
+        "relationship_modified": "2026-07-31T18:48:23.019Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        },
+        {
+          "citation": "Klijnsma, Y.. (2018, January 16). First Activities of Cobalt Group in 2018: Spear Phishing Russian Banks. Retrieved October 10, 2018.",
+          "source_name": "RiskIQ Cobalt Jan 2018",
+          "url": "https://web.archive.org/web/20190508170147/https://www.riskiq.com/blog/labs/cobalt-group-spear-phishing-russian-banks/"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used a JavaScript backdoor that is capable of launching cmd.exe to execute shell commands. The group has used an exploit toolkit known as Threadkit that launches.bat files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a0493e99-06ba-4f40-9aae-6f7f9bad6caa",
+        "relationship_modified": "2026-07-31T18:48:23.245Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        },
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent Word OLE compound documents with malicious obfuscated VBA macros that will run upon user execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7d115073-c008-4394-867d-07c385d3db87",
+        "relationship_modified": "2026-07-31T18:48:23.087Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has executed JavaScript scriptlets on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8e8bebc7-14ff-4c84-a2a4-472446c5897a",
+        "relationship_modified": "2026-07-31T18:48:23.193Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group had exploited multiple vulnerabilities for execution, including Microsoft’s Equation Editor (CVE-2017-11882), an Internet Explorer vulnerability (CVE-2018-8174), CVE-2017-8570, CVE-2017-0199, and CVE-2017-8759.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7ec2b835-9c82-4a0a-9730-5f4b87e233f4",
+        "relationship_modified": "2026-07-31T18:48:23.111Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Mesa, M, et al. (2017, June 1). Microsoft Word Intruder Integrates CVE-2017-0199, Utilized by Cobalt Group to Target Financial Institutions. Retrieved October 10, 2018.",
+          "source_name": "Proofpoint Cobalt June 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/microsoft-word-intruder-integrates-cve-2017-0199-utilized-cobalt-group-target"
+        },
+        {
+          "citation": "Klijnsma, Y.. (2017, November 28). Gaffe Reveals Full List of Targets in Spear Phishing Attack Using Cobalt Strike Against Financial Institutions. Retrieved October 10, 2018.",
+          "source_name": "RiskIQ Cobalt Nov 2017",
+          "url": "https://web.archive.org/web/20190508170630/https://www.riskiq.com/blog/labs/cobalt-strike/"
+        },
+        {
+          "citation": "Klijnsma, Y.. (2018, January 16). First Activities of Cobalt Group in 2018: Spear Phishing Russian Banks. Retrieved October 10, 2018.",
+          "source_name": "RiskIQ Cobalt Jan 2018",
+          "url": "https://web.archive.org/web/20190508170147/https://www.riskiq.com/blog/labs/cobalt-group-spear-phishing-russian-banks/"
+        },
+        {
+          "citation": "CrowdStrike. (2018, February 26). CrowdStrike 2018 Global Threat Report. Retrieved October 10, 2018.",
+          "source_name": "Crowdstrike Global Threat Report Feb 2018",
+          "url": "https://crowdstrike.lookbookhq.com/global-threat-report-2018-web/cs-2018-global-threat-report"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent emails containing malicious links that require users to execute a file or macro to infect the victim machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c8cf20d-b834-4460-a8a8-13d96c19d2ea",
+        "relationship_modified": "2026-07-31T18:48:23.218Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        },
+        {
+          "citation": "CTU. (2018, September 27). Cybercriminals Increasingly Trying to Ensnare the Big Financial Fish. Retrieved September 20, 2021.",
+          "source_name": "Secureworks GOLD KINGSWOOD September 2018",
+          "url": "https://www.secureworks.com/blog/cybercriminals-increasingly-trying-to-ensnare-the-big-financial-fish"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent emails containing malicious attachments that require users to execute a file or macro to infect the victim machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5b078c2e-229d-4ef0-8e46-2164354caee9",
+        "relationship_modified": "2026-07-31T18:48:22.938Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has sent malicious Word OLE compound documents to victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4bfaaf99-6884-4df1-af72-0cc61ce50aa0",
+        "relationship_modified": "2026-07-31T18:48:22.918Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559.002",
+        "name": "Inter-Process Communication: Dynamic Data Exchange",
+        "parent_id": "T1559",
+        "url": "https://attack.mitre.org/techniques/T1559/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has added persistence by registering the file name for the next stage malware under <code>HKCU\\Environment\\UserInitMprLogonScript</code>.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f9283994-d216-4796-989d-a375eb4834a9",
+        "relationship_modified": "2026-07-31T18:48:23.417Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1037.001",
+        "name": "Boot or Logon Initialization Scripts: Logon Script (Windows)",
+        "parent_id": "T1037",
+        "url": "https://attack.mitre.org/techniques/T1037/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has created new services to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d54a98b2-8023-43ac-8577-53796b1efa55",
+        "relationship_modified": "2026-07-31T18:48:23.362Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used Registry Run keys for persistence. The group has also set a Startup path to launch the PowerShell shell command and download Cobalt Strike.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bd5bc949-6b6b-4511-87f7-3a439a4681da",
+        "relationship_modified": "2026-07-31T18:48:23.323Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has injected code into trusted processes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6b083f3f-f8db-403d-b922-308b79d20cc7",
+        "relationship_modified": "2026-07-31T18:48:22.996Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used exploits to increase their levels of rights and privileges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5bd3526a-1ae2-4b09-8be7-0eef6ae33155",
+        "relationship_modified": "2026-07-31T18:48:22.953Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1068"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has bypassed UAC.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8b4fd69e-a3c6-4721-9aed-d8235a93672e",
+        "relationship_modified": "2026-07-31T18:48:23.134Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group obfuscated several scriptlets and code used on the victim’s machine, including through use of XOR and RC4.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1010f466-818d-4387-9e43-9ae5e9bf9a40",
+        "relationship_modified": "2026-07-31T18:48:22.800Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group deleted the DLL dropper from the victim’s machine to cover their tracks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--88852c38-9aeb-47f4-be63-dc09b8583155",
+        "relationship_modified": "2026-07-31T18:48:23.123Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used the command <code>cmstp.exe /s /ns C:\\Users\\ADMINI~W\\AppData\\Local\\Temp\\XKNqbpzl.txt</code> to bypass AppLocker and launch a malicious script.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5dbd040e-0433-42ca-8e03-b3741be31cb2",
+        "relationship_modified": "2026-07-31T18:48:22.966Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        },
+        {
+          "citation": "Unit 42. (2018, October 25). New Techniques to Uncover and Attribute Financial actors Commodity Builders and Infrastructure Revealed. Retrieved December 11, 2018.",
+          "source_name": "Unit 42 Cobalt Gang Oct 2018",
+          "url": "https://researchcenter.paloaltonetworks.com/2018/10/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.003",
+        "name": "System Binary Proxy Execution: CMSTP",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/003"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used <code>odbcconf</code> to proxy the execution of malicious DLL files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1d10495f-64e6-43d9-85cd-4d74a8acdf7c",
+        "relationship_modified": "2026-07-31T18:48:22.849Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.008",
+        "name": "System Binary Proxy Execution: Odbcconf",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/008"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used regsvr32.exe to execute scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--62c5050d-983c-44f7-ba23-f2820398eb67",
+        "relationship_modified": "2026-07-31T18:48:22.979Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        },
+        {
+          "citation": "Giagone, R., Bermejo, L., and Yarochkin, F. (2017, November 20). Cobalt Strikes Again: Spam Runs Use Macros and CVE-2017-8759 Exploit Against Russian Banks. Retrieved March 7, 2019.",
+          "source_name": "TrendMicro Cobalt Group Nov 2017",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/cobalt-spam-runs-use-macros-cve-2017-8759-exploit/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.010",
+        "name": "System Binary Proxy Execution: Regsvr32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/010"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group used msxsl.exe to bypass AppLocker and to invoke Jscript code from an XSL file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8c13ef6b-5274-4de0-9fad-531b9c87309e",
+        "relationship_modified": "2026-07-31T18:48:23.163Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1220",
+        "name": "XSL Script Processing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1220"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group leveraged an open-source tool called SoftPerfect Network Scanner to perform network scanning.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--edcd7a59-f8e0-41e5-b0f5-8d348fa13a10",
+        "relationship_modified": "2026-07-31T18:48:23.403Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group used a JavaScript backdoor that is capable of collecting a list of the security solutions installed on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--30ff291e-e546-4084-8b5b-22fd5a597449",
+        "relationship_modified": "2026-07-31T18:48:22.892Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used Remote Desktop Protocol to conduct lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--78865095-f63e-461c-9e32-e202d514747d",
+        "relationship_modified": "2026-07-31T18:48:23.066Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used HTTPS for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b398ed8d-5801-4cf0-bea2-c8b62c568bcd",
+        "relationship_modified": "2026-09-03T19:47:02.880Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used DNS tunneling for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8de247e5-8d6b-4a07-bd65-ba3c3ca57923",
+        "relationship_modified": "2026-09-03T19:46:51.131Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.004",
+        "name": "Application Layer Protocol: DNS",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/004"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used public sites such as github.com and sendspace.com to upload files and then download them to victim computers. The group's JavaScript backdoor is also capable of downloading files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--07ab4fde-e1fd-4740-863e-c40cc8722d32",
+        "relationship_modified": "2026-09-03T19:46:53.872Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Gorelik, M. (2018, October 08). Cobalt Group 2.0. Retrieved November 5, 2018.",
+          "source_name": "Morphisec Cobalt Gang Oct 2018",
+          "url": "https://blog.morphisec.com/cobalt-gang-2.0"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group used the Ammyy Admin tool as well as TeamViewer for remote access, including to preserve remote access if a Cobalt Strike module was lost.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e74cdd3d-4ac7-42c5-a7ac-e2f58371fc5b",
+        "relationship_modified": "2026-07-31T18:48:23.389Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Positive Technologies. (2017, August 16). Cobalt Strikes Back: An Evolving Multinational Threat to Finance. Retrieved September 5, 2018.",
+          "source_name": "PTSecurity Cobalt Group Aug 2017",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-2017-eng.pdf"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used the Plink utility to create SSH tunnels.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c50f75fe-e7a9-4190-9ca8-a28187955669",
+        "relationship_modified": "2026-09-03T19:46:56.147Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Svajcer, V. (2018, July 31). Multiple Cobalt Personality Disorder. Retrieved September 5, 2018.",
+          "source_name": "Talos Cobalt Group July 2018",
+          "url": "https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html"
+        },
+        {
+          "citation": "Positive Technologies. (2016, December 16). Cobalt Snatch. Retrieved October 9, 2018.",
+          "source_name": "PTSecurity Cobalt Dec 2016",
+          "url": "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Cobalt-Snatch-eng.pdf"
+        },
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "G0080",
+      "confidence": "high",
+      "description": "Cobalt Group has used the Plink utility to create SSH tunnels.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cfb7e335-e7a3-4dc3-91b8-70381a888222",
+        "relationship_modified": "2026-09-02T20:09:43.620Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matveeva, V. (2017, August 15). Secrets of Cobalt. Retrieved October 10, 2018.",
+          "source_name": "Group IB Cobalt Aug 2017",
+          "url": "https://www.group-ib.com/blog/cobalt"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.002",
+        "name": "Encrypted Channel: Asymmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "medium",
+      "description": "“The payload is CobInt stager that will download Cobalt Strike beacon from hXXp://safestaticfirefox[.]com/uacuxuiaeoerkaryixju.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "low",
+      "description": "“The victims received spearphishing emails with a link pointing to hXXs://swift-customer[.]com/Login_Details.img.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“We observed a large number of phishing campaigns, in most of which the group used spearphishing attachments or links.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "medium",
+      "description": "“And finally, bqzpq: This function is used to run the file.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204",
+        "name": "User Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1204"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "high",
+      "description": "“To summarize the analysis, let’s map the techniques used by the threat actors to MITRE ATT&CK: | ID | Name | Description | |---|---|---| | T1192 | Spearphishing Link | Cobalt Gang used a link to weaponized IMG file in the spearphishing email | | T1204 | User Execution | Cobalt…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.010",
+        "name": "System Binary Proxy Execution: Regsvr32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/010"
+      }
+    },
+    {
+      "attack_ref": "INC-0291",
+      "confidence": "low",
+      "description": "“Finally, the stager downloads and runs the beacon.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobaltphishing/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: A Shortcut to Compromise: Cobalt Gang phishing campaign",
+          "url": "https://www.group-ib.com/blog/cobaltphishing/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "high",
+      "description": "“In our early years, this analysis was a painstaking ordeal to establish links that might help identify criminals, i.e. information about domains, IP addresses, and server fingerprints.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“For our part, we will continue to enrich our graph with data and design new algorithms using artificial intelligence to improve the graph’s accuracy.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.007",
+        "name": "Obtain Capabilities: Artificial Intelligence",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“This information helps us establish links between the phishing attacks and the cardshop, which might be used to sell the compromised credentials.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "high",
+      "description": "“Detection of phishing and fraud Every time we detect a suspicious link to a phishing, fake, or pirated website, we create a graph of linked web resources and check all the detected hosts for similar content.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“Let’s take the example that does not relate to APT or zero-day exploits.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“Apart from network indicators, we can also see links to malicious files related to this infrastructure and tags, which suggests that Meterpreter and AZORult were used.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“In its paper, the company also included six indicators of compromise.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“In particular, the report mentioned the domain “themcx[.]co”, which was used by cybercriminals to host what was disguised as Miner Coin Exchange, and “phone-lookup[.]xyz“, used to attract traffic.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“Coincidentally, it was used in all the above-mentioned examples.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1220",
+        "name": "XSL Script Processing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1220"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“The built graph has some additional tools, namely the “whois” change history, DNS, and open ports and services launched within.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“Why did we create our own network graph?” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“As much as 99% of cardshops, underground hacker forums, phishing pages, and other malicious servers use both their own proxy servers and proxy servers provided by legitimate services, including Cloudflare.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090",
+        "name": "Proxy",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1090"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“The document contained a macros that launched powershell, which, in turn, tried to download and execute a file from hXXp://wateroilclub[.]com/file/dwm.exe in %Temp%einmrmdmy.exe.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "low",
+      "description": "“The graph identified more than 250 malicious domains that the group had used since 2015.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "INC-0292",
+      "confidence": "medium",
+      "description": "“Throughout years of investigating phishing, botnets, fraudulent transactions, and cybercriminal groups, Group-IB experts have used graphs to detect such threats.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/graph-network-analysis/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Group-IB unveils its Graph",
+          "url": "https://www.group-ib.com/blog/graph-network-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“However, some of the email addresses belong to employees that no longer work at the organization, which means that the Cobalt group likely uses out-of-date mailing lists.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“The addresses of the C&C servers change from the moment the intruders penetrate the company’s network until the moment the money is stolen, thus avoiding blacklists of IP addresses or domain names.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Therefore, the Cobalt group registered domains are similar to real ones (for example, diebold.pw), and configured their email server to distribute acting as these legitimate domains (fig.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Upon review it was discovered that this domain name was registered by a person with the same name as with previously registered domains for Cobalt attacks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Each message contains an attachment that loads the payload – part of Cobalt Strike software – to the computer’s operating memory.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“CobInt has C&C at foxsecit.com [185.86.79[.]156], and the domain was registered on May 18, 2018.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Provision of the malware survivability The Cobalt group uses different methods to ensure malware survivability on corporate networks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“Millions of dollars were stolen in both cases, which required technologies and contacts with money mules that would be able to transfer large amounts of money withdrawn through SWIFT.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Supply chain attacks and non-typical targets A major change in the tactics of Cobalt was the shift towards indirect attacks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Network penetration In all cases investigated by Group-IB, the Cobalt group used a set of spear phishing emails to gain initial access to the corporate infrastructure.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Technical overview On May 23, 2018, phishing emails were sent from the following mailboxes:” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“On May 28, hackers sent emails as European Central Bank with JS-backdoor.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“On April 3, emails sent from the compromised mail server of the Swedish company were tracked.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“The goal is to set the startup path to the executable file or program code, launching it with the powershell.exe shell command to access the Internet resource specified in the code in order to download and install Cobalt Strike module.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“For organizations that perform timely updates of their systems and adhere to strict security policies, the Cobalt group employs another method to deliver malicious code through emails with Word documents containing a malicious macro.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“In September attack they used InfoStealer 0.2.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“However, when there is use of a security policy that prohibits the transfer of encrypted archives, such an email message may be blocked, so the attackers would send .doc files that contain exploits for Microsoft Office (fig.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“In order to download the email, the user was asked to follow a link, which would then infect the Bank employee’s computer.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“- Connect to another computer using PsExec.exe (the remote access program is included in the Microsoft SysInternals suite), copy the module, and run it; delete the module.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“By default, the code runs in the context of rundll32.exe process, but can be injected into any process, for example, to increase the rights and number of privileges.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“Of course, the risk of zero-day vulnerabilities remains, but we have not yet seen their use in these types of attacks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1068"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“By default, the code runs in the context of rundll32.exe process, but can be injected into any process, for example, to increase the rights and number of privileges.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“This set includes a keylogger, screenshots, remote access via VNC, injections into processes, the ability to bypass the UAC security system, the Mimikatz tool, which is used to compromise access credentials for Windows OS accounts, the ability to scan open ports on an…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003",
+        "name": "OS Credential Dumping",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1003"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“This set includes a keylogger, screenshots, remote access via VNC, injections into processes, the ability to bypass the UAC security system, the Mimikatz tool, which is used to compromise access credentials for Windows OS accounts, the ability to scan open ports on an…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“- network scanning using the SoftPerfect Network Scanner program;” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“- Connect to another computer via RDP, copy the module, and run it; delete the module.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“- Connect to a shared directory (C$, ADMIN$) on another computer, copy the module to it, create the service, run it to start the module, and then delete the service; delete the module.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.002",
+        "name": "Remote Services: SMB/Windows Admin Shares",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“This set includes a keylogger, screenshots, remote access via VNC, injections into processes, the ability to bypass the UAC security system, the Mimikatz tool, which is used to compromise access credentials for Windows OS accounts, the ability to scan open ports on an…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“The former module is installed on a system that has access to the Internet and provides interaction with the C&C server using HTTP/HTTPS/DNS protocols.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“For interaction on HTTPS protocol, HTTP protocol profiles may be used with an indicated SSL certificate, but for data exchange on the DNS protocol, it requires DNS A, AAAA, and TXT records.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.004",
+        "name": "Application Layer Protocol: DNS",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“To circumvent intrusion detection and prevention systems, as well as firewalls and proxy servers with signature rules aimed at detecting requests of a certain type, the Cobalt Strike modules generate communication profiles using the HTTP protocol: the value of the protocol’s…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090",
+        "name": "Proxy",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1090"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“When interacting with the C&C server, the data (executable files, commands, and the outputs of those commands) is encrypted.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Later, the link led to the Complaint.scr file, CobInt.Downloader, which was the usual executable: MD5 7b55c7ae346efb428aaf63d25ca0fcc7 size 278016 bytes Compiled on May 18, 2018.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“- remote connection using TeamViewer, which allows a user to preserve remote access in case control using the Cobalt Strike module is lost;” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“- secure connection using the Plink program.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cobalt/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Secrets of Cobalt",
+          "url": "https://www.group-ib.com/blog/cobalt/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“In September, the group for the first time attacked an e-wallet vendor and successfully stole funds through a payment gateway.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/renaissance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cobalt Renaissance",
+          "url": "https://www.group-ib.com/blog/renaissance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“As of today (November 22, 2017), the IP address for all these domains is 139.59.89[.]20, whereas previously, on November 21, 2017, their IP address was 104.254.99[.]67: Both domains were created by the same group – the uploading was conducted from IP address “138.68.234[.]128”,…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“First activity In a matter of hours, the Cobalt group started a mass mailing of phishing letters to financial institutions.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“Attachments to these letters contained a vulnerable document not detectable by antivirus solutions: The mail contained a malware-infected document called “Changes to Payment Transfer rules.rtf” (MD5 F360D41A0B42B129F7F0C29F98381416, 31811 bytes) The domain called…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“In the second case, an executable HTA file was uploaded and run via mshta.exe: The uploaded file contains an obfuscated JS executing the following coded Powershell script: As a result of the code being executed, a PS script is uploaded from a remote hosting…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "high",
+      "description": "“Recommendations To disable vulnerable component, the following command in cmd.exe should be executed, which will add the required parameter to the registry: “reg add “HKLM\\SOFTWARE\\Microsoft\\Office\\XX.X\\Common\\COM Compatibility\\{0002CE02-0000- 0000-C000-000000000046}” /v…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“Three days ago, on November 21, in its public GitHub repository, Embedi published a proof of concept for this vulnerability, as well as a python script, which allows creating new vulnerable “.rtf” documents.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.006",
+        "name": "Command and Scripting Interpreter: Python",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“Threat Intelligence will ensure that you are aware of attacks conducted by hacker groups and have systems available for traffic and sandbox analysis that will give verdicts for malicious files not on the basis of signatures, but based on behaviour analysis and a…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“It appeared back in 2000 – it was when the vulnerable element Microsoft Equation or, more precisely, “EQNEDT32.EXE” was created.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559.002",
+        "name": "Inter-Process Communication: Dynamic Data Exchange",
+        "parent_id": "T1559",
+        "url": "https://attack.mitre.org/techniques/T1559/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“In the second case, an executable HTA file was uploaded and run via mshta.exe: The uploaded file contains an obfuscated JS executing the following coded Powershell script: As a result of the code being executed, a PS script is uploaded from a remote hosting…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“In the second case, an executable HTA file was uploaded and run via mshta.exe: The uploaded file contains an obfuscated JS executing the following coded Powershell script: As a result of the code being executed, a PS script is uploaded from a remote hosting…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.005",
+        "name": "System Binary Proxy Execution: Mshta",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0300",
+      "confidence": "medium",
+      "description": "“The same scheme was used to mail the next letter, which was empty but had the same attachment: Technical headers of the letter: As we can see, the antivirus solution failed to detect the malicious email.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/antivirus/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: When Hackers are Quicker than Antiviruses: Cobalt Group Bypasses Antivirus Protection",
+          "url": "https://www.group-ib.com/blog/antivirus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "cobalt-group",
+  "software": [
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0284",
+      "name": "More_eggs",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0284"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S0195",
+      "name": "SDelete",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0195"
+    },
+    {
+      "id": "S0646",
+      "name": "SpicyOmelette",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0646"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:22.149Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

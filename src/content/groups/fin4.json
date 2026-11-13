@@ -1,0 +1,665 @@
+{
+  "aliases": [],
+  "attack_id": "G0085",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0085",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0085",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0085"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: since 2013 steals confidential information related to the public financial market (insider-trading style credential capture).",
+    "tier": 3
+  },
+  "country": "Unknown",
+  "counts": {
+    "attack_rows": 12,
+    "reviewed_rows": 0,
+    "rows": 12,
+    "techniques": 12
+  },
+  "description": "FIN4 is a financially-motivated threat group that has targeted confidential information related to the public financial market, particularly regarding healthcare and pharmaceutical companies, since at least 2013. FIN4 is unique in that they do not infect victims with typical persistent malware, but rather they focus on capturing credentials authorized to access email and other non-public correspondence.",
+  "description_references": [
+    {
+      "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+      "source_name": "FireEye Hacking FIN4 Dec 2014",
+      "url": "https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+    },
+    {
+      "citation": "Dennesen, K. et al.. (2014, November 30). FIN4: Stealing Insider Information for an Advantage in Stock Trading?. Retrieved November 17, 2024.",
+      "source_name": "FireEye FIN4 Stealing Insider NOV 2014",
+      "url": "https://web.archive.org/web/20190508171649/https://www.fireeye.com/blog/threat-research/2014/11/fin4_stealing_insid.html"
+    },
+    {
+      "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+      "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+      "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/fin4.csv",
+    "navigator_layer": "layers/fin4.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Ffin4.json"
+  },
+  "id": "G0085",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain (market-sensitive information)",
+  "name": "FIN4",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used legitimate credentials to hijack email communications.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--073fd81c-b49a-4800-b73a-c1b3aba3aa54",
+        "relationship_modified": "2026-07-31T20:48:48.725Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used spearphishing emails containing attachments (which are often stolen, legitimate documents sent from compromised accounts) with embedded malicious macros.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c35e3d28-f9f2-4547-9927-7b734ebec54c",
+        "relationship_modified": "2026-07-31T20:48:48.797Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used spearphishing emails (often sent from compromised accounts) containing malicious links.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a8e36e77-3899-4e7c-b27e-ab6ebf049066",
+        "relationship_modified": "2026-07-31T20:48:48.787Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used VBA macros to display a dialog box and collect victim credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0ef0077e-ee87-4e67-a466-2085a9148fc9",
+        "relationship_modified": "2026-07-31T20:48:48.734Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has lured victims to click malicious links delivered via spearphishing emails (often sent from compromised accounts).",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--822c5044-906d-4c4f-b350-49471beb03a8",
+        "relationship_modified": "2026-07-31T20:48:48.764Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has lured victims to launch malicious attachments delivered via spearphishing emails (often sent from compromised accounts).",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--59b6b000-c8c5-4b4a-8801-5102de111111",
+        "relationship_modified": "2026-07-31T20:48:48.749Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has created rules in victims' Microsoft Outlook accounts to automatically delete emails containing words such as “hacked,\" \"phish,\" and “malware\" in a likely attempt to prevent organizations from communicating about their activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--70a17629-6b01-4764-932b-8be576270329",
+        "relationship_modified": "2026-08-04T20:30:53.880Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.008",
+        "name": "Hide Artifacts: Email Hiding Rules",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/008"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has captured credentials via fake Outlook Web App (OWA) login pages and has also used a.NET based keylogger.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8cb59548-2e8d-4635-809b-b9ba22c94c31",
+        "relationship_modified": "2026-07-31T20:48:48.772Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has presented victims with spoofed Windows Authentication prompts to collect their credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a568a6a5-860b-4fe1-9f00-ab6fbbb41a26",
+        "relationship_modified": "2026-07-31T20:48:48.779Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.002",
+        "name": "Input Capture: GUI Input Capture",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/002"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has accessed and hijacked online email communications using stolen credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e9267a72-00d7-438b-8c41-af72021e89d0",
+        "relationship_modified": "2026-09-09T18:44:33.972Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1114.002",
+        "name": "Email Collection: Remote Email Collection",
+        "parent_id": "T1114",
+        "url": "https://attack.mitre.org/techniques/T1114/002"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used HTTP POST requests to transmit data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d26abf6d-069b-4b7b-b408-cf9065ebef92",
+        "relationship_modified": "2026-09-03T19:47:03.708Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        },
+        {
+          "citation": "Vengerik, B. & Dennesen, K.. (2014, December 5). Hacking the Street?  FIN4 Likely Playing the Market. Retrieved January 15, 2019.",
+          "source_name": "FireEye Hacking FIN4 Video Dec 2014",
+          "url": "https://www2.fireeye.com/WBNR-14Q4NAMFIN4.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G0085",
+      "confidence": "high",
+      "description": "FIN4 has used Tor to log in to victims' email accounts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--50f68fb8-1e59-4b3a-b389-9c2797f4d347",
+        "relationship_modified": "2026-07-31T20:48:48.742Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Vengerik, B. et al.. (2014, December 5). Hacking the Street? FIN4 Likely Playing the Market. Retrieved December 17, 2018.",
+          "source_name": "FireEye Hacking FIN4 Dec 2014",
+          "url": "https://web.archive.org/web/20220313062515/https://www.mandiant.com/sites/default/files/2021-09/rpt-fin4.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090.003",
+        "name": "Proxy: Multi-hop Proxy",
+        "parent_id": "T1090",
+        "url": "https://attack.mitre.org/techniques/T1090/003"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "fin4",
+  "software": [],
+  "stix_modified": "2026-07-31T20:48:48.493Z",
+  "tactics_present": [
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    }
+  ]
+}

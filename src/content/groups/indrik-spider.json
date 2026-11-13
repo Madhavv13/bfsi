@@ -1,0 +1,1577 @@
+{
+  "aliases": [
+    "Evil Corp",
+    "Manatee Tempest",
+    "DEV-0243",
+    "UNC2165"
+  ],
+  "attack_id": "G0119",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0119",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0119",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0119"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: started with the Dridex banking trojan, later BitPaymer/WastedLocker/Hades; sanctioned and indicted in 2019 (Evil Corp).",
+    "tier": 2
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 33,
+    "reviewed_rows": 0,
+    "rows": 33,
+    "techniques": 33
+  },
+  "description": "Indrik Spider is a Russia-based cybercriminal group that has been active since at least 2014. Indrik Spider initially started with the Dridex banking Trojan, and then by 2017 they began running ransomware operations using BitPaymer, WastedLocker, and Hades ransomware. Following U.S. sanctions and an indictment in 2019, Indrik Spider changed their tactics and diversified their toolset.",
+  "description_references": [
+    {
+      "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+      "source_name": "Crowdstrike Indrik November 2018",
+      "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+    },
+    {
+      "citation": "Podlosky, A., Feeley, B. (2021, March 17). INDRIK SPIDER Supersedes WastedLocker with Hades Ransomware to Circumvent OFAC Sanctions. Retrieved September 15, 2021.",
+      "source_name": "Crowdstrike EvilCorp March 2021",
+      "url": "https://www.crowdstrike.com/blog/hades-ransomware-successor-to-indrik-spiders-wastedlocker/"
+    },
+    {
+      "citation": "U.S. Department of Treasury. (2019, December 5). Treasury Sanctions Evil Corp, the Russia-Based Cybercriminal Group Behind Dridex Malware. Retrieved September 15, 2021.",
+      "source_name": "Treasury EvilCorp Dec 2019",
+      "url": "https://home.treasury.gov/news/press-releases/sm845"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/indrik-spider.csv",
+    "navigator_layer": "layers/indrik-spider.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Findrik-spider.json"
+  },
+  "id": "G0119",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain",
+  "name": "Indrik Spider",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has downloaded tools, such as the Advanced Port Scanner utility and Lansweeper, to conduct internal reconnaissance of the victim network. Indrik Spider has also accessed the victim’s VMware VCenter, which had information about host configuration, clusters, etc.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--656f1790-2ea7-4690-9d72-0371b90bdafd",
+        "relationship_modified": "2026-07-31T18:47:35.436Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590",
+        "name": "Gather Victim Network Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1590"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has purchased access to victim VPNs to facilitate access to victim environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--451d0efa-51c0-414b-a839-cb44edca7bdc",
+        "relationship_modified": "2026-07-31T18:47:35.346Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583",
+        "name": "Acquire Infrastructure",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1583"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has served fake updates via legitimate websites that have been compromised.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f7d3d7fc-e25f-4b1f-b7ea-7c19adb300bd",
+        "relationship_modified": "2026-07-31T18:47:36.163Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1584.004",
+        "name": "Compromise Infrastructure: Server",
+        "parent_id": "T1584",
+        "url": "https://attack.mitre.org/techniques/T1584/004"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has created email accounts to communicate with their ransomware victims, to include providing payment and decryption details.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bc156b29-534a-4156-b188-8f4a426a0e6c",
+        "relationship_modified": "2026-07-31T18:47:35.944Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has developed malware for their operations, including ransomware such as BitPaymer and WastedLocker.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0b5cb547-b027-4a30-84de-d9d1df2495d0",
+        "relationship_modified": "2026-07-31T18:47:35.234Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used valid accounts for initial access and lateral movement. Indrik Spider has also maintained access to the victim environment through the VPN infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8f0596f7-159c-43c0-a848-cffb02fc3c9e",
+        "relationship_modified": "2026-07-31T18:47:35.716Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has collected credentials from infected systems, including domain accounts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--739217f2-c273-4005-8175-1261a81a1224",
+        "relationship_modified": "2026-07-31T18:47:35.481Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used WMIC to execute commands on remote computers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--89fad9cc-d20b-43c4-a98d-105ff6642f2c",
+        "relationship_modified": "2026-07-31T18:47:35.651Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used PowerShell Empire for execution of malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7005793f-b8da-49c5-8985-9d4476c3faaf",
+        "relationship_modified": "2026-07-31T18:47:35.453Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        },
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used batch scripts on victim's machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8904d69b-a5ab-4e4c-b7c7-c437e7859b8a",
+        "relationship_modified": "2026-07-31T18:47:35.582Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used malicious JavaScript files for several components of their attack.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b8fbce12-deae-4655-ac96-e23ebbeef624",
+        "relationship_modified": "2026-07-31T18:47:35.917Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has attempted to get users to click on a malicious zipped file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f30598a2-f1bd-41da-874c-9b883d54790d",
+        "relationship_modified": "2026-07-31T18:47:36.109Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has modified registry keys to prepare for ransomware execution and to disable common administrative utilities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1cebf654-8955-4be0-b01f-392ffa2bad0a",
+        "relationship_modified": "2026-07-31T18:47:35.286Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider used <code>wmic.exe</code> to add a new user to the system.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--15033f82-efad-4db9-8d4c-015eeeeead64",
+        "relationship_modified": "2026-07-31T18:47:35.268Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136",
+        "name": "Create Account",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1136"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has created local system accounts and has added the accounts to privileged groups.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b21266cc-1c7a-4ec5-9f15-5acc771a6560",
+        "relationship_modified": "2026-07-31T18:47:35.869Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136.001",
+        "name": "Create Account: Local Account",
+        "parent_id": "T1136",
+        "url": "https://attack.mitre.org/techniques/T1136/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used Group Policy Objects to deploy batch scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--89500cd9-c663-4b3e-bb20-b8fe1860891a",
+        "relationship_modified": "2026-07-31T18:47:35.630Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1484.001",
+        "name": "Domain or Tenant Policy Modification: Group Policy Modification",
+        "parent_id": "T1484",
+        "url": "https://attack.mitre.org/techniques/T1484/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider used fake updates for FlashPlayer plugin and Google Chrome as initial infection vectors.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2f33e27a-6fdf-4121-9e25-a307910b118f",
+        "relationship_modified": "2026-07-31T18:47:35.303Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider used PsExec to leverage Windows Defender to disable scanning of all downloaded files and to restrict real-time monitoring. Indrik Spider has used `MpCmdRun` to revert the definitions in Microsoft Defender. Additionally, Indrik Spider has used WMI to stop or uninstall and reset anti-virus products and other defensive services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4d6e2596-a7ed-49af-b24b-dca2ddbb6ef2",
+        "relationship_modified": "2026-07-31T18:47:35.364Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used Cobalt Strike to empty log files. Additionally, Indrik Spider has cleared all event logs using `wevutil`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ac9b186f-dfd1-4110-b53e-299652097280",
+        "relationship_modified": "2026-07-31T18:47:35.837Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider used Cobalt Strike to carry out credential dumping using ProcDump.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--000aa4d0-315e-40d7-b2b6-76e91ecf0fe8",
+        "relationship_modified": "2026-07-31T18:47:35.213Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has searched files to obtain and exfiltrate credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--752dc7ba-6ad9-42a7-a61a-4440bec0e1ea",
+        "relationship_modified": "2026-07-31T18:47:35.498Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.001",
+        "name": "Unsecured Credentials: Credentials In Files",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has accessed and exported passwords from password managers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5c254f88-f567-43d8-9384-54edcf0cb348",
+        "relationship_modified": "2026-07-31T18:47:35.419Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.005",
+        "name": "Credentials from Password Stores: Password Managers",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/005"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has conducted Kerberoasting attacks using a module from GitHub.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e9ebd661-1095-4638-8231-1ebccf520069",
+        "relationship_modified": "2026-07-31T18:47:36.088Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1558.003",
+        "name": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "parent_id": "T1558",
+        "url": "https://attack.mitre.org/techniques/T1558/003"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used the win32_service WMI class to retrieve a list of services from the system.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--342a3da9-79e7-4fdc-8a08-bd7f54caa2ac",
+        "relationship_modified": "2026-07-31T18:47:35.325Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1007",
+        "name": "System Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1007"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used a service account to extract copies of the `Security` Registry hive.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e56386ab-5c44-403a-bfaf-dce6c6129c0c",
+        "relationship_modified": "2026-07-31T18:47:36.069Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1012",
+        "name": "Query Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1012"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used PowerView to enumerate all Windows Server, Windows Server 2003, and Windows 7 instances in the Active Directory database.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b2c02ae1-c62a-4811-a913-b0a26f605e38",
+        "relationship_modified": "2026-07-31T18:47:35.891Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used RDP for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--59a330b5-9ca3-4888-b81d-ce9e6ce564e5",
+        "relationship_modified": "2026-07-31T18:47:35.402Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used SSH for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f43de92c-7a30-4d24-82d1-4537d4fc3fb2",
+        "relationship_modified": "2026-07-31T18:47:36.138Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has stored collected data in a.tmp file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5926c79d-b8a7-419a-b789-7e2ff1ee32b9",
+        "relationship_modified": "2026-07-31T18:47:35.383Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074.001",
+        "name": "Data Staged: Local Data Staging",
+        "parent_id": "T1074",
+        "url": "https://attack.mitre.org/techniques/T1074/001"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has downloaded additional scripts, malware, and tools onto a compromised host.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d9360852-584e-4980-9f9b-f56193bd3fc0",
+        "relationship_modified": "2026-09-03T19:47:05.468Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        },
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has exfiltrated data using Rclone or MEGASync prior to deploying ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7a9d20e3-053c-4a5c-87d6-bd72bcdd0d69",
+        "relationship_modified": "2026-07-31T18:47:35.513Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has encrypted domain-controlled systems using BitPaymer. Additionally, Indrik Spider used PsExec to execute a ransomware script.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a5ee5826-e742-4847-9816-d9124827262a",
+        "relationship_modified": "2026-07-31T18:47:35.777Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frankoff, S., Hartley, B. (2018, November 14). Big Game Hunting: The Evolution of INDRIK SPIDER From Dridex Wire Fraud to BitPaymer Targeted Ransomware. Retrieved January 6, 2021.",
+          "source_name": "Crowdstrike Indrik November 2018",
+          "url": "https://www.crowdstrike.com/blog/big-game-hunting-the-evolution-of-indrik-spider-from-dridex-wire-fraud-to-bitpaymer-targeted-ransomware/"
+        },
+        {
+          "citation": "Mandiant Intelligence. (2022, June 2). To HADES and Back: UNC2165 Shifts to LOCKBIT to Evade Sanctions. Retrieved July 29, 2024.",
+          "source_name": "Mandiant_UNC2165",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc2165-shifts-to-evade-sanctions/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "G0119",
+      "confidence": "high",
+      "description": "Indrik Spider has used PsExec to stop services prior to the execution of ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e2763cbf-c068-47b5-a871-3b20a368497f",
+        "relationship_modified": "2026-07-31T18:47:36.044Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Intelligence. (2020, June 25). WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. Retrieved May 20, 2021.",
+          "source_name": "Symantec WastedLocker June 2020",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1489",
+        "name": "Service Stop",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1489"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "indrik-spider",
+  "software": [
+    {
+      "id": "S0570",
+      "name": "BitPaymer",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0570"
+    },
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0695",
+      "name": "Donut",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0695"
+    },
+    {
+      "id": "S0384",
+      "name": "Dridex",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0384"
+    },
+    {
+      "id": "S0363",
+      "name": "Empire",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0363"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S0612",
+      "name": "WastedLocker",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0612"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:34.523Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { withBase } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const groups = await getCollection('groups');
+  return groups.map((entry) => ({ params: { id: entry.data.slug }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<'groups'>;
+}
+const g = Astro.props.entry.data;
+const attacks = new Map(g.attacks.map((a) => [a.id, a]));
+const provLabel = { 'mitre-attack': 'ATT&CK', 'reviewed-automap': 'Reviewed auto-map', curated: 'Curated' } as const;
+const kindLabel = {
+  group_general: 'Group-level',
+  attack_campaign: 'ATT&CK campaign',
+  curated_incident: 'Curated incident',
+  reported_activity: 'Reported activity',
+} as const;
+const navigatorUrl = g.downloads.navigator_url;
+---
+<Base title={`${g.name}${g.attack_id ? ` (${g.attack_id})` : ''}`} description={`${g.name}: MITRE ATT&CK techniques used against banks and financial services.`} attackVersion={g.attack_version} searchable="Group">
+  <nav class="crumbs"><a href={withBase('/')}>All groups</a> › {g.name}</nav>
+  <h1 data-pagefind-weight="10">
+    {g.name}
+    {g.attack_id && g.attack_url && (
+      <a class="id" href={g.attack_url} rel="noopener">{g.attack_id}</a>
+    )}
+  </h1>
+  {g.aliases.length > 0 && <p class="aka" data-pagefind-weight="10"><strong>Also known as:</strong> {g.aliases.join(', ')}</p>}
+  <dl class="facts">
+    {g.country && (<><dt>Nexus</dt><dd>{g.country}</dd></>)}
+    {g.motivation && (<><dt>Motivation</dt><dd>{g.motivation}</dd></>)}
+    <dt>Why BFSI</dt><dd>{g.bfsi.reason}</dd>
+    <dt>Data</dt><dd>ATT&amp;CK v{g.attack_version} · last updated {g.last_updated}</dd>
+  </dl>
+
+  <section>
+    <h2>Description</h2>
+    <p class="desc">{g.description}</p>
+    <p class="source-note">
+      Source: {g.description_source === 'mitre-attack' ? 'MITRE ATT&CK group description' : 'curated from the references below'}.
+    </p>
+    {g.description_references.length > 0 && (
+      <details>
+        <summary>References ({g.description_references.length})</summary>
+        <ol class="refs">
+          {g.description_references.map((r) => (
+            <li>{r.url ? <a href={r.url} rel="noopener nofollow">{r.citation ?? r.source_name}</a> : (r.citation ?? r.source_name)}</li>
+          ))}
+        </ol>
+      </details>
+    )}
+  </section>
+
+  <section>
+    <h2>Techniques</h2>
+    <p class="downloads">
+      <a href={withBase(g.downloads.csv)} download>CSV</a> ·
+      <a href={withBase(g.downloads.navigator_layer)} download>Navigator layer (JSON)</a>
+      {navigatorUrl && <> · <a href={navigatorUrl} rel="noopener">Open in ATT&amp;CK Navigator</a></>}
+    </p>
+    {g.rows.length === 0 ? (
+      <p>No techniques published yet for this group. Rows appear once mappings from public reporting are reviewed.</p>
+    ) : (
+      <>
+        <div class="filters" data-tactic-filter-root>
+          <label for="tactic-filter">Filter by tactic</label>
+          <select id="tactic-filter" data-tactic-filter>
+            <option value="">All tactics ({g.rows.length} rows)</option>
+            {g.tactics_present.map((t) => <option value={t.id}>{t.name} ({t.id})</option>)}
+          </select>
+          <label for="prov-filter">Source</label>
+          <select id="prov-filter" data-prov-filter>
+            <option value="">All sources</option>
+            <option value="mitre-attack">ATT&amp;CK</option>
+            <option value="reviewed-automap">Reviewed auto-map</option>
+          </select>
+          <output data-row-count aria-live="polite"></output>
+        </div>
+        <table class="data techniques">
+          <caption>Techniques used by {g.name}: one row per documented procedure</caption>
+          <thead>
+            <tr>
+              <th scope="col">Attack Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Tactic</th>
+              <th scope="col">Technique</th>
+            </tr>
+          </thead>
+          <tbody>
+            {g.rows.map((r) => {
+              const a = attacks.get(r.attack_ref);
+              return (
+                <tr data-tactics={r.tactics.map((t) => t.id).join(' ')} data-prov={r.provenance.source}>
+                  <td>
+                    {a?.url ? <a href={a.url} rel="noopener">{a?.name}</a> : a?.name}
+                    <div class="meta">
+                      {a && kindLabel[a.kind]}
+                      {a?.first_seen && <> · {a.first_seen}{a.last_seen && a.last_seen !== a.first_seen ? ` – ${a.last_seen}` : ''}</>}
+                    </div>
+                  </td>
+                  <td>
+                    {r.description}
+                    <div class="meta">
+                      <span class={`badge ${r.provenance.source}`}>{provLabel[r.provenance.source]}</span>
+                      {r.provenance.via_group && <span class="badge umbrella">umbrella via {r.provenance.via_group}</span>}
+                      {r.provenance.reviewed_at && <span> reviewed {r.provenance.reviewed_at}</span>}
+                      {r.references.length > 0 && (
+                        <details>
+                          <summary>Sources ({r.references.length})</summary>
+                          <ol class="refs">
+                            {r.references.map((ref) => (
+                              <li>{ref.url ? <a href={ref.url} rel="noopener nofollow">{ref.citation ?? ref.source_name}</a> : (ref.citation ?? ref.source_name)}</li>
+                            ))}
+                          </ol>
+                        </details>
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    {r.tactics.map((t, i) => (
+                      <>{i > 0 && ', '}<a href={t.url} rel="noopener">{t.name}</a></>
+                    ))}
+                  </td>
+                  <td class="tech">
+                    <a href={withBase(`/techniques/${r.technique.id}/`)}>{r.technique.id}</a>
+                    <div>{r.technique.name}</div>
+                    <a class="meta" href={r.technique.url} rel="noopener">ATT&amp;CK ↗</a>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </>
+    )}
+  </section>
+
+  {g.software.length > 0 && (
+    <section>
+      <h2>Software (ATT&amp;CK)</h2>
+      <p class="software">
+        {g.software.map((s, i) => (
+          <>{i > 0 && ', '}<a href={s.url} rel="noopener">{s.name}</a> <span class="meta">({s.id}, {s.type})</span></>
+        ))}
+      </p>
+    </section>
+  )}
+  <p class="notice" data-pagefind-ignore>{g.notice}</p>
+  <script is:inline src={withBase('/scripts/tactic-filter.js')} defer></script>
+</Base>

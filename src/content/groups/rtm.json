@@ -1,0 +1,700 @@
+{
+  "aliases": [],
+  "attack_id": "G0048",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0048",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0048",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0048"
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0296",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Following the RTM",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2015; targets users of remote banking systems in Russia and neighbouring countries.",
+    "tier": 3
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 7,
+    "reviewed_rows": 7,
+    "rows": 14,
+    "techniques": 11
+  },
+  "description": "RTM is a cybercriminal group that has been active since at least 2015 and is primarily interested in users of remote banking systems in Russia and neighboring countries. The group uses a Trojan by the same name (RTM).",
+  "description_references": [
+    {
+      "citation": "Faou, M. and Boutin, J. (2017, February). Read The Manual: A Guide to the RTM Banking Trojan. Retrieved March 9, 2017.",
+      "source_name": "ESET RTM Feb 2017",
+      "url": "https://www.welivesecurity.com/wp-content/uploads/2017/02/Read-The-Manual.pdf"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/rtm.csv",
+    "navigator_layer": "layers/rtm.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Frtm.json"
+  },
+  "id": "G0048",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "RTM",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has distributed its malware via the RIG and SUNDOWN exploit kits, as well as online advertising network <code>Yandex.Direct</code>.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--03e67769-31da-4a46-a5a6-1ccbdd0cf29f",
+        "relationship_modified": "2026-07-31T18:48:17.240Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Faou, M. and Boutin, J. (2017, February). Read The Manual: A Guide to the RTM Banking Trojan. Retrieved March 9, 2017.",
+          "source_name": "ESET RTM Feb 2017",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2017/02/Read-The-Manual.pdf"
+        },
+        {
+          "citation": "ESET Research. (2019, April 30). Buhtrap backdoor and Buran ransomware distributed via major advertising platform. Retrieved May 11, 2020.",
+          "source_name": "ESET Buhtrap and Buran April 2019",
+          "url": "https://www.welivesecurity.com/2019/04/30/buhtrap-backdoor-ransomware-advertising-platform/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1189",
+        "name": "Drive-by Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1189"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has used spearphishing attachments to distribute its malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5f1493e8-65d8-474a-b6b7-c1311fc24d98",
+        "relationship_modified": "2026-07-31T18:48:17.357Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O. (2019, August 5). Following the RTM Forensic examination of a computer infected with a banking trojan. Retrieved May 11, 2020.",
+          "source_name": "Group IB RTM August 2019",
+          "url": "https://www.group-ib.com/blog/rtm"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has attempted to lure victims into opening e-mail attachments to execute malicious code.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1bf08293-5342-4736-b3a9-c1f160ad9c81",
+        "relationship_modified": "2026-07-31T18:48:17.329Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O. (2019, August 5). Following the RTM Forensic examination of a computer infected with a banking trojan. Retrieved May 11, 2020.",
+          "source_name": "Group IB RTM August 2019",
+          "url": "https://www.group-ib.com/blog/rtm"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has used search order hijacking to force TeamViewer to load a malicious DLL.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--16dfd169-264f-410f-97bf-a1cdec20c50e",
+        "relationship_modified": "2026-07-31T18:48:17.302Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O. (2019, August 5). Following the RTM Forensic examination of a computer infected with a banking trojan. Retrieved May 11, 2020.",
+          "source_name": "Group IB RTM August 2019",
+          "url": "https://www.group-ib.com/blog/rtm"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has used Registry run keys to establish persistence for the RTM Trojan and other tools, such as a modified version of TeamViewer remote desktop software.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--09381138-b93b-4b0d-b82d-c21d452ff514",
+        "relationship_modified": "2026-07-31T18:48:17.274Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Faou, M. and Boutin, J. (2017, February). Read The Manual: A Guide to the RTM Banking Trojan. Retrieved March 9, 2017.",
+          "source_name": "ESET RTM Feb 2017",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2017/02/Read-The-Manual.pdf"
+        },
+        {
+          "citation": "Skulkin, O. (2019, August 5). Following the RTM Forensic examination of a computer infected with a banking trojan. Retrieved May 11, 2020.",
+          "source_name": "Group IB RTM August 2019",
+          "url": "https://www.group-ib.com/blog/rtm"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has used an RSS feed on Livejournal to update a list of encrypted C2 server names.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a58ad2d1-7200-4ba8-9c24-fc640306ea2f",
+        "relationship_modified": "2026-09-02T19:42:04.395Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Faou, M. and Boutin, J. (2017, February). Read The Manual: A Guide to the RTM Banking Trojan. Retrieved March 9, 2017.",
+          "source_name": "ESET RTM Feb 2017",
+          "url": "https://www.welivesecurity.com/wp-content/uploads/2017/02/Read-The-Manual.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.001",
+        "name": "Web Service: Dead Drop Resolver",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/001"
+      }
+    },
+    {
+      "attack_ref": "G0048",
+      "confidence": "high",
+      "description": "RTM has used a modified version of TeamViewer and Remote Utilities for remote access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--685a8409-db59-4ef3-b4de-786b87be8839",
+        "relationship_modified": "2026-07-31T18:48:17.376Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O. (2019, August 5). Following the RTM Forensic examination of a computer infected with a banking trojan. Retrieved May 11, 2020.",
+          "source_name": "Group IB RTM August 2019",
+          "url": "https://www.group-ib.com/blog/rtm"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219.002",
+        "name": "Remote Access Tools: Remote Desktop Software",
+        "parent_id": "T1219",
+        "url": "https://attack.mitre.org/techniques/T1219/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "medium",
+      "description": "“Since then, phishing emails distributing the trojan have been sent to potential victims with admirable persistence.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "medium",
+      "description": "“From September to December 2018 the RTM group sent out more than 11,000 malicious emails.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "low",
+      "description": "“Let’s recall Jesse Kornblum’s paradox: “Malware can hide, but it must run”.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "high",
+      "description": "“Judging by the file’s size, it has nothing to do with the original msi.dll, so it is clearly DLL Search Order Hijacking.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "medium",
+      "description": "“Let’s start with low-hanging fruits, the so-called run keys: The partition was last modified on November 7th, and we see that when a user logs in, the apg.exe file is executed from a very suspicious location.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "low",
+      "description": "“To extract data from it, you can use RegRipper again.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1213.006",
+        "name": "Data from Information Repositories: Databases",
+        "parent_id": "T1213",
+        "url": "https://attack.mitre.org/techniques/T1213/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0296",
+      "confidence": "medium",
+      "description": "“Let’s take a closer look at apg.exe and use PPEE: This looks like TeamViewer and is signed as TeamViewer, so does this mean it indeed is TeamViewer?” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/rtm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Following the RTM",
+          "url": "https://www.group-ib.com/blog/rtm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "rtm",
+  "software": [
+    {
+      "id": "S0148",
+      "name": "RTM",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0148"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:16.598Z",
+  "tactics_present": [
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    }
+  ]
+}

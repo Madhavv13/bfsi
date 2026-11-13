@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/paths';
+---
+<Base title="Search" description="Search BFSI threat groups, aliases, techniques and procedures.">
+  <h1>Search</h1>
+  <p class="lead">
+    Search group names and aliases (for example “BlueNoroff”), technique names and IDs, and procedure text.
+  </p>
+  <link rel="stylesheet" href={withBase('/pagefind/pagefind-ui.css')} />
+  <div id="search" data-bundle={withBase('/pagefind/')}></div>
+  <noscript>
+    <p>Search needs JavaScript. Browse the <a href={withBase('/')}>group list</a> or the
+    <a href={withBase('/techniques/')}>technique index</a> instead.</p>
+  </noscript>
+  <script is:inline src={withBase('/pagefind/pagefind-ui.js')}></script>
+  <script is:inline src={withBase('/scripts/search.js')} defer></script>
+</Base>

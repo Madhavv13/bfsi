@@ -1,0 +1,94 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { withBase } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const techniques = await getCollection('techniques');
+  return techniques.map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<'techniques'>;
+}
+const t = Astro.props.entry.data;
+const all = (await getCollection('techniques')).map((e) => e.data);
+const byId = new Map(all.map((x) => [x.id, x]));
+const parent = t.parent_id ? byId.get(t.parent_id) : undefined;
+const subs = all.filter((x) => x.parent_id === t.id).sort((a, b) => a.id.localeCompare(b.id));
+
+const groups = (await getCollection('groups')).map((g) => g.data).sort((a, b) => a.name.localeCompare(b.name));
+const uses = groups.flatMap((g) => {
+  const attacks = new Map(g.attacks.map((a) => [a.id, a]));
+  return g.rows
+    .filter((r) => r.technique.id === t.id)
+    .map((r) => ({ g, r, a: attacks.get(r.attack_ref) }));
+});
+const usedByGroup = (id: string) => groups.filter((g) => g.rows.some((r) => r.technique.id === id)).length;
+const provLabel = { 'mitre-attack': 'ATT&CK', 'reviewed-automap': 'Reviewed auto-map', curated: 'Curated' } as const;
+---
+<Base title={`${t.id} ${t.name}`} description={`${t.name} (${t.id}): BFSI threat groups that use this MITRE ATT&CK technique.`} attackVersion={t.attack_version} searchable="Technique">
+  <nav class="crumbs">
+    <a href={withBase('/techniques/')}>Techniques</a> ›
+    {parent && <><a href={withBase(`/techniques/${parent.id}/`)}>{parent.id}</a> › </>}
+    {t.id}
+  </nav>
+  <h1>{t.name} <a class="id" href={t.url} rel="noopener">{t.id}</a></h1>
+  <dl class="facts">
+    <dt>Tactic{t.tactics.length > 1 ? 's' : ''}</dt>
+    <dd>{t.tactics.map((x, i) => <>{i > 0 && ', '}<a href={x.url} rel="noopener">{x.name}</a> ({x.id})</>)}</dd>
+    <dt>Data</dt><dd>MITRE ATT&amp;CK v{t.attack_version}</dd>
+  </dl>
+
+  <section>
+    <h2>Description</h2>
+    <p class="desc">{t.description}</p>
+    <p class="source-note">First paragraph of the MITRE ATT&amp;CK technique description. <a href={t.url} rel="noopener">Full entry on attack.mitre.org</a>.</p>
+  </section>
+
+  {subs.length > 0 && (
+    <section>
+      <h2>Sub-techniques seen in BFSI reporting</h2>
+      <ul>
+        {subs.map((s) => (
+          <li><a href={withBase(`/techniques/${s.id}/`)}>{s.id}</a> {s.short_name} <span class="meta">({usedByGroup(s.id)} group{usedByGroup(s.id) === 1 ? '' : 's'})</span></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section>
+    <h2>Procedures by BFSI groups</h2>
+    {uses.length === 0 ? (
+      <p>No group page has a procedure for {t.id} itself{subs.length > 0 ? '; see the sub-techniques above' : ''}.</p>
+    ) : (
+      <table class="data">
+        <caption>{uses.length} documented procedure{uses.length === 1 ? '' : 's'} for {t.id}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Group</th>
+            <th scope="col">Attack Name</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {uses.map(({ g, r, a }) => (
+            <tr data-prov={r.provenance.source}>
+              <td><a href={withBase(`/groups/${g.slug}/`)}>{g.name}</a>{g.attack_id && <div class="meta">{g.attack_id}</div>}</td>
+              <td>{a?.url ? <a href={a.url} rel="noopener">{a.name}</a> : a?.name}</td>
+              <td>
+                {r.description}
+                <div class="meta">
+                  <span class={`badge ${r.provenance.source}`}>{provLabel[r.provenance.source]}</span>
+                  {r.references.length > 0 && r.references[0].url && (
+                    <a href={r.references[0].url} rel="noopener nofollow">{r.references[0].citation ?? r.references[0].source_name}</a>
+                  )}
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </section>
+</Base>

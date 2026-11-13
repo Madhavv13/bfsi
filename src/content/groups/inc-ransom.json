@@ -1,0 +1,2605 @@
+{
+  "aliases": [
+    "GOLD IONIC"
+  ],
+  "attack_id": "G1032",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1032",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1032",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1032"
+    },
+    {
+      "first_seen": "2026-11-10",
+      "id": "INC-0372",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-10",
+      "name": "IT threat evolution in Q3 2026. Non-mobile statistics",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-11",
+      "id": "INC-0008",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-11",
+      "name": "https://www.jnattorney.com/ By inc ransom",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: ransomware and data-extortion group active since July 2023. Its leak site listed a US brokerage/financial-services firm in Nov 2026 (ransomware.live); the claim is the group's own and unverified.",
+    "tier": 2
+  },
+  "country": "eCrime",
+  "counts": {
+    "attack_rows": 25,
+    "reviewed_rows": 30,
+    "rows": 55,
+    "techniques": 43
+  },
+  "description": "INC Ransom is a ransomware and data extortion threat group associated with the deployment of INC Ransomware that has been active since at least July 2023. INC Ransom has targeted organizations worldwide most commonly in the industrial, healthcare, and education sectors in the US and Europe.",
+  "description_references": [
+    {
+      "citation": "Toulas, B. (2024, March 27). INC Ransom threatens to leak 3TB of NHS Scotland stolen data. Retrieved June 5, 2024.",
+      "source_name": "Bleeping Computer INC Ransomware March 2024",
+      "url": "https://www.bleepingcomputer.com/news/security/inc-ransom-threatens-to-leak-3tb-of-nhs-scotland-stolen-data/"
+    },
+    {
+      "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+      "source_name": "Cybereason INC Ransomware November 2023",
+      "url": "https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+    },
+    {
+      "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+      "source_name": "Secureworks GOLD IONIC April 2024",
+      "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+    },
+    {
+      "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+      "source_name": "SentinelOne INC Ransomware",
+      "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/inc-ransom.csv",
+    "navigator_layer": "layers/inc-ransom.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Finc-ransom.json"
+  },
+  "id": "G1032",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain (extortion)",
+  "name": "INC Ransom",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has acquired and used several tools including MegaSync, AnyDesk, esentutl and PsExec.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9ab8569f-3b5a-455b-880f-10d29cbae970",
+        "relationship_modified": "2026-07-31T20:48:47.714Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used compromised valid accounts for access to victim environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d80025ab-a35d-400d-b08d-9fd6f6a3ce4a",
+        "relationship_modified": "2026-07-31T20:48:47.789Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has exploited known vulnerabilities including CVE-2023-3519 in Citrix NetScaler for initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c962253b-d89e-4645-bdd4-5625df63abc1",
+        "relationship_modified": "2026-07-31T20:48:47.774Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used phishing to gain initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ee6640f-978b-4402-a6a7-c74e7c8e1c4b",
+        "relationship_modified": "2026-07-31T20:48:47.620Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used WMIC to deploy ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0a789ae7-0348-4bec-a7bd-7890f0996d66",
+        "relationship_modified": "2026-07-31T20:48:47.612Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used `cmd.exe` to launch malicious payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3997e83c-b7da-4ce0-8e5c-89fac56535f1",
+        "relationship_modified": "2026-07-31T20:48:47.627Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has run a file encryption executable via `Service Control Manager/7045;winupd,%SystemRoot%\\winupd.exe,user mode service,demand start,LocalSystem`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6bbb4292-0496-412d-8277-af752703c46a",
+        "relationship_modified": "2026-07-31T20:48:47.685Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has named a PsExec executable winupd to mimic a legitimate Windows update file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9defa430-9c4c-4dde-b952-d75394c8fd5e",
+        "relationship_modified": "2026-07-31T20:48:47.729Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has uninstalled tools from compromised endpoints after use.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ca4c427c-2804-419d-b4ba-c07ed2cb24ab",
+        "relationship_modified": "2026-07-31T20:48:47.781Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom can use SystemSettingsAdminFlows.exe, a native Windows utility, to disable Windows Defender.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9024716a-189b-4e2d-b58e-ae9b0cd111ec",
+        "relationship_modified": "2026-07-31T20:48:47.707Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used NETSCAN.EXE for internal reconnaissance.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6633ef0a-40ae-46f4-aff9-762fb4c0ab29",
+        "relationship_modified": "2026-07-31T20:48:47.672Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used RDP to test network connections.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fe892807-f2da-4fc2-a552-979a10c44094",
+        "relationship_modified": "2026-07-31T20:48:47.822Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1049",
+        "name": "System Network Connections Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1049"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has enumerated domain groups on targeted hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b02e5116-d609-4e7f-a95e-77bd51f6c4ee",
+        "relationship_modified": "2026-07-31T20:48:47.753Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.002",
+        "name": "Permission Groups Discovery: Domain Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/002"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has scanned for domain admin accounts in compromised environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--493429f4-9d83-4131-8308-44e167a1a909",
+        "relationship_modified": "2026-07-31T20:48:47.641Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.002",
+        "name": "Account Discovery: Domain Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/002"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used Internet Explorer to view folders on other systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c7ed191d-dbff-48c9-8a6b-baf056156baf",
+        "relationship_modified": "2026-07-31T20:48:47.767Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1135",
+        "name": "Network Share Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1135"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used RDP to move laterally.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--08c3b884-5e8d-413a-a336-6246ed11af24",
+        "relationship_modified": "2026-07-31T20:48:47.596Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used a rapid succession of copy commands to install a file encryption executable across multiple endpoints within compromised infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9ecaf902-7633-4463-b5aa-3771a0ef08b7",
+        "relationship_modified": "2026-09-03T19:46:57.604Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+          "source_name": "Secureworks GOLD IONIC April 2024",
+          "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1570"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has staged data on compromised hosts prior to exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--514198d4-dac9-4982-8d80-429b7843b639",
+        "relationship_modified": "2026-07-31T20:48:47.655Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074",
+        "name": "Data Staged",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1074"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used 7-Zip and WinRAR to archive collected data prior to exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ef2873f3-3e8d-4ec0-ba63-e487dc36a005",
+        "relationship_modified": "2026-07-31T20:48:47.804Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+          "source_name": "Secureworks GOLD IONIC April 2024",
+          "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used valid accounts over RDP to connect to targeted systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6521c093-6e80-4669-9151-1c4df2dac259",
+        "relationship_modified": "2026-09-03T19:46:51.911Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071",
+        "name": "Application Layer Protocol",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1071"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has downloaded tools to compromised servers including Advanced IP Scanner.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e05db24d-57e8-40e9-a412-819ac5592ed8",
+        "relationship_modified": "2026-09-03T19:47:05.577Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used AnyDesk and PuTTY on compromised systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--78601356-fa8e-47f5-b5ad-01549bac169f",
+        "relationship_modified": "2026-07-31T20:48:47.692Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "Carvey, H. (2024, May 1). LOLBin to INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransomware May 2024",
+          "url": "https://www.huntress.com/blog/lolbin-to-inc-ransomware"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used Megasync to exfiltrate data to the cloud.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--463d6149-8561-4e11-a5a7-c24faa34da62",
+        "relationship_modified": "2026-07-31T20:48:47.634Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+          "source_name": "Secureworks GOLD IONIC April 2024",
+          "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1537",
+        "name": "Transfer Data to Cloud Account",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1537"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has used INC Ransomware to encrypt victim's data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--05a9fa5f-7273-4c4e-846c-1b04754208c6",
+        "relationship_modified": "2026-07-31T20:48:47.588Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        },
+        {
+          "citation": "Team Huntress. (2023, August 11). Investigating New INC Ransom Group Activity. Retrieved June 5, 2024.",
+          "source_name": "Huntress INC Ransom Group August 2023",
+          "url": "https://www.huntress.com/blog/investigating-new-inc-ransom-group-activity"
+        },
+        {
+          "citation": "Toulas, B. (2024, March 27). INC Ransom threatens to leak 3TB of NHS Scotland stolen data. Retrieved June 5, 2024.",
+          "source_name": "Bleeping Computer INC Ransomware March 2024",
+          "url": "https://www.bleepingcomputer.com/news/security/inc-ransom-threatens-to-leak-3tb-of-nhs-scotland-stolen-data/"
+        },
+        {
+          "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+          "source_name": "Secureworks GOLD IONIC April 2024",
+          "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+        },
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "G1032",
+      "confidence": "high",
+      "description": "INC Ransom has stolen and encrypted victim's data in order to extort payment for keeping it private or decrypting it.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0930ad61-cdf2-451f-bdfe-5c644c3a97c8",
+        "relationship_modified": "2026-07-31T20:48:47.604Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Cybereason Security Research Team. (2023, November 20). Threat Alert: INC Ransomware. Retrieved June 5, 2024.",
+          "source_name": "Cybereason INC Ransomware November 2023",
+          "url": "https://web.archive.org/web/20231202022946/https://www.cybereason.com/hubfs/dam/collateral/reports/threat-alert-inc-ransomware.pdf"
+        },
+        {
+          "citation": "Toulas, B. (2024, March 27). INC Ransom threatens to leak 3TB of NHS Scotland stolen data. Retrieved June 5, 2024.",
+          "source_name": "Bleeping Computer INC Ransomware March 2024",
+          "url": "https://www.bleepingcomputer.com/news/security/inc-ransom-threatens-to-leak-3tb-of-nhs-scotland-stolen-data/"
+        },
+        {
+          "citation": "Counter Threat Unit Research Team. (2024, April 15). GOLD IONIC DEPLOYS INC RANSOMWARE. Retrieved June 5, 2024.",
+          "source_name": "Secureworks GOLD IONIC April 2024",
+          "url": "https://www.secureworks.com/blog/gold-ionic-deploys-inc-ransomware"
+        },
+        {
+          "citation": "SOCRadar. (2024, January 24). Dark Web Profile: INC Ransom. Retrieved June 5, 2024.",
+          "source_name": "SOCRadar INC Ransom January 2024",
+          "url": "https://socradar.io/dark-web-profile-inc-ransom/"
+        },
+        {
+          "citation": "SentinelOne. (n.d.). What Is Inc. Ransomware?. Retrieved June 5, 2024.",
+          "source_name": "SentinelOne INC Ransomware",
+          "url": "https://www.sentinelone.com/anthology/inc-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“Distribution of attacked services by number of unique IP addresses of attacking devices (download) The distribution of attacks over the Telnet and SSH protocols shows the same trend.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "low",
+      "description": "“Websites that host user-generated content, such as message boards, as well as compromised legitimate sites, can become infected.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1584.001",
+        "name": "Compromise Infrastructure: Domains",
+        "parent_id": "T1584",
+        "url": "https://attack.mitre.org/techniques/T1584/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "high",
+      "description": "“The vulnerability allowed attackers to bypass authentication and compromise victims’ networks without valid accounts.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "high",
+      "description": "“Vulnerabilities and attacks In July, researchers published a report on the Qilin group exploiting the CVE-2026-0257 vulnerability in Palo Alto Networks firewall software.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“During the quarter, Socket researchers discovered several supply chain attacks that compromised popular npm, PyPI and Cargo (the Rust package manager) packages.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "low",
+      "description": "“- CVE-2026-63077 in JetBrains TeamCity allowed OS commands to run with the privileges of the TeamCity server process by way of an authentication bypass through the agent polling protocol.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“What sets it apart is its use of Pluggable Authentication Modules (PAM) to verify the administrator password the user enters.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        },
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1556.003",
+        "name": "Modify Authentication Process: Pluggable Authentication Modules",
+        "parent_id": "T1556",
+        "url": "https://attack.mitre.org/techniques/T1556/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“CISA published information in its Known Exploited Vulnerabilities Catalog (KEV) on several CVEs actively exploited by ransomware groups:” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1068"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "low",
+      "description": "“Distribution by protocol In Q3 2026, the share of devices attacking Kaspersky honeypots over SSH grew to 18.42%.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“- CVE-2026-59310 in VMware vCenter enabled unauthenticated remote code execution.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“- CVE-2026-15409/CVE-2026-15410 in SonicWall SMA1000 remote access gateways.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“The share of Ngrok, a network tunneling tool suite with both legitimate and malicious uses, continued to grow, bringing it to the top of the list.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "INC-0372",
+      "confidence": "medium",
+      "description": "“Examples of the latter are programs in complex installers and encrypted files.” — Kaspersky Securelist",
+      "provenance": {
+        "article_source": "Kaspersky Securelist",
+        "article_url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Kaspersky Securelist: IT threat evolution in Q3 2026. Non-mobile statistics",
+          "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“mills, feed mills, sugar centrals, farms, retail stores, and distribution networks. --- ## Group Entities \\| Segment \\| Companies \\| \\|---\\|---\\| \\| **Logistics** \\| Amigo Logistics Corp (ALC), Amadi ALC Services (AASI), Amadi MGT Terminals (AMTI), Mariveles Grain Corp (MGC) \\|…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“No further access to Kalahari Resorts' systems 4.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“We also have the **Oracle ERP login credentials** (MMNEW/MMNEW@millimed.world) - **Accounting databases** for **all 25+ entities** — complete general ledger, trial balances, tax reconciliation, intercompany transactions - **28 entity accounting folders** with full Chart of…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“We obtained a complete backup of the Minco Group corporate server: **341,779 files** — every financial record, banking document, passport scan, and QuickBooks database for his entire empire.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“Below is a summary of what we hold. --- ### DATA IN OUR POSSESSION **EMPLOYEE PERSONAL DATA** - 262 employee files containing Social Security Number scans (PDF), driver's licenses (CDL), DOT medical examination cards, drug screening results, I-9 employment verification forms,…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“Complete and verifiable deletion of all acquired data 2.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“Portfolio yield approximately 4.8%, repo financing rate 3.8%. --- ## Scope of Compromise ### Infrastructure — Total Network Takeover - **2 Active Directory domains**: SWSHKG (swshkg.com.hk) and INT (int.swshkg.com.hk) — 1,091 computers - **796 NTLM password hashes** from…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.003",
+        "name": "OS Credential Dumping: NTDS",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“From their infrastructure we obtained: **198 Client Organizations** — complete IT documentation for each, including: - VPN access configurations (.tgb) to connect directly to client networks - Firewall configurations (full rulesets) - Bitlocker encryption keys - Server…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“We obtained: - **King Contracting:** 30+ Active Directory and M365 accounts with plaintext passwords - **Industrial Solutions (ISNY):** 39 email accounts with passwords - **ClearScope:** 8 Microsoft 365 accounts with passwords - **Skylatus Property Capital:** Full IT…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.003",
+        "name": "Account Discovery: Email Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“We have obtained **complete access** to ZIRNET's internal servers, including **all client data they manage**.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“ADP payroll registers for 3,000–5,000+ employees across all locations \\| \\| **Executive Communications** \\| **410,000+ corporate emails** from senior executive Groupwise email archive, spanning years of executive correspondence, financial discussions, legal matters, operational…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.007",
+        "name": "Remote Services: Cloud Services",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“Your **ISO and Halal certifications** depend on audit documentation security. **All of this — 3 terabytes of it — is now in our hands.** We strongly recommend Millimed's management reconsider their position and contact us immediately to resolve this situation before the full…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“Limited \\| Hong Kong \\| Type 1 \\| **Full compromise** \\| \\| SWHY Futures (H.K.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.002",
+        "name": "Web Service: Bidirectional Communication",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“The breach has exposed: - **1,805+ individual client folders** organized alphabetically, each containing multi-year tax returns, financial statements, and personal records - **3,500+ client records** in the firm's full client listing database - **297 Beneficial Ownership…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“All communications are encrypted and confidential.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.002",
+        "name": "Encrypted Channel: Asymmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "medium",
+      "description": "“(NIK, tax ID, address, email), 22,365 sales orders, 20,243 invoices \\| \\| **Production** \\| 19,454 products, 177 suppliers/vendors with contact details and tax IDs \\| \\| **Tax** \\| Digital signing certificates (.p12) for E-Faktur tax filing, Derby tax databases \\| \\| **IT…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0008",
+      "confidence": "low",
+      "description": "“Nucor, Cleveland Cliffs, Ryder, US Bank, and others will terminate carrier agreements and pursue damages 5. **Financial fraud exposure** — bank routing numbers, account numbers, and online banking passwords enable direct financial theft.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/inc%20ransom",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: https://www.jnattorney.com/ By inc ransom",
+          "url": "https://www.ransomlook.io//group/inc%20ransom"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "inc-ransom",
+  "software": [
+    {
+      "id": "S0552",
+      "name": "AdFind",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0552"
+    },
+    {
+      "id": "S0404",
+      "name": "esentutl",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0404"
+    },
+    {
+      "id": "S1139",
+      "name": "INC Ransomware",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1139"
+    },
+    {
+      "id": "S0039",
+      "name": "Net",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0039"
+    },
+    {
+      "id": "S0359",
+      "name": "Nltest",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0359"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S1040",
+      "name": "Rclone",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S1040"
+    },
+    {
+      "id": "S0183",
+      "name": "Tor",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0183"
+    }
+  ],
+  "stix_modified": "2026-07-31T20:48:47.333Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

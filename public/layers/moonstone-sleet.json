@@ -1,0 +1,250 @@
+{
+  "description": "Techniques for Moonstone Sleet: MITRE ATT&CK v20.1 procedures plus analyst-reviewed mappings. Score = number of procedure rows.",
+  "domain": "enterprise-attack",
+  "gradient": {
+    "colors": [
+      "#fff3e0ff",
+      "#e65100ff"
+    ],
+    "maxValue": 1,
+    "minValue": 0
+  },
+  "hideDisabled": false,
+  "legendItems": [],
+  "metadata": [
+    {
+      "name": "generated_by",
+      "value": "bfsi-intel"
+    },
+    {
+      "name": "attack_version",
+      "value": "20.1"
+    },
+    {
+      "name": "last_updated",
+      "value": "2026-11-05"
+    }
+  ],
+  "name": "Moonstone Sleet (G1036) - BFSI APT Intel",
+  "selectSubtechniquesWithParent": false,
+  "selectTechniquesAcrossTactics": true,
+  "showTacticRowBackground": false,
+  "sorting": 0,
+  "techniques": [
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1003.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1016"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1027"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1027.009"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1027.013"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1033"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1053.005"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1071.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1082"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1105"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1140"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1195.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1217"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1486"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1547.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1566.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1566.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1569.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1583.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1583.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1585.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1585.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1587"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1587.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1589.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1591"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1598"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1598.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1608.001"
+    }
+  ],
+  "versions": {
+    "attack": "20",
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  }
+}

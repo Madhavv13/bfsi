@@ -1,0 +1,117 @@
+{
+  "description": "Techniques for RTM: MITRE ATT&CK v20.1 procedures plus analyst-reviewed mappings. Score = number of procedure rows.",
+  "domain": "enterprise-attack",
+  "gradient": {
+    "colors": [
+      "#fff3e0ff",
+      "#e65100ff"
+    ],
+    "maxValue": 2,
+    "minValue": 0
+  },
+  "hideDisabled": false,
+  "legendItems": [],
+  "metadata": [
+    {
+      "name": "generated_by",
+      "value": "bfsi-intel"
+    },
+    {
+      "name": "attack_version",
+      "value": "20.1"
+    },
+    {
+      "name": "last_updated",
+      "value": "2026-11-13"
+    }
+  ],
+  "name": "RTM (G0048) - BFSI APT Intel",
+  "selectSubtechniquesWithParent": false,
+  "selectTechniquesAcrossTactics": true,
+  "showTacticRowBackground": false,
+  "sorting": 0,
+  "techniques": [
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1102.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1189"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.002"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1213.006"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1219"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1219.002"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1547.001"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1566"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1566.001"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1569.002"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1574.001"
+    }
+  ],
+  "versions": {
+    "attack": "20",
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  }
+}

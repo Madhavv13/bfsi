@@ -1,0 +1,1171 @@
+{
+  "aliases": [
+    "Gleaming Pisces",
+    "Citrine Sleet",
+    "UNC1720",
+    "UNC4736"
+  ],
+  "attack_id": "G1049",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1049",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1049",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1049"
+    },
+    {
+      "first_seen": "2022-11-01",
+      "id": "C0057",
+      "kind": "attack_campaign",
+      "last_seen": "2023-03-01",
+      "name": "3CX Supply Chain Attack",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/campaigns/C0057/"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: primarily targets the cryptocurrency industry; responsible for campaign C0057 (3CX supply chain attack, started from a trojanised X_Trader trading application). Most techniques sit on C0057 and are merged onto this page via attributed-to.",
+    "tier": 1
+  },
+  "country": "North Korea (DPRK)",
+  "counts": {
+    "attack_rows": 24,
+    "reviewed_rows": 0,
+    "rows": 24,
+    "techniques": 24
+  },
+  "description": "AppleJeus is a North Korean state-sponsored threat group attributed to the Reconnaissance General Bureau. Associated with the broader Lazarus Group umbrella of actors, AppleJeus has been active since at least 2018 and is closely aligned in resources with TEMP.hermit, another DPRK-affiliated group under the same umbrella. The group’s primary mission is to generate and launder revenue to provide financial support to the government. AppleJeus primarily targets the cryptocurrency industry and is most notably responsible for the 3CX Supply Chain Attack. The group traditionally deploys malicious cryptocurrency software in combination with Phishing. From these compromised environments, it selectively deploys additional backdoors to enable extended operations against high-value financial targets.",
+  "description_references": [
+    {
+      "citation": "Michael “Barni” Barnhart, DTEX, and Anonymous SMEs. (2025, May 14). Exposing DPRK's Cyber Syndicate and Hidden IT Workforce. Retrieved September 3, 2025.",
+      "source_name": "dtex DPRK 2025 structure ITworkers",
+      "url": "https://reports.dtexsystems.com/DTEX-Exposing+DPRK+Cyber+Syndicate+and+Hidden+IT+Workforce.pdf"
+    },
+    {
+      "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+      "source_name": "Mandiant 3cx UNC4736 2023",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+    },
+    {
+      "citation": "Michael Barnhart, Austin Larsen, Jeff Johnson, Taylor Long, Michelle Cantos, Adrian Hernandez. (2023, October 10). Assessed Cyber Structure and Alignments of North Korea in 2023. Retrieved August 25, 2025.",
+      "source_name": "Mandiant DPRK Groups 2023",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-cyber-structure-alignment-2023"
+    },
+    {
+      "citation": "佐々木勇人 Hayato Sasaki. (2025, March 25). Tempted to Classifying APT Actors: Practical Challenges of Attribution in the Case of Lazarus’s Subgroup. Retrieved August 25, 2025.",
+      "source_name": "JPCert Blog Laz Subgroups 2025",
+      "url": "https://blogs.jpcert.or.jp/en/2025/03/classifying-lazaruss-subgroup.html"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/applejeus.csv",
+    "navigator_layer": "layers/applejeus.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fapplejeus.json"
+  },
+  "id": "G1049",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain (revenue generation and laundering)",
+  "name": "AppleJeus",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1049",
+      "confidence": "high",
+      "description": "AppleJeus has used spearphishing emails to distribute malicious payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--dbaed920-c55d-4762-8279-91aac835bbfc",
+        "relationship_modified": "2026-07-31T18:47:38.914Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Michael “Barni” Barnhart, DTEX, and Anonymous SMEs. (2025, May 14). Exposing DPRK's Cyber Syndicate and Hidden IT Workforce. Retrieved September 3, 2025.",
+          "source_name": "dtex DPRK 2025 structure ITworkers",
+          "url": "https://reports.dtexsystems.com/DTEX-Exposing+DPRK+Cyber+Syndicate+and+Hidden+IT+Workforce.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "G1049",
+      "confidence": "high",
+      "description": "AppleJeus has targeted the cryptocurrency industry with the goal of stealing digital assets.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--77710bfe-3b57-44b5-bf71-3c7c22bdf9d3",
+        "relationship_modified": "2026-07-31T18:47:38.867Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Michael Barnhart, Austin Larsen, Jeff Johnson, Taylor Long, Michelle Cantos, Adrian Hernandez. (2023, October 10). Assessed Cyber Structure and Alignments of North Korea in 2023. Retrieved August 25, 2025.",
+          "source_name": "Mandiant DPRK Groups 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-cyber-structure-alignment-2023"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During 3CX Supply Chain Attack, AppleJeus has gained access to the 3CX corporate environment through legitimate VPN credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4e78a70d-13b0-4539-bc43-0f45417b91c2",
+        "relationship_modified": "2026-07-31T18:47:22.324Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Agathocles Prodromou. (2023, April 20). Security Update Thursday 20 April 2023 – Initial Intrusion Vector Found. Retrieved August 25, 2025.",
+          "source_name": "3cx official statement 2023",
+          "url": "https://www.3cx.com/blog/news/mandiant-security-update2/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus compromised the `www.tradingtechnologies[.]com` website hosting a hidden IFRAME to exploit visitors, two months before the site was known to deliver a compromised version of the X_TRADER software package.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--54947050-5539-43fe-a1b4-684900c528d4",
+        "relationship_modified": "2026-07-31T18:47:22.408Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1189",
+        "name": "Drive-by Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1189"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus first compromised an “end-of-life\" trading software application which was downloaded and executed inside the 3CX enterprise environment. The second compromise modified the Windows and macOS build environments used to distribute the 3CX software to their customer base.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--51d88fe0-d7b6-42dd-81fd-3b03efdf8f4c",
+        "relationship_modified": "2026-07-31T18:47:22.383Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus leveraged the Chrome vulnerability, CVE-2022-0609, in combination with a Drive-by Compromise website.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f57211b1-df3f-4f38-a1ce-7a4f3d1d7fe1",
+        "relationship_modified": "2026-07-31T18:47:22.927Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus's VEILEDSIGNAL creates and listens on a Windows named pipe to exchange messages between modules.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--42f40187-5451-4bf4-96e8-d15de1f395c8",
+        "relationship_modified": "2026-07-31T18:47:22.288Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559",
+        "name": "Inter-Process Communication",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1559"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus splits functionally across multiple.dll files using export functions, such as DLLGetClassObject, to execute code from an embedded.dll file within another.dll file. AppleJeus has also used DLL search order hijacking via the IKEEXT service, running with LocalSystem privileges, to load the TAXHAUL DLL for persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--861da25e-ea48-469d-8171-d63ad8194208",
+        "relationship_modified": "2026-07-31T18:47:22.575Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        },
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus installs a Launch Daemon to execute the POOLRAT macOS backdoor software.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--62aa7456-ae5e-40d5-b7e7-6831e0cca501",
+        "relationship_modified": "2026-07-31T18:47:22.429Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.004",
+        "name": "Create or Modify System Process: Launch Daemon",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/004"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus added a malicious.dylib file to a.dmg installer package for the macOS 3CX application.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--de58eda3-6389-4648-8965-8e2c096e9686",
+        "relationship_modified": "2026-07-31T18:47:22.865Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.016",
+        "name": "Event Triggered Execution: Installer Packages",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/016"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus's VEILEDSIGNAL uses process injection to inject the C2 communication module code in the first found process instance of Chrome, Firefox, or Edge web browsers. It also monitors the established named pipe and re-injects the C2 communication module if necessary.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c376fa52-2641-4c12-bd08-ad020d3f5306",
+        "relationship_modified": "2026-07-31T18:47:22.684Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus uses the SigFlip tool to inject arbitrary code without affecting or breaking the file's signature.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eabeadf0-4061-496e-bfe8-e301076181c3",
+        "relationship_modified": "2026-07-31T18:47:22.892Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mohamed El Azaar (med0x2e), TimWhite (timwhitez). (2023, August 28). GitHub SigFlip. Retrieved September 30, 2025.",
+          "source_name": "GitHub SigFlip opensource tool",
+          "url": "https://github.com/med0x2e/SigFlip"
+        },
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.002",
+        "name": "Process Injection: Portable Executable Injection",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/002"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus payloads use AES-256 GCM cipher to encrypt data to include ICONICSTEALER and VEILEDSIGNAL.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1970d1b3-ed23-44b5-a83f-d6a952714144",
+        "relationship_modified": "2026-07-31T18:47:22.255Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Ankur Saini, Callum Roxan, Charlie Gardner, Paul Rascagneres, Steven Adair, Tom Lancaster. (2023, March 30). 3CX Supply Chain Compromise Leads to ICONIC Incident. Retrieved October 21, 2025.",
+          "source_name": "Volexity 3CX Supply Chain Compromise AppleJeus IconicStealer March 2023",
+          "url": "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/"
+        },
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus uses embedded.dll as apart of a chained delivery mechanism to invoke the COM class factory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d140e9e2-debf-4650-8495-26d76c3d9bd0",
+        "relationship_modified": "2026-07-31T18:47:22.810Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.009",
+        "name": "Obfuscated Files or Information: Embedded Payloads",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/009"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus encrypts its dynamic library files (.dll) using RC4, and when loaded only decrypts specific portions of the file using the key `3jB(2bsG#@c7`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cacb6b4d-a69b-437b-b7cc-5d115bf0b30a",
+        "relationship_modified": "2026-07-31T18:47:22.733Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus delivered components using a Windows Installer package (.msi). The MSI installer extracted several files and executed the 3CXDesktopApp.exe, which loaded the malicious library file ffmpeg.dll.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6ad89fae-ee05-40fc-b8fa-011ed917eb07",
+        "relationship_modified": "2026-07-31T18:47:22.503Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.007",
+        "name": "System Binary Proxy Execution: Msiexec",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/007"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus leveraged the 3CX application's electron framework to execute its malicious libraries under the official 3CX electron application.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eeea8a71-82d7-4f7e-93d2-8c652ebb3c47",
+        "relationship_modified": "2026-07-31T18:47:22.909Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.015",
+        "name": "System Binary Proxy Execution: Electron Applications",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/015"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus leverages the publicly available open-source project DAVESHELL to convert PE-COFF files to position-independent code to reflectively load the payload into memory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a2c7da9a-b2fc-41be-bbd5-911bcf3d0eaf",
+        "relationship_modified": "2026-07-31T18:47:22.598Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        },
+        {
+          "citation": "Nick Landers (monoxgas). (2022, June 18). GitHub monoxgas sRDI (DAVESHELL). Retrieved October 1, 2025.",
+          "source_name": "Daveshell sRDI GitHub shell code loader",
+          "url": "https://github.com/monoxgas/sRDI"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1620",
+        "name": "Reflective Code Loading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1620"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus's software generates a randomly selected date that is between 1-4 weeks in the future. This timestamp is then checked against the current time of the compromised machine, and the malware will sleep until that time is encountered.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--69e9e6bb-df32-4261-a8fc-4b81fca67990",
+        "relationship_modified": "2026-07-31T18:47:22.483Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1678",
+        "name": "Delay Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1678"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "Although the X_TRADER platform was reportedly discontinued in 2020, it was still available for download from the legitimate Trading Technologies website in 2022. During the 3CX Supply Chain Attack, AppleJeus used a code signing certificate to digitally sign the malicious software with an expiration date set to October 2022. This file was signed with the subject “Trading Technologies International, Inc” and contained the executable file Setup.exe, also signed with the same digital certificate.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--aa896ba8-2d2c-43c3-9264-38a52a84b713",
+        "relationship_modified": "2026-07-31T18:47:22.617Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        },
+        {
+          "citation": "Agathocles Prodromou. (2023, April 20). Security Update Thursday 20 April 2023 – Initial Intrusion Vector Found. Retrieved August 25, 2025.",
+          "source_name": "3cx official statement 2023",
+          "url": "https://www.3cx.com/blog/news/mandiant-security-update2/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus leveraged ICONICSTEALER to steal browser information to include browser history located on the infected host.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b41527a6-941d-47a7-b2cf-9479f4cd243f",
+        "relationship_modified": "2026-07-31T18:47:22.650Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Ankur Saini, Callum Roxan, Charlie Gardner, Paul Rascagneres, Steven Adair, Tom Lancaster. (2023, March 30). 3CX Supply Chain Compromise Leads to ICONIC Incident. Retrieved October 21, 2025.",
+          "source_name": "Volexity 3CX Supply Chain Compromise AppleJeus IconicStealer March 2023",
+          "url": "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/"
+        },
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, March 30). Preventing and Detecting Attacks Involving 3CX Desktop App. Retrieved October 21, 2025.",
+          "source_name": "Trend Micro 3CX AppleJeus ICONICSTEALER March 2023",
+          "url": "https://www.trendmicro.com/en_us/research/23/c/information-on-attacks-involving-3cx-desktop-app.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1217",
+        "name": "Browser Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1217"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus's COLDCAT C2 leverages cookie headers to contain data over HTTPS. Cookies also contain hardcoded variables `__tutma` or `__tutmc` in the payload's HTTPS request.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cef03277-36e0-4753-92a7-46ac4b4185a2",
+        "relationship_modified": "2026-09-03T19:47:03.619Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        },
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus leveraged a GitHub repository to host icon files containing the command and control URL.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--75daf0b5-2ad5-4950-a895-ec7a34de330b",
+        "relationship_modified": "2026-09-02T19:42:04.277Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Robert Falcone, Josh Grunzweig. (2023, March 30). Threat Brief: 3CXDesktopApp Supply Chain Attack. Retrieved September 15, 2025.",
+          "source_name": "Unit42 3cx supply chain 2023",
+          "url": "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/"
+        },
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.001",
+        "name": "Web Service: Dead Drop Resolver",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/001"
+      }
+    },
+    {
+      "attack_ref": "C0057",
+      "confidence": "high",
+      "description": "During the 3CX Supply Chain Attack, AppleJeus's VEILEDSIGNAL communication module supports three commands to conduct the following actions: send implant data, execute shellcode, and terminate itself.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d9108692-8e7e-4289-825b-29f471c914eb",
+        "relationship_modified": "2026-09-02T20:07:47.806Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jeff Johnson, Fred Plan, Adrian Sanchez, Renato Fontana, Jake Nicastro, Dimiter Andonov, Marius Fodoreanu, Daniel Scott. (2023, April 20). 3CX Software Supply Chain Compromise Initiated by a Prior Software Supply Chain Compromise; Suspected North Korean Actor Responsible. Retrieved August 25, 2025.",
+          "source_name": "Mandiant 3cx UNC4736 2023",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/3cx-software-supply-chain-compromise/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.001",
+        "name": "Encrypted Channel: Symmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/001"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "applejeus",
+  "software": [
+    {
+      "id": "S1144",
+      "name": "FRP",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S1144"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:38.399Z",
+  "tactics_present": [
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

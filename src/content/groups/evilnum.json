@@ -1,0 +1,3796 @@
+{
+  "aliases": [],
+  "attack_id": "G0120",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0120",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0120",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0120"
+    },
+    {
+      "first_seen": "2024-02-13",
+      "id": "INC-0321",
+      "kind": "reported_activity",
+      "last_seen": "2024-02-13",
+      "name": "Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz cloud threat landscape: Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+          "url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-09-22",
+      "id": "INC-0068",
+      "kind": "reported_activity",
+      "last_seen": "2026-09-22",
+      "name": "DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0253",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: financially motivated group active since at least 2018, known for targeting fintech and online-trading firms. Huntress (2026) reported its DarkMe RAT evolving into a conventional infostealer.",
+    "tier": 2
+  },
+  "country": "Unknown",
+  "counts": {
+    "attack_rows": 11,
+    "reviewed_rows": 81,
+    "rows": 92,
+    "techniques": 66
+  },
+  "description": "Evilnum is a financially motivated threat group that has been active since at least 2018.",
+  "description_references": [
+    {
+      "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+      "source_name": "ESET EvilNum July 2020",
+      "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/evilnum.csv",
+    "navigator_layer": "layers/evilnum.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fevilnum.json"
+  },
+  "id": "G0120",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "Evilnum",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has sent spearphishing emails containing a link to a zip file hosted on Google Drive.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--478e4f65-d03a-4f1b-aeeb-16dddc1bfead",
+        "relationship_modified": "2026-07-31T18:47:42.387Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has used malicious JavaScript files on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ea3b16db-6b34-4171-9dec-7ce618f49dee",
+        "relationship_modified": "2026-07-31T18:47:42.588Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has sent spearphishing emails designed to trick the recipient into opening malicious shortcut links which downloads a.LNK file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6c0ae1dc-2429-42fd-899e-8aafb9adc50c",
+        "relationship_modified": "2026-07-31T18:47:42.479Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has used the malware variant, TerraTV, to load a malicious DLL placed in the TeamViewer directory, instead of the original Windows DLL located in a system folder.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--67f7ebd0-effb-4169-a184-7d45c614a6ee",
+        "relationship_modified": "2026-07-31T18:47:42.451Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has used PowerShell to bypass UAC.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--497c12c8-1cdf-4c1e-9624-83438ef770a2",
+        "relationship_modified": "2026-07-31T18:47:42.410Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has deleted files used during infection.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--65ce8ea7-b997-4bb3-8fb4-9259567f492b",
+        "relationship_modified": "2026-07-31T18:47:42.429Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum has used a component called TerraLoader to check certain hardware and file information to detect sandboxed environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1646da26-9846-4a24-b9a6-59ebad8c9cb5",
+        "relationship_modified": "2026-07-31T18:47:42.285Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497.001",
+        "name": "Virtualization/Sandbox Evasion: System Checks",
+        "parent_id": "T1497",
+        "url": "https://attack.mitre.org/techniques/T1497/001"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum can steal cookies and session information from browsers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3fd05c59-c28b-418a-be56-87ff52d4771c",
+        "relationship_modified": "2026-07-31T18:47:42.361Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1539"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum can collect email credentials from victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8b914660-657e-4f6e-a9be-ed51c840875e",
+        "relationship_modified": "2026-07-31T18:47:42.522Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555",
+        "name": "Credentials from Password Stores",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1555"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "Evilnum can deploy additional components or tools as needed.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--acdab071-f314-4671-a794-3c792b559c28",
+        "relationship_modified": "2026-09-03T19:47:04.331Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0120",
+      "confidence": "high",
+      "description": "EVILNUM has used the malware variant, TerraTV, to run a legitimate TeamViewer application to connect to compromised machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2a5341b9-e987-4687-b8f2-6c798f1ac0ae",
+        "relationship_modified": "2026-07-31T18:47:42.343Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Porolli, M. (2020, July 9). More evil: A deep look at Evilnum and its toolset. Retrieved January 22, 2021.",
+          "source_name": "ESET EvilNum July 2020",
+          "url": "https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219.002",
+        "name": "Remote Access Tools: Remote Desktop Software",
+        "parent_id": "T1219",
+        "url": "https://attack.mitre.org/techniques/T1219/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0321",
+      "confidence": "medium",
+      "description": "“This exploit involves spearphishing campaigns on various forums and stock trading Telegram channels, leveraging compromised websites to distribute malicious links.” — Wiz cloud threat landscape",
+      "provenance": {
+        "article_source": "Wiz cloud threat landscape",
+        "article_url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz cloud threat landscape: Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+          "url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0321",
+      "confidence": "medium",
+      "description": "“This exploit involves spearphishing campaigns on various forums and stock trading Telegram channels, leveraging compromised websites to distribute malicious links.” — Wiz cloud threat landscape",
+      "provenance": {
+        "article_source": "Wiz cloud threat landscape",
+        "article_url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz cloud threat landscape: Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+          "url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0321",
+      "confidence": "medium",
+      "description": "“These links lead users to download a .url file disguised as an image, which, when opened, bypasses SmartScreen due to CVE-2024-21412 and executes malicious code without the user's knowledge.” — Wiz cloud threat landscape",
+      "provenance": {
+        "article_source": "Wiz cloud threat landscape",
+        "article_url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz cloud threat landscape: Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+          "url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0321",
+      "confidence": "medium",
+      "description": "“Initially confused with the Evilnum APT group, Water Hydra was later recognized as a distinct entity by November 2023 after a series of attacks, notably using a WinRAR vulnerability (CVE-2023-38831) to target stock traders.” — Wiz cloud threat landscape",
+      "provenance": {
+        "article_source": "Wiz cloud threat landscape",
+        "article_url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz cloud threat landscape: Microsoft Smartscreen Vulnerability Exploited by Water Hydra (Campaign)",
+          "url": "https://threats.wiz.io/all-incidents/microsoft-smartscreen-vulnerability-exploited-by-water-hydra"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "high",
+      "description": "“As long as these old-school phishing tactics keep working, adversaries have no reason to burn expensive exploits.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Antivirus enumeration through the WMI query SELECT * FROM AntivirusProduct” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Full file manipulation and arbitrary command execution over a custom TCP channel implemented on wsock32 The big giveaway for DarkMe is that its C2 verbs are Spanish- and Italian-derived mnemonics, and both Trend Micro and SonicWall published an identical list.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1059"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "high",
+      "description": "“Background DarkMe, a Visual Basic 6 (VB6) spy trojan and remote access tool became well known in February 2024 for its use of zero days to deliver malware.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“Figure 24: The DarkMe adversary infrastructure as mapped through VirusTotal Graph Mitigation guidance and remediations Hunt the execution chain (cheap queries with high signal)” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“Its root serves a fake software-crack page that walks the visitor through a bogus install asking them to paste a command into PowerShell, a technique we call ClickFix.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“EXPAND.EXE -R files.cab drops the components into %AppData%\\ComponentsFolder\\, and the installer executes prnfig.wsf.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "high",
+      "description": "“Indicators of Compromise (IOCs) Disk and memory artifacts | Value | Description | |---|---| | image.pif SHA256: 394c93dfbb7581c66a23c52b20cd90b31415c0825a2eab7107e60ee3fe693c04 | Initial dropper, masquerading as an image | | propi.msi SHA256:…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "high",
+      "description": "“Process hollowing into a signed Microsoft binary With the payload \"decrypted,\" stage 3 hollows out clspack.exe, a legitimate Microsoft-signed binary (the \"Zip Package Creation Tool\") that the staging script had already copied into %AppData%\\Microsoft\\.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.012",
+        "name": "Process Injection: Process Hollowing",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/012"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Delete the persistence: the HKCU...\\CurrentVersion\\Run value and the HKCU\\Software\\Classes\\Locked and CLSID {CFDC57BA-...} registrations.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“From there, the chain runs through three VB6 loaders, each of which is an obfuscation layer calling a named export in the next:” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“Figure 1: An overview of the attack chain employed by this new DarkMe campaign Technical breakdown Initial access: a photo that wasn't The delivery came through a link in a plain old social engineering malspam email: Figure 2: Phishing email delivering PIF disguised as an image…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Finalized.dll → Calculation is stage 3, which profiles the host, decrypts the payload, and hollows a signed binary.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Fires the loader The dropped filetext.txt is a Registry template that registers the COM object as @=\"Coconout.dll\".” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.010",
+        "name": "System Binary Proxy Execution: Regsvr32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/010"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "high",
+      "description": "“The loader: Rundll32.exe and three Visual Basic 6 loaders The command that initiates the final stage of infection, rundll32.exe /sta {CFDC57BA-1705-45AF-BA10-EFC3D592982B}, was observed in the 2024 campaign, and is a great signature to detect or hunt on.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“- Use.dll→ FillText is stage 2, where the anti-sandbox (and VM detection) gate and persistence live.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“Figure 1: An overview of the attack chain employed by this new DarkMe campaign Technical breakdown Initial access: a photo that wasn't The delivery came through a link in a plain old social engineering malspam email: Figure 2: Phishing email delivering PIF disguised as an image…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“- Reset credentials for the affected user, and treat any cryptocurrency wallet used on the host as compromised, assuming seed phrases are exposed.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“- Password managers (keepass.exe, bitwarden.exe)” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.005",
+        "name": "Credentials from Password Stores: Password Managers",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“In 2023, Water Hydra weaponised the WinRAR extension-spoofing flaw CVE-2023-38831 as a zero day, dropping malicious archives on trading forums.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“The users simply double-clicked and downloaded the file, not realising what it was.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "low",
+      "description": "“Our samples all communicated over port 7712, a non-standard port rarely associated with legitimate business applications.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    },
+    {
+      "attack_ref": "INC-0068",
+      "confidence": "medium",
+      "description": "“Figure 19: The RC4-encrypted C2 domain in VBReFormer Analysis via Censys on 67.43.50[.]11 (hosted via Voxility/ColoGuys in Prague) reveals a sloppy Windows Server deployment exposing a wealth of remote management ports, including RDP (3389), WinRM (5985, 47001), and DCERPC (135).” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: DarkMe RAT: A VB6 APT Trojan Turned Conventional Infostealer",
+          "url": "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573",
+        "name": "Encrypted Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1573"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1566.001 Phishing: Spear phishing Attachment” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1566.002 Phishing: Spear phishing Link” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1047 Windows Management Instrumentation” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1059.001 Command and Scripting Interpreter: PowerShell” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1059.003 Command and Scripting Interpreter: Windows Command Shell” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "low",
+      "description": "“After the payload is downloaded and decrypted, Remcos RAT is executed.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1203 Exploitation for Client Execution” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1204.001 User Execution: Malicious Link” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1204.002 User Execution: Malicious File” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1559.001 Inter-Process Communication: Component Object Model” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559.001",
+        "name": "Inter-Process Communication: Component Object Model",
+        "parent_id": "T1559",
+        "url": "https://attack.mitre.org/techniques/T1559/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1574 Hijack Execution Flow” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574",
+        "name": "Hijack Execution Flow",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1574"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1112 Modify Registry” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1547.001 Registry Run Keys / Startup Folder” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1055.012 Process Injection: Process Hollowing” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.012",
+        "name": "Process Injection: Process Hollowing",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/012"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1548.002 Abuse Elevation Control Mechanism: Bypass User Account Control” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.001 Obfuscated Files or Information: Binary Padding” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.001",
+        "name": "Obfuscated Files or Information: Binary Padding",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.002 Obfuscated Files or Information: Software Packing” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.002",
+        "name": "Obfuscated Files or Information: Software Packing",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.003 Obfuscated Files or Information: Steganography” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.003",
+        "name": "Obfuscated Files or Information: Steganography",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.007 Obfuscated Files or Information: Dynamic API Resolution” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.007",
+        "name": "Obfuscated Files or Information: Dynamic API Resolution",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.008 Obfuscated Files or Information: Stripped Payloads” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.008",
+        "name": "Obfuscated Files or Information: Stripped Payloads",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/008"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.009 Obfuscated Files or Information: Embedded Payloads” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.009",
+        "name": "Obfuscated Files or Information: Embedded Payloads",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/009"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.010 Obfuscated Files or Information: Command Obfuscation” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1027.011 Obfuscated Files or Information: Fileless Storage” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.011",
+        "name": "Obfuscated Files or Information: Fileless Storage",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "low",
+      "description": "“When the crafted ZIP archives reached the systems of the targeted traders, the malware payloads contained inside the archives were executed, leading to their devices being compromised.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.015",
+        "name": "Obfuscated Files or Information: Compression",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/015"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "medium",
+      "description": "“- The cybercriminals are exploiting a vulnerability that allows them to spoof file extensions, which means that they are able to hide the launch of malicious script within an archive masquerading as a ‘.jpg’, ‘.txt’, or any other file format” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1036.001 Masquerading: Invalid Code Signature” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.001",
+        "name": "Masquerading: Invalid Code Signature",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1036.006 Masquerading: Space after Filename” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.006",
+        "name": "Masquerading: Space after Filename",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1036.007 Masquerading: Double File Extension” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.007",
+        "name": "Masquerading: Double File Extension",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1036.008 Masquerading: Masquerade File Type” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.008",
+        "name": "Masquerading: Masquerade File Type",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/008"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1070.004 Indicator Removal: File Deletion” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1218.011 System Binary Proxy Execution: rundll32” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1497 Virtualization/Sandbox Evasion” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1497.001 Virtualization/Sandbox Evasion: System Checks” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497.001",
+        "name": "Virtualization/Sandbox Evasion: System Checks",
+        "parent_id": "T1497",
+        "url": "https://attack.mitre.org/techniques/T1497/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1497.003 Virtualization/Sandbox Evasion: Time Based Evasion” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497.003",
+        "name": "Virtualization/Sandbox Evasion: Time Based Checks",
+        "parent_id": "T1497",
+        "url": "https://attack.mitre.org/techniques/T1497/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1056.001 Input Capture: Keylogging” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1539 Steal Web Session Cookie” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1539"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1555.003 Credentials from Password Stores: Credentials from Web Browsers” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.003",
+        "name": "Credentials from Password Stores: Credentials from Web Browsers",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "medium",
+      "description": "“- Encourage the use of password managers for the storage of login data.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.005",
+        "name": "Credentials from Password Stores: Password Managers",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1606.001 Forge Web Credentials: Web Cookies” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1606.001",
+        "name": "Forge Web Credentials: Web Cookies",
+        "parent_id": "T1606",
+        "url": "https://attack.mitre.org/techniques/T1606/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1083 File and Directory Discovery” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1518.001 Software Discovery: Security Software Discovery –” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "medium",
+      "description": "“- T1539 Steal Web Session Cookie” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1550.004",
+        "name": "Use Alternate Authentication Material: Web Session Cookie",
+        "parent_id": "T1550",
+        "url": "https://attack.mitre.org/techniques/T1550/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1113 Screen Capture” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1115 Clipboard Data” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1115",
+        "name": "Clipboard Data",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1115"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1123 Audio Capture” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1123",
+        "name": "Audio Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1123"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1125 Video Capture” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1125",
+        "name": "Video Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1125"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "medium",
+      "description": "“We highly recommend that all users install the latest version of WinRAR In this blog post, we document our discovery of this zero-day vulnerability that can be exploited by cybercriminals.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1071.001 Application Layer Protocol: Web Protocols” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1105 Ingress Tool Transfer” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "low",
+      "description": "“- T1132.002 Data Encoding: Non-Standard Encoding” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1132.001",
+        "name": "Data Encoding: Standard Encoding",
+        "parent_id": "T1132",
+        "url": "https://attack.mitre.org/techniques/T1132/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1132.002 Data Encoding: Non-Standard Encoding” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1132.002",
+        "name": "Data Encoding: Non-Standard Encoding",
+        "parent_id": "T1132",
+        "url": "https://attack.mitre.org/techniques/T1132/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "medium",
+      "description": "“Threat Attribution Although we did identify the DarkMe Trojan, which is allegedly associated with EvilNum and is distributed together with a widely-used remote access tool, we cannot conclusively link the identified campaign to this financially motivated group.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1571 Non-Standard Port” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    },
+    {
+      "attack_ref": "INC-0253",
+      "confidence": "high",
+      "description": "“- T1573.002 Encrypted Channel: Asymmetric Cryptography – – APPENDIX A.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Traders’ dollars in danger: CVE-2023-38831 zero-day vulnerability in WinRAR exploited by cybercriminals to target traders",
+          "url": "https://www.group-ib.com/blog/cve-2023-38831-winrar-zero-day/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.002",
+        "name": "Encrypted Channel: Asymmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/002"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "evilnum",
+  "software": [
+    {
+      "id": "S0568",
+      "name": "EVILNUM",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0568"
+    },
+    {
+      "id": "S0349",
+      "name": "LaZagne",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0349"
+    },
+    {
+      "id": "S0284",
+      "name": "More_eggs",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0284"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:41.686Z",
+  "tactics_present": [
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    }
+  ]
+}

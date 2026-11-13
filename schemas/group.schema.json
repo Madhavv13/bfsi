@@ -1,0 +1,638 @@
+{
+  "$defs": {
+    "AttackOut": {
+      "additionalProperties": false,
+      "properties": {
+        "first_seen": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "First Seen"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "group_general",
+            "attack_campaign",
+            "curated_incident",
+            "reported_activity"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "last_seen": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Seen"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "references": {
+          "items": {
+            "$ref": "#/$defs/RefOut"
+          },
+          "title": "References",
+          "type": "array"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Summary"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "title": "AttackOut",
+      "type": "object"
+    },
+    "BfsiOut": {
+      "additionalProperties": false,
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "tier": {
+          "maximum": 3,
+          "minimum": 1,
+          "title": "Tier",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "tier",
+        "reason"
+      ],
+      "title": "BfsiOut",
+      "type": "object"
+    },
+    "DownloadsOut": {
+      "additionalProperties": false,
+      "properties": {
+        "csv": {
+          "title": "Csv",
+          "type": "string"
+        },
+        "navigator_layer": {
+          "title": "Navigator Layer",
+          "type": "string"
+        },
+        "navigator_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Navigator Url"
+        }
+      },
+      "required": [
+        "navigator_layer",
+        "csv"
+      ],
+      "title": "DownloadsOut",
+      "type": "object"
+    },
+    "ProvenanceOut": {
+      "additionalProperties": false,
+      "properties": {
+        "article_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Article Source"
+        },
+        "article_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Article Url"
+        },
+        "attack_version": {
+          "title": "Attack Version",
+          "type": "string"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        },
+        "relationship_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Relationship Id"
+        },
+        "relationship_modified": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Relationship Modified"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        },
+        "source": {
+          "enum": [
+            "mitre-attack",
+            "reviewed-automap",
+            "curated"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "via_group": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Via Group"
+        }
+      },
+      "required": [
+        "source",
+        "attack_version"
+      ],
+      "title": "ProvenanceOut",
+      "type": "object"
+    },
+    "RefOut": {
+      "additionalProperties": false,
+      "properties": {
+        "citation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citation"
+        },
+        "source_name": {
+          "title": "Source Name",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "source_name"
+      ],
+      "title": "RefOut",
+      "type": "object"
+    },
+    "RowOut": {
+      "additionalProperties": false,
+      "properties": {
+        "attack_ref": {
+          "title": "Attack Ref",
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ProvenanceOut"
+        },
+        "references": {
+          "items": {
+            "$ref": "#/$defs/RefOut"
+          },
+          "title": "References",
+          "type": "array"
+        },
+        "tactics": {
+          "items": {
+            "$ref": "#/$defs/TacticOut"
+          },
+          "title": "Tactics",
+          "type": "array"
+        },
+        "technique": {
+          "$ref": "#/$defs/TechniqueOut"
+        }
+      },
+      "required": [
+        "attack_ref",
+        "technique",
+        "tactics",
+        "description",
+        "provenance",
+        "confidence"
+      ],
+      "title": "RowOut",
+      "type": "object"
+    },
+    "SoftwareOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "malware",
+            "tool"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type",
+        "url"
+      ],
+      "title": "SoftwareOut",
+      "type": "object"
+    },
+    "TacticOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^TA\\d{4}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "title": "Order",
+          "type": "integer"
+        },
+        "shortname": {
+          "title": "Shortname",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "shortname",
+        "order",
+        "url"
+      ],
+      "title": "TacticOut",
+      "type": "object"
+    },
+    "TechniqueOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^T\\d{4}(\\.\\d{3})?$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "url"
+      ],
+      "title": "TechniqueOut",
+      "type": "object"
+    }
+  },
+  "$id": "https://bfsi-apt-intel.local/schemas/group.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "One static-site page per BFSI group.",
+  "properties": {
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "attack_id": {
+      "anyOf": [
+        {
+          "pattern": "^G\\d{4}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Attack Id"
+    },
+    "attack_modified": {
+      "title": "Attack Modified",
+      "type": "string"
+    },
+    "attack_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Attack Url"
+    },
+    "attack_version": {
+      "title": "Attack Version",
+      "type": "string"
+    },
+    "attacks": {
+      "items": {
+        "$ref": "#/$defs/AttackOut"
+      },
+      "title": "Attacks",
+      "type": "array"
+    },
+    "bfsi": {
+      "$ref": "#/$defs/BfsiOut"
+    },
+    "country": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Country"
+    },
+    "counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Counts",
+      "type": "object"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "description_references": {
+      "items": {
+        "$ref": "#/$defs/RefOut"
+      },
+      "title": "Description References",
+      "type": "array"
+    },
+    "description_source": {
+      "enum": [
+        "mitre-attack",
+        "curated"
+      ],
+      "title": "Description Source",
+      "type": "string"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "type": "string"
+    },
+    "downloads": {
+      "$ref": "#/$defs/DownloadsOut"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "last_updated": {
+      "title": "Last Updated",
+      "type": "string"
+    },
+    "motivation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Motivation"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "notice": {
+      "title": "Notice",
+      "type": "string"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/RowOut"
+      },
+      "title": "Rows",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "slug": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Slug",
+      "type": "string"
+    },
+    "software": {
+      "items": {
+        "$ref": "#/$defs/SoftwareOut"
+      },
+      "title": "Software",
+      "type": "array"
+    },
+    "stix_modified": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Stix Modified"
+    },
+    "tactics_present": {
+      "items": {
+        "$ref": "#/$defs/TacticOut"
+      },
+      "title": "Tactics Present",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "aliases",
+    "description",
+    "description_source",
+    "bfsi",
+    "attack_version",
+    "attack_modified",
+    "last_updated",
+    "tactics_present",
+    "attacks",
+    "rows",
+    "downloads",
+    "counts",
+    "notice",
+    "disclaimer"
+  ],
+  "title": "GroupDoc",
+  "type": "object"
+}

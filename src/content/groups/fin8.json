@@ -1,0 +1,1786 @@
+{
+  "aliases": [
+    "Syssphinx"
+  ],
+  "attack_id": "G0061",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0061",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0061",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0061"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2016; targets include the insurance and financial sectors; moved from POS malware to ransomware in 2021.",
+    "tier": 2
+  },
+  "country": "eCrime",
+  "counts": {
+    "attack_rows": 36,
+    "reviewed_rows": 0,
+    "rows": 36,
+    "techniques": 36
+  },
+  "description": "FIN8 is a financially motivated threat group that has been active since at least January 2016, and known for targeting organizations in the hospitality, retail, entertainment, insurance, technology, chemical, and financial sectors. In June 2021, security researchers detected FIN8 switching from targeting point-of-sale (POS) devices to distributing a number of ransomware variants.",
+  "description_references": [
+    {
+      "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+      "source_name": "FireEye Obfuscation June 2017",
+      "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+    },
+    {
+      "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+      "source_name": "FireEye Fin8 May 2016",
+      "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+    },
+    {
+      "citation": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+      "source_name": "Bitdefender Sardonic Aug 2021",
+      "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+    },
+    {
+      "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+      "source_name": "Symantec FIN8 Jul 2023",
+      "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/fin8.csv",
+    "navigator_layer": "layers/fin8.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Ffin8.json"
+  },
+  "id": "G0061",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain",
+  "name": "FIN8",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used open-source tools such as Impacket for targeting efforts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3a20f6f1-0e1b-4d8e-8461-eb41e4c6b5da",
+        "relationship_modified": "2026-07-31T18:48:29.476Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+          "source_name": "Bitdefender Sardonic Aug 2021",
+          "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used an expired open-source X.509 certificate for testing in the OpenSSL repository, to connect to actor-controlled C2 servers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3b72eb79-c499-4f2a-b6aa-464bb3bbd42d",
+        "relationship_modified": "2026-07-31T18:48:29.518Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+          "source_name": "Bitdefender Sardonic Aug 2021",
+          "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.003",
+        "name": "Obtain Capabilities: Code Signing Certificates",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/003"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used valid accounts for persistence and lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--060e7485-d2a9-4aa2-a742-58f7e4e6086a",
+        "relationship_modified": "2026-07-31T18:48:29.290Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has distributed targeted emails containing Word documents with embedded malicious macros.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c1ec4da-96d9-4173-b944-77c341a19572",
+        "relationship_modified": "2026-07-31T18:48:29.858Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+          "source_name": "FireEye Fin8 May 2016",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has distributed targeted emails containing links to malicious documents with embedded macros.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--52e319bc-d6ee-4ab5-a3ae-36f0477cac67",
+        "relationship_modified": "2026-07-31T18:48:29.594Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8's malicious spearphishing payloads use WMI to launch malware and spawn `cmd.exe` execution. FIN8 has also used WMIC and the Impacket suite for lateral movement, as well as during and post compromise cleanup activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fd763f17-409d-428b-825c-f731b0ad88cc",
+        "relationship_modified": "2026-07-31T18:48:30.176Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used scheduled tasks to maintain RDP backdoors.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--55ea8954-9b81-45e4-89c9-a6b55f5b2541",
+        "relationship_modified": "2026-07-31T18:48:29.617Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8's malicious spearphishing payloads are executed as PowerShell. FIN8 has also used PowerShell for lateral movement and credential access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cd001a55-ed41-4109-9090-41bebed9113a",
+        "relationship_modified": "2026-07-31T18:48:30.033Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used a Batch file to automate frequently executed post compromise cleanup activities. FIN8 has also executed commands remotely via `cmd.exe`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e090281c-4ab9-4b6f-ab63-f22606f7e620",
+        "relationship_modified": "2026-07-31T18:48:30.081Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        },
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used emails with malicious links to lure victims into installing malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5a374aec-ae82-4c99-bbc2-34c4050a9932",
+        "relationship_modified": "2026-07-31T18:48:29.637Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+          "source_name": "FireEye Fin8 May 2016",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used malicious e-mail attachments to lure victims into executing malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3aacea96-941f-4a1d-8981-36d2a0e62cf3",
+        "relationship_modified": "2026-07-31T18:48:29.496Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+          "source_name": "FireEye Fin8 May 2016",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has deleted Registry keys during post compromise cleanup activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f8ff17c3-2921-40c2-b4a9-19ee7678397a",
+        "relationship_modified": "2026-07-31T18:48:30.147Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used WMI event subscriptions for persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5014ed30-309e-4bed-af86-ec5603736342",
+        "relationship_modified": "2026-07-31T18:48:29.573Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.003",
+        "name": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/003"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has injected malicious code into a new svchost.exe process.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eda4c39d-9615-4c5f-8086-64150137df7f",
+        "relationship_modified": "2026-07-31T18:48:30.100Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.004",
+        "name": "Process Injection: Asynchronous Procedure Call",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/004"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has exploited the CVE-2016-0167 local vulnerability.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--45626c7f-c401-427b-9589-c91a4b2a4f7f",
+        "relationship_modified": "2026-07-31T18:48:29.546Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+          "source_name": "FireEye Fin8 May 2016",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1068"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used a malicious framework designed to impersonate the lsass.exe/vmtoolsd.exe token.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f950b817-9082-4299-a310-6b48fc347ebc",
+        "relationship_modified": "2026-07-31T18:48:30.156Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        },
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1134.001",
+        "name": "Access Token Manipulation: Token Impersonation/Theft",
+        "parent_id": "T1134",
+        "url": "https://attack.mitre.org/techniques/T1134/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used environment variables and standard input (stdin) to obfuscate command-line arguments. FIN8 also obfuscates malicious macros delivered as payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--82ce1bf6-b1a1-4a82-9c86-8ff372d6a873",
+        "relationship_modified": "2026-07-31T18:48:29.815Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has deleted tmp and prefetch files during post compromise cleanup activities. FIN8 has also deleted PowerShell scripts to evade detection on compromised machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--92bc1e7b-6700-4d11-b82e-24284f30c2d7",
+        "relationship_modified": "2026-07-31T18:48:29.845Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has cleared logs during post compromise cleanup activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a97899ea-2470-4612-ab5e-2637556da1cb",
+        "relationship_modified": "2026-07-31T18:48:29.914Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 harvests credentials using Invoke-Mimikatz or Windows Credentials Editor (WCE).",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--331e59e9-0d10-4c2d-ba92-e8eb0de1cc95",
+        "relationship_modified": "2026-07-31T18:48:29.452Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used the Ping command to check connectivity to actor-controlled C2 servers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fd135724-b4b3-470a-95c6-43191f99dcb6",
+        "relationship_modified": "2026-07-31T18:48:30.167Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+          "source_name": "Bitdefender Sardonic Aug 2021",
+          "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016.001",
+        "name": "System Network Configuration Discovery: Internet Connection Discovery",
+        "parent_id": "T1016",
+        "url": "https://attack.mitre.org/techniques/T1016/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used dsquery and other Active Directory utilities to enumerate hosts; they have also used <code>nltest.exe /dclist</code> to retrieve a list of domain controllers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ee46b157-d368-42e4-98f6-b76f6e65c9bd",
+        "relationship_modified": "2026-07-31T18:48:30.113Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has executed the command `quser` to display the session details of a compromised machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--17bace22-3930-4b7e-9fd1-1473da5496ff",
+        "relationship_modified": "2026-07-31T18:48:29.342Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1033",
+        "name": "System Owner/User Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1033"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used PowerShell Scripts to check the architecture of a compromised machine before the selection of a 32-bit or 64-bit version of a malicious.NET loader.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c8342b87-ceea-40e0-a9ad-11b72aa1378f",
+        "relationship_modified": "2026-07-31T18:48:30.008Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has retrieved a list of trusted domains by using <code>nltest.exe /domain_trusts</code>.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f5f833ab-9ee4-477b-854a-b7b4446761ba",
+        "relationship_modified": "2026-07-31T18:48:30.136Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1482",
+        "name": "Domain Trust Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1482"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used Registry keys to detect and avoid executing in potential sandboxes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ce61b6a-b1fd-4e21-874a-774a1487fa12",
+        "relationship_modified": "2026-07-31T18:48:29.370Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used RDP for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--31a6eec8-0281-4973-a2af-ebf30e317a9f",
+        "relationship_modified": "2026-07-31T18:48:29.434Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has attempted to map to C$ on enumerated hosts to test the scope of their current credentials/context. FIN8 has also used smbexec from the Impacket suite for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a83e6a0f-fc31-472f-bffd-135dfc5ce683",
+        "relationship_modified": "2026-07-31T18:48:29.899Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        },
+        {
+          "citation": "Budaca, E., et al. (2021, August 25). FIN8 Threat Actor Goes Agile with New Sardonic Backdoor. Retrieved August 9, 2023.",
+          "source_name": "Bitdefender Sardonic Aug 2021",
+          "url": "https://www.bitdefender.com/files/News/CaseStudies/study/401/Bitdefender-PR-Whitepaper-FIN8-creat5619-en-EN.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.002",
+        "name": "Remote Services: SMB/Windows Admin Shares",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 aggregates staged data from a network into a single location.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b8df1d2c-f014-4f51-a277-8050adafb865",
+        "relationship_modified": "2026-07-31T18:48:29.943Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074.002",
+        "name": "Data Staged: Remote Data Staging",
+        "parent_id": "T1074",
+        "url": "https://attack.mitre.org/techniques/T1074/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used RAR to compress collected data before exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b6e427c5-ae51-4240-b91e-3c417cc4e1f0",
+        "relationship_modified": "2026-07-31T18:48:29.931Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used HTTPS for command and control.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a1c0db19-e187-480b-85d4-6e5672480d33",
+        "relationship_modified": "2026-09-03T19:47:02.514Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used <code>sslip.io</code>, a free IP to domain mapping service that also makes SSL certificate generation easier for traffic encryption, as part of their command and control.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--68a9519f-c65a-451e-9126-5946ac6844c6",
+        "relationship_modified": "2026-09-03T19:46:54.844Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102",
+        "name": "Web Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1102"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used remote code execution to download subsequent payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c3dd754d-3e2b-4761-8d21-2e7a52fc6616",
+        "relationship_modified": "2026-09-03T19:47:04.988Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kizhakkinan, D., et al. (2016, May 11). Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks. Retrieved February 12, 2018.",
+          "source_name": "FireEye Fin8 May 2016",
+          "url": "https://www.fireeye.com/blog/threat-research/2016/05/windows-zero-day-payment-cards.html"
+        },
+        {
+          "citation": "Martin Zugec. (2021, July 27). Deep Dive Into a FIN8 Attack - A Forensic Investigation. Retrieved September 1, 2021.",
+          "source_name": "Bitdefender FIN8 July 2021",
+          "url": "https://businessinsights.bitdefender.com/deep-dive-into-a-fin8-attack-a-forensic-investigation"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used the Plink utility to tunnel RDP back to C2 infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e4c23aa3-edf1-4f6e-ae86-f709d7c306ee",
+        "relationship_modified": "2026-09-02T20:09:43.769Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.002",
+        "name": "Encrypted Channel: Asymmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/002"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has used FTP to exfiltrate collected data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--177950ec-8f25-4243-8d9d-a15e24ff7c98",
+        "relationship_modified": "2026-09-03T19:46:47.827Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Elovitz, S. & Ahl, I. (2016, August 18). Know Your Enemy:  New Financially-Motivated & Spear-Phishing Group. Retrieved February 26, 2018.",
+          "source_name": "FireEye Know Your Enemy FIN8 Aug 2016",
+          "url": "https://www2.fireeye.com/WBNR-Know-Your-Enemy-UNC622-Spear-Phishing.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/003"
+      }
+    },
+    {
+      "attack_ref": "G0061",
+      "confidence": "high",
+      "description": "FIN8 has deployed ransomware such as Ragnar Locker, White Rabbit, and attempted to execute Noberus on compromised networks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f36a77f2-dfab-4636-a796-67e6416031ef",
+        "relationship_modified": "2026-07-31T18:48:30.125Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Symantec Threat Hunter Team. (2023, July 18). FIN8 Uses Revamped Sardonic Backdoor to Deliver Noberus Ransomware. Retrieved August 9, 2023.",
+          "source_name": "Symantec FIN8 Jul 2023",
+          "url": "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/syssphinx-fin8-backdoor"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "fin8",
+  "software": [
+    {
+      "id": "S1081",
+      "name": "BADHATCH",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1081"
+    },
+    {
+      "id": "S0105",
+      "name": "dsquery",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0105"
+    },
+    {
+      "id": "S0357",
+      "name": "Impacket",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0357"
+    },
+    {
+      "id": "S0039",
+      "name": "Net",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0039"
+    },
+    {
+      "id": "S0359",
+      "name": "Nltest",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0359"
+    },
+    {
+      "id": "S0097",
+      "name": "Ping",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0097"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S0196",
+      "name": "PUNCHBUGGY",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0196"
+    },
+    {
+      "id": "S0197",
+      "name": "PUNCHTRACK",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0197"
+    },
+    {
+      "id": "S0481",
+      "name": "Ragnar Locker",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0481"
+    },
+    {
+      "id": "S1085",
+      "name": "Sardonic",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1085"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:28.923Z",
+  "tactics_present": [
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

@@ -1,0 +1,3133 @@
+{
+  "aliases": [
+    "UNC1878",
+    "TEMP.MixMaster",
+    "Grim Spider",
+    "FIN12",
+    "GOLD BLACKBURN",
+    "ITG23",
+    "Periwinkle Tempest",
+    "DEV-0193",
+    "Pistachio Tempest",
+    "DEV-0237"
+  ],
+  "attack_id": "G0102",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0102",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0102",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0102"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: TrickBot (banking trojan lineage), Conti and Ryuk operators; alias list includes FIN12.",
+    "tier": 2
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 64,
+    "reviewed_rows": 0,
+    "rows": 64,
+    "techniques": 64
+  },
+  "description": "Wizard Spider is a Russia-based financially motivated threat group originally known for the creation and deployment of TrickBot since at least 2016. Wizard Spider possesses a diverse arsenal of tools and has conducted ransomware campaigns against a variety of organizations, ranging from major corporations to hospitals.",
+  "description_references": [
+    {
+      "citation": "Hanel, A. (2019, January 10). Big Game Hunting with Ryuk: Another Lucrative Targeted Ransomware. Retrieved May 12, 2020.",
+      "source_name": "CrowdStrike Ryuk January 2019",
+      "url": "https://www.crowdstrike.com/blog/big-game-hunting-with-ryuk-another-lucrative-targeted-ransomware/"
+    },
+    {
+      "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+      "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+      "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+    },
+    {
+      "citation": "Podlosky, A., Hanel, A. et al. (2020, October 16). WIZARD SPIDER Update: Resilient, Reactive and Resolute. Retrieved June 15, 2021.",
+      "source_name": "CrowdStrike Wizard Spider October 2020",
+      "url": "https://www.crowdstrike.com/blog/wizard-spider-adversary-update/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/wizard-spider.csv",
+    "navigator_layer": "layers/wizard-spider.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fwizard-spider.json"
+  },
+  "id": "G0102",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain",
+  "name": "Wizard Spider",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has leveraged ProtonMail email addresses in ransom notes when delivering Ryuk ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a28b6a04-5562-4550-91bd-6397c0c9fe3f",
+        "relationship_modified": "2026-07-31T20:48:50.431Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has utilized tools such as Empire, Cobalt Strike, Cobalt Strike, Rubeus, AdFind, BloodHound, Metasploit, Advanced IP Scanner, Nirsoft PingInfoView, and SoftPerfect Network Scanner for targeting efforts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--260a6771-1b29-49b6-ad42-6c43e68b11dc",
+        "relationship_modified": "2026-07-31T20:48:50.064Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has obtained code signing certificates signed by DigiCert, GlobalSign, and COMOOD for malware payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--00a88d6f-fa8c-48bf-a028-fb75ca04e000",
+        "relationship_modified": "2026-07-31T20:48:49.990Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.003",
+        "name": "Obtain Capabilities: Code Signing Certificates",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used valid credentials for privileged accounts with the goal of accessing domain controllers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ad06b85a-a0df-41aa-8f45-f41504987918",
+        "relationship_modified": "2026-07-31T20:48:50.449Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used administrative accounts, including Domain Admin, to move laterally within a victim network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2dd33387-a109-46cd-8204-cb79a62e4830",
+        "relationship_modified": "2026-07-31T20:48:50.092Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has accessed victim networks by using stolen credentials to access the corporate VPN infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--79b0a6bc-4061-468c-ac1b-eef3dc3fb419",
+        "relationship_modified": "2026-07-31T20:48:50.315Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used spearphishing attachments to deliver Microsoft documents containing macros or PDFs containing malicious links to download either Emotet, Bokbot, TrickBot, or Bazar.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c671056c-f213-4084-9e9e-3361274ceb80",
+        "relationship_modified": "2026-07-31T20:48:50.503Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Brian Donohue, Katie Nickels, Paul Michaud, Adina Bodkins, Taylor Chapman, Tony Lambert, Jeff Felling, Kyle Rainey, Mike Haag, Matt Graeber, Aaron Didier.. (2020, October 29). A Bazar start: How one hospital thwarted a Ryuk ransomware outbreak. Retrieved October 30, 2020.",
+          "source_name": "Red Canary Hospital Thwarted Ryuk October 2020",
+          "url": "https://redcanary.com/blog/how-one-hospital-thwarted-a-ryuk-ransomware-outbreak/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has sent phishing emails containing a link to an actor-controlled Google Drive document or other free online file hosting services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d87925c8-23ed-4913-81d6-c4d93d65c798",
+        "relationship_modified": "2026-07-31T20:48:50.552Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used WMI and LDAP queries for network discovery and to move laterally. Wizard Spider has also used batch scripts to leverage WMIC to deploy ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1fa97951-8eba-4771-bc42-8084967f0c65",
+        "relationship_modified": "2026-07-31T20:48:50.048Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "Brian Donohue, Katie Nickels, Paul Michaud, Adina Bodkins, Taylor Chapman, Tony Lambert, Jeff Felling, Kyle Rainey, Mike Haag, Matt Graeber, Aaron Didier.. (2020, October 29). A Bazar start: How one hospital thwarted a Ryuk ransomware outbreak. Retrieved October 30, 2020.",
+          "source_name": "Red Canary Hospital Thwarted Ryuk October 2020",
+          "url": "https://redcanary.com/blog/how-one-hospital-thwarted-a-ryuk-ransomware-outbreak/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used scheduled tasks to establish persistence for TrickBot and other malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--57f8c6d0-406d-4e97-b3ff-5b2f0274231b",
+        "relationship_modified": "2026-07-31T20:48:50.183Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used macros to execute PowerShell scripts to download malware on victim's machines. It has also used PowerShell to execute commands and move laterally through a victim network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--73baa214-fbe6-477e-9beb-d1a08a6d117f",
+        "relationship_modified": "2026-07-31T20:48:50.285Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "Brian Donohue, Katie Nickels, Paul Michaud, Adina Bodkins, Taylor Chapman, Tony Lambert, Jeff Felling, Kyle Rainey, Mike Haag, Matt Graeber, Aaron Didier.. (2020, October 29). A Bazar start: How one hospital thwarted a Ryuk ransomware outbreak. Retrieved October 30, 2020.",
+          "source_name": "Red Canary Hospital Thwarted Ryuk October 2020",
+          "url": "https://redcanary.com/blog/how-one-hospital-thwarted-a-ryuk-ransomware-outbreak/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used `cmd.exe` to execute commands on a victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ca344f1-97fe-453c-9f12-86130ddcebbc",
+        "relationship_modified": "2026-07-31T20:48:50.022Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used batch scripts that utilizes WMIC to execute a BITSAdmin transfer of a ransomware payload to each compromised machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fb229043-04d8-40e8-a155-bd2471bfc5c3",
+        "relationship_modified": "2026-07-31T20:48:50.631Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1197",
+        "name": "BITS Jobs",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1197"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has lured victims into clicking a malicious link delivered through spearphishing.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b9dcab92-6b0d-43c7-a122-90eccb016b9d",
+        "relationship_modified": "2026-07-31T20:48:50.466Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has lured victims to execute malware with spearphishing attachments containing macros to download either Emotet, Bokbot, TrickBot, or Bazar.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--53e1bf2f-7ab4-4173-879b-9975618c4527",
+        "relationship_modified": "2026-07-31T20:48:50.176Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Podlosky, A., Hanel, A. et al. (2020, October 16). WIZARD SPIDER Update: Resilient, Reactive and Resolute. Retrieved June 15, 2021.",
+          "source_name": "CrowdStrike Wizard Spider October 2020",
+          "url": "https://www.crowdstrike.com/blog/wizard-spider-adversary-update/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used `services.exe` to execute scripts and executables during lateral movement within a victim's network. Wizard Spider has also used batch scripts that leverage PsExec to execute a previously transferred ransomware payload on a victim's network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f3b210e4-9784-4305-8cad-6bdb4d44250f",
+        "relationship_modified": "2026-07-31T20:48:50.598Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 18). Ryuk in 5 Hours. Retrieved October 19, 2020.",
+          "source_name": "DFIR Ryuk in 5 Hours October 2020",
+          "url": "https://thedfirreport.com/2020/10/18/ryuk-in-5-hours/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has modified the Registry key <code>HKLM\\System\\CurrentControlSet\\Control\\SecurityProviders\\WDigest</code> by setting the <code>UseLogonCredential</code> registry value to <code>1</code> in order to force credentials to be stored in clear text in memory. Wizard Spider has also modified the WDigest registry key to allow plaintext credentials to be cached in memory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--75f0ea4c-5b88-4b14-9859-67379f4ba9b0",
+        "relationship_modified": "2026-07-31T20:48:50.300Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has created local administrator accounts to maintain persistence in compromised networks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0038b0b8-f51c-4fd1-8b04-2fd7ebd1d61d",
+        "relationship_modified": "2026-07-31T20:48:49.981Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136.001",
+        "name": "Create Account: Local Account",
+        "parent_id": "T1136",
+        "url": "https://attack.mitre.org/techniques/T1136/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has created and used new accounts within a victim's Active Directory environment to maintain persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--970860bd-6183-4728-8f34-a5a1ad199655",
+        "relationship_modified": "2026-07-31T20:48:50.383Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136.002",
+        "name": "Create Account: Domain Account",
+        "parent_id": "T1136",
+        "url": "https://attack.mitre.org/techniques/T1136/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has installed TrickBot as a service named ControlServiceA in order to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2b5965fe-b178-4c03-91af-942491c79302",
+        "relationship_modified": "2026-07-31T20:48:50.071Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has established persistence via the Registry key <code>HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run</code> and a shortcut within the startup folder.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f3cc3739-9dea-41c9-ac82-038b9c92bdb0",
+        "relationship_modified": "2026-07-31T20:48:50.607Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has established persistence using Userinit by adding the Registry key HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--79e8a269-8ef5-4795-94ce-72bfbb03c7cb",
+        "relationship_modified": "2026-07-31T20:48:50.322Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.004",
+        "name": "Boot or Logon Autostart Execution: Winlogon Helper DLL",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/004"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used process injection to execute payloads to escalate privileges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3a5b04dd-815c-4f52-be7a-e997625c18e6",
+        "relationship_modified": "2026-07-31T20:48:50.099Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has injected malicious DLLs into memory with read, write, and execute permissions.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f9d9b5aa-f4d6-46fc-8831-21ca405ab8e5",
+        "relationship_modified": "2026-07-31T20:48:50.624Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.001",
+        "name": "Process Injection: Dynamic-link Library Injection",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider used Base64 encoding to obfuscate an Empire service and PowerShell commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5a2c4561-48e4-4d51-8f00-ff470a18df32",
+        "relationship_modified": "2026-07-31T20:48:50.201Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Goody, K., et al (2019, January 11). A Nasty Trick: From Credential Theft Malware to Business Disruption. Retrieved May 12, 2020.",
+          "source_name": "FireEye Ryuk and Trickbot January 2019",
+          "url": "https://www.fireeye.com/blog/threat-research/2019/01/a-nasty-trick-from-credential-theft-malware-to-business-disruption.html"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used scheduled tasks to install TrickBot, using task names to appear legitimate such as WinDotNet, GoogleTask, or Sysnetsf. It has also used common document file names for other malware binaries.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7e555910-0e1b-403d-a369-e7a2e8e61670",
+        "relationship_modified": "2026-07-31T20:48:50.336Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.004",
+        "name": "Masquerading: Masquerade Task or Service",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/004"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used file deletion to remove some modules and configurations from an infected host after use.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5c252868-1474-4fed-b3b2-07a6d3415034",
+        "relationship_modified": "2026-07-31T20:48:50.209Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has utilized `rundll32.exe` to deploy ransomware commands with the use of WebDAV.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6924c49b-0f86-4712-9600-f91b21fa5691",
+        "relationship_modified": "2026-07-31T20:48:50.267Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used the icacls command to modify access control to backup servers, providing them with full control of all the system folders.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4e3b7cf3-298e-4db2-a920-375abd50280d",
+        "relationship_modified": "2026-07-31T20:48:50.161Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Sean Gallagher, Peter Mackenzie, Elida Leite, Syed Shahram, Bill Kearney, Anand Aijan, Sivagnanam Gn, Suraj Mundalik. (2020, October 14). They’re back: inside a new Ryuk ransomware attack. Retrieved October 14, 2020.",
+          "source_name": "Sophos New Ryuk Attack October 2020",
+          "url": "https://news.sophos.com/en-us/2020/10/14/inside-a-new-ryuk-ransomware-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1222.001",
+        "name": "File and Directory Permissions Modification: Windows Permissions",
+        "parent_id": "T1222",
+        "url": "https://attack.mitre.org/techniques/T1222/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used Digicert code-signing certificates for some of its malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9438f268-3827-435b-98b5-79dbc0ee5213",
+        "relationship_modified": "2026-07-31T20:48:50.376Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has shut down or uninstalled security applications on victim systems that might prevent ransomware from executing.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--61a16f5b-29c2-4d75-bf4f-36228fe68016",
+        "relationship_modified": "2026-07-31T20:48:50.244Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has dumped the lsass.exe memory to harvest credentials with the use of open-source tool LaZagne.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bfd2f3f1-3a5f-4500-be4e-39e3f8d6cb8e",
+        "relationship_modified": "2026-07-31T20:48:50.474Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has acquired credentials from the SAM/SECURITY registry hives.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c96e7dda-d05c-458a-8332-9e7851bb4775",
+        "relationship_modified": "2026-07-31T20:48:50.510Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.002",
+        "name": "OS Credential Dumping: Security Account Manager",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has gained access to credentials via exported copies of the ntds.dit Active Directory database. Wizard Spider has also created a volume shadow copy and used a batch script file to collect NTDS.dit with the use of the Windows utility, ntdsutil.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a1e10048-626c-4e64-9bdb-fd576be8c19f",
+        "relationship_modified": "2026-07-31T20:48:50.415Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.003",
+        "name": "OS Credential Dumping: NTDS",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used PowerShell cmdlets `Get-GPPPassword` and `Find-GPOPassword` to find unsecured credentials in a compromised network group policy.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5c98e0bb-7451-4c61-a798-4306b89b1e61",
+        "relationship_modified": "2026-07-31T20:48:50.216Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.006",
+        "name": "Unsecured Credentials: Group Policy Preferences",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/006"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used PowerShell cmdlet `Invoke-WCMDump` to enumerate Windows credentials in the Credential Manager in a compromised network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e8e8e281-398c-4cec-bcc5-d12d28bada31",
+        "relationship_modified": "2026-07-31T20:48:50.584Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.004",
+        "name": "Credentials from Password Stores: Windows Credential Manager",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/004"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used the Invoke-Inveigh PowerShell cmdlets, likely for name service poisoning.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9bd4212c-2e17-41e2-9ff3-1448642ce958",
+        "relationship_modified": "2026-07-31T20:48:50.399Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1557.001",
+        "name": "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay",
+        "parent_id": "T1557",
+        "url": "https://attack.mitre.org/techniques/T1557/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used Rubeus, MimiKatz Kerberos module, and the Invoke-Kerberoast cmdlet to steal AES hashes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--72b30ddb-137c-4799-bacd-ab17aa2d01fc",
+        "relationship_modified": "2026-07-31T20:48:50.274Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1558.003",
+        "name": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "parent_id": "T1558",
+        "url": "https://attack.mitre.org/techniques/T1558/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used ipconfig to identify the network configuration of a victim machine. Wizard Spider has also used the PowerShell cmdlet `Get-ADComputer` to collect IP address data from Active Directory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a25300cb-c2b7-4968-b1d7-cc4d5fe5bb4b",
+        "relationship_modified": "2026-07-31T20:48:50.423Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Sean Gallagher, Peter Mackenzie, Elida Leite, Syed Shahram, Bill Kearney, Anand Aijan, Sivagnanam Gn, Suraj Mundalik. (2020, October 14). They’re back: inside a new Ryuk ransomware attack. Retrieved October 14, 2020.",
+          "source_name": "Sophos New Ryuk Attack October 2020",
+          "url": "https://news.sophos.com/en-us/2020/10/14/inside-a-new-ryuk-ransomware-attack/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used networkdll for network discovery and psfin specifically for financial and point of sale indicators. Wizard Spider has also used AdFind, <code>nltest/dclist</code>, and PowerShell script Get-DataInfo.ps1 to enumerate domain computers, including the domain controller.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--df13cae2-4e20-4e89-ae60-6bd8b99e2342",
+        "relationship_modified": "2026-07-31T20:48:50.560Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Goody, K., et al (2019, January 11). A Nasty Trick: From Credential Theft Malware to Business Disruption. Retrieved May 12, 2020.",
+          "source_name": "FireEye Ryuk and Trickbot January 2019",
+          "url": "https://www.fireeye.com/blog/threat-research/2019/01/a-nasty-trick-from-credential-theft-malware-to-business-disruption.html"
+        },
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "Brian Donohue, Katie Nickels, Paul Michaud, Adina Bodkins, Taylor Chapman, Tony Lambert, Jeff Felling, Kyle Rainey, Mike Haag, Matt Graeber, Aaron Didier.. (2020, October 29). A Bazar start: How one hospital thwarted a Ryuk ransomware outbreak. Retrieved October 30, 2020.",
+          "source_name": "Red Canary Hospital Thwarted Ryuk October 2020",
+          "url": "https://redcanary.com/blog/how-one-hospital-thwarted-a-ryuk-ransomware-outbreak/"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used \"whoami\" to identify the local user and their privileges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--aca710ff-23a3-4c78-b75a-dfe6cad337a9",
+        "relationship_modified": "2026-07-31T20:48:50.439Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Sean Gallagher, Peter Mackenzie, Elida Leite, Syed Shahram, Bill Kearney, Anand Aijan, Sivagnanam Gn, Suraj Mundalik. (2020, October 14). They’re back: inside a new Ryuk ransomware attack. Retrieved October 14, 2020.",
+          "source_name": "Sophos New Ryuk Attack October 2020",
+          "url": "https://news.sophos.com/en-us/2020/10/14/inside-a-new-ryuk-ransomware-attack/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1033",
+        "name": "System Owner/User Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1033"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used Systeminfo and similar commands to acquire detailed configuration information of a victim's machine. Wizard Spider has also utilized the PowerShell cmdlet `Get-ADComputer` to collect DNS hostnames, last logon dates, and operating system information from Active Directory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e24411cf-6274-4b6b-87b4-b90b01146c8d",
+        "relationship_modified": "2026-07-31T20:48:50.577Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has identified domain admins through the use of `net group \"Domain admins\" /DOMAIN`. Wizard Spider has also leveraged the PowerShell cmdlet `Get-ADComputer` to collect account names from Active Directory data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--82dee5a5-7890-4bed-bc8c-83ffa13a8bcf",
+        "relationship_modified": "2026-07-31T20:48:50.351Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.002",
+        "name": "Account Discovery: Domain Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used the “net view” command to locate mapped network shares.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eaebb080-e57e-4c06-84df-376cc8bff09e",
+        "relationship_modified": "2026-07-31T20:48:50.591Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1135",
+        "name": "Network Share Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1135"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used WMI to identify anti-virus products installed on a victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--61c802ec-b415-4161-bf15-3a8c5cc0a243",
+        "relationship_modified": "2026-07-31T20:48:50.252Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has utilized the PowerShell script `Get-DataInfo.ps1` to collect installed backup software information from a compromised machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--87d7a5b5-8f45-4a88-bc3c-f73f67a50255",
+        "relationship_modified": "2026-07-31T20:48:50.361Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.002",
+        "name": "Software Discovery: Backup Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used the WebDAV protocol to execute Ryuk payloads hosted on network file shares.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4340d15d-5577-4b4e-8e5b-570b9ab3a147",
+        "relationship_modified": "2026-07-31T20:48:50.114Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021",
+        "name": "Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1021"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used RDP for lateral movement and to deploy ransomware interactively.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--43fabcba-66b6-45dc-b905-926f0a0a2bba",
+        "relationship_modified": "2026-07-31T20:48:50.132Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used SMB to drop Cobalt Strike Beacon on a domain controller for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2bb3c950-2099-4d7d-ac13-05a1470fc3c6",
+        "relationship_modified": "2026-07-31T20:48:50.078Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.002",
+        "name": "Remote Services: SMB/Windows Admin Shares",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used Window Remote Management to move laterally through a victim network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f947ae1c-1042-469d-b00e-84784e406cec",
+        "relationship_modified": "2026-07-31T20:48:50.617Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "DHS/CISA. (2020, October 28). Ransomware Activity Targeting the Healthcare and Public Health Sector. Retrieved October 28, 2020.",
+          "source_name": "DHS/CISA Ransomware Targeting Healthcare October 2020",
+          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-302a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.006",
+        "name": "Remote Services: Windows Remote Management",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/006"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has exploited or attempted to exploit Zerologon (CVE-2020-1472) and EternalBlue (MS17-010) vulnerabilities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--14f3eebf-40c3-48d5-ad62-356d57ccf2dc",
+        "relationship_modified": "2026-08-04T20:30:55.765Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kimberly Goody, Jeremy Kennelly, Joshua Shilko, Steve Elovitz, Douglas Bienstock. (2020, October 28). Unhappy Hour Special: KEGTAP and SINGLEMALT With a Ransomware Chaser. Retrieved October 28, 2020.",
+          "source_name": "FireEye KEGTAP SINGLEMALT October 2020",
+          "url": "https://www.fireeye.com/blog/threat-research/2020/10/kegtap-and-singlemalt-with-a-ransomware-chaser.html"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "The DFIR Report. (2020, October 18). Ryuk in 5 Hours. Retrieved October 19, 2020.",
+          "source_name": "DFIR Ryuk in 5 Hours October 2020",
+          "url": "https://thedfirreport.com/2020/10/18/ryuk-in-5-hours/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1210"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used the `Invoke-SMBExec` PowerShell cmdlet to execute the pass-the-hash technique and utilized stolen password hashes to move laterally.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--43fec1ed-cc26-4036-95c0-1598150f3916",
+        "relationship_modified": "2026-07-31T20:48:50.140Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1550.002",
+        "name": "Use Alternate Authentication Material: Pass the Hash",
+        "parent_id": "T1550",
+        "url": "https://attack.mitre.org/techniques/T1550/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used stolen credentials to copy tools into the <code>%TEMP%</code> directory of domain controllers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4f243ab6-812f-4fd3-9607-8d94409a94c1",
+        "relationship_modified": "2026-09-03T19:46:55.866Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1570"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has collected data from a compromised host prior to exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e199c02e-a45c-4eca-ab24-7b037167c775",
+        "relationship_modified": "2026-07-31T20:48:50.569Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1005"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has collected and staged credentials and network enumeration information, using the networkdll and psfin TrickBot modules.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2c54816e-5dd1-4723-99f5-29c80a2fc171",
+        "relationship_modified": "2026-07-31T20:48:50.085Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074",
+        "name": "Data Staged",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1074"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has staged ZIP files in local directories such as, `C:\\PerfLogs\\1\\` and `C:\\User\\1\\` prior to exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--97a62430-6a83-4ead-b8c7-ce47f5d0cac0",
+        "relationship_modified": "2026-07-31T20:48:50.391Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074.001",
+        "name": "Data Staged: Local Data Staging",
+        "parent_id": "T1074",
+        "url": "https://attack.mitre.org/techniques/T1074/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has archived data into ZIP files on compromised machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--18437772-ace9-4a63-b928-8f313dc44f1e",
+        "relationship_modified": "2026-07-31T20:48:50.015Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used HTTP for network communications.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--93cd9a2c-48e3-4a95-90fb-6436afcfa7a8",
+        "relationship_modified": "2026-09-03T19:47:02.214Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider can transfer malicious payloads such as ransomware to compromised machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a137a1d7-d40b-4565-8377-98a3065d5fec",
+        "relationship_modified": "2026-09-03T19:47:03.997Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has exfiltrated domain credentials and network enumeration information over command and control (C2) channels.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c51d9123-7f7e-41e6-8cf7-7c7dc4170ca0",
+        "relationship_modified": "2026-09-03T19:47:01.196Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "John, E. and Carvey, H. (2019, May 30). Unraveling the Spiderweb: Timelining ATT&CK Artifacts Used by GRIM SPIDER. Retrieved May 12, 2020.",
+          "source_name": "CrowdStrike Grim Spider May 2019",
+          "url": "https://www.crowdstrike.com/blog/timelining-grim-spiders-big-game-hunting-tactics/"
+        },
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1041"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has exfiltrated victim information using FTP.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5fe0a46c-7a06-4aea-9768-d611d3f3116d",
+        "relationship_modified": "2026-09-03T19:46:49.968Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        },
+        {
+          "citation": "The DFIR Report. (2020, November 5). Ryuk Speed Run, 2 Hours to Ransom. Retrieved November 6, 2020.",
+          "source_name": "DFIR Ryuk 2 Hour Speed Run November 2020",
+          "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/003"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has exfiltrated stolen victim data to various cloud storage providers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--743f2f00-57d0-4df8-94db-b044e2551890",
+        "relationship_modified": "2026-07-31T20:48:50.293Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used taskkill.exe and net.exe to stop backup, catalog, cloud, and other services prior to network encryption.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cd283aa1-23f1-4516-9198-9d565bd4a431",
+        "relationship_modified": "2026-07-31T20:48:50.517Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The DFIR Report. (2020, October 8). Ryuk’s Return. Retrieved October 9, 2020.",
+          "source_name": "DFIR Ryuk's Return October 2020",
+          "url": "https://thedfirreport.com/2020/10/08/ryuks-return/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1489",
+        "name": "Service Stop",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1489"
+      }
+    },
+    {
+      "attack_ref": "G0102",
+      "confidence": "high",
+      "description": "Wizard Spider has used WMIC and vssadmin to manually delete volume shadow copies. Wizard Spider has also used Conti ransomware to delete volume shadow copies automatically with the use of vssadmin.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--773fc200-e44d-4049-b972-043c1e3d9035",
+        "relationship_modified": "2026-07-31T20:48:50.307Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Shilko, J., et al. (2021, October 7). FIN12: The Prolific Ransomware Intrusion Threat Actor That Has Aggressively Pursued Healthcare Targets. Retrieved June 15, 2023.",
+          "source_name": "Mandiant FIN12 Oct 2021",
+          "url": "https://web.archive.org/web/20220313061955/https://www.mandiant.com/sites/default/files/2021-10/fin12-group-profile.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1490"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "wizard-spider",
+  "software": [
+    {
+      "id": "S0552",
+      "name": "AdFind",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0552"
+    },
+    {
+      "id": "S0504",
+      "name": "Anchor",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0504"
+    },
+    {
+      "id": "S0534",
+      "name": "Bazar",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0534"
+    },
+    {
+      "id": "S0190",
+      "name": "BITSAdmin",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0190"
+    },
+    {
+      "id": "S0521",
+      "name": "BloodHound",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0521"
+    },
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0575",
+      "name": "Conti",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0575"
+    },
+    {
+      "id": "S0659",
+      "name": "Diavol",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0659"
+    },
+    {
+      "id": "S0024",
+      "name": "Dyre",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0024"
+    },
+    {
+      "id": "S0367",
+      "name": "Emotet",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0367"
+    },
+    {
+      "id": "S0363",
+      "name": "Empire",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0363"
+    },
+    {
+      "id": "S0632",
+      "name": "GrimAgent",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0632"
+    },
+    {
+      "id": "S0349",
+      "name": "LaZagne",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0349"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0039",
+      "name": "Net",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0039"
+    },
+    {
+      "id": "S0359",
+      "name": "Nltest",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0359"
+    },
+    {
+      "id": "S0097",
+      "name": "Ping",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0097"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S1071",
+      "name": "Rubeus",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S1071"
+    },
+    {
+      "id": "S0446",
+      "name": "Ryuk",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0446"
+    },
+    {
+      "id": "S9001",
+      "name": "SystemBC",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S9001"
+    },
+    {
+      "id": "S0266",
+      "name": "TrickBot",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0266"
+    }
+  ],
+  "stix_modified": "2026-07-31T20:48:49.730Z",
+  "tactics_present": [
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

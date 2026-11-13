@@ -1,0 +1,1305 @@
+{
+  "aliases": [
+    "Storm-1789"
+  ],
+  "attack_id": "G1036",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1036",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1036",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1036"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: DPRK-linked group conducting both financially motivated attacks and espionage, using fake companies/personas; software includes Qilin ransomware.",
+    "tier": 1
+  },
+  "country": "North Korea (DPRK)",
+  "counts": {
+    "attack_rows": 30,
+    "reviewed_rows": 0,
+    "rows": 30,
+    "techniques": 30
+  },
+  "description": "Moonstone Sleet is a North Korean-linked threat actor executing both financially motivated attacks and espionage operations. The group previously overlapped significantly with another North Korean-linked entity, Lazarus Group, but has differentiated its tradecraft since 2023. Moonstone Sleet is notable for creating fake companies and personas to interact with victim entities, as well as developing unique malware such as a variant delivered via a fully functioning game.",
+  "description_references": [
+    {
+      "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+      "source_name": "Microsoft Moonstone Sleet 2024",
+      "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/moonstone-sleet.csv",
+    "navigator_layer": "layers/moonstone-sleet.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fmoonstone-sleet.json"
+  },
+  "id": "G1036",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain and espionage",
+  "name": "Moonstone Sleet",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet gathered victim email address information for follow-on phishing activity.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1d805346-82fa-4912-99e7-a8a5fc112f90",
+        "relationship_modified": "2026-07-31T18:48:24.813Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has gathered information on victim organizations through email and social media interaction.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--40495023-f12d-4789-8b11-1b14f0a4ea19",
+        "relationship_modified": "2026-07-31T18:48:24.839Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1591",
+        "name": "Gather Victim Org Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1591"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has interacted with victims to gather information via email.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c5a84306-f745-450a-8c32-8c3d0819fec1",
+        "relationship_modified": "2026-07-31T18:48:24.988Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1598",
+        "name": "Phishing for Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1598"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet used spearphishing messages containing items such as tracking pixels to determine if users interacted with malicious messages.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b5d1e525-1bb7-43a9-8cb6-0a8d9539b465",
+        "relationship_modified": "2026-07-31T18:48:24.955Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1598.003",
+        "name": "Phishing for Information: Spearphishing Link",
+        "parent_id": "T1598",
+        "url": "https://attack.mitre.org/techniques/T1598/003"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet registered domains to develop effective personas for fake companies used in phishing activity.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d5d39691-0e75-4921-8822-a84566d757a0",
+        "relationship_modified": "2026-07-31T18:48:25.037Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet registered virtual private servers to host payloads for download.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a7a27fb9-551b-4f6c-9d5a-3c230366bd85",
+        "relationship_modified": "2026-07-31T18:48:24.921Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.003",
+        "name": "Acquire Infrastructure: Virtual Private Server",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/003"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has created social media accounts to interact with victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f4980470-c6f6-4032-8d99-e707861a4180",
+        "relationship_modified": "2026-07-31T18:48:25.093Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has created email accounts to interact with victims, including for phishing purposes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--144d9006-95ab-4d14-8243-5c7e035d930c",
+        "relationship_modified": "2026-07-31T18:48:24.777Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet developed malicious npm packages for delivery to or retrieval by victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f6072bdd-734e-4fa0-b11a-d02fed4f19ec",
+        "relationship_modified": "2026-07-31T18:48:25.108Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587",
+        "name": "Develop Capabilities",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1587"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has developed custom malware, including a malware delivery mechanism masquerading as a legitimate game.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0ae6d331-80eb-4422-bb28-9145e389b377",
+        "relationship_modified": "2026-07-31T18:48:24.718Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet staged malicious capabilities online for follow-on download by victims or malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c0aedaa7-158f-4f97-a49b-9e6420365f8a",
+        "relationship_modified": "2026-07-31T18:48:24.981Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has distributed a trojanized version of PuTTY software for initial access to victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cb673e8c-4d90-4e12-bfc9-80727e2ded41",
+        "relationship_modified": "2026-07-31T18:48:24.997Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet delivered various payloads to victims as spearphishing attachments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a4d2042a-c211-4145-a406-e39bc700d652",
+        "relationship_modified": "2026-07-31T18:48:24.894Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has used social media services to spear phish victims to deliver trojainized software.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--efd13110-1e89-4e99-b015-4e09046f2b73",
+        "relationship_modified": "2026-07-31T18:48:25.059Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.003",
+        "name": "Phishing: Spearphishing via Service",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/003"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet used scheduled tasks for program execution during initial access to victim machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--96d8b36d-88b1-4cbc-8cc8-9a22487ab648",
+        "relationship_modified": "2026-07-31T18:48:24.851Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet relied on users interacting with malicious files, such as a trojanized PuTTY installer, for initial execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c800f85-0062-40af-9799-fe4a7bcb0526",
+        "relationship_modified": "2026-07-31T18:48:24.879Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet used intermediate loader malware such as YouieLoader and SplitLoader that create malicious services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cfc5761e-2c94-420a-a985-a4a1d7fe0b7c",
+        "relationship_modified": "2026-07-31T18:48:25.015Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet used registry run keys for process execution during initial victim infection.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c3459f4-8c8e-4650-bd21-ad506a1a3ee9",
+        "relationship_modified": "2026-07-31T18:48:24.867Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet delivers encrypted payloads in pieces that are then combined together to form a new portable executable (PE) file during installation.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a6ea2a1c-dfe9-4599-812a-d1f846fb775b",
+        "relationship_modified": "2026-07-31T18:48:24.904Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet embedded payloads in trojanized software for follow-on execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fbf73b94-a193-4b6c-9e04-7f0a279d9ce9",
+        "relationship_modified": "2026-07-31T18:48:25.161Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.009",
+        "name": "Obfuscated Files or Information: Embedded Payloads",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/009"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has used encrypted payloads within files for follow-on execution and defense evasion.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--faa996f9-3d60-455f-ab31-50687113f24e",
+        "relationship_modified": "2026-07-31T18:48:25.138Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet delivered payloads using multiple rounds of obfuscation and encoding to evade defenses and analysis.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2310666c-87e1-45ae-bac8-2255215e858a",
+        "relationship_modified": "2026-07-31T18:48:24.825Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet retrieved credentials from LSASS memory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bb3bc4fe-6695-454e-9215-7b754c5d33f7",
+        "relationship_modified": "2026-07-31T18:48:24.965Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has gathered information on victim network configuration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b255397e-d2b9-409d-8983-7f5daf4065ce",
+        "relationship_modified": "2026-07-31T18:48:24.945Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet deployed various malware such as YouieLoader that can perform system user discovery actions.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0b5338ac-c1ca-4296-b06c-44d3730c8557",
+        "relationship_modified": "2026-07-31T18:48:24.735Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1033",
+        "name": "System Owner/User Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1033"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has gathered information on victim systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f65ea007-e6e0-4311-a766-4ca60f17a79f",
+        "relationship_modified": "2026-07-31T18:48:25.120Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet deployed malware such as YouieLoader capable of capturing victim system browser information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eeea996c-6eaf-4244-b5a8-294df9c008c3",
+        "relationship_modified": "2026-07-31T18:48:25.049Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1217",
+        "name": "Browser Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1217"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet used curl to connect to adversary-controlled infrastructure and retrieve additional payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--10f21b9c-893d-46be-9bf2-50422d380d4f",
+        "relationship_modified": "2026-09-03T19:46:51.057Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet retrieved a final stage payload from command and control infrastructure during initial installation on victim systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--adeeaadc-9306-4d57-915b-d1e2d07b4387",
+        "relationship_modified": "2026-09-03T19:47:04.390Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G1036",
+      "confidence": "high",
+      "description": "Moonstone Sleet has deployed ransomware in victim environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f38fe70e-e940-4884-91e4-d06363f248d3",
+        "relationship_modified": "2026-07-31T18:48:25.076Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft Threat Intelligence. (2024, May 28). Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks. Retrieved August 26, 2024.",
+          "source_name": "Microsoft Moonstone Sleet 2024",
+          "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "moonstone-sleet",
+  "software": [
+    {
+      "id": "S1242",
+      "name": "Qilin",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1242"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:24.240Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

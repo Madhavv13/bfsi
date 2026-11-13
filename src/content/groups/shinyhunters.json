@@ -1,0 +1,4977 @@
+{
+  "aliases": [
+    "UNC6240",
+    "Bling Libra"
+  ],
+  "attack_id": "G1057",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1057",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1057",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1057"
+    },
+    {
+      "first_seen": "2025-08-27",
+      "id": "INC-0129",
+      "kind": "reported_activity",
+      "last_seen": "2025-08-27",
+      "name": "Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+          "url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-06-03",
+      "id": "INC-0327",
+      "kind": "reported_activity",
+      "last_seen": "2026-06-03",
+      "name": "UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-07-15",
+      "id": "INC-0324",
+      "kind": "reported_activity",
+      "last_seen": "2026-07-15",
+      "name": "UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+          "url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-08-14",
+      "id": "INC-0086",
+      "kind": "reported_activity",
+      "last_seen": "2026-08-14",
+      "name": "10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-01",
+      "id": "INC-0078",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-01",
+      "name": "Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
+          "url": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-05",
+      "id": "INC-0077",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-05",
+      "name": "250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: 250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms",
+          "url": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-07",
+      "id": "INC-0076",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-07",
+      "name": "Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany",
+          "url": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-08",
+      "id": "INC-0075",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-08",
+      "name": "Fake Decryption Tools Masked $11M Markup in Ransomware Recovery Scheme",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Fake Decryption Tools Masked $11M Markup in Ransomware Recovery Scheme",
+          "url": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-10",
+      "id": "INC-0073",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-10",
+      "name": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: FBI Arrests Executive at Ransomware Negotiation Firm",
+          "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-19",
+      "id": "INC-0072",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-19",
+      "name": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+          "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-26",
+      "id": "INC-0053",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-26",
+      "name": "Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+          "url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-10-28",
+      "id": "INC-0032",
+      "kind": "reported_activity",
+      "last_seen": "2026-10-28",
+      "name": "Unwrapping Retail Peak Season Cyber Threats",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0212",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0276",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Shedding light on the dark web",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Shedding light on the dark web",
+          "url": "https://www.group-ib.com/blog/ml-in-investigations/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0360",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "August 5, 2026",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: steals credentials and PII for resale/extortion; associated with campaign C0059 (Salesforce data exfiltration, Oct 2024 - Sep 2025) affecting financial firms.",
+    "tier": 2
+  },
+  "country": "English-speaking eCrime (\"The Com\")",
+  "counts": {
+    "attack_rows": 46,
+    "reviewed_rows": 67,
+    "rows": 113,
+    "techniques": 70
+  },
+  "description": "ShinyHunters is a cyber criminal collective that has been active since at least 2019 operating under the ShinyCorp persona. ShinyHunters has targeted multiple industries and geographic regions gathering legitimate credentials and personally identifiable information (PII) for resale or extortion of victims. ShinyHunters has been associated with the broader collective called The Community, also known as The Com whose members have also included Scattered Spider and LAPSUS$. Public reporting has mentioned a variety of names for operations ShinyHunters members have reportedly conducted with members of other groups, including “Scattered Lapsus Hunters,” “Scattered Lapsus Shiny Hunters,” and “SLSH.”",
+  "description_references": [
+    {
+      "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+      "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+      "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+    },
+    {
+      "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+      "source_name": "SOCRadar_ShinyHunters_Mar2024",
+      "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+    },
+    {
+      "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+      "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+      "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+    },
+    {
+      "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+      "source_name": "Intel471_SH_Aug2021",
+      "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+    },
+    {
+      "citation": "Federal Bureau of Investigation. (2026, May 15). ShinyHunters: Cyber Criminal Group Attacks Learning Management System. Retrieved July 1, 2026.",
+      "source_name": "FBI_SHLMS_May2026",
+      "url": "https://www.ic3.gov/PSA/2026/PSA260515"
+    },
+    {
+      "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+      "source_name": "Google_SHOracle_Jun2026",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+    },
+    {
+      "citation": "Mandiant. (2026, January 30). Vishing for Access: Tracking the Expansion of ShinyHunters-Branded SaaS Data Theft. Retrieved June 16, 2026.",
+      "source_name": "Mandiant_SHDataTheft_Jan2026",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/expansion-shinyhunters-saas-data-theft"
+    },
+    {
+      "citation": "Google Threat Intelligence Group. (2025, June 4). The Cost of a Call: From Voice Phishing to Data Extortion. Retrieved October 22, 2025.",
+      "source_name": "Google Salesforce JUN 2025",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/shinyhunters.csv",
+    "navigator_layer": "layers/shinyhunters.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fshinyhunters.json"
+  },
+  "id": "G1057",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain (data theft and extortion)",
+  "name": "ShinyHunters",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has collected credentials containing PII, ultimately selling the information on their DLS.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d2ac3384-00db-49f0-bf3b-6c545c1b91e0",
+        "relationship_modified": "2026-07-31T18:47:59.150Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        },
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.001",
+        "name": "Gather Victim Identity Information: Credentials",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has searched through target companies’ GitHub repositories for login credentials or API keys.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d3d82b76-254e-4cdc-b50d-66bdd5a70efd",
+        "relationship_modified": "2026-07-31T18:47:59.173Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.003",
+        "name": "Search Open Websites/Domains: Code Repositories",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/003"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has searched through victim companies’ GitHub repositories for vulnerabilities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f9304e7f-8ce3-488d-b5b7-32351024fe4a",
+        "relationship_modified": "2026-07-31T18:47:59.284Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1595.002",
+        "name": "Active Scanning: Vulnerability Scanning",
+        "parent_id": "T1595",
+        "url": "https://attack.mitre.org/techniques/T1595/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has sent phishing emails to Microsoft Office 365 corporate users in order to steal credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9e666441-93dc-406d-b8bd-d92155746fa3",
+        "relationship_modified": "2026-07-31T18:47:58.997Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1598",
+        "name": "Phishing for Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1598"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used spearphishing emails with malicious links to gain initial access and credentials.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5f8667b5-b957-4f45-9c58-07321db8f62a",
+        "relationship_modified": "2026-07-31T18:47:58.761Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1598.003",
+        "name": "Phishing for Information: Spearphishing Link",
+        "parent_id": "T1598",
+        "url": "https://attack.mitre.org/techniques/T1598/003"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has established clearnet and Tor data leak sites (DLS) including one named “SHINYHUNTERS” for the exfiltration and posting of stolen data. Additionally, ShinyHunters has registered domains that mimic legitimate Microsoft Azure NetApp Files endpoints, such as azurenetfiles[.]net, and legitimate Okta SSO login pages, such as trial-6857053.okta[.]com.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--df55f1d1-f7a0-4e93-af6a-ee4e47d0b809",
+        "relationship_modified": "2026-07-31T18:47:59.188Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant. (2026, January 30). Vishing for Access: Tracking the Expansion of ShinyHunters-Branded SaaS Data Theft. Retrieved June 16, 2026.",
+          "source_name": "Mandiant_SHDataTheft_Jan2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/expansion-shinyhunters-saas-data-theft"
+        },
+        {
+          "citation": "Federal Bureau of Investigation. (2026, May 15). ShinyHunters: Cyber Criminal Group Attacks Learning Management System. Retrieved July 1, 2026.",
+          "source_name": "FBI_SHLMS_May2026",
+          "url": "https://www.ic3.gov/PSA/2026/PSA260515"
+        },
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        },
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used five IP addresses to host Python SimpleHTTP servers on port 8888, which exposed staging materials, customized agents, and.bash_history files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bf1ca7bb-41e7-45ea-88b1-893600ac5b90",
+        "relationship_modified": "2026-07-31T18:47:59.074Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.004",
+        "name": "Acquire Infrastructure: Server",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/004"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has established multiple email accounts, such as shinycorp@tutonota[.]com, for use in extortion activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--23c5db03-ed4a-4021-835f-32f719e4bd9c",
+        "relationship_modified": "2026-07-31T18:47:58.644Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Google Threat Intelligence Group. (2025, June 4). The Cost of a Call: From Voice Phishing to Data Extortion. Retrieved October 22, 2025.",
+          "source_name": "Google Salesforce JUN 2025",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion"
+        },
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has exploited zero-day vulnerability CVE-2026-35273 against Oracle PeopleSoft application infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e66f8174-7b2f-43bc-885e-fab4859398fb",
+        "relationship_modified": "2026-07-31T18:47:59.216Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.004",
+        "name": "Develop Capabilities: Exploits",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/004"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has obtained MeshCentral to deploy agents masquerading as legitimate cloud endpoints. ShinyHunters has obtained WinSCP to gather information on S3 bucket configurations. ShinyHunters has obtained ConnectWise and other RMM tools to gain initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6ef45519-7ca1-44a4-8421-152af4e85d68",
+        "relationship_modified": "2026-07-31T18:47:58.839Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        },
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        },
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used Bland AI to create conversational pathways tailored to specific scenarios during voice phishing attacks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c53d31c2-d849-41cc-b505-fb8f21447dc3",
+        "relationship_modified": "2026-07-31T18:47:59.103Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.007",
+        "name": "Obtain Capabilities: Artificial Intelligence",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/007"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used valid high-privileged SSO users as leverage during negotiations.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4cbfc615-1e0d-4140-bf36-8b83b6a087d2",
+        "relationship_modified": "2026-07-31T18:47:58.735Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used valid domain accounts to gain initial access or to escalate privileges within environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9102a3f8-73c4-4a07-934c-13045415cc6a",
+        "relationship_modified": "2026-07-31T18:47:58.908Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used valid cloud accounts to gain initial access or to escalate privileges within cloud environments. Additionally, ShinyHunters has also used valid credentials from public repositories to include access keys to gain access to the victim organization’s AWS environment.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8afa26f2-4df2-4d97-b2c8-747683443803",
+        "relationship_modified": "2026-07-31T18:47:58.899Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        },
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        },
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.004",
+        "name": "Valid Accounts: Cloud Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/004"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has exploited CVE-2026-35273 against Oracle PeopleSoft application infrastructure. ShinyHunters has exploited known vulnerabilities in internet-facing servers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--430c6ce1-4461-4c3a-b7e2-3617cc82483a",
+        "relationship_modified": "2026-07-31T18:47:58.694Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        },
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has compromised CI/CD pipelines by gaining access to high privilege engineering accounts on Git version control, BrowserStack, JFrog and other cloud project management platforms.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9e76a5cb-c329-4ee6-937e-c1a37c248d19",
+        "relationship_modified": "2026-07-31T18:47:59.005Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.001",
+        "name": "Supply Chain Compromise: Compromise Software Dependencies and Development Tools",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used the MeshCentral command-line interface utility meshctrl.js and npm to interact with compromised systems. Specifically for npm, ShinyHunters has checked for the authenticode tool using the command `npm list global authenticode`. Additionally, ShinyHunters has used the MeshCentral command to execute the propagation script: ` node meshctrl.js RunCommand --loginuser admin --loginpass '[password]' --id '[agent_id]' --run 'bash /tmp/[victim_abbreviation]_fanout.sh' `.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4677c432-d537-4d61-bc25-efe1b608c378",
+        "relationship_modified": "2026-07-31T18:47:58.722Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used the AWS Command Line Interface (CLI) for operations to include a variety of API calls, such as `ListBuckets`, `CreateBucket` and `DeleteBucket`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bc4b3d58-4a4c-43e4-94c5-bced84db2c97",
+        "relationship_modified": "2026-07-31T18:47:59.058Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.009",
+        "name": "Command and Scripting Interpreter: Cloud API",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/009"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has abused software deployment tools for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c331ae1d-c490-4366-9b39-e2b68073e606",
+        "relationship_modified": "2026-07-31T18:47:59.087Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1072",
+        "name": "Software Deployment Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1072"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has exploited vulnerabilities in the target company’s GitHub repository source code to enable more complex follow-on third-party or supply chain attacks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--630900fe-588f-44af-8f46-f722c503b6fd",
+        "relationship_modified": "2026-07-31T18:47:58.776Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has disguised MeshCentral agent binaries as Microsoft Azure services, e.g. meshagent32-azure-ops.exe, meshagent64-azure-ops.exe, and meshagent64-v2.exe.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c368600-66c9-4fad-bd0f-faa82eb26304",
+        "relationship_modified": "2026-07-31T18:47:58.971Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used social engineering to demand payment from victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8315ce9b-e122-467d-8304-5b0badcef750",
+        "relationship_modified": "2026-07-31T18:47:58.872Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Federal Bureau of Investigation. (2026, May 15). ShinyHunters: Cyber Criminal Group Attacks Learning Management System. Retrieved July 1, 2026.",
+          "source_name": "FBI_SHLMS_May2026",
+          "url": "https://www.ic3.gov/PSA/2026/PSA260515"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has performed brute force attacks against edge devices, such as VPNs or firewall solutions.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c728ccae-df91-4801-824d-2e235269eb8f",
+        "relationship_modified": "2026-07-31T18:47:59.123Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110",
+        "name": "Brute Force",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1110"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has stolen valid OAuth credentials from DevOps personnel or a company GitHub repository. Additionally, ShinyHunters has stolen application access tokens to access cloud services and to bypass authentication mechanisms.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--68501418-9bf5-4f7f-a29e-0c11111bf791",
+        "relationship_modified": "2026-07-31T18:47:58.803Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        },
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1528",
+        "name": "Steal Application Access Token",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1528"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has gathered PII from database infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8658fc97-dc3a-4d39-8cb6-c0590b88cd14",
+        "relationship_modified": "2026-07-31T18:47:58.882Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.001",
+        "name": "Unsecured Credentials: Credentials In Files",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has collected machine names and IP addresses by parsing the process scheduler configuration file psappsrv.cfg.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9604d3ad-329e-47bc-863e-a7528ad13739",
+        "relationship_modified": "2026-07-31T18:47:58.942Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has enumerated the internal subnet using ` cat /etc/hosts | grep -E \"[redacted_victim_string]\"`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bae9c6ec-2d33-418b-b7db-8b99af22e32f",
+        "relationship_modified": "2026-07-31T18:47:59.040Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has executed API calls to enumerate permissions for compromised AWS accounts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f453dbd9-d26e-4e56-88eb-25d37f7aae39",
+        "relationship_modified": "2026-08-04T20:30:54.360Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.003",
+        "name": "Permission Groups Discovery: Cloud Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/003"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used the MeshCentral command-line utility meshctrl.js to collect hostnames and IDs of compromised systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--272163a2-0b55-4d7a-b955-b7fa1022a7e2",
+        "relationship_modified": "2026-07-31T18:47:58.660Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has checked mount points for Oracle PeopleSoft configurations and has checked the process scheduler configuration file psappsrv.cfg. Additionally, ShinyHunters has read WebLogic server XML configurations files (config.xml).",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--69d75d5b-0780-4618-aca4-3a9c9b1e2aee",
+        "relationship_modified": "2026-08-04T19:30:39.865Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used Amazon Simple Storage Service (S3) Browser and WinSCP to collect information on S3 bucket configurations.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b04004a8-57bd-4245-813b-9e64ede24a18",
+        "relationship_modified": "2026-07-31T18:47:59.030Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        },
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1580",
+        "name": "Cloud Infrastructure Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1580"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used Amazon Simple Storage Service (S3) Browser and WinSCP to access S3 objects.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f3a9dfb6-a028-4f80-8823-32b43c9a3fc2",
+        "relationship_modified": "2026-07-31T18:47:59.245Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1619",
+        "name": "Cloud Storage Object Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1619"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has exploited vulnerabilities in remote services for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ba12f04-859e-471e-9dfd-4f74e402220d",
+        "relationship_modified": "2026-08-04T20:30:55.797Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1210"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used stolen OAuth keys to access cloud infrastructure and to bypass two-factor authentication.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1af6f63b-b54b-496a-a85f-dbedf2f79b9c",
+        "relationship_modified": "2026-07-31T18:47:58.608Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1550.001",
+        "name": "Use Alternate Authentication Material: Application Access Token",
+        "parent_id": "T1550",
+        "url": "https://attack.mitre.org/techniques/T1550/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has gathered information from and has searched for vulnerabilities in the target company’s GitHub repository source code.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--79305255-7451-45ad-b265-b641e97f7182",
+        "relationship_modified": "2026-07-31T18:47:58.855Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1213.003",
+        "name": "Data from Information Repositories: Code Repositories",
+        "parent_id": "T1213",
+        "url": "https://attack.mitre.org/techniques/T1213/003"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has collected Salesforce datasets from victims in the airline and retail sectors.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d0d35cd6-3fdb-476e-b830-214f32c2d104",
+        "relationship_modified": "2026-07-31T18:47:59.136Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1213.006",
+        "name": "Data from Information Repositories: Databases",
+        "parent_id": "T1213",
+        "url": "https://attack.mitre.org/techniques/T1213/006"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has collected data from insecure cloud buckets.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--441bf771-bc3a-43ba-bd84-7d77f82d5ab3",
+        "relationship_modified": "2026-07-31T18:47:58.707Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1530",
+        "name": "Data from Cloud Storage",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1530"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used the following command to compress collected data: ` pv -s \"$(du -sb exfil | awk '{print $1}')\" | zstd -3 -T0 -o exfil.tar.zst `.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1a2a16f7-92e1-4065-897f-b12f3856dcba",
+        "relationship_modified": "2026-07-31T18:47:58.595Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.002",
+        "name": "Archive Collected Data: Archive via Library",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used Tor to host their DLS.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e415632a-d3e4-4b15-b285-4eab032989e4",
+        "relationship_modified": "2026-07-31T18:47:59.200Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Federal Bureau of Investigation. (2026, May 15). ShinyHunters: Cyber Criminal Group Attacks Learning Management System. Retrieved July 1, 2026.",
+          "source_name": "FBI_SHLMS_May2026",
+          "url": "https://www.ic3.gov/PSA/2026/PSA260515"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090.003",
+        "name": "Proxy: Multi-hop Proxy",
+        "parent_id": "T1090",
+        "url": "https://attack.mitre.org/techniques/T1090/003"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has deployed custom scripts to targeted systems from customized MeshAgents in their staging environment.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--366015da-df59-466c-98fb-8d31d545d09c",
+        "relationship_modified": "2026-09-03T19:46:59.944Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used MeshCentral and ConnectWise to gain initial access, to run administrative command queries and to deploy the custom lateral movement and defacement script [victim_abbreviation]_fanout.sh.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9c3aa1cd-a210-4995-851f-7364bf5bb313",
+        "relationship_modified": "2026-07-31T18:47:58.982Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        },
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has established a connection between the staging host and the C2 using SSH.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ce64576-d10f-4ea6-b818-801436d8cc39",
+        "relationship_modified": "2026-09-02T20:09:42.701Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.002",
+        "name": "Encrypted Channel: Asymmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/002"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has used compromised Salesforce CRM (Customer Relationship Management) dashboards to exfiltrate bulk data. Additionally, ShinyHunters has used LimeWire, a file-sharing service, to showcase samples of stolen data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--58fd919a-44e2-46d5-ac18-bb327e80b3ff",
+        "relationship_modified": "2026-07-31T18:47:58.748Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1567"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has executed the `DeleteBucket` API call to delete buckets.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f105ba9c-5c64-4728-9f97-aa3b6d8ed274",
+        "relationship_modified": "2026-07-31T18:47:59.234Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1485",
+        "name": "Data Destruction",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1485"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has left ransom notes titled README-IF-YOU-SEE-THIS-YOUVE-BEEN-HACKED.TXT.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9b48e1b5-e52b-44a2-9a8e-6e21126c3705",
+        "relationship_modified": "2026-07-31T18:47:58.961Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Mandiant, Google Threat Intelligence Group. (2026, June 11). ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit. Retrieved June 11, 2026.",
+          "source_name": "Google_SHOracle_Jun2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1491.001",
+        "name": "Defacement: Internal Defacement",
+        "parent_id": "T1491",
+        "url": "https://attack.mitre.org/techniques/T1491/001"
+      }
+    },
+    {
+      "attack_ref": "G1057",
+      "confidence": "high",
+      "description": "ShinyHunters has called or sent text messages or emails to employees of victim organizations to demand payment in Bitcoin within 72 hours. Email addresses used in extortion activities include shinycorp@tuta[.]com, shinygroup@tuta[.]com, shinycorp@tutanota[.]com, and shinygroup@onionmail[.]com.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--adae2782-ce69-4587-bfb0-2417ee44e0fa",
+        "relationship_modified": "2026-07-31T18:47:59.015Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Google Threat Intelligence Group. (2025, June 4). The Cost of a Call: From Voice Phishing to Data Extortion. Retrieved October 22, 2025.",
+          "source_name": "Google Salesforce JUN 2025",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion"
+        },
+        {
+          "citation": "Mandiant. (2026, January 30). Vishing for Access: Tracking the Expansion of ShinyHunters-Branded SaaS Data Theft. Retrieved June 16, 2026.",
+          "source_name": "Mandiant_SHDataTheft_Jan2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/expansion-shinyhunters-saas-data-theft"
+        },
+        {
+          "citation": "Federal Bureau of Investigation. (2026, May 15). ShinyHunters: Cyber Criminal Group Attacks Learning Management System. Retrieved July 1, 2026.",
+          "source_name": "FBI_SHLMS_May2026",
+          "url": "https://www.ic3.gov/PSA/2026/PSA260515"
+        },
+        {
+          "citation": "Intel 471. (2021, August 23). Here’s how to guard your enterprise against ShinyHunters. Retrieved July 29, 2026.",
+          "source_name": "Intel471_SH_Aug2021",
+          "url": "https://www.intel471.com/blog/shinyhunters-data-breach-mitre-attack"
+        },
+        {
+          "citation": "Kelley, M., Vaya, C. (2024, August 23). Bling Libra’s Tactical Evolution: The Threat Actor Group Behind ShinyHunters Ransomware. Retrieved May 18, 2026.",
+          "source_name": "Unit42KelleyVaya_BlingLibra_Aug2024",
+          "url": "https://unit42.paloaltonetworks.com/shinyhunters-ransomware-extortion/"
+        },
+        {
+          "citation": "SOCRadar. (2024, March 18). Dark Web Profile: ShinyHunters. Retrieved May 18, 2026.",
+          "source_name": "SOCRadar_ShinyHunters_Mar2024",
+          "url": "https://socradar.io/dark-web-profile-shinyhunters/"
+        },
+        {
+          "citation": "Büyükkaya, A. (2025, September 22). ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications. Retrieved May 18, 2026.",
+          "source_name": "ElecticIQ Buyukkaya_ShinyHunters_Sept2025",
+          "url": "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0129",
+      "confidence": "low",
+      "description": "“The deep web also includes sites that aren’t indexed by standard search engines, but these sites are available on the clearnet, meaning that they can be reached via regular web browsers.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+          "url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.002",
+        "name": "Search Open Websites/Domains: Search Engines",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0129",
+      "confidence": "medium",
+      "description": "“Dark web forums and marketplaces: XSS, Exploit, and more The dark web is an eclectic mix of forums and marketplaces, including RAMP, Cracked, OnniForums, and more.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+          "url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585",
+        "name": "Establish Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1585"
+      }
+    },
+    {
+      "attack_ref": "INC-0129",
+      "confidence": "medium",
+      "description": "“These are essentially web hosting services that enable cybercrime—like malware hosting or sites used for phishing—by ignoring or evading law enforcement or various abuse complaints.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+          "url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0129",
+      "confidence": "high",
+      "description": "“Like many other forums, this one also features infostealer malware logs, which are credentials sold in data dumps that can be used by threat actors for business email compromise (BEC) or other identity attacks.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Join Huntress' John Hammond & Dave Kleinatland on a | Huntress",
+          "url": "https://www.huntress.com/blog/journey-to-center-of-dark-web-tradecraft-tuesday-recap"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0327",
+      "confidence": "low",
+      "description": "“- Instructure confirmed the affected data includes names, student ID numbers, email addresses, and private student-instructor messages.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0327",
+      "confidence": "medium",
+      "description": "“Enhanced activity logs and a certified 24/7 SOC monitoring service could have detected these actions by identifying anomalous login events and data exfiltration events to unknown IP addresses.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0327",
+      "confidence": "medium",
+      "description": "“- Following the initial investigation into the breach, Instructure confirmed that ShinyHunters had exploited a vulnerability in its “Free-for-Teacher” account creation system.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0327",
+      "confidence": "medium",
+      "description": "“- Be Wary of Second-Order Effects: After a breach of this size, its key to warn users and SOC teams to be vigilant for new waves of phishing emails, brute forcing attacks, and other account takeover methods leveraging the stolen data.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0327",
+      "confidence": "low",
+      "description": "“Instead, they exfiltrate data from cloud platforms, software environments, and third-party integrators, then demand a ransom to avoid its public release.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: British Universities Struck by ShinyHunters Before Exam Season",
+          "url": "https://blog.bushidotoken.net/2026/05/uk-cybercrime-journal-british.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1530",
+        "name": "Data from Cloud Storage",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1530"
+      }
+    },
+    {
+      "attack_ref": "INC-0324",
+      "confidence": "low",
+      "description": "“- The data stolen includes contact information, transaction amounts, IP addresses, full names, home addresses, postcodes, email addresses, phone numbers, dates of birth, and other internal campus data.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+          "url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0324",
+      "confidence": "low",
+      "description": "“- The data stolen includes contact information, transaction amounts, IP addresses, full names, home addresses, postcodes, email addresses, phone numbers, dates of birth, and other internal campus data.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+          "url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0324",
+      "confidence": "high",
+      "description": "“Cybercriminal adversaries like ShinyHunters often exploit internet-facing applications or use stolen credentials for initial access.” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+          "url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0324",
+      "confidence": "high",
+      "description": "“- On 11 June 2026, Mandiant and Google Threat Intelligence Group (GTIG) disclosed they have observed active compromise and extortion campaign attributed to UNC6240 (ShinyHunters) targeting Oracle PeopleSoft application infrastructure via a zero-day now tracked as…” — BushidoToken",
+      "provenance": {
+        "article_source": "BushidoToken",
+        "article_url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "BushidoToken: UK Cybercrime Journal: University of Nottingham Breached by ShinyHunters",
+          "url": "https://blog.bushidotoken.net/2026/07/uk-cybercrime-journal-university-of.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "low",
+      "description": "“It also led to a conversation on social media around the investigation, what managed endpoint detection and response (EDR) products actually do and what purpose that they serve, and more.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "medium",
+      "description": "“We learned everything from soldering/assembling badges to how AI is changing attacks against people (thanks to a demonstration and contest using AI-assisted vishing in the Social Engineering Village).” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.004",
+        "name": "Phishing: Spearphishing Voice",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "high",
+      "description": "“The research is a real world example of indirect prompt injection, which falls directly under Open Worldwide Application Security Project (OWASP) Top 10 for Large Language Model (LLM) Applications 2026, LLM01:2026 Prompt Injection.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1698",
+        "name": "Indirect Prompt Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1698"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "low",
+      "description": "“What makes this especially concerning is the combination of Prompt Injection (OWASP LLM01:2026) and Excessive Agency (OWASP LLM03:2026).” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1699",
+        "name": "Direct Prompt Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1699"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "high",
+      "description": "“We learned everything from soldering/assembling badges to how AI is changing attacks against people (thanks to a demonstration and contest using AI-assisted vishing in the Social Engineering Village).” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "medium",
+      "description": "“The investigation unearthed significant Identity and Access Management (IAM) design weaknesses, including websocket sessions that outlive API token revocation and default CloudShell access tied to consumer email accounts.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.003",
+        "name": "Account Discovery: Email Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0086",
+      "confidence": "low",
+      "description": "“The hands-on experience provides a much better understanding of how the adversary approaches a target and follows the breadcrumbs from initial discovery to potential compromise.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/black-hat-def-con-standouts",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: 10 Hacker Summer Camp Standouts at Black Hat and DEF CON",
+          "url": "https://www.huntress.com/blog/black-hat-def-con-standouts"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1482",
+        "name": "Domain Trust Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1482"
+      }
+    },
+    {
+      "attack_ref": "INC-0078",
+      "confidence": "medium",
+      "description": "“On Wednesday, police took over KillSec’s dark web leak site and blocked further unauthorized access to at least 110TB of data, presumably stolen from victims.” — SecurityWeek ransomware",
+      "provenance": {
+        "article_source": "SecurityWeek ransomware",
+        "article_url": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
+          "url": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0077",
+      "confidence": "high",
+      "description": "“Jersey City, New Jersey-based Clover Health Investments was hacked in early July, after attackers used social engineering to compromise three non-managerial health plan employee accounts.” — SecurityWeek ransomware",
+      "provenance": {
+        "article_source": "SecurityWeek ransomware",
+        "article_url": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: 250,000 Impacted by Data Breaches at New Jersey, Texas Healthcare Firms",
+          "url": "https://www.securityweek.com/250000-impacted-by-data-breaches-at-new-jersey-texas-healthcare-firms/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0076",
+      "confidence": "low",
+      "description": "“In June this year, Qilin was exploiting a critical authentication bypass vulnerability in Check Point VPN and firewall products, tracked as CVE-2026-50751.” — SecurityWeek ransomware",
+      "provenance": {
+        "article_source": "SecurityWeek ransomware",
+        "article_url": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Qilin Ransomware Suspect Arrested in Japan, Extradited to Germany",
+          "url": "https://www.securityweek.com/qilin-ransomware-suspect-arrested-in-japan-extradited-to-germany/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "INC-0075",
+      "confidence": "low",
+      "description": "“Instead, he contacted the ransomware groups that hacked his clients, paid ransoms to obtain the decryption keys, and then charged the victim organizations a fee when using the decryption key to restore the data.” — SecurityWeek ransomware",
+      "provenance": {
+        "article_source": "SecurityWeek ransomware",
+        "article_url": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek ransomware: Fake Decryption Tools Masked $11M Markup in Ransomware Recovery Scheme",
+          "url": "https://www.securityweek.com/fake-decryption-tools-masked-11m-markup-in-ransomware-recovery-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0073",
+      "confidence": "medium",
+      "description": "“ShinyHunters typically uses phishing and stolen credentials to siphon data from corporate accounts at software-as-a-service companies, and then threatens to publish the stolen data online unless a ransom demand is paid.” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: FBI Arrests Executive at Ransomware Negotiation Firm",
+          "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0073",
+      "confidence": "medium",
+      "description": "“ShinyHunters typically uses phishing and stolen credentials to siphon data from corporate accounts at software-as-a-service companies, and then threatens to publish the stolen data online unless a ransom demand is paid.” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: FBI Arrests Executive at Ransomware Negotiation Firm",
+          "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0072",
+      "confidence": "low",
+      "description": "“U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity…” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+          "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0072",
+      "confidence": "medium",
+      "description": "“The following screenshot shows a cached portion of the Shinywire extortion page for Intuitive Surgical, an American medical technology company that was breached in March 2026 after an employee fell for a targeted phishing email.” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+          "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0072",
+      "confidence": "low",
+      "description": "“The following screenshots show just how annoyed the ShinyHunters leaders were with Coveware’s relentless advice against paying the group.” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+          "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0072",
+      "confidence": "medium",
+      "description": "“Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.” — Krebs on Security",
+      "provenance": {
+        "article_source": "Krebs on Security",
+        "article_url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Krebs on Security: Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+          "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0053",
+      "confidence": "medium",
+      "description": "“Related: Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages Related: US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms Related: Canonical Websites Disrupted in Second DDoS Attack This Year Related: Ransomware Response Expert Arrested in…” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+          "url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0053",
+      "confidence": "medium",
+      "description": "“The audio recordings impersonated various banks, companies, and scenarios, asked victims to press ‘1’ if they were not responsible for the alleged suspicious activity, and then put them on hold.” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+          "url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0053",
+      "confidence": "medium",
+      "description": "“Related: Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages Related: US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms Related: Canonical Websites Disrupted in Second DDoS Attack This Year Related: Ransomware Response Expert Arrested in…” — SecurityWeek cybercrime",
+      "provenance": {
+        "article_source": "SecurityWeek cybercrime",
+        "article_url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek cybercrime: Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+          "url": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1498",
+        "name": "Network Denial of Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1498"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "low",
+      "description": "“This included customer email addresses, hashed passwords, customer payment invoices and internal employee files containing salaries and tax IDs.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“The actors were able to drain stored gift card balances, steal mobile payment funds and collect rewards points before advertising access to the compromised accounts on dark web forums.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585",
+        "name": "Establish Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1585"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“They used large databases of stolen credentials to conduct the attack, which ultimately led to the compromise of thousands of loyalty accounts.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“To achieve this level of operational resilience, retail security teams can leverage the Palo Alto Networks security platform for an integrated, AI-driven security architecture that unifies enterprise-wide telemetry into automated response.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“This includes the SolarWinds software supply chain compromise in December 2020 and the exploitation of a Log4j zero-day vulnerability in December 2021.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195",
+        "name": "Supply Chain Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1195"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“These threat actors send phishing and smishing messages to socially engineer employees at targeted retailers to obtain credentials for initial access.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“Gambit Security has reported on an attacker using multiple open source harnesses to steal more than 600,000 payment card records from retailers using JavaScript-based web skimmers.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "high",
+      "description": "“- Correct security configuration drift prior to holiday code freezes Guest-Focused Threats Account Takeover Credential stuffing attacks are a major concern for retailers during peak shopping season as they directly impact the trust of their customers if an account is compromised.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110.004",
+        "name": "Brute Force: Credential Stuffing",
+        "parent_id": "T1110",
+        "url": "https://attack.mitre.org/techniques/T1110/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“- Enforce zero trust access across the enterprise to limit lateral movement” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“During the December 2025 holiday rush, the pro-Russian hacktivist group Noname057(16) used the DDoSia botnet to launch coordinated TCP SYN and HTTP GET request floods targeting the victim's web-facing portals and API endpoints.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "low",
+      "description": "“Distributed Denial of Service (DDoS) DDoS also poses a major risk for retailers during peak shopping season because these attacks severely impact the operational uptime for e-commerce platforms if successful.” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1498",
+        "name": "Network Denial of Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1498"
+      }
+    },
+    {
+      "attack_ref": "INC-0032",
+      "confidence": "medium",
+      "description": "“- Utilize inline sandboxing capabilities to inspect suspicious binaries and stop zero-day exploits before execution Data Theft and Extortion Data theft and extortion attacks continue to rise in volume as cybercriminals like Bling Libra (aka ShinyHunters) and Hazy Scorpius (aka…” — Palo Alto Networks Unit 42",
+      "provenance": {
+        "article_source": "Palo Alto Networks Unit 42",
+        "article_url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Palo Alto Networks Unit 42: Unwrapping Retail Peak Season Cyber Threats",
+          "url": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "medium",
+      "description": "“The attackers obtain the victim’s ID through various illicit channels, including malware, social media, social engineering schemes, or the dark web.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "medium",
+      "description": "“Real predictive models flag emerging infrastructure (domains, IPs, malware variants) before they’re used in active campaigns.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "high",
+      "description": "“Predictive analytics in cybersecurity refers to the use of Machine Learning (ML), Artificial Intelligence (AI), User Behavior Analytics (UEBA), and statistical algorithms that are continually refined to identify patterns indicating potential attacks targeting a region,…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.007",
+        "name": "Obtain Capabilities: Artificial Intelligence",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "high",
+      "description": "“Example: detecting similar phishing kits used in Southeast Asia, now being registered in your region.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "high",
+      "description": "“The attackers obtain the victim’s ID through various illicit channels, including malware, social media, social engineering schemes, or the dark web.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "medium",
+      "description": "“Case 3: SIM Swapping Pattern Detection and Infrastructure Takedown What was tracked: Group-IB analysts detected a network of phishing domains impersonating well-known insurance providers.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "high",
+      "description": "“Can you predict the specific cyber threats your organization faces, such as anticipating a DDoS attack, an attempt to phish Azure credentials, or a brute-force attack aiming to gain initial access to your network?” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110",
+        "name": "Brute Force",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1110"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "high",
+      "description": "“- They were spread through social engineering schemes and smishing (SMS phishing) campaigns What it indicated: The infrastructure, techniques, and tactics all pointed towards a planned SIM swap campaign where attackers gather and then use victims’ personal information to…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1111"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "medium",
+      "description": "“Can you predict the specific cyber threats your organization faces, such as anticipating a DDoS attack, an attempt to phish Azure credentials, or a brute-force attack aiming to gain initial access to your network?” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1498",
+        "name": "Network Denial of Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1498"
+      }
+    },
+    {
+      "attack_ref": "INC-0212",
+      "confidence": "medium",
+      "description": "“Phase 4: Mimicking real faces to build fake credibility Fraudsters exploited virtual camera software to manipulate accounts’ biometric data, using pre-recorded videos to mimic real-time facial recognition during KYC processes, deceiving institutions into approving fraudulent…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/predictive-ai/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Predictive AI: The “Quiet Catalyst” Behind The Future of Cybersecurity",
+          "url": "https://www.group-ib.com/blog/predictive-ai/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0276",
+      "confidence": "low",
+      "description": "“The examination of behavior patterns of accounts in the dark web can show the correlation between accounts used by the same group, with automatic analysis based on the proposed algorithms allowing to increase the depth of research, while reducing the list of suspects.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/ml-in-investigations/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Shedding light on the dark web",
+          "url": "https://www.group-ib.com/blog/ml-in-investigations/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585",
+        "name": "Establish Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1585"
+      }
+    },
+    {
+      "attack_ref": "INC-0276",
+      "confidence": "medium",
+      "description": "“Megadimarus account was created on May 4, 2020 on the RaidForums and is banned at the time of writing.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/ml-in-investigations/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Shedding light on the dark web",
+          "url": "https://www.group-ib.com/blog/ml-in-investigations/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.009",
+        "name": "Indicator Removal: Clear Persistence",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/009"
+      }
+    },
+    {
+      "attack_ref": "INC-0276",
+      "confidence": "medium",
+      "description": "“This account was created in June 2019 and impersonated the name and photo of the famous cybersecurity researcher Troy Hunt.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/ml-in-investigations/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Shedding light on the dark web",
+          "url": "https://www.group-ib.com/blog/ml-in-investigations/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0276",
+      "confidence": "medium",
+      "description": "“A user with the nickname whysodankk joined the dispute and refuted Jumbo‘s claims saying that the screenshots allegedly confirming the money transfer in fact represented the transfer of money between two wallets belonging to Jumbo.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/ml-in-investigations/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Shedding light on the dark web",
+          "url": "https://www.group-ib.com/blog/ml-in-investigations/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "medium",
+      "description": "“- Australian taxation–themed activity: crypto-ato.com, atocalculation.com The pattern suggests a focus on organizations where compromised identity access could quickly create operational or financial leverage.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "high",
+      "description": "“First, cp.myyalemanager.com is a cp. subdomain on the Yale-targeted phishing domain.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "medium",
+      "description": "“Push described campaigns that combine voice phishing with adversary-in-the-middle credential capture against enterprise identity providers and cryptocurrency platforms.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.004",
+        "name": "Phishing: Spearphishing Voice",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "low",
+      "description": "“The cp. prefix is consistent with a control-panel or admin endpoint for the operator’s panel UI.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.002",
+        "name": "System Binary Proxy Execution: Control Panel",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "medium",
+      "description": "“Push described campaigns that combine voice phishing with adversary-in-the-middle credential capture against enterprise identity providers and cryptocurrency platforms.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1557"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "low",
+      "description": "“It does not provide the same visibility as direct panel access, source code review, victim submission logs, or operator communications.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1213.005",
+        "name": "Data from Information Repositories: Messaging Applications",
+        "parent_id": "T1213",
+        "url": "https://attack.mitre.org/techniques/T1213/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "medium",
+      "description": "“Cloudflare CDN peers (172.69.219.144, 172.69.219.145) on ports 80 and 443 are consistent with traffic reaching Cloudflare-fronted lure infrastructure.” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090",
+        "name": "Proxy",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1090"
+      }
+    },
+    {
+      "attack_ref": "INC-0360",
+      "confidence": "low",
+      "description": "“The observed target set spans higher education (Yale, UPenn), financial services (KKR, Shift4, Meridian Savings, IQ-EQ), asset management (VanEck), real estate (Brixmor), luxury goods (LVMH), media (Disney), retail (Nike, JB Hi-Fi, Dick’s, Publix, Petco, Purple Mattress),…” — Team Cymru (HTML list)",
+      "provenance": {
+        "article_source": "Team Cymru (HTML list)",
+        "article_url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Team Cymru (HTML list): August 5, 2026",
+          "url": "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "shinyhunters",
+  "software": [
+    {
+      "id": "S0183",
+      "name": "Tor",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0183"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:57.967Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

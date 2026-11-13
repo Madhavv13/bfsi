@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/paths';
+---
+<Base title="Licenses and attribution" description="Licensing, attribution and data-source terms for BFSI APT Intel.">
+  <div class="licenses">
+    <h1>Licenses and attribution</h1>
+
+    <section>
+      <h2>MITRE ATT&amp;CK®</h2>
+      <p>
+        Group descriptions, technique names and descriptions, tactics, software and the procedure rows marked
+        “ATT&amp;CK” come from MITRE ATT&amp;CK®, Enterprise domain.
+      </p>
+      <p><strong>
+        © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE
+        Corporation.
+      </strong></p>
+      <p>
+        MITRE ATT&amp;CK® and ATT&amp;CK® are registered trademarks of The MITRE Corporation. This site is not
+        affiliated with, sponsored by or endorsed by MITRE. See the
+        <a href="https://attack.mitre.org/resources/legal-and-branding/terms-of-use/" rel="noopener">ATT&amp;CK terms of use</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Original analysis</h2>
+      <p>
+        Curated group descriptions, incident names and analyst-written procedure descriptions (rows marked
+        “Reviewed auto-map” or “Curated”) are original work, licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">Creative Commons Attribution 4.0 (CC BY 4.0)</a>.
+        Each row links to the public report it is based on.
+      </p>
+    </section>
+
+    <section>
+      <h2>Third-party reporting</h2>
+      <p>
+        Vendor, government and news reports are linked, not republished. Where an analyst has not yet written a
+        description for a reviewed row, the row shows a short, attributed quotation from the cited report.
+      </p>
+      <p>
+        Content from Malpedia (CC BY-NC-SA) and ETDA is never copied into this site. Report-discovery services
+        (ORKL, Malpedia bibliography) are used only to find the original publisher's report.
+      </p>
+    </section>
+
+    <section>
+      <h2>Indicators of compromise</h2>
+      <p>
+        No indicators of compromise are published. IOC feeds such as abuse.ch ThreatFox are used only to discover
+        reports, under their fair-use terms.
+      </p>
+    </section>
+
+    <section>
+      <h2>Downloads</h2>
+      <p>
+        The CSV files and ATT&amp;CK Navigator layers on each <a href={withBase('/')}>group page</a> combine
+        ATT&amp;CK data with original analysis. Keep both notices above when you reuse them.
+      </p>
+    </section>
+  </div>
+</Base>

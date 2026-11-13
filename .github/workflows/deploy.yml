@@ -1,0 +1,41 @@
+# Deploy the static site to GitHub Pages (Settings -> Pages -> Source: "GitHub Actions").
+# This `site/` folder is meant to be its own public repository; the pipeline repo stays private.
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Third-party actions pinned to commit SHAs (tag in the comment; Dependabot can bump both).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Validate exported JSON against the contract
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/group.schema.json -d "src/content/groups/*.json" --strict=false
+        if: hashFiles('schemas/group.schema.json') != ''
+      - name: Validate the technique index against its contract
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/techniques.schema.json -d src/data/techniques.json --strict=false
+        if: hashFiles('schemas/techniques.schema.json') != ''
+      - uses: withastro/action@a8b97df764791eb61fbf3338ef713b0e61ae05c5 # v6
+        env:
+          SITE_URL: https://${{ github.repository_owner }}.github.io
+          # Project pages live under /<repo>; for <user>.github.io or a custom domain set BASE_PATH: /
+          BASE_PATH: /${{ github.event.repository.name }}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

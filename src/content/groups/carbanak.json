@@ -1,0 +1,1007 @@
+{
+  "aliases": [
+    "Anunak"
+  ],
+  "attack_id": "G0008",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0008",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0008",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0008"
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0299",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Silence: Moving into the Darkside",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: used Carbanak malware to target financial institutions since at least 2013; may be linked to Cobalt Group and FIN7.",
+    "tier": 1
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 9,
+    "reviewed_rows": 11,
+    "rows": 20,
+    "techniques": 18
+  },
+  "description": "Carbanak is a cybercriminal group that has used Carbanak malware to target financial institutions since at least 2013. Carbanak may be linked to groups tracked separately as Cobalt Group and FIN7 that have also used Carbanak malware.",
+  "description_references": [
+    {
+      "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+      "source_name": "Kaspersky Carbanak",
+      "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+    },
+    {
+      "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+      "source_name": "FireEye FIN7 April 2017",
+      "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+    },
+    {
+      "citation": "Europol. (2018, March 26). Mastermind Behind EUR 1 Billion Cyber Bank Robbery Arrested in Spain. Retrieved October 10, 2018.",
+      "source_name": "Europol Cobalt Mar 2018",
+      "url": "https://www.europol.europa.eu/newsroom/news/mastermind-behind-eur-1-billion-cyber-bank-robbery-arrested-in-spain"
+    },
+    {
+      "citation": "CTU. (n.d.). GOLD NIAGARA. Retrieved September 21, 2021.",
+      "source_name": "Secureworks GOLD NIAGARA Threat Profile",
+      "url": "https://www.secureworks.com/research/threat-profiles/gold-niagara"
+    },
+    {
+      "citation": "Secureworks. (n.d.). GOLD KINGSWOOD. Retrieved October 18, 2021.",
+      "source_name": "Secureworks GOLD KINGSWOOD Threat Profile",
+      "url": "https://www.secureworks.com/research/threat-profiles/gold-kingswood?filter=item-financial-gain"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/carbanak.csv",
+    "navigator_layer": "layers/carbanak.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fcarbanak.json"
+  },
+  "id": "G0008",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "Carbanak",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak has obtained and used open-source tools such as PsExec and Mimikatz.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f9b07e52-aff8-4fad-af72-ff646495d25f",
+        "relationship_modified": "2026-07-31T18:47:56.720Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak actors used legitimate credentials of banking employees to perform operations that sent them millions of dollars.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--58882b0d-0f4a-4e12-b8c1-f43c53fd96f4",
+        "relationship_modified": "2026-07-31T18:47:56.521Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak malware installs itself as a service to provide persistence and SYSTEM privileges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--aad8c4dc-db11-48b4-b294-f63ccde5e798",
+        "relationship_modified": "2026-07-31T18:47:56.570Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak has copied legitimate service names to use for malicious services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--28a4517c-89b9-4744-a58f-6a1f1fec3c33",
+        "relationship_modified": "2026-07-31T18:47:56.472Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.004",
+        "name": "Masquerading: Masquerade Task or Service",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/004"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak has named malware \"svchost.exe,\" which is the name of the Windows shared service host program.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bbf116bf-6f8a-44f4-9d98-db6ccbbff333",
+        "relationship_modified": "2026-07-31T18:47:56.610Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak installs VNC server software that executes through rundll32.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--539f8bc3-3fb4-43af-8918-9a65239cdff6",
+        "relationship_modified": "2026-07-31T18:47:56.496Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research and Analysis Team. (2015, February). CARBANAK APT THE GREAT BANK ROBBERY. Retrieved August 23, 2018.",
+          "source_name": "Kaspersky Carbanak",
+          "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak may use netsh to add local firewall rule exceptions.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c8eec284-ab05-48a5-b79e-412db42f7123",
+        "relationship_modified": "2026-07-31T18:47:56.659Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB and Fox-IT. (2014, December). Anunak: APT against financial institutions. Retrieved April 20, 2016.",
+          "source_name": "Group-IB Anunak",
+          "url": "http://www.group-ib.com/files/Anunak_APT_against_financial_institutions.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1686",
+        "name": "Disable or Modify System Firewall",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1686"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak has used a VBScript named \"ggldr\" that uses Google Apps Script, Sheets, and Forms services for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a732c265-07f0-4e9b-a42c-0df6277e5b27",
+        "relationship_modified": "2026-09-03T19:46:52.006Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Griffin, N. (2017, January 17). CARBANAK GROUP USES GOOGLE FOR MALWARE COMMAND-AND-CONTROL. Retrieved February 15, 2017.",
+          "source_name": "Forcepoint Carbanak Google C2",
+          "url": "https://blogs.forcepoint.com/security-labs/carbanak-group-uses-google-malware-command-and-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.002",
+        "name": "Web Service: Bidirectional Communication",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/002"
+      }
+    },
+    {
+      "attack_ref": "G0008",
+      "confidence": "high",
+      "description": "Carbanak used legitimate programs such as AmmyyAdmin and Team Viewer for remote interactive C2 to target systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--af1514c0-0e58-4878-a409-9804a7ce5e0b",
+        "relationship_modified": "2026-07-31T18:47:56.585Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB and Fox-IT. (2014, December). Anunak: APT against financial institutions. Retrieved April 20, 2016.",
+          "source_name": "Group-IB Anunak",
+          "url": "http://www.group-ib.com/files/Anunak_APT_against_financial_institutions.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“And there is one more danger caused by targeted attacks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Remote access Infection of one computer in a corporate network opens a door into a protected bank system.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“In 2016, Cobalt sent phishing emails acting as the European Central Bank (“The rules for European banks.doc”) or an ATM manufacturer Wincor Nixdorf.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“Intrusion and infection The key infection vector used to attack bank networks is sending phishing emails with malicious attachments (Trojans) disguised as a legitimate document or a password-protected archive to bank employees.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Intrusion and infection The key infection vector used to attack bank networks is sending phishing emails with malicious attachments (Trojans) disguised as a legitimate document or a password-protected archive to bank employees.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“Therefore, it is critical that banks be more careful in selecting their employees and arrange regular personnel trainings, which should include not only training sessions on issues related to targeted attacks, phishing and social engineering, but also “combat training”: banks…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“For instance, a source code of such a tool, Mimikatz, has been posted on a website and is currently available for everyone.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003",
+        "name": "OS Credential Dumping",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1003"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“We observe that criminals search persistently for insiders in banks in order to collect information and perform initial infection.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1010",
+        "name": "Application Window Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1010"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“In addition to ATM control systems, cybercriminals try to gain access to SWIFT systems, payment gateways and card processing systems.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“With freeware employed (such as TeamViewer, Ammy Admin, VNC, Light Manager), intruders gain remote access to a bank network.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“For many years, it has been known for their actions against ideological opponents of North Korea, which involved DDoS attacks and hacking into resources of government, military and aerospace institutions in South Korea and the USA.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/polygon/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Targeted attacks on banks",
+          "url": "https://www.group-ib.com/blog/polygon/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1498",
+        "name": "Network Denial of Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1498"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "carbanak",
+  "software": [
+    {
+      "id": "S0030",
+      "name": "Carbanak",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0030"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0108",
+      "name": "netsh",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0108"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:55.855Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

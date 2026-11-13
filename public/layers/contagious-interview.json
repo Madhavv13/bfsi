@@ -1,0 +1,467 @@
+{
+  "description": "Techniques for Contagious Interview: MITRE ATT&CK v20.1 procedures plus analyst-reviewed mappings. Score = number of procedure rows.",
+  "domain": "enterprise-attack",
+  "gradient": {
+    "colors": [
+      "#fff3e0ff",
+      "#e65100ff"
+    ],
+    "maxValue": 3,
+    "minValue": 0
+  },
+  "hideDisabled": false,
+  "legendItems": [],
+  "metadata": [
+    {
+      "name": "generated_by",
+      "value": "bfsi-intel"
+    },
+    {
+      "name": "attack_version",
+      "value": "20.1"
+    },
+    {
+      "name": "last_updated",
+      "value": "2026-11-13"
+    }
+  ],
+  "name": "Contagious Interview (G1052) - BFSI APT Intel",
+  "selectSubtechniquesWithParent": false,
+  "selectTechniquesAcrossTactics": true,
+  "showTacticRowBackground": false,
+  "sorting": 0,
+  "techniques": [
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1021.007"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1027.010"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1027.013"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1036"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1036.005"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1041"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1048.003"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1053.005"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1059.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1059.004"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1059.005"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1059.006"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1059.007"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1070.004"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1071.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1082"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1083"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1090"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1102.001"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1195.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.001"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.004"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1204.005"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1219.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1480"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1497"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1543.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1546.004"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1547.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1547.013"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1555.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1566.003"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1567"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1567.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1571"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1573.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1583"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1583.001"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1583.003"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1583.006"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1585"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1585.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1585.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1587"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1587.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1588.002"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1588.007"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1589"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1589.002"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1590.005"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1593"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1593.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1593.003"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1608.001"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 2,
+      "showSubtechniques": false,
+      "techniqueID": "T1657"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1681"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1683.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1683.002"
+    },
+    {
+      "comment": "sources: mitre-attack, reviewed-automap",
+      "enabled": true,
+      "score": 3,
+      "showSubtechniques": false,
+      "techniqueID": "T1684.001"
+    },
+    {
+      "comment": "sources: mitre-attack",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1685"
+    }
+  ],
+  "versions": {
+    "attack": "20",
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  }
+}

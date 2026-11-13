@@ -1,0 +1,637 @@
+{
+  "aliases": [
+    "Silent Chollima",
+    "PLUTONIUM",
+    "Onyx Sleet"
+  ],
+  "attack_id": "G0138",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0138",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0138",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0138"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: conducted cyber financial operations against ATMs, banks and cryptocurrency exchanges, in addition to espionage against South Korea.",
+    "tier": 1
+  },
+  "country": "North Korea (DPRK)",
+  "counts": {
+    "attack_rows": 12,
+    "reviewed_rows": 0,
+    "rows": 12,
+    "techniques": 12
+  },
+  "description": "Andariel is a North Korean state-sponsored threat group that has been active since at least 2009. Andariel has primarily focused its operations--which have included destructive attacks--against South Korean government agencies, military organizations, and a variety of domestic companies; they have also conducted cyber financial operations against ATMs, banks, and cryptocurrency exchanges. Andariel's notable activity includes Operation Black Mine, Operation GoldenAxe, and Campaign Rifle.\n\nAndariel is considered a sub-set of Lazarus Group, and has been attributed to North Korea's Reconnaissance General Bureau.\n\nNorth Korean group definitions are known to have significant overlap, and some security researchers report all North Korean state-sponsored cyber activity under the name Lazarus Group instead of tracking clusters or subgroups.",
+  "description_references": [
+    {
+      "citation": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 12, 2024.",
+      "source_name": "FSI Andariel Campaign Rifle July 2017",
+      "url": "https://fsiceat.tistory.com/2"
+    },
+    {
+      "citation": "IssueMakersLab. (2017, May 1). Operation GoldenAxe. Retrieved September 12, 2024.",
+      "source_name": "IssueMakersLab Andariel GoldenAxe May 2017",
+      "url": "http://www.issuemakerslab.com/research3/"
+    },
+    {
+      "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+      "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+      "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+    },
+    {
+      "citation": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+      "source_name": "TrendMicro New Andariel Tactics July 2018",
+      "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html"
+    },
+    {
+      "citation": "CrowdStrike. (2021, September 29). Silent Chollima Adversary Profile. Retrieved September 29, 2021.",
+      "source_name": "CrowdStrike Silent Chollima Adversary September 2021",
+      "url": "https://adversary.crowdstrike.com/en-US/adversary/silent-chollima/"
+    },
+    {
+      "citation": "US Treasury . (2019, September 13). Treasury Sanctions North Korean State-Sponsored Malicious Cyber Groups. Retrieved September 29, 2021.",
+      "source_name": "Treasury North Korean Cyber Groups September 2019",
+      "url": "https://home.treasury.gov/news/press-releases/sm774"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/andariel.csv",
+    "navigator_layer": "layers/andariel.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fandariel.json"
+  },
+  "id": "G0138",
+  "last_updated": "2026-11-05",
+  "motivation": "Espionage and financial gain",
+  "name": "Andariel",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has limited its watering hole attacks to specific IP address ranges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4ee087c3-92d0-4886-bc90-167e7ab8926d",
+        "relationship_modified": "2026-07-31T18:47:50.737Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+          "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+          "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has inserted a malicious script within compromised websites to collect potential victim information such as browser type, system language, Flash Player version, and other data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9fc2e926-e5a9-4c56-8d7c-cdef9dd7f7ab",
+        "relationship_modified": "2026-07-31T18:47:50.802Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+          "source_name": "TrendMicro New Andariel Tactics July 2018",
+          "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1592.002",
+        "name": "Gather Victim Host Information: Software",
+        "parent_id": "T1592",
+        "url": "https://attack.mitre.org/techniques/T1592/002"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has used a variety of publicly-available remote access Trojans (RATs) for its operations.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--aaeef068-5853-45c9-922a-9ff779041cbe",
+        "relationship_modified": "2026-09-02T17:55:53.264Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 12, 2024.",
+          "source_name": "FSI Andariel Campaign Rifle July 2017",
+          "url": "https://fsiceat.tistory.com/2"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.001",
+        "name": "Obtain Capabilities: Malware",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/001"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has used watering hole attacks, often with zero-day exploits, to gain initial access to victims within a specific IP range.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4fd205f2-656f-4211-b60b-510d53dfa8d3",
+        "relationship_modified": "2026-07-31T18:47:50.757Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+          "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+          "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+        },
+        {
+          "citation": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+          "source_name": "TrendMicro New Andariel Tactics July 2018",
+          "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1189",
+        "name": "Drive-by Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1189"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has conducted spearphishing campaigns that included malicious Word or Excel attachments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c801e7ac-dce5-4349-bc07-446b5eec9744",
+        "relationship_modified": "2026-07-31T18:47:50.853Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+          "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+          "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+        },
+        {
+          "citation": "Jazi, H. (2021, April 19). Lazarus APT conceals malicious code within BMP image to drop its RAT . Retrieved September 29, 2021.",
+          "source_name": "MalwareBytes Lazarus-Andariel Conceals Code April 2021",
+          "url": "https://blog.malwarebytes.com/threat-intelligence/2021/04/lazarus-apt-conceals-malicious-code-within-bmp-file-to-drop-its-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has exploited numerous ActiveX vulnerabilities, including zero-days.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2f5d9a23-5360-479c-b6dc-f9827bb6b353",
+        "relationship_modified": "2026-07-31T18:47:50.692Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 12, 2024.",
+          "source_name": "FSI Andariel Campaign Rifle July 2017",
+          "url": "https://fsiceat.tistory.com/2"
+        },
+        {
+          "citation": "IssueMakersLab. (2017, May 1). Operation GoldenAxe. Retrieved September 12, 2024.",
+          "source_name": "IssueMakersLab Andariel GoldenAxe May 2017",
+          "url": "http://www.issuemakerslab.com/research3/"
+        },
+        {
+          "citation": "Chen, Joseph. (2018, July 16). New Andariel Reconnaissance Tactics Uncovered. Retrieved September 29, 2021.",
+          "source_name": "TrendMicro New Andariel Tactics July 2018",
+          "url": "https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has attempted to lure victims into enabling malicious macros within email attachments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c4de34ea-99de-4850-817d-f9f2915bc7bd",
+        "relationship_modified": "2026-07-31T18:47:50.837Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+          "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+          "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has hidden malicious executables within PNG files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--da7dcfcb-7a36-43a8-8a0a-409d15b7e62e",
+        "relationship_modified": "2026-07-31T18:47:50.875Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Jazi, H. (2021, April 19). Lazarus APT conceals malicious code within BMP image to drop its RAT . Retrieved September 29, 2021.",
+          "source_name": "MalwareBytes Lazarus-Andariel Conceals Code April 2021",
+          "url": "https://blog.malwarebytes.com/threat-intelligence/2021/04/lazarus-apt-conceals-malicious-code-within-bmp-file-to-drop-its-rat/"
+        },
+        {
+          "citation": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+          "source_name": "Kaspersky Andariel Ransomware June 2021",
+          "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.003",
+        "name": "Obfuscated Files or Information: Steganography",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/003"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has used the <code>netstat -naop tcp</code> command to display TCP connections on a victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2bb829ce-e597-4033-af7c-ef44aaebadb4",
+        "relationship_modified": "2026-07-31T18:47:50.673Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+          "source_name": "Kaspersky Andariel Ransomware June 2021",
+          "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1049",
+        "name": "System Network Connections Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1049"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has used <code>tasklist</code> to enumerate processes and find a specific string.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--63f08c72-9be6-45d5-9c60-2a4794795760",
+        "relationship_modified": "2026-07-31T18:47:50.778Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Park, S. (2021, June 15). Andariel evolves to target South Korea with ransomware. Retrieved September 29, 2021.",
+          "source_name": "Kaspersky Andariel Ransomware June 2021",
+          "url": "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has collected large numbers of files from compromised network systems for later extraction.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--343e78cb-dbe9-4421-aca3-a8a973553c7a",
+        "relationship_modified": "2026-07-31T18:47:50.716Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "FSI. (2017, July 27). Campaign Rifle - Andariel, the Maiden of Anguish. Retrieved September 12, 2024.",
+          "source_name": "FSI Andariel Campaign Rifle July 2017",
+          "url": "https://fsiceat.tistory.com/2"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1005"
+      }
+    },
+    {
+      "attack_ref": "G0138",
+      "confidence": "high",
+      "description": "Andariel has downloaded additional tools and malware onto compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ef8385b2-e62c-4854-9a0b-f23d6de334cd",
+        "relationship_modified": "2026-09-03T19:47:05.874Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "AhnLab. (2018, June 23). Targeted attacks by Andariel Threat Group,  a subgroup of the Lazarus. Retrieved September 29, 2021.",
+          "source_name": "AhnLab Andariel Subgroup of Lazarus June 2018",
+          "url": "https://web.archive.org/web/20230213154832/http://download.ahnlab.com/global/brochure/%5BAnalysis%5DAndariel_Group.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "andariel",
+  "software": [
+    {
+      "id": "S0032",
+      "name": "gh0st RAT",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0032"
+    },
+    {
+      "id": "S0433",
+      "name": "Rifdoor",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0433"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:50.220Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    }
+  ]
+}

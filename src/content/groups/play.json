@@ -1,0 +1,4750 @@
+{
+  "aliases": [
+    "Play ransomware",
+    "Playcrypt",
+    "Play ransomware group"
+  ],
+  "attack_id": "G1040",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1040",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1040",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1040"
+    },
+    {
+      "first_seen": "2025-09-08",
+      "id": "INC-0323",
+      "kind": "reported_activity",
+      "last_seen": "2025-09-08",
+      "name": "Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-04-20",
+      "id": "INC-0099",
+      "kind": "reported_activity",
+      "last_seen": "2026-04-20",
+      "name": "What the ransom note won’t say",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0251",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2022, deploying Playcrypt with double extortion against business, government and critical-infrastructure targets. Included on analyst request; no BFSI-specific incident in local reporting yet, so the page currently shows ATT&CK data only.",
+    "tier": 2
+  },
+  "country": "eCrime (closed group)",
+  "counts": {
+    "attack_rows": 26,
+    "reviewed_rows": 85,
+    "rows": 111,
+    "techniques": 78
+  },
+  "description": "Play is a ransomware group that has been active since at least 2022 deploying Playcrypt ransomware against the business, government, critical infrastructure, healthcare, and media sectors in North America, South America, and Europe. Play actors employ a double-extortion model, encrypting systems after exfiltrating data, and are presumed by security researchers to operate as a closed group.",
+  "description_references": [
+    {
+      "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+      "source_name": "CISA Play Ransomware Advisory December 2023",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+    },
+    {
+      "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+      "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+      "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/play.csv",
+    "navigator_layer": "layers/play.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fplay.json"
+  },
+  "id": "G1040",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain (double extortion)",
+  "name": "Play",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play developed and employ Playcrypt ransomware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--52e9a2ec-3999-4ec5-bdda-227fc2a79173",
+        "relationship_modified": "2026-07-31T18:48:25.708Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        },
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used multiple tools for discovery and defense evasion purposes on compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--de2ef201-d74b-4963-877b-93d669ea7f3b",
+        "relationship_modified": "2026-07-31T18:48:26.040Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used valid VPN accounts to achieve initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--857b5251-78d1-4f73-ac6a-e3f231718630",
+        "relationship_modified": "2026-07-31T18:48:25.794Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used valid domain accounts for access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ad8a8754-3852-440f-926e-22ec8dcf419a",
+        "relationship_modified": "2026-07-31T18:48:25.903Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used valid local accounts to gain initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5e856280-00bc-4b8c-aec4-8ca3fd29ef62",
+        "relationship_modified": "2026-07-31T18:48:25.735Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.003",
+        "name": "Valid Accounts: Local Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/003"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Remote Desktop Protocol (RDP) and Virtual Private Networks (VPN) for initial access.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d92510c1-43d7-4b4c-b3a1-cf7ae0387737",
+        "relationship_modified": "2026-07-31T18:48:26.016Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has exploited known vulnerabilities for initial access including CVE-2018-13379 and CVE-2020-12812 in FortiOS and CVE-2022-41082 and CVE-2022-41040 (\"ProxyNotShell\") in Microsoft Exchange.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e8148225-e246-45c4-b203-2958d0bb07da",
+        "relationship_modified": "2026-07-31T18:48:26.060Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Base64-encoded PowerShell scripts to disable Microsoft Defender.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3fabf752-3732-4958-9b2c-e9a2e1ebbd0f",
+        "relationship_modified": "2026-07-31T18:48:25.625Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used a batch script to remove indicators of its presence on compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--31c3aadb-7979-4ea7-9488-f08b5524bada",
+        "relationship_modified": "2026-07-31T18:48:25.610Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Base64-encoded PowerShell scripts for post exploit activities on compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5112b872-0d2e-48a7-ac5c-512a3720d46d",
+        "relationship_modified": "2026-07-31T18:48:25.697Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used tools including Wevtutil to remove malicious files from compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3194bdc2-a0d3-412a-a14a-bc0c4f30bc9c",
+        "relationship_modified": "2026-07-31T18:48:25.593Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used tools including GMER, IOBit, and PowerTool to disable antivirus software.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fb4e6ac6-49db-43ae-a595-5e1c1c3ad6ec",
+        "relationship_modified": "2026-07-31T18:48:26.142Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used tools to remove log files on targeted systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--759f675c-2172-4dcd-b781-571e9577a921",
+        "relationship_modified": "2026-07-31T18:48:25.785Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Mimikatz and the Windows Task Manager to dump LSASS process memory.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f061c68a-7a2f-4cad-af24-9dc55415f956",
+        "relationship_modified": "2026-07-31T18:48:26.112Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used the information-stealing tool Grixba to enumerate network information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0bea4f92-da4b-483c-81ba-c39b0c58368b",
+        "relationship_modified": "2026-07-31T18:48:25.569Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used tools such as AdFind, Nltest, and BloodHound to enumerate shares and hostnames on compromised networks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4a50bbbf-990f-4556-86e2-2990bccc90e9",
+        "relationship_modified": "2026-07-31T18:48:25.666Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used the information stealer Grixba to check for a list of security processes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4b7e9da5-e087-4a1d-8df0-82910bd3b1c3",
+        "relationship_modified": "2026-07-31T18:48:25.684Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has leveraged tools to enumerate system information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b8ecd33a-190f-4f7d-945d-c258512d76d4",
+        "relationship_modified": "2026-07-31T18:48:25.919Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used the Grixba information stealer to list security files and processes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c33b2278-04ef-4506-8406-37700b797af6",
+        "relationship_modified": "2026-07-31T18:48:25.936Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used the information-stealing tool Grixba to scan for anti-virus software.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ca2d1f51-cbd8-403b-a957-b142ba7895bf",
+        "relationship_modified": "2026-07-31T18:48:25.986Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery",
+        "parent_id": "T1518",
+        "url": "https://attack.mitre.org/techniques/T1518/001"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Cobalt Strike to move laterally via SMB.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6d9f27eb-cc6b-4871-b42a-37640f45f8fa",
+        "relationship_modified": "2026-07-31T18:48:25.752Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.002",
+        "name": "Remote Services: SMB/Windows Admin Shares",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/002"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used WinRAR to compress files prior to exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--48ff3270-ada9-4f02-b4f4-bfd6a3a3865f",
+        "relationship_modified": "2026-07-31T18:48:25.646Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used Cobalt Strike to download files to compromised machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--913ea392-e874-463c-bfbf-a84668cfc5b6",
+        "relationship_modified": "2026-09-03T19:47:03.389Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has split victims' files into chunks for exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--017d597b-2268-4760-baf0-0cee23906965",
+        "relationship_modified": "2026-09-02T18:23:57.002Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1030",
+        "name": "Data Transfer Size Limits",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1030"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play has used WinSCP to exfiltrate data to actor-controlled accounts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--231ed92a-eb30-453c-b808-495807e54857",
+        "relationship_modified": "2026-09-03T19:46:53.130Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        },
+        {
+          "citation": "Trend Micro Research. (2023, July 21). Ransomware Spotlight: Play. Retrieved September 24, 2024.",
+          "source_name": "Trend Micro Ransomware Spotlight Play July 2023",
+          "url": "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048",
+        "name": "Exfiltration Over Alternative Protocol",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1048"
+      }
+    },
+    {
+      "attack_ref": "G1040",
+      "confidence": "high",
+      "description": "Play demands ransom payments from victims to unencrypt filesystems and to not publish sensitive data exfiltrated from victim networks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f0cd78a8-82ce-47e8-9ecc-beaaf34248c2",
+        "relationship_modified": "2026-07-31T18:48:26.128Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "CISA. (2023, December 18). #StopRansomware: Play Ransomware AA23-352A. Retrieved September 24, 2024.",
+          "source_name": "CISA Play Ransomware Advisory December 2023",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“The threat actor executed the command with the “-subnets” parameter to query the CN=Subnets,CN=Sites,CN=Configuration partition, where Active Directory stores subnet-to-site mappings and network topology information.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.004",
+        "name": "Gather Victim Network Information: Network Topology",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“Another network scanning tool used was the SoftPerfect tool netscan.exe, which was executed on the domain controller from the path C:\\Users\\Public\\Music\\123\\123\\netscan.exe and scanned ports 135 (RPC), 445 (SMB) and 3389 (RDP) across 46 IP addresses.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“Based on OSINT data, this organization has been compromised by DragonForce, as evidenced by their company profile being posted on DragonForce’s data leak site (DLS).” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“F:\\Shares\\REDACTED\\REDACTED The threat actor also deployed a tool named FS64.exe, a custom tool designed for automating file collection.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“- The threat actor deployed multiple malware families, including SystemBC for proxy tunneling, and later Betruger backdoor for additional capabilities.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“Soon after establishing the initial access, the malware deployed SystemBC.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“The backdoor accessed the LSASS process memory to harvest credentials, which was observed through a Sysmon process access event showing a GrantedAccess value of 0x1410.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“During the intrusion, the threat actor created a local account named “Admon” with the password “Qwerty12345!” using the legitimate binary net.exe on the beachhead host.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.003",
+        "name": "Valid Accounts: Local Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“This traffic triggered the following Suricata rules: This SectopRAT IP address was also mentioned by Fox_threatintel on X/Twitter last year (2024) while also mentioning port 9000 The same IP address was listed in the IOC section of RussianPanda’s blog detailing The abuse of…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“Based on OSINT, the 504ec1c95.host.njalla[.]net has been classified as a phishing domain.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1127.001",
+        "name": "Trusted Developer Utilities Proxy Execution: MSBuild",
+        "parent_id": "T1127",
+        "url": "https://attack.mitre.org/techniques/T1127/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1098.007",
+        "name": "Account Manipulation: Additional Local or Domain Groups",
+        "parent_id": "T1098",
+        "url": "https://attack.mitre.org/techniques/T1098/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136",
+        "name": "Create Account",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1136"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1136.001",
+        "name": "Create Account: Local Account",
+        "parent_id": "T1136",
+        "url": "https://attack.mitre.org/techniques/T1136/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“Throughout the intrusion, the threat actor used multiple defense evasion techniques, including process injection, timestomping, disabling Microsoft Defender’s protections, and deploying binaries with spoofed metadata to disguise themselves as legitimate cybersecurity tools such…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“The threat actors leveraged Microsoft Sysinternals’ PsExec utility for local privilege escalation on the compromised host.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1068"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“Privilege Escalation The threat actor created a new local user account called “Admon” with the password “Qwerty12345!” on the compromised system.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1548.002",
+        "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+        "parent_id": "T1548",
+        "url": "https://attack.mitre.org/techniques/T1548/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“We also discovered a WinSCP.ini configuration file used by the WinSCP application.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“The new payload executed was Betruger, a multi-function backdoor.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.006",
+        "name": "Indicator Removal: Timestomp",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“Across all infected systems, the malware was consistently staged in the C:\\Users\\Public\\Music\\ directory and executed via rundll32.exe, calling the exported function ‘Reset’.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“A file named “EarthTime.exe” is far less suspicious than something with a random or obviously malicious name, making this a classic example of social engineering through software masquerading.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“- The intrusion began when a user downloaded and executed a malicious file impersonating DeskSoft’s EarthTime application but instead dropped SectopRAT malware.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“Due to the threat actor’s use of the unencrypted FTP protocol rather than SFTP for data exfiltration, packet capture analysis from the file server revealed compromising evidence of the threat actor’s activities in clear text, including their credentials.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“According to research conducted by the Symantec team, this backdoor is multifunctional and includes modules designed for credential dumping.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003",
+        "name": "OS Credential Dumping",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1003"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.006",
+        "name": "OS Credential Dumping: DCSync",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“Betruger’s comprehensive feature set includes screenshotting, keylogging, file exfiltration, network reconnaissance, privilege escalation, and credential harvesting.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555",
+        "name": "Credentials from Password Stores",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1555"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "low",
+      "description": "“The first section queries the Windows Registry for SQL Server instances and targets a hardcoded database named “VeeamBackup”.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1012",
+        "name": "Query Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1012"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“Once executed, ccs.exe then injected itself into the memory of 172 distinct running processes.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.001",
+        "name": "Permission Groups Discovery: Local Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.002",
+        "name": "Permission Groups Discovery: Domain Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.001",
+        "name": "Account Discovery: Local Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.002",
+        "name": "Account Discovery: Domain Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1135",
+        "name": "Network Share Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1135"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1482",
+        "name": "Domain Trust Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1482"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1615",
+        "name": "Group Policy Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1615"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“During the netscan execution on the domain controller, we observed the creation of a file called delete.me on the C$ share of the beachhead workstation, logged by Event ID 5145.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.002",
+        "name": "Remote Services: SMB/Windows Admin Shares",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1570"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1119",
+        "name": "Automated Collection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1119"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility",
+        "parent_id": "T1560",
+        "url": "https://attack.mitre.org/techniques/T1560/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090",
+        "name": "Proxy",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1090"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“T1615 Lateral Tool Transfer - T1570 Local Account - T1087.001 Local Account - T1136.001 Local Groups - T1069.001 LSASS Memory - T1003.001 Malicious File - T1204.002 Masquerading - T1036 MSBuild - T1127.001 Network Service Discovery - T1046 Network Share Discovery - T1135…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "high",
+      "description": "“File Potential Suspicious Extension 6d44fb93-e7d2-475c-9d3d-54c9c1e33427 : BITS Transfer Job With Uncommon Or Suspicious Remote TLD 02773bed-83bf-469f-b7ff-e676e7d78bab : BloodHound Collection Files f376c8a7-a2d0-4ddc-aa0c-16c17236d962 : HackTool – Bloodhound/Sharphound…” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048",
+        "name": "Exfiltration Over Alternative Protocol",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1048"
+      }
+    },
+    {
+      "attack_ref": "INC-0323",
+      "confidence": "medium",
+      "description": "“The threat actor utilized WinSCP to perform data exfiltration, as detailed in the Exfiltration section of this report.” — The DFIR Report",
+      "provenance": {
+        "article_source": "The DFIR Report",
+        "article_url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "The DFIR Report: Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+          "url": "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "low",
+      "description": "“The initial access broker who sells a foothold into a corporate network doesn’t (even need to) know what the buyer plans to do with the logins.” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "low",
+      "description": "“What happens to our environment if an MSP in our supply chain is compromised?” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195",
+        "name": "Supply Chain Compromise",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1195"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "medium",
+      "description": "“Barely two years ago, ClickFix – a social engineering technique where a fake error message tricks users into copy-pasting and executing malicious commands – was on almost nobody’s radar.” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "low",
+      "description": "“These anti-tools come packaged with subscription-based obfuscation services that update regularly to stay ahead of detection.” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "medium",
+      "description": "“Barely two years ago, ClickFix – a social engineering technique where a fake error message tricks users into copy-pasting and executing malicious commands – was on almost nobody’s radar.” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "high",
+      "description": "“Can our security stack ward off a BYOVD attack that uses the drivers now in circulation?” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "INC-0099",
+      "confidence": "low",
+      "description": "“The Red Queen’s race Over the years, the ransomware playbook of yore – lock the files and demand a ransom – has given way to double extortion, where attackers steal corporate data before encrypting it and publish at least samples from the haul on dedicated leak sites.” — ESET WeLiveSecurity",
+      "provenance": {
+        "article_source": "ESET WeLiveSecurity",
+        "article_url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ESET WeLiveSecurity: What the ransom note won’t say",
+          "url": "https://www.welivesecurity.com/en/ransomware/what-ransom-note-doesnt-say/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "high",
+      "description": "“The full list of IP addresses used by the threat actor is as follows: Table 1.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“All contributions will be given appropriate credit along with the full backing of our social media team on Group-IB’s Threat Intelligence Twitter page, where we regularly share our latest findings into threat actors’ TTPs and infrastructure, along with our other social media…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“Research We conducted our research using Group-IB tools and data, reports by other vendors, the search engines Shodan and Censys, and OSINT.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.002",
+        "name": "Search Open Websites/Domains: Search Engines",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "high",
+      "description": "“- In its attacks, ShadowSyndicate used an “off-the-shelf” toolkit, including Cobalt Strike, IcedID, and Sliver malware.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "low",
+      "description": "“- ShadowSyndicate is an initial access broker that obtains initial access to victims themselves and then sells that access to other cybercrime groups.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "low",
+      "description": "“We have dubbed the threat actor that uses the SSH fingerprint 1ca4cbac895fc3bd12417b77fc6ed31d ShadowSyndicate (previous name Infra Storm).” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“It has been detected in phishing campaigns and it ultimately drops the Cobalt Strike post-exploitation framework on compromised machines.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "high",
+      "description": "“In this case, the initial vector of attack was MalSpam, which delivered a malicious ISO file.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“It led to Quantum ransomware being deployed in September 2022.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“- ShadowSyndicate is a RaaS affiliate that uses various types of ransomware.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1059"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "high",
+      "description": "“In this case, the initial vector of attack was an Excel maldoc containing VBA macros which downloaded the IcedID payload.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“It is used to execute .exe payloads and for loading and executing shellcodes and malicious DLL files.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“In recent years it has mostly been used in attack chains to deliver another payload, for example ransomware.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“- The threat actor dubbed ShadowSyndicate uses the same Secure Shell (SSH) fingerprint on many servers (85 at the time of writing).” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“On most List A servers, OpenSSH 8.2p1 was used.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "INC-0251",
+      "confidence": "medium",
+      "description": "“00000000000000000000000000000000000000000000000000000000000000 References: IcedID IcedID is a malware developed in 2017 as a banking Trojan with web injects.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/shadowsyndicate-raas/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Dusting for fingerprints: ShadowSyndicate, a new RaaS player?",
+          "url": "https://www.group-ib.com/blog/shadowsyndicate-raas/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "play",
+  "software": [
+    {
+      "id": "S0552",
+      "name": "AdFind",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0552"
+    },
+    {
+      "id": "S0521",
+      "name": "BloodHound",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0521"
+    },
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0363",
+      "name": "Empire",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0363"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0359",
+      "name": "Nltest",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0359"
+    },
+    {
+      "id": "S1162",
+      "name": "Playcrypt",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1162"
+    },
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S0645",
+      "name": "Wevtutil",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0645"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:24.924Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

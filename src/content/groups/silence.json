@@ -1,0 +1,2247 @@
+{
+  "aliases": [
+    "Whisper Spider"
+  ],
+  "attack_id": "G0091",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0091",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0091",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0091"
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0275",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Cleaning the atmosphere",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0299",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "Silence: Moving into the Darkside",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: compromised the Russian Central Bank's Automated Workstation Client, ATMs and card processing in RU, UA, BY, AZ, PL and KZ.",
+    "tier": 1
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 28,
+    "reviewed_rows": 21,
+    "rows": 49,
+    "techniques": 40
+  },
+  "description": "Silence is a financially motivated threat actor targeting financial institutions in different countries. The group was first seen in June 2016. Their main targets reside in Russia, Ukraine, Belarus, Azerbaijan, Poland and Kazakhstan. They compromised various banking systems, including the Russian Central Bank's Automated Workstation Client, ATMs, and card processing.",
+  "description_references": [
+    {
+      "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+      "source_name": "Cyber Forensicator Silence Jan 2019",
+      "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+    },
+    {
+      "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+      "source_name": "SecureList Silence Nov 2017",
+      "url": "https://securelist.com/the-silence/83009/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/silence.csv",
+    "navigator_layer": "layers/silence.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fsilence.json"
+  },
+  "id": "G0091",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "Silence",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has obtained and modified versions of publicly-available tools like Empire and PsExec.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c3a35bf1-acfc-4e70-8be8-db843110a142",
+        "relationship_modified": "2026-07-31T18:48:21.439Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2019, August). Silence 2.0: Going Global. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Aug 2019",
+          "url": "https://www.group-ib.com/resources/threat-research/silence_2.0.going_global.pdf"
+        },
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used compromised credentials to log on to other systems and escalate privileges.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9569bfcd-38f8-4cb7-8470-a473ea9e4328",
+        "relationship_modified": "2026-07-31T18:48:21.342Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has sent emails with malicious DOCX, CHM, LNK and ZIP attachments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--da6a811d-2a77-4f6f-a19e-2aff8662f12f",
+        "relationship_modified": "2026-07-31T18:48:21.493Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used scheduled tasks to stage its operation.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1d7e1954-b020-4578-9a57-b1596a7a25ff",
+        "relationship_modified": "2026-07-31T18:48:21.015Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used PowerShell to download and execute payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--afafd676-1b44-44ae-ad9a-930c0df348bc",
+        "relationship_modified": "2026-07-31T18:48:21.406Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used Windows command-line to run commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f1eda5c7-6843-406d-89b8-c61759c02450",
+        "relationship_modified": "2026-07-31T18:48:21.533Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used VBS scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--378914cd-36cf-409f-8c99-25e144218546",
+        "relationship_modified": "2026-07-31T18:48:21.068Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used JS scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--60989b47-4725-4077-8aed-fb5f990fda22",
+        "relationship_modified": "2026-07-31T18:48:21.155Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used RAdmin, a remote software tool used to remotely control workstations and ATMs.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6fc128ed-90f3-4933-8ad7-4fd4a04cb39f",
+        "relationship_modified": "2026-07-31T18:48:21.179Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1072",
+        "name": "Software Deployment Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1072"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has leveraged the Windows API, including using CreateProcess() or ShellExecute(), to perform a variety of tasks.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fdedfad5-5cb7-436a-8522-6df3f6de42b1",
+        "relationship_modified": "2026-07-31T18:48:21.553Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1106",
+        "name": "Native API",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1106"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence attempts to get users to launch malicious attachments delivered via spearphishing emails.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--efe23026-7cba-46df-873b-1c8244a92d36",
+        "relationship_modified": "2026-07-31T18:48:21.519Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used Winexe to install a service on the remote system.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--85be49ac-785e-48af-8d0e-4b74818428fc",
+        "relationship_modified": "2026-07-31T18:48:21.248Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence can create, delete, or modify a specified Registry key or value.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--396a5415-67aa-4ec6-ae27-6be641d69e15",
+        "relationship_modified": "2026-07-31T18:48:21.086Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used <code>HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>, <code>HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</code>, and the Startup folder to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2d49852d-083e-4379-90e3-dcb0748be624",
+        "relationship_modified": "2026-07-31T18:48:21.054Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has injected a DLL library containing a Trojan into the fwmain32.exe process.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--28a76700-4834-4a1b-bb56-2005bc044e29",
+        "relationship_modified": "2026-07-31T18:48:21.042Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used environment variable string substitution for obfuscation.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7b2113c8-9b48-4f93-9090-3946a980c183",
+        "relationship_modified": "2026-07-31T18:48:21.224Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has named its backdoor \"WINWORD.exe\".",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e3038b75-63f6-44c2-9645-673bbf0ffa3b",
+        "relationship_modified": "2026-07-31T18:48:21.505Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has deleted artifacts, including scheduled tasks, communicates files from the C2 and other logs.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ccd99593-7ff0-4706-aa94-73cc8d237fe8",
+        "relationship_modified": "2026-07-31T18:48:21.457Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has weaponized CHM files in their phishing campaigns.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--68602080-9968-4a36-9a5e-130343e61566",
+        "relationship_modified": "2026-07-31T18:48:21.167Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Skulkin, O.. (2019, January 20). Silence: Dissecting Malicious CHM Files and Performing Forensic Analysis. Retrieved November 17, 2024.",
+          "source_name": "Cyber Forensicator Silence Jan 2019",
+          "url": "https://web.archive.org/web/20220119133748/https://cyberforensicator.com/2019/01/20/silence-dissecting-malicious-chm-files-and-performing-forensic-analysis/"
+        },
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2019, August). Silence 2.0: Going Global. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Aug 2019",
+          "url": "https://www.group-ib.com/resources/threat-research/silence_2.0.going_global.pdf"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.001",
+        "name": "System Binary Proxy Execution: Compiled HTML File",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used a valid certificate to sign their primary loader Silence.Downloader (aka TrueBot).",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--908f1fa6-c797-47c3-bcb1-3438a9105095",
+        "relationship_modified": "2026-07-31T18:48:21.301Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2019, August). Silence 2.0: Going Global. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Aug 2019",
+          "url": "https://www.group-ib.com/resources/threat-research/silence_2.0.going_global.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used the Farse6.1 utility (based on Mimikatz) to extract credentials from lsass.exe.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a9c366b6-270d-4884-86dd-7c048460741b",
+        "relationship_modified": "2026-07-31T18:48:21.384Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory",
+        "parent_id": "T1003",
+        "url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used Nmap to scan the corporate network, build a network topology, and identify vulnerable hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a6dc02a8-2ce3-45db-a7e5-e475d6acec3c",
+        "relationship_modified": "2026-07-31T18:48:21.366Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used RDP for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5cc793b0-cc45-439e-a994-c8884ca55fe7",
+        "relationship_modified": "2026-07-31T18:48:21.124Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence can capture victim screen activity.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--778765e1-7eb6-46b1-a370-6dfe09081ee3",
+        "relationship_modified": "2026-07-31T18:48:21.197Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has been observed making videos of victims to observe bank employees day to day activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5e60c70a-7b2f-45b8-b7d4-80e214acfb2d",
+        "relationship_modified": "2026-07-31T18:48:21.137Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "GReAT. (2017, November 1). Silence – a new Trojan attacking financial organizations. Retrieved May 24, 2019.",
+          "source_name": "SecureList Silence Nov 2017",
+          "url": "https://securelist.com/the-silence/83009/"
+        },
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1125",
+        "name": "Video Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1125"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used ProxyBot, which allows the attacker to redirect traffic from the current node to the backconnect server via Sock4\\Socks5.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--89077d0b-aaa2-48b9-90d7-e253a550bfad",
+        "relationship_modified": "2026-09-08T20:29:10.511Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090.002",
+        "name": "Proxy: External Proxy",
+        "parent_id": "T1090",
+        "url": "https://attack.mitre.org/techniques/T1090/002"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has downloaded additional modules and malware to victim’s machines.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--948146db-f966-4e0c-bbb2-289e2eae6718",
+        "relationship_modified": "2026-09-03T19:47:03.495Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0091",
+      "confidence": "high",
+      "description": "Silence has used port 444 when sending data about the system from the client to the server.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--01c982c2-f610-443f-ae60-1b4a1f508f81",
+        "relationship_modified": "2026-09-03T19:46:52.904Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Group-IB. (2018, September). Silence: Moving Into the Darkside. Retrieved May 5, 2020.",
+          "source_name": "Group IB Silence Sept 2018",
+          "url": "https://go.group-ib.com/report-silence-en?_gl=1*d1bh3a*_ga*MTIwMzM5Mzc5MS4xNjk4OTI5NzY4*_ga_QMES53K3Y2*MTcwNDcyMjU2OS40LjEuMTcwNDcyMzU1Mi41My4wLjA."
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "medium",
+      "description": "“For example, the group Wizzard Spider used Trickbot as a substitute for Cobalt Strike in early attack stages.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "medium",
+      "description": "“If an email contains a password-protected archive, for example, it does not matter how cleverly the key is specified — the email will not be delivered.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "low",
+      "description": "“With this in mind, we created a free automated email security testing system called Group-IB Trebuchet.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1106",
+        "name": "Native API",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1106"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "medium",
+      "description": "“All attachments are delivered in a modified form; for instance, the malware does not communicate with command-and-control servers.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "medium",
+      "description": "“Emails in such attacks are often disguised as commercial proposals, requests for money transfers, or messages from an HR department.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "low",
+      "description": "“If the solution that your organization uses includes an anti-spam system, we strongly recommend testing it against the infection vector described above.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "low",
+      "description": "“Sandbox evasion techniques can be divided into three major categories:” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "high",
+      "description": "“The initial file was designed to use multiple stagers to deliver the TrueBot Trojan (also known as Silence.Downloader) to the target endpoint.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0275",
+      "confidence": "high",
+      "description": "“The attack was conducted by a Nigerian group called TMT (also known as SilverTerrier), which focused on business email compromise (BEC).” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/atmosphere/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Cleaning the atmosphere",
+          "url": "https://www.group-ib.com/blog/atmosphere/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“- To rent servers, Silence uses Russian-speaking hosting providers.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.003",
+        "name": "Acquire Infrastructure: Virtual Private Server",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“The group has access to non-public malware samples, patched Trojans available only to security experts and also TTP changes suggest that they modify their activity to mimic new attacks and red teaming activity.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“The bank’s employees suspended the transaction and conducted Incident Response and remediation using their own resources.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“After the failed attempt with the interbank transactions system in 2016, the criminals did not try to withdraw money using the system, even after gaining access to the servers of AWS CBR.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        }
+      ],
+      "technique": {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1133"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“In a short period of time they studied not only direct types of hacking, but also supply-chain attacks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“It also appeared that the authors of the phishing emails had in-depth knowledge of reverse engineering.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566",
+        "name": "Phishing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1566"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“While the gang had previously targeted Russian banks, Group-IB experts also have discovered evidence of the group’s activity in more than 25 countries worldwide.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“However, the tool, as Group-IB discovered, was modified to target banks.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1016",
+        "name": "System Network Configuration Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1016"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“In addition, the Developer has sufficient knowledge of ATM processes, systems and has access to non-public malware samples, which are usually only available to security companies.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "low",
+      "description": "“Their main targets are located in Russia, Ukraine, Belarus, Azerbaijan, Poland, and Kazakhstan.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1614",
+        "name": "System Location Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1614"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "high",
+      "description": "“To do this, they downloaded software to secretly take screenshots and proceeded to investigate the operator’s work via video stream.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0299",
+      "confidence": "medium",
+      "description": "“In the same year, they conducted DDoS attacks using the Perl IRC bot and public IRC chats to control Trojans.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/silence/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: Silence: Moving into the Darkside",
+          "url": "https://www.group-ib.com/blog/silence/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1498",
+        "name": "Network Denial of Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1498"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "silence",
+  "software": [
+    {
+      "id": "S0363",
+      "name": "Empire",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0363"
+    },
+    {
+      "id": "S0195",
+      "name": "SDelete",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0195"
+    },
+    {
+      "id": "S0191",
+      "name": "Winexe",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0191"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:20.506Z",
+  "tactics_present": [
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

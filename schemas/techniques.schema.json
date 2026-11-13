@@ -1,0 +1,106 @@
+{
+  "$defs": {
+    "TacticOut": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^TA\\d{4}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "title": "Order",
+          "type": "integer"
+        },
+        "shortname": {
+          "title": "Shortname",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "shortname",
+        "order",
+        "url"
+      ],
+      "title": "TacticOut",
+      "type": "object"
+    },
+    "TechniqueDoc": {
+      "additionalProperties": false,
+      "description": "One entry of ``site/src/data/techniques.json`` (one technique page each).",
+      "properties": {
+        "attack_version": {
+          "title": "Attack Version",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^T\\d{4}(\\.\\d{3})?$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "short_name": {
+          "title": "Short Name",
+          "type": "string"
+        },
+        "tactics": {
+          "items": {
+            "$ref": "#/$defs/TacticOut"
+          },
+          "title": "Tactics",
+          "type": "array"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "short_name",
+        "tactics",
+        "url",
+        "description",
+        "attack_version"
+      ],
+      "title": "TechniqueDoc",
+      "type": "object"
+    }
+  },
+  "$id": "https://bfsi-apt-intel.local/schemas/techniques.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "$ref": "#/$defs/TechniqueDoc"
+  },
+  "type": "array"
+}

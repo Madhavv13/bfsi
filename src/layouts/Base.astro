@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import { withBase } from '../lib/paths';
+
+interface Props {
+  title: string;
+  description?: string;
+  attackVersion?: string;
+  noticeYear?: number;
+  /** Index this page's <main> in Pagefind search (group and technique pages only). */
+  searchable?: 'Group' | 'Technique';
+}
+const {
+  title,
+  description = 'MITRE ATT&CK techniques of APT and financially motivated groups targeting banks, payments, crypto exchanges and insurers.',
+  attackVersion,
+  noticeYear = 2026,
+  searchable,
+} = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const nav = [
+  ['/', 'Groups'],
+  ['/techniques/', 'Techniques'],
+  ['/search/', 'Search'],
+  ['/licenses/', 'Licenses'],
+] as const;
+const here = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | BFSI APT Intel</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={withBase('/')}>BFSI APT Intel</a>
+      <span class="tagline">Threat groups targeting banking, financial services &amp; insurance</span>
+      <nav class="site-nav" aria-label="Site">
+        {nav.map(([path, label]) => {
+          const href = withBase(path);
+          return <a href={href} aria-current={here === href ? 'page' : undefined}>{label}</a>;
+        })}
+      </nav>
+    </header>
+    {searchable ? (
+      <main id="main" data-pagefind-body data-pagefind-filter={`type:${searchable}`}>
+        <slot />
+      </main>
+    ) : (
+      <main id="main">
+        <slot />
+      </main>
+    )}
+    <footer class="site-footer">
+      <p>
+        © {noticeYear} The MITRE Corporation. This work is reproduced and distributed with the permission of
+        The MITRE Corporation. MITRE ATT&amp;CK® and ATT&amp;CK® are registered trademarks of The MITRE
+        Corporation. This site is not affiliated with or endorsed by MITRE.
+        {attackVersion && <span> Data: MITRE ATT&amp;CK Enterprise v{attackVersion}.</span>}
+        <a href="https://attack.mitre.org/resources/legal-and-branding/terms-of-use/" rel="noopener">ATT&amp;CK terms of use</a>.
+      </p>
+      <p>
+        <strong>Attribution disclaimer:</strong> group attributions and aliases reflect public reporting by the
+        cited vendors and agencies. Attribution is probabilistic and naming overlaps (e.g. Lazarus sub-clusters)
+        are imperfect; inclusion does not imply a definitive link to any nation-state. Rows marked
+        “Reviewed auto-map” are analyst-approved proposals from a local mapping engine, each linked to its source.
+        No indicators of compromise are published. For defensive research only.
+      </p>
+    </footer>
+  </body>
+</html>

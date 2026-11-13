@@ -1,0 +1,4385 @@
+{
+  "aliases": [
+    "GOLD NIAGARA",
+    "ITG14",
+    "Carbon Spider",
+    "ELBRUS",
+    "Sangria Tempest"
+  ],
+  "attack_id": "G0046",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0046",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0046",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0046"
+    },
+    {
+      "first_seen": "2026-03-02",
+      "id": "INC-0123",
+      "kind": "reported_activity",
+      "last_seen": "2026-03-02",
+      "name": "Fake Tech Support Delivers Havoc Command & Control",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2013 against sectors including financial services; shifted to big-game ransomware from 2020.",
+    "tier": 1
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 67,
+    "reviewed_rows": 30,
+    "rows": 97,
+    "techniques": 78
+  },
+  "description": "FIN7 is a financially-motivated threat group that has been active since 2013. FIN7 has targeted the retail, restaurant, hospitality, software, consulting, financial services, medical equipment, cloud services, media, food and beverage, transportation, pharmaceutical, and utilities industries in the United States. A portion of FIN7 was operated out of a front company called Combi Security and often used point-of-sale malware for targeting efforts. Since 2020, FIN7 shifted operations to big game hunting (BGH), including use of REvil ransomware and their own Ransomware-as-a-Service (RaaS), Darkside. FIN7 may be linked to the Carbanak Group, but multiple threat groups have been observed using Carbanak, leading these groups to be tracked separately.",
+  "description_references": [
+    {
+      "citation": "Miller, S., et al. (2017, March 7). FIN7 Spear Phishing Campaign Targets Personnel Involved in SEC Filings. Retrieved March 8, 2017.",
+      "source_name": "FireEye FIN7 March 2017",
+      "url": "https://web.archive.org/web/20180808125108/https:/www.fireeye.com/blog/threat-research/2017/03/fin7_spear_phishing.html"
+    },
+    {
+      "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+      "source_name": "FireEye FIN7 April 2017",
+      "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+    },
+    {
+      "citation": "Bennett, J., Vengerik, B. (2017, June 12). Behind the CARBANAK Backdoor. Retrieved June 11, 2018.",
+      "source_name": "FireEye CARBANAK June 2017",
+      "url": "https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html"
+    },
+    {
+      "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+      "source_name": "FireEye FIN7 Aug 2018",
+      "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+    },
+    {
+      "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+      "source_name": "CrowdStrike Carbon Spider August 2021",
+      "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+    },
+    {
+      "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+      "source_name": "Mandiant FIN7 Apr 2022",
+      "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+    },
+    {
+      "citation": "BI.ZONE Cyber Threats Research Team. (2021, May 13). From pentest to APT attack: cybercriminal group FIN7 disguises its malware as an ethical hacker’s toolkit. Retrieved February 2, 2022.",
+      "source_name": "BiZone Lizar May 2021",
+      "url": "https://bi-zone.medium.com/from-pentest-to-apt-attack-cybercriminal-group-fin7-disguises-its-malware-as-an-ethical-hackers-c23c9a75e319"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/fin7.csv",
+    "navigator_layer": "layers/fin7.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Ffin7.json"
+  },
+  "id": "G0046",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "FIN7",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has compiled a list of victims by filtering companies by revenue using Zoominfo, which is a service that provides business information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--600d5767-1a78-4853-a152-a376b6a59239",
+        "relationship_modified": "2026-07-31T20:48:31.937Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "BI.ZONE Cyber Threats Research Team. (2021, May 13). From pentest to APT attack: cybercriminal group FIN7 disguises its malware as an ethical hacker’s toolkit. Retrieved February 2, 2022.",
+          "source_name": "BiZone Lizar May 2021",
+          "url": "https://bi-zone.medium.com/from-pentest-to-apt-attack-cybercriminal-group-fin7-disguises-its-malware-as-an-ethical-hackers-c23c9a75e319"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1591",
+        "name": "Gather Victim Org Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1591"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has identified IT staff and employees who had higher levels of administrative rights.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b304d2dd-a04a-4457-bc60-fadb58401e62",
+        "relationship_modified": "2026-07-31T20:48:32.140Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1591.004",
+        "name": "Gather Victim Org Information: Identify Roles",
+        "parent_id": "T1591",
+        "url": "https://attack.mitre.org/techniques/T1591/004"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has registered look-alike domains for use in phishing campaigns. Additionally, FIN7 has registered a malicious domain as `advanced-ip-sccanner[.]com` that redirected to an adversary-controlled Dropbox which contained the malicious executable.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ba18e103-7479-4041-be39-4a78e0961d92",
+        "relationship_modified": "2026-07-31T20:48:32.163Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire. (2021, July 21). Notorious Cybercrime Gang, FIN7, Lands Malware in Law Firm Using Fake Legal Complaint Against Jack Daniels’ Owner, Brown-Forman Inc.. Retrieved September 20, 2021.",
+          "source_name": "eSentire FIN7 July 2021",
+          "url": "https://www.esentire.com/security-advisories/notorious-cybercrime-gang-fin7-lands-malware-in-law-firm-using-fake-legal-complaint-against-jack-daniels-owner-brown-forman-inc"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has set up Amazon S3 buckets to host trojanized digital products.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--64f76b74-cafc-4cf5-9c86-f7305fbaf61c",
+        "relationship_modified": "2026-07-31T20:48:31.951Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.006",
+        "name": "Acquire Infrastructure: Web Services",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/006"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has developed malware for use in operations, including the creation of infected removable media.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fe8004eb-df5b-43c5-bf5a-1cbe028e8663",
+        "relationship_modified": "2026-07-31T20:48:32.317Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The Record. (2022, January 7). FBI: FIN7 hackers target US companies with BadUSB devices to install ransomware. Retrieved January 14, 2022.",
+          "source_name": "FBI Flash FIN7 USB",
+          "url": "https://therecord.media/fbi-fin7-hackers-target-us-companies-with-badusb-devices-to-install-ransomware/"
+        },
+        {
+          "citation": "Carr, N, et all. (2019, October 10). Mahalo FIN7: Responding to the Criminal Operators’ New Tools and Techniques. Retrieved October 11, 2019.",
+          "source_name": "FireEye FIN7 Oct 2019",
+          "url": "https://www.fireeye.com/blog/threat-research/2019/10/mahalo-fin7-responding-to-new-tools-and-techniques.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has utilized a variety of tools such as Cobalt Strike, PowerSploit, and the remote management tool, Atera for targeting efforts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5f0b2cd5-125e-4473-8623-5f5a7dc09caf",
+        "relationship_modified": "2026-07-31T20:48:31.930Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has staged legitimate software, that was trojanized to contain an Atera agent installer, on Amazon S3. FIN7 has also used an open directory web server as a staging server for payloads and other tools, such as OpenSSH and 7zip.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d9a18216-bb4f-445a-92a9-abd99ba0609a",
+        "relationship_modified": "2026-07-31T20:48:32.239Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": "Cocomazzi, Antonio. (2024, July 17). FIN7 Reboot | Cybercrime Gang Enhances Ops with New EDR Bypasses and Automated Attacks. Retrieved September 24, 2025.",
+          "source_name": "Cocomazzi FIN7 Reboot",
+          "url": "https://www.sentinelone.com/labs/fin7-reboot-cybercrime-gang-enhances-ops-with-new-edr-bypasses-and-automated-attacks/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has compromised a digital product website and modified multiple download links to point to trojanized versions of offered digital products.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--75270994-ea95-4744-a383-056eb96ab50d",
+        "relationship_modified": "2026-07-31T20:48:32.007Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.004",
+        "name": "Stage Capabilities: Drive-by Target",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/004"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has created a fake link that redirected to an adversary-controlled Dropbox that downloaded the malicious executable.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1f3d48af-f6e6-423b-8290-2386f13b766f",
+        "relationship_modified": "2026-07-31T20:48:31.734Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.005",
+        "name": "Stage Capabilities: Link Target",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has harvested valid administrative credentials for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--08e70a50-f4fe-4856-9bd1-a7098f802fca",
+        "relationship_modified": "2026-07-31T20:48:31.692Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used compromised credentials for access as SYSTEM on Exchange servers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b1323523-7596-4cc2-bd31-34363e4e9b60",
+        "relationship_modified": "2026-07-31T20:48:32.133Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft. (2022, May 9). Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself. Retrieved March 10, 2023.",
+          "source_name": "Microsoft Ransomware as a Service",
+          "url": "https://www.microsoft.com/en-us/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.003",
+        "name": "Valid Accounts: Local Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/003"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 actors have mailed USB drives to potential victims containing malware that downloads and installs various backdoors, including in some cases for ransomware operations. Additionally, FIN7 has used malicious USBs that acted as virtual keyboards to install malware and txt files that decode to PowerShell commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c7697490-b9ad-45b9-9e69-ddc4a7a6d94c",
+        "relationship_modified": "2026-07-31T20:48:32.185Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The Record. (2022, January 7). FBI: FIN7 hackers target US companies with BadUSB devices to install ransomware. Retrieved January 14, 2022.",
+          "source_name": "FBI Flash FIN7 USB",
+          "url": "https://therecord.media/fbi-fin7-hackers-target-us-companies-with-badusb-devices-to-install-ransomware/"
+        },
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1091",
+        "name": "Replication Through Removable Media",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1091"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has compromised targeted organizations through exploitation of CVE-2021-31207 in Exchange.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--198a9aa2-5d98-46c2-b43b-0191786049e7",
+        "relationship_modified": "2026-07-31T20:48:31.720Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Microsoft. (2022, May 9). Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself. Retrieved March 10, 2023.",
+          "source_name": "Microsoft Ransomware as a Service",
+          "url": "https://www.microsoft.com/en-us/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has gained initial access by compromising a victim's software supply chain.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e814521c-211d-4db9-b637-dd13ccdfed92",
+        "relationship_modified": "2026-07-31T20:48:32.271Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 sent spearphishing emails with either malicious Microsoft Documents or RTF files attached.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cf9e7512-c510-4605-9035-f60335c351f4",
+        "relationship_modified": "2026-07-31T20:48:32.222Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "Department of Justice. (2018, August 01). HOW FIN7 ATTACKED AND STOLE DATA. Retrieved August 24, 2018.",
+          "source_name": "DOJ FIN7 Aug 2018",
+          "url": "https://www.justice.gov/opa/press-release/file/1084361/download"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        },
+        {
+          "citation": "eSentire. (2021, July 21). Notorious Cybercrime Gang, FIN7, Lands Malware in Law Firm Using Fake Legal Complaint Against Jack Daniels’ Owner, Brown-Forman Inc.. Retrieved September 20, 2021.",
+          "source_name": "eSentire FIN7 July 2021",
+          "url": "https://www.esentire.com/security-advisories/notorious-cybercrime-gang-fin7-lands-malware-in-law-firm-using-fake-legal-complaint-against-jack-daniels-owner-brown-forman-inc"
+        },
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has conducted broad phishing campaigns using malicious links. Additionally, FIN7 has sent spearphishing emails containing a typosquatted link to “ip-sccanner[.]com.”",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--34319090-f87a-431b-a6c1-38d8494495b6",
+        "relationship_modified": "2026-07-31T20:48:31.787Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used WMI to install malware on targeted systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3a30af61-b9b4-488e-aebc-dee4dfce52b6",
+        "relationship_modified": "2026-07-31T20:48:31.809Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire. (2021, July 21). Notorious Cybercrime Gang, FIN7, Lands Malware in Law Firm Using Fake Legal Complaint Against Jack Daniels’ Owner, Brown-Forman Inc.. Retrieved September 20, 2021.",
+          "source_name": "eSentire FIN7 July 2021",
+          "url": "https://www.esentire.com/security-advisories/notorious-cybercrime-gang-fin7-lands-malware-in-law-firm-using-fake-legal-complaint-against-jack-daniels-owner-brown-forman-inc"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 malware has created scheduled tasks to establish persistence. Specifically, FIN7 has used OpenSSH to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1f7b17e9-9ad3-42dd-ab92-e3afe752247b",
+        "relationship_modified": "2026-07-31T20:48:31.750Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "Gorelik, M.. (2017, June 9). FIN7 Takes Another Bite at the Restaurant Industry. Retrieved July 13, 2017.",
+          "source_name": "Morphisec FIN7 June 2017",
+          "url": "http://blog.morphisec.com/fin7-attacks-restaurant-industry"
+        },
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used SQL scripts to help perform tasks on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1332e859-38be-45ed-9ebc-09efd7117c17",
+        "relationship_modified": "2026-07-31T20:48:31.706Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1059"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used a PowerShell script to launch shellcode that retrieved an additional payload. Additionally, FIN7 has executed a custom obfuscation of the shellcode invoker in PowerSploit called POWERTRASH.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4856de0a-2635-4081-97a8-3f15593c2aa5",
+        "relationship_modified": "2026-07-31T20:48:31.863Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "Gorelik, M.. (2017, June 9). FIN7 Takes Another Bite at the Restaurant Industry. Retrieved July 13, 2017.",
+          "source_name": "Morphisec FIN7 June 2017",
+          "url": "http://blog.morphisec.com/fin7-attacks-restaurant-industry"
+        },
+        {
+          "citation": "The Record. (2022, January 7). FBI: FIN7 hackers target US companies with BadUSB devices to install ransomware. Retrieved January 14, 2022.",
+          "source_name": "FBI Flash FIN7 USB",
+          "url": "https://therecord.media/fbi-fin7-hackers-target-us-companies-with-badusb-devices-to-install-ransomware/"
+        },
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used the command prompt to launch commands on the victim’s machine. Additionally, FIN7 has used cmd.exe to open the Run dialog by sending the “Windows + R” keys through malicious USBs acting as virtual keyboards.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--cbf95438-c89f-451f-9895-eaeb3fb65104",
+        "relationship_modified": "2026-07-31T20:48:32.200Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        },
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used VBS scripts to help perform tasks on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3f0e6cfa-7edc-4eaa-bc03-754d0f46d605",
+        "relationship_modified": "2026-07-31T20:48:31.826Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        },
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used JavaScript scripts to help perform tasks on the victim's machine.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--72b1c4ab-81ca-47a4-a541-ceb44580c87b",
+        "relationship_modified": "2026-07-31T20:48:31.988Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Platt, J. and Reeves, J.. (2019, March). FIN7 Revisited: Inside Astra Panel and SQLRat Malware. Retrieved June 18, 2019.",
+          "source_name": "Flashpoint FIN 7 March 2019",
+          "url": "https://www.flashpoint-intel.com/blog/fin7-revisited-inside-astra-panel-and-sqlrat-malware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used malicious links to lure victims into downloading malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--00561c3c-345e-4578-95c3-b7e0a95db7b1",
+        "relationship_modified": "2026-07-31T20:48:31.662Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 lured victims to double-click on images in the attachments they sent which would then execute the hidden LNK file. Additionally, FIN7 has used malicious Microsoft Word and Excel files and Leo VBS to distribute an updated version of JSS Loader and to distribute the Harpy backdoor.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9b9dad4a-c597-4979-9129-7753a7c3b3db",
+        "relationship_modified": "2026-07-31T20:48:32.082Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "eSentire. (2021, July 21). Notorious Cybercrime Gang, FIN7, Lands Malware in Law Firm Using Fake Legal Complaint Against Jack Daniels’ Owner, Brown-Forman Inc.. Retrieved September 20, 2021.",
+          "source_name": "eSentire FIN7 July 2021",
+          "url": "https://www.esentire.com/security-advisories/notorious-cybercrime-gang-fin7-lands-malware-in-law-firm-using-fake-legal-complaint-against-jack-daniels-owner-brown-forman-inc"
+        },
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        },
+        {
+          "citation": "Loui, E., Reynolds, J. (2021, November 4). CARBON SPIDER Embraces Big Game Hunting, Part 2. Retrieved May 7, 2025.",
+          "source_name": "Crowdstrike_CarbonSpider_Part2_Nov2024",
+          "url": "https://www.crowdstrike.com/en-us/blog/carbon-spider-embraces-big-game-hunting-part-2/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 spear phishing campaigns have included malicious Word documents with DDE execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--51afbe4e-c5cd-4acd-b4e1-ff7877b78b9e",
+        "relationship_modified": "2026-07-31T20:48:31.893Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Waterman, S. (2017, October 16). Fin7 weaponization of DDE is just their latest slick move, say researchers. Retrieved November 21, 2017.",
+          "source_name": "CyberScoop FIN7 Oct 2017",
+          "url": "https://www.cyberscoop.com/fin7-dde-morphisec-fileless-malware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559.002",
+        "name": "Inter-Process Communication: Dynamic Data Exchange",
+        "parent_id": "T1559",
+        "url": "https://attack.mitre.org/techniques/T1559/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has started the SSH service by executing `sc start sshd`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--619998d9-cbe8-40b1-ad0e-bc47f9c8037a",
+        "relationship_modified": "2026-07-31T20:48:31.944Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569.002",
+        "name": "System Services: Service Execution",
+        "parent_id": "T1569",
+        "url": "https://attack.mitre.org/techniques/T1569/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used malicious USBs to emulate keystrokes to launch PowerShell to download and execute malware from the adversary's server.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5c95135f-dbdf-4a9d-8fe0-3a489a171c58",
+        "relationship_modified": "2026-07-31T20:48:31.915Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "The Record. (2022, January 7). FBI: FIN7 hackers target US companies with BadUSB devices to install ransomware. Retrieved January 14, 2022.",
+          "source_name": "FBI Flash FIN7 USB",
+          "url": "https://therecord.media/fbi-fin7-hackers-target-us-companies-with-badusb-devices-to-install-ransomware/"
+        },
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1674",
+        "name": "Input Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1674"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 created new Windows services and added them to the startup directories for persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bde512f7-afbb-4fe5-8df7-53a00bdadc79",
+        "relationship_modified": "2026-07-31T20:48:32.178Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used application shim databases for persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--506acc8a-e691-4f4e-b69f-bfab84cf2c73",
+        "relationship_modified": "2026-07-31T20:48:31.885Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Erickson, J., McWhirt, M., Palombo, D. (2017, May 3). To SDB, Or Not To SDB: FIN7 Leveraging Shim Databases for Persistence. Retrieved July 18, 2017.",
+          "source_name": "FireEye FIN7 Shim Databases",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.011",
+        "name": "Event Triggered Execution: Application Shimming",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/011"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 malware has created Registry Run and RunOnce keys to establish persistence, and has also added items to the Startup folder.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--74859e2a-7a8f-4b87-b75c-7286b3de685c",
+        "relationship_modified": "2026-07-31T20:48:31.998Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used fragmented strings, environment variables, standard input (stdin), and native character-replacement functionalities to obfuscate commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--95fc970d-98cd-4bc9-895a-9534ba89c795",
+        "relationship_modified": "2026-07-31T20:48:32.066Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bohannon, D. & Carr N. (2017, June 30). Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques. Retrieved February 12, 2018.",
+          "source_name": "FireEye Obfuscation June 2017",
+          "url": "https://web.archive.org/web/20170923102302/https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html"
+        },
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used random junk code to obfuscate malware code.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--19ab4bf2-7498-4f53-afd7-fc1a99a96187",
+        "relationship_modified": "2026-07-31T20:48:31.727Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.016",
+        "name": "Obfuscated Files or Information: Junk Code Insertion",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/016"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has created a scheduled task named “AdobeFlashSync” to establish persistence.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--37ba7858-8765-4445-a65e-d2765b673b34",
+        "relationship_modified": "2026-07-31T20:48:31.794Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gorelik, M.. (2017, June 9). FIN7 Takes Another Bite at the Restaurant Industry. Retrieved July 13, 2017.",
+          "source_name": "Morphisec FIN7 June 2017",
+          "url": "http://blog.morphisec.com/fin7-attacks-restaurant-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.004",
+        "name": "Masquerading: Masquerade Task or Service",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/004"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has attempted to run Darkside ransomware with the filename sleep.exe. Additionally, FIN7 has mimicked WsTaskLoad.exe, which is associated with the Wondershare software suite, by using a malicious executable under the same name.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--306ab1b7-4926-43ae-8989-b0dde2a43111",
+        "relationship_modified": "2026-07-31T20:48:31.773Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has decoded a malicious PowerShell script using `certutil -decode hex` and has decoded an XOR-obfuscated block of data with the key `qawsed1q2w3e`, which led to the installation of Lizar.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--94f5837a-6e62-4402-ad2e-b7ef7f3c60d9",
+        "relationship_modified": "2026-07-31T20:48:32.051Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used mshta.exe to execute VBScript to execute malicious code on victim systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9e77b81d-6298-4233-8baa-f419031a9d64",
+        "relationship_modified": "2026-07-31T20:48:32.104Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.005",
+        "name": "System Binary Proxy Execution: Mshta",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used `rundll32.exe` to execute malware on a compromised network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3832d04e-41aa-456d-8104-b0a1fa2c12bb",
+        "relationship_modified": "2026-07-31T20:48:31.802Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used images embedded into document lures that only activate the payload when a user double clicks to avoid sandboxes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6aaf2c92-43a3-42f5-81ab-220c854607b0",
+        "relationship_modified": "2026-07-31T20:48:31.966Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497.002",
+        "name": "Virtualization/Sandbox Evasion: User Activity Based Checks",
+        "parent_id": "T1497",
+        "url": "https://attack.mitre.org/techniques/T1497/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used `attrib +h “C:\\ProgramData\\ssh”` to make the SSH folder hidden.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--42cedca0-2faf-47db-a2da-c81b430ace60",
+        "relationship_modified": "2026-07-31T20:48:31.855Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.001",
+        "name": "Hide Artifacts: Hidden Files and Directories",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used.txt files to conceal PowerShell commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--331313a6-8f2d-46ef-939f-2688d06af86e",
+        "relationship_modified": "2026-07-31T20:48:31.780Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.003",
+        "name": "Hide Artifacts: Hidden Window",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/003"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has loaded a.NET assembly into the currect execution context via `Reflection.Assembly::Load`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3c01b9a0-b53f-45f1-a277-f1c0e5d088ed",
+        "relationship_modified": "2026-07-31T20:48:31.816Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1620",
+        "name": "Reflective Code Loading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1620"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has signed Carbanak payloads with legally purchased code signing certificates. FIN7 has also digitally signed their phishing documents, backdoors and other staging tools to bypass security controls.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--081c68ae-de26-4ab4-9108-5c7493f34f43",
+        "relationship_modified": "2026-07-31T20:48:31.676Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Bennett, J., Vengerik, B. (2017, June 12). Behind the CARBANAK Backdoor. Retrieved June 11, 2018.",
+          "source_name": "FireEye CARBANAK June 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html"
+        },
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has added a firewall rule to allow TCP port 59999 inbound and a rule to allow sshd.exe on TCP port 9898.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--83ce1f0c-8afc-472d-af07-71b359d7781b",
+        "relationship_modified": "2026-07-31T20:48:32.022Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1686",
+        "name": "Disable or Modify System Firewall",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1686"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used Kerberoasting PowerShell commands such as, `Invoke-Kerberoast` for credential access and to enable lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--df3c2022-f649-45f5-a987-5ba7a766a058",
+        "relationship_modified": "2026-07-31T20:48:32.253Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        },
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1558.003",
+        "name": "Steal or Forge Kerberos Tickets: Kerberoasting",
+        "parent_id": "T1558",
+        "url": "https://attack.mitre.org/techniques/T1558/003"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used the command `cmd.exe /C quser` to collect user session information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1f548074-df9e-4029-842b-7d774e2f1093",
+        "relationship_modified": "2026-07-31T20:48:31.743Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1033",
+        "name": "System Owner/User Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1033"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used the PowerShell script 3CF9.ps1 to perform process discovery by executing `tasklist /v`. Additionally, WsTaskLoad.exe executes `tasklist /v` to perform process discovery.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9ba9eff2-1471-4395-a2ed-2187aabd893b",
+        "relationship_modified": "2026-07-31T20:48:32.089Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used the command `net group \"domain admins\" /domain` to enumerate domain groups.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--51db2539-ad77-4fa1-8f54-2bb6ccf603df",
+        "relationship_modified": "2026-07-31T20:48:31.900Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.002",
+        "name": "Permission Groups Discovery: Domain Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used csvde.exe, which is a built-in Windows command line tool, to export system information. Additionally, WsTaskLoad has gathered system information, such as operating system and hostname.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8fa843c8-bd61-48a2-8c65-587f6d96e238",
+        "relationship_modified": "2026-07-31T20:48:32.029Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used the PowerShell script 3CF9.ps1 and the executable WsTaskLoad to enumerate domain administrations by executing `net group “Domain Admins” /domain`. FIN7 has also used csvde.exe, which is a built-in Windows command line tool, to export Active Directory information.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9879a7e4-04b0-4cf2-a429-bad37bfd0741",
+        "relationship_modified": "2026-07-31T20:48:32.075Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.002",
+        "name": "Account Discovery: Domain Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used the PowerShell script 3CF9.ps1 to execute `net time`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b846a531-6945-45d6-86f1-7964645d2ef7",
+        "relationship_modified": "2026-07-31T20:48:32.156Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1124",
+        "name": "System Time Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1124"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used RDP to move laterally in victim environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+        "relationship_modified": "2026-07-31T20:48:31.907Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used SSH to move laterally through victim environments.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+        "relationship_modified": "2026-07-31T20:48:31.713Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used TightVNC to control compromised hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+        "relationship_modified": "2026-07-31T20:48:31.765Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.005",
+        "name": "Remote Services: VNC",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has exploited ZeroLogon (CVE-2020-1472) against vulnerable domain controllers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fe3872cb-5e08-4a04-9162-a6868ef95952",
+        "relationship_modified": "2026-08-04T20:30:56.359Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1210"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has collected files and other sensitive information from a compromised network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+        "relationship_modified": "2026-07-31T20:48:32.170Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1005"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 captured screenshots and desktop video recordings.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f443e72c-68a6-4d46-b2aa-96b1aafd5f6b",
+        "relationship_modified": "2026-07-31T20:48:32.285Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Department of Justice. (2018, August 01). HOW FIN7 ATTACKED AND STOLE DATA. Retrieved August 24, 2018.",
+          "source_name": "DOJ FIN7 Aug 2018",
+          "url": "https://www.justice.gov/opa/press-release/file/1084361/download"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 created a custom video recording capability that could be used to monitor operations in the victim's environment.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--91926031-c1b4-462b-8597-20b10e7211ef",
+        "relationship_modified": "2026-07-31T20:48:32.037Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": "Department of Justice. (2018, August 01). HOW FIN7 ATTACKED AND STOLE DATA. Retrieved August 24, 2018.",
+          "source_name": "DOJ FIN7 Aug 2018",
+          "url": "https://www.justice.gov/opa/press-release/file/1084361/download"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1125",
+        "name": "Video Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1125"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7's Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+        "relationship_modified": "2026-09-09T18:39:17.195Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Crowdstrike. (2020, March 2). 2020 Global Threat Report. Retrieved December 11, 2020.",
+          "source_name": "Crowdstrike GTR2020 Mar 2020",
+          "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1008",
+        "name": "Fallback Channels",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1008"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has performed C2 using DNS via A, OPT, and TXT records.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ca2a22df-7f99-497a-8f51-cf0180308305",
+        "relationship_modified": "2026-09-03T19:46:53.312Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.004",
+        "name": "Application Layer Protocol: DNS",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/004"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 used legitimate services like Google Docs, Google Scripts, and Pastebin for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ada291f4-524c-4400-9425-0936a03d4a41",
+        "relationship_modified": "2026-09-03T19:46:52.311Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.002",
+        "name": "Web Service: Bidirectional Communication",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has downloaded additional malware to execute on the victim's machine, including by using a PowerShell script to launch shellcode that retrieves an additional payload.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b077d81d-0449-493f-9b93-23dc0fb0b62d",
+        "relationship_modified": "2026-09-03T19:47:04.513Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2017, April 24). FIN7 Evolution and the Phishing LNK. Retrieved April 24, 2017.",
+          "source_name": "FireEye FIN7 April 2017",
+          "url": "https://www.fireeye.com/blog/threat-research/2017/04/fin7-phishing-lnk.html"
+        },
+        {
+          "citation": "Department of Justice. (2018, August 01). HOW FIN7 ATTACKED AND STOLE DATA. Retrieved August 24, 2018.",
+          "source_name": "DOJ FIN7 Aug 2018",
+          "url": "https://www.justice.gov/opa/press-release/file/1084361/download"
+        },
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": "Gemini Advisory. (2022, January 13). FIN7 Uses Flash Drives to Spread Remote Access Trojan. Retrieved May 14, 2025.",
+          "source_name": "Gemini_FIN7_Jan2022",
+          "url": "https://geminiadvisory.io/fin7-flash-drives-spread-remote-access-trojan/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has utilized the remote management tool Atera to download malware to a compromised system.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--42684416-c3f0-4668-9c86-77482740179e",
+        "relationship_modified": "2026-07-31T20:48:31.846Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has used port-protocol mismatches on ports such as 53, 80, 443, and 8080 during C2. FIN7 has used TCP ports 59999 and 9898 for firewall rules.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--921b9a4d-091a-442b-981a-0b34daa2ed6a",
+        "relationship_modified": "2026-09-03T19:46:57.398Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Carr, N., et al. (2018, August 01). On the Hunt for FIN7: Pursuing an Enigmatic and Evasive Global Criminal Operation. Retrieved August 23, 2018.",
+          "source_name": "FireEye FIN7 Aug 2018",
+          "url": "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has tunneled C2 traffic via OpenSSH.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4c0cf71d-c000-46c5-a232-ea0e41a4b48a",
+        "relationship_modified": "2026-09-03T19:46:53.629Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1572"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has exfiltrated stolen data to the MEGA file sharing site.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f770ba6c-df62-4bd4-ab29-34a954c4f6ac",
+        "relationship_modified": "2026-07-31T20:48:32.293Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
+    },
+    {
+      "attack_ref": "G0046",
+      "confidence": "high",
+      "description": "FIN7 has encrypted virtual disk volumes on ESXi servers using a version of Darkside ransomware. Additionally, FIN7 has deployed ransomware as the end payload during big game hunting.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5ed383c7-a4b7-441b-8f99-a9927689aea0",
+        "relationship_modified": "2026-07-31T20:48:31.923Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+          "source_name": "CrowdStrike Carbon Spider August 2021",
+          "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+        },
+        {
+          "citation": "Abdo, B., et al. (2022, April 4). FIN7 Power Hour: Adversary Archaeology and the Evolution of FIN7. Retrieved April 5, 2022.",
+          "source_name": "Mandiant FIN7 Apr 2022",
+          "url": "https://www.mandiant.com/resources/evolution-of-fin7"
+        },
+        {
+          "citation": " The BlackBerry Research and Intelligence Team. (2024, April 17). Threat Group FIN7 Targets the U.S. Automotive Industry. Retrieved May 1, 2025.",
+          "source_name": "BlackBerry_FIN7_April2024",
+          "url": "https://blogs.blackberry.com/en/2024/04/fin7-targets-the-united-states-automotive-industry"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Regardless of intent, the end result still presents a remediation challenge: cleaning one persistence mechanism from one host doesn't guarantee the environment is clear, and the mix of custom malware with legitimate RMM tools makes full scoping essential.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“Havoc is an open-source, modern, and malleable post-exploitation command-and-control framework created by @C5pider, designed as an alternative to commercial tools like Cobalt Strike.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Educated users present the largest barrier to adversary initial access.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“Just 50 minutes later, at 21:08 UTC, scheduled tasks were being created across the environment.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“These tasks were registered across four of the nine compromised endpoints, each pointing to a batch script located at C:\\Windows\\SoftwareDistribution\\Download\\go.bat, a directory that temporarily stores Windows Update files, chosen to blend in with legitimate system activity.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“This will maintain DLL load states and help preserve execution chains; allowing the malware to run unabated from security software.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Summoning the Demon: Dissecting modified Havoc C2 agent What is Havoc?” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559",
+        "name": "Inter-Process Communication",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1559"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“Adversaries employed identical tactics: storing command-and-control parameters in the registry, leveraging extensive DLL sideloading to maintain persistence, and deploying similar techniques to plant malware on target systems.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“The shellcode loader uses seed 0x2673 and is only used during the initial PE mapping stage, resolving NtAllocateVirtualMemory, NtProtectVirtualMemory, and LdrLoadDll from ntdll.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“An attempt to read HKCU\\SOFTWARE\\Classes\\Local Settings\\Software\\Microsoft, specifically the UXMP value, is generated by this loader.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“The loader bootstraps itself in three steps: first, it finds its own base address, unlike a normal EXE that loads at a known address, shellcode gets injected into arbitrary memory and has no idea where it is.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055",
+        "name": "Process Injection",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1055"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“The adversary forwarded the necessary legitimate functions from the legitimate DLL, prefixed with a “2”, but the DLL’s entrypoint caused the execution of an advanced and highly obfuscated loader.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“In fact, the adversary’s heavy use of trampolines required that they also account for the unconventional way they used the language, specifically during the Hell’s Gate preamble, which we’ll discuss later in depth. mpclient.dll & faultrep.dll These sideloaded DLLs are…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.002",
+        "name": "Obfuscated Files or Information: Software Packing",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Once the payload is decrypted and exists in memory, the evasion hooks are utilized to prevent disruption to process execution.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“The attacker then instructed the user to enter their email and access the “Outlook Antispam Control Panel.” From this fake panel, they would download the “Antispam Patch” and initiate a test of the \"rules.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.002",
+        "name": "System Binary Proxy Execution: Control Panel",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "low",
+      "description": "“This registry value contains the install location of the license.key file, but in our experience, this was never set by the malware nor the adversary, so this deletion is likely superfluous.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Given our adversary is deleting this key during execution, it may be used as a mutual exclusion (mutex) method to try and deconflict execution of multiple Havoc implants, though we find it more likely that this is simply leftover code or an unutilized feature of the loader.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1480.002",
+        "name": "Execution Guardrails: Mutual Exclusion",
+        "parent_id": "T1480",
+        "url": "https://attack.mitre.org/techniques/T1480/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“- The adversary then creates directory %PROGRAMDATA%\\Adobe\\ARM” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.001",
+        "name": "Hide Artifacts: Hidden Files and Directories",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“As the shellcode loader is relatively uninteresting, we’ll dissect, instead, the PE DLL, as ultimately the loader works to simply pass off control from vcruntime_1.dll to the reflectively loaded PE DLL, internally titled loader_vcruntime140_1.dll.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1620",
+        "name": "Reflective Code Loading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1620"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“While the initial social engineering and malware delivery demonstrated some interesting techniques, the hands-on-keyboard activity that followed was comparatively straightforward.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Use host-based firewall policies to restrict access via these channels.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1686",
+        "name": "Disable or Modify System Firewall",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1686"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“The adversary then uses a series of commands to unfold this payload:” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.002",
+        "name": "Permission Groups Discovery: Domain Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“- Lock down horizontal communication - Common tradecraft often dictates that attackers will move laterally via TCP/3389 (RDP) or TCP/445 (SMB).” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“- Teamserver - a Golang-based server that handles connected operators, manages listeners, parses agent callbacks, and handles downloaded files and screenshots from agents.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1113",
+        "name": "Screen Capture",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1113"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "low",
+      "description": "“The attack began with a spam campaign, where the adversary targeted organizations with mass emails.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1008",
+        "name": "Fallback Channels",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1008"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "low",
+      "description": "“It uses Yaotl configuration profiles (.yaotl) for defining operators, listeners, and C2 behavior.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.002",
+        "name": "Application Layer Protocol: File Transfer Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Staging additional payloads With the initial compromise occurring at 20:18 UTC on February 20, 2026, the adversary wasted little time.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "high",
+      "description": "“Users were then persuaded to approve a QuickAssist session or to install remote access applications like AnyDesk, granting the attacker hands-on access to the endpoint.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Figure 9: Call graph referencing XOR key beyond VirtualSize DLL comparison matrix We’ve generated the following comparison matrix for both DLLs for an at-a-glance summary of characteristics thus far: | Identity | | | | | vcruntime140_1.dll | mpclient.dll | | Masquerade Target |…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1568",
+        "name": "Dynamic Resolution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1568"
+      }
+    },
+    {
+      "attack_ref": "INC-0123",
+      "confidence": "medium",
+      "description": "“Figure 13: Encrypted C2 and ChaCha20 key in the registry Figure 14: Decrypted C2s (Source: CyberChef) From Havoc to chaos Following the successful deployment of the Havoc Demon on the beachhead host, the threat actors began lateral movement across the victim environment.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Fake Tech Support Delivers Havoc Command & Control",
+          "url": "https://www.huntress.com/blog/fake-tech-support-havoc-command-control"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573",
+        "name": "Encrypted Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1573"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "fin7",
+  "software": [
+    {
+      "id": "S0552",
+      "name": "AdFind",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0552"
+    },
+    {
+      "id": "S0415",
+      "name": "BOOSTWRITE",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0415"
+    },
+    {
+      "id": "S0030",
+      "name": "Carbanak",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0030"
+    },
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0488",
+      "name": "CrackMapExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0488"
+    },
+    {
+      "id": "S0417",
+      "name": "GRIFFON",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0417"
+    },
+    {
+      "id": "S0151",
+      "name": "HALFBAKED",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0151"
+    },
+    {
+      "id": "S0648",
+      "name": "JSS Loader",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0648"
+    },
+    {
+      "id": "S0681",
+      "name": "Lizar",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0681"
+    },
+    {
+      "id": "S0449",
+      "name": "Maze",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0449"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0517",
+      "name": "Pillowmint",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0517"
+    },
+    {
+      "id": "S0145",
+      "name": "POWERSOURCE",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0145"
+    },
+    {
+      "id": "S0194",
+      "name": "PowerSploit",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0194"
+    },
+    {
+      "id": "S0416",
+      "name": "RDFSNIFFER",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0416"
+    },
+    {
+      "id": "S0496",
+      "name": "REvil",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0496"
+    },
+    {
+      "id": "S0390",
+      "name": "SQLRat",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0390"
+    },
+    {
+      "id": "S9001",
+      "name": "SystemBC",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S9001"
+    },
+    {
+      "id": "S0146",
+      "name": "TEXTMATE",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0146"
+    }
+  ],
+  "stix_modified": "2026-07-31T20:48:31.412Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0009",
+      "name": "Collection",
+      "order": 11,
+      "shortname": "collection",
+      "url": "https://attack.mitre.org/tactics/TA0009"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

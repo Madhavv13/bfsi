@@ -1,0 +1,521 @@
+{
+  "aliases": [],
+  "attack_id": "G0105",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0105",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0105",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0105"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: attacked at least 8 Eastern European banks in 2017-2018.",
+    "tier": 3
+  },
+  "country": "Unknown",
+  "counts": {
+    "attack_rows": 10,
+    "reviewed_rows": 0,
+    "rows": 10,
+    "techniques": 10
+  },
+  "description": "DarkVishnya is a financially motivated threat actor targeting financial institutions in Eastern Europe. In 2017-2018 the group attacked at least 8 banks in this region.",
+  "description_references": [
+    {
+      "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+      "source_name": "Securelist DarkVishnya Dec 2018",
+      "url": "https://securelist.com/darkvishnya/89169/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/darkvishnya.csv",
+    "navigator_layer": "layers/darkvishnya.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fdarkvishnya.json"
+  },
+  "id": "G0105",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain",
+  "name": "DarkVishnya",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya has obtained and used tools such as Impacket, Winexe, and PsExec.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0b3809c3-78a5-4121-9b51-64a9dfa60b11",
+        "relationship_modified": "2026-07-31T18:48:05.108Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya physically connected Bash Bunny, Raspberry Pi, netbooks, and inexpensive laptops to the target organization's environment to access the company’s local network.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--04d1a31c-97c2-4cdd-8fb7-391c984e2fad",
+        "relationship_modified": "2026-07-31T18:48:05.092Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1200",
+        "name": "Hardware Additions",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1200"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya used PowerShell to create shellcode loaders.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bff00753-95ef-4a13-96fa-963365520573",
+        "relationship_modified": "2026-07-31T18:48:05.259Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya created new services for shellcode loaders distribution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--12dcf7c0-4f6b-4eb1-9317-3337822ecbe1",
+        "relationship_modified": "2026-07-31T18:48:05.120Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Windows Service",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/003"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya used network sniffing to obtain login data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c2ba1f7a-1951-47df-855b-3f42a60a9901",
+        "relationship_modified": "2026-07-31T18:48:05.277Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1040",
+        "name": "Network Sniffing",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1040"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya used brute-force attack to obtain login data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5a9197b3-c5fb-4288-9fdf-684fa289435b",
+        "relationship_modified": "2026-07-31T18:48:05.212Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110",
+        "name": "Brute Force",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1110"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya performed port scanning to obtain the list of active services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3778dc3a-14b2-43e9-8e37-d1c3c731b390",
+        "relationship_modified": "2026-07-31T18:48:05.146Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1046",
+        "name": "Network Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1046"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya scanned the network for public shared folders.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3a31f8c0-36bf-40b5-90d2-d03c72b2c8d8",
+        "relationship_modified": "2026-07-31T18:48:05.159Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1135",
+        "name": "Network Share Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1135"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya used DameWare Mini Remote Control for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--96934e69-6d38-4ebd-970d-3d9bf88e03e3",
+        "relationship_modified": "2026-07-31T18:48:05.239Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "G0105",
+      "confidence": "high",
+      "description": "DarkVishnya used ports 5190 and 7900 for shellcode listeners, and 4444, 4445, 31337 for shellcode C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ca38f31f-3551-49e3-835b-588693a8b512",
+        "relationship_modified": "2026-09-03T19:46:58.173Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Golovanov, S. (2018, December 6). DarkVishnya: Banks attacked through direct connection to local network. Retrieved May 15, 2020.",
+          "source_name": "Securelist DarkVishnya Dec 2018",
+          "url": "https://securelist.com/darkvishnya/89169/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "darkvishnya",
+  "software": [
+    {
+      "id": "S0029",
+      "name": "PsExec",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0029"
+    },
+    {
+      "id": "S0191",
+      "name": "Winexe",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0191"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:04.496Z",
+  "tactics_present": [
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    }
+  ]
+}

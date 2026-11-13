@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { withBase } from '../../lib/paths';
+
+const techniques = (await getCollection('techniques')).map((e) => e.data);
+const groups = (await getCollection('groups')).map((g) => g.data);
+const groupCount = new Map<string, number>();
+for (const g of groups) {
+  for (const id of new Set(g.rows.map((r) => r.technique.id))) {
+    groupCount.set(id, (groupCount.get(id) ?? 0) + 1);
+  }
+}
+type Tactic = (typeof techniques)[number]['tactics'][number];
+const tactics = new Map<string, { tactic: Tactic; items: typeof techniques }>();
+for (const t of techniques) {
+  for (const tac of t.tactics) {
+    const slot = tactics.get(tac.id) ?? { tactic: tac, items: [] };
+    slot.items.push(t);
+    tactics.set(tac.id, slot);
+  }
+}
+const ordered = [...tactics.values()].sort((a, b) => a.tactic.order - b.tactic.order);
+for (const s of ordered) s.items.sort((a, b) => a.id.localeCompare(b.id));
+const attackVersion = techniques[0]?.attack_version;
+---
+<Base title="Techniques" attackVersion={attackVersion}>
+  <h1>Techniques used by BFSI threat groups</h1>
+  <p class="lead">
+    Every MITRE ATT&amp;CK technique that appears on at least one group page, by tactic. A technique can
+    sit under more than one tactic. The count is the number of group pages that use it.
+  </p>
+  {techniques.length === 0 && <p>No techniques exported yet. Run <code>bfsi-intel export</code> in the pipeline.</p>}
+  {ordered.map(({ tactic, items }) => (
+    <section>
+      <h2 id={tactic.id}>{tactic.name} <span class="meta">({tactic.id}, {items.length})</span></h2>
+      <ul class="tactic-list">
+        {items.map((t) => (
+          <li>
+            <a href={withBase(`/techniques/${t.id}/`)}>{t.id}</a> {t.name}
+            {groupCount.get(t.id) && <span class="meta"> · {groupCount.get(t.id)}</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>

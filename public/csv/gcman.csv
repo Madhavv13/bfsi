@@ -1,0 +1,3 @@
+attack_name,attack_kind,attack_ref,tactics,technique_id,technique_name,description,provenance,confidence,references
+Documented tradecraft (MITRE ATT&CK),group_general,G0036,Lateral Movement,T1021.004,Remote Services: SSH,GCMAN uses Putty for lateral movement.,mitre-attack,high,https://securelist.com/apt-style-bank-robberies-increase-with-metel-gcman-and-carbanak-2-0-attacks/73638/
+Documented tradecraft (MITRE ATT&CK),group_general,G0036,Lateral Movement,T1021.005,Remote Services: VNC,GCMAN uses VNC for lateral movement.,mitre-attack,high,https://securelist.com/apt-style-bank-robberies-increase-with-metel-gcman-and-carbanak-2-0-attacks/73638/

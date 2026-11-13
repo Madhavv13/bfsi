@@ -1,0 +1,141 @@
+{
+  "aliases": [],
+  "attack_id": "G0036",
+  "attack_modified": "2026-11-05T15:11:27.678Z",
+  "attack_url": "https://attack.mitre.org/groups/G0036",
+  "attack_version": "20.1",
+  "attacks": [
+    {
+      "first_seen": null,
+      "id": "G0036",
+      "kind": "group_general",
+      "last_seen": null,
+      "name": "Documented tradecraft (MITRE ATT&CK)",
+      "references": [],
+      "summary": null,
+      "url": "https://attack.mitre.org/groups/G0036"
+    }
+  ],
+  "bfsi": {
+    "reason": "ATT&CK: focuses on targeting banks to transfer money to e-currency services (thin technique mapping).",
+    "tier": 3
+  },
+  "country": "Russian-speaking eCrime",
+  "counts": {
+    "attack_rows": 2,
+    "reviewed_rows": 0,
+    "rows": 2,
+    "techniques": 2
+  },
+  "description": "GCMAN is a threat group that focuses on targeting banks for the purpose of transferring money to e-currency services.",
+  "description_references": [
+    {
+      "citation": "Kaspersky Lab's Global Research & Analysis Team. (2016, February 8). APT-style bank robberies increase with Metel, GCMAN and Carbanak 2.0 attacks. Retrieved April 20, 2016.",
+      "source_name": "Securelist GCMAN",
+      "url": "https://securelist.com/apt-style-bank-robberies-increase-with-metel-gcman-and-carbanak-2-0-attacks/73638/"
+    }
+  ],
+  "description_source": "mitre-attack",
+  "disclaimer": "Group attributions and aliases reflect public reporting by the cited vendors and agencies. Attribution is probabilistic and naming overlaps are imperfect; inclusion does not imply a definitive link to any nation-state. Reviewed auto-mappings are analyst-approved proposals from a local mapping engine. For defensive research only. Not affiliated with or endorsed by MITRE.",
+  "downloads": {
+    "csv": "csv/gcman.csv",
+    "navigator_layer": "layers/gcman.json",
+    "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fgcman.json"
+  },
+  "id": "G0036",
+  "last_updated": "2026-11-05",
+  "motivation": "Financial gain",
+  "name": "GCMAN",
+  "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
+  "rows": [
+    {
+      "attack_ref": "G0036",
+      "confidence": "high",
+      "description": "GCMAN uses Putty for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--7db7f665-6e29-4789-8a3d-d6cb8d0af31e",
+        "relationship_modified": "2026-07-31T18:47:37.972Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research & Analysis Team. (2016, February 8). APT-style bank robberies increase with Metel, GCMAN and Carbanak 2.0 attacks. Retrieved April 20, 2016.",
+          "source_name": "Securelist GCMAN",
+          "url": "https://securelist.com/apt-style-bank-robberies-increase-with-metel-gcman-and-carbanak-2-0-attacks/73638/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/004"
+      }
+    },
+    {
+      "attack_ref": "G0036",
+      "confidence": "high",
+      "description": "GCMAN uses VNC for lateral movement.",
+      "provenance": {
+        "article_source": null,
+        "article_url": null,
+        "attack_version": "20.1",
+        "method": null,
+        "relationship_id": "relationship--35f5caad-87d0-46c5-b2b6-eb69b0eda6bd",
+        "relationship_modified": "2026-07-31T18:47:37.950Z",
+        "reviewed_at": null,
+        "source": "mitre-attack",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": "Kaspersky Lab's Global Research & Analysis Team. (2016, February 8). APT-style bank robberies increase with Metel, GCMAN and Carbanak 2.0 attacks. Retrieved April 20, 2016.",
+          "source_name": "Securelist GCMAN",
+          "url": "https://securelist.com/apt-style-bank-robberies-increase-with-metel-gcman-and-carbanak-2-0-attacks/73638/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0008",
+          "name": "Lateral Movement",
+          "order": 10,
+          "shortname": "lateral-movement",
+          "url": "https://attack.mitre.org/tactics/TA0008"
+        }
+      ],
+      "technique": {
+        "id": "T1021.005",
+        "name": "Remote Services: VNC",
+        "parent_id": "T1021",
+        "url": "https://attack.mitre.org/techniques/T1021/005"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "slug": "gcman",
+  "software": [],
+  "stix_modified": "2026-07-31T18:47:37.385Z",
+  "tactics_present": [
+    {
+      "id": "TA0008",
+      "name": "Lateral Movement",
+      "order": 10,
+      "shortname": "lateral-movement",
+      "url": "https://attack.mitre.org/tactics/TA0008"
+    }
+  ]
+}
