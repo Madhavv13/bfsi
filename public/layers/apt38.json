@@ -22,7 +22,7 @@
     },
     {
       "name": "last_updated",
-      "value": "2026-11-13"
+      "value": "2026-11-14"
     }
   ],
   "name": "APT38 (G0082) - BFSI APT Intel",
@@ -202,7 +202,7 @@
     {
       "comment": "sources: mitre-attack, reviewed-automap",
       "enabled": true,
-      "score": 3,
+      "score": 4,
       "showSubtechniques": false,
       "techniqueID": "T1056.001"
     },
@@ -482,7 +482,7 @@
     {
       "comment": "sources: mitre-attack, reviewed-automap",
       "enabled": true,
-      "score": 4,
+      "score": 5,
       "showSubtechniques": false,
       "techniqueID": "T1204.001"
     },
@@ -685,7 +685,7 @@
     {
       "comment": "sources: mitre-attack, reviewed-automap",
       "enabled": true,
-      "score": 3,
+      "score": 4,
       "showSubtechniques": false,
       "techniqueID": "T1552.004"
     },
@@ -853,7 +853,7 @@
     {
       "comment": "sources: mitre-attack, reviewed-automap",
       "enabled": true,
-      "score": 2,
+      "score": 3,
       "showSubtechniques": false,
       "techniqueID": "T1583.001"
     },

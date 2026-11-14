@@ -133,6 +133,22 @@
       ],
       "summary": null,
       "url": null
+    },
+    {
+      "first_seen": "2026-11-14",
+      "id": "INC-0387",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-14",
+      "name": "Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/"
+        }
+      ],
+      "summary": null,
+      "url": null
     }
   ],
   "bfsi": {
@@ -142,8 +158,8 @@
   "country": "North Korea (DPRK)",
   "counts": {
     "attack_rows": 115,
-    "reviewed_rows": 164,
-    "rows": 279,
+    "reviewed_rows": 168,
+    "rows": 283,
     "techniques": 142
   },
   "description": "APT38 is a North Korean state-sponsored threat group that specializes in financial cyber operations; it has been attributed to the Reconnaissance General Bureau. Active since at least 2014, APT38 has targeted banks, financial institutions, casinos, cryptocurrency exchanges, SWIFT system endpoints, and ATMs in at least 38 countries worldwide. Significant operations include the 2016 Bank of Bangladesh heist, Bancomext and Banco de Chile, along with software supply chain compromises and destructive malware attacks.\n\nNorth Korean group definitions are known to have significant overlap, and some security researchers report all North Korean state-sponsored cyber activity under the name Lazarus Group instead of tracking clusters or subgroups.",
@@ -192,7 +208,7 @@
     "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fapt38.json"
   },
   "id": "G0082",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-14",
   "motivation": "Financial gain (state revenue generation)",
   "name": "APT38",
   "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
@@ -11499,6 +11515,165 @@
         "name": "Financial Theft",
         "parent_id": null,
         "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0387",
+      "confidence": "low",
+      "description": "“The meeting link arrives shortly before the call and points to a lookalike domain such as uu01webzoom[.]us.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domains",
+        "parent_id": "T1583",
+        "url": "https://attack.mitre.org/techniques/T1583/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0387",
+      "confidence": "low",
+      "description": "“Your webcam has been recording since you clicked the link.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0002",
+          "name": "Execution",
+          "order": 3,
+          "shortname": "execution",
+          "url": "https://attack.mitre.org/tactics/TA0002"
+        }
+      ],
+      "technique": {
+        "id": "T1204.001",
+        "name": "User Execution: Malicious Link",
+        "parent_id": "T1204",
+        "url": "https://attack.mitre.org/techniques/T1204/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0387",
+      "confidence": "high",
+      "description": "“Following those steps installs a cookie harvester, keyloggers, a screen capturer and a backdoor.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        },
+        {
+          "id": "TA0009",
+          "name": "Collection",
+          "order": 11,
+          "shortname": "collection",
+          "url": "https://attack.mitre.org/tactics/TA0009"
+        }
+      ],
+      "technique": {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging",
+        "parent_id": "T1056",
+        "url": "https://attack.mitre.org/techniques/T1056/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0387",
+      "confidence": "high",
+      "description": "“The hackers go after computers that hold a crypto wallet, a seed phrase, or access to an employer’s network or a code repository.” — ORKL report library (backfill)",
+      "provenance": {
+        "article_source": "ORKL report library (backfill)",
+        "article_url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "ORKL report library (backfill): Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0006",
+          "name": "Credential Access",
+          "order": 8,
+          "shortname": "credential-access",
+          "url": "https://attack.mitre.org/tactics/TA0006"
+        }
+      ],
+      "technique": {
+        "id": "T1552.004",
+        "name": "Unsecured Credentials: Private Keys",
+        "parent_id": "T1552",
+        "url": "https://attack.mitre.org/techniques/T1552/004"
       }
     }
   ],

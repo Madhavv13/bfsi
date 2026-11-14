@@ -169,6 +169,22 @@
       ],
       "summary": null,
       "url": null
+    },
+    {
+      "first_seen": "2026-11-13",
+      "id": "INC-0382",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-13",
+      "name": "North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
+        }
+      ],
+      "summary": null,
+      "url": null
     }
   ],
   "bfsi": {
@@ -178,9 +194,9 @@
   "country": "North Korea (DPRK)",
   "counts": {
     "attack_rows": 0,
-    "reviewed_rows": 136,
-    "rows": 136,
-    "techniques": 98
+    "reviewed_rows": 141,
+    "rows": 141,
+    "techniques": 99
   },
   "description": "TraderTraitor is the FBI's name for North Korean (DPRK) cyber activity focused on stealing cryptocurrency from exchanges and other crypto-finance firms. The FBI attributed the February 2025 theft of roughly US$1.5 billion from the Bybit exchange to TraderTraitor (the operation manipulated the signing interface of a multisig cold wallet during a transfer), and, together with Japan's National Police Agency, the May 2024 theft of about US$308 million from DMM Bitcoin. Vendor reporting tracks overlapping activity as Jade Sleet, UNC4899 and Slow Pisces; these names overlap with, but are not exact equivalents of, APT38 (BlueNoroff/Sapphire Sleet) and Lazarus Group. MITRE ATT&CK has no TraderTraitor group object, so this page lists only analyst-reviewed mappings from public reporting.",
   "description_references": [
@@ -208,7 +224,7 @@
     "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Ftradertraitor.json"
   },
   "id": "LOCAL-TRADERTRAITOR",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-14",
   "motivation": "Financial gain (cryptocurrency theft)",
   "name": "TraderTraitor",
   "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
@@ -5503,6 +5519,196 @@
           "citation": null,
           "source_name": "Dark Reading: Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
           "url": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0040",
+          "name": "Impact",
+          "order": 14,
+          "shortname": "impact",
+          "url": "https://attack.mitre.org/tactics/TA0040"
+        }
+      ],
+      "technique": {
+        "id": "T1657",
+        "name": "Financial Theft",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1657"
+      }
+    },
+    {
+      "attack_ref": "INC-0382",
+      "confidence": "medium",
+      "description": "“They also used each victim’s contact lists, social media accounts and messaging apps to identify and approach new targets.” — Security Affairs",
+      "provenance": {
+        "article_source": "Security Affairs",
+        "article_url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0043",
+          "name": "Reconnaissance",
+          "order": 0,
+          "shortname": "reconnaissance",
+          "url": "https://attack.mitre.org/tactics/TA0043"
+        }
+      ],
+      "technique": {
+        "id": "T1593.001",
+        "name": "Search Open Websites/Domains: Social Media",
+        "parent_id": "T1593",
+        "url": "https://attack.mitre.org/techniques/T1593/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0382",
+      "confidence": "medium",
+      "description": "“They also used each victim’s contact lists, social media accounts and messaging apps to identify and approach new targets.” — Security Affairs",
+      "provenance": {
+        "article_source": "Security Affairs",
+        "article_url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0042",
+          "name": "Resource Development",
+          "order": 1,
+          "shortname": "resource-development",
+          "url": "https://attack.mitre.org/tactics/TA0042"
+        }
+      ],
+      "technique": {
+        "id": "T1585.001",
+        "name": "Establish Accounts: Social Media Accounts",
+        "parent_id": "T1585",
+        "url": "https://attack.mitre.org/techniques/T1585/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0382",
+      "confidence": "medium",
+      "description": "“This leads to the installation of malware.” — Security Affairs",
+      "provenance": {
+        "article_source": "Security Affairs",
+        "article_url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1218.007",
+        "name": "System Binary Proxy Execution: Msiexec",
+        "parent_id": "T1218",
+        "url": "https://attack.mitre.org/techniques/T1218/007"
+      }
+    },
+    {
+      "attack_ref": "INC-0382",
+      "confidence": "medium",
+      "description": "“Together, the two moves put more than $1.2 billion back under law enforcement control. “Today the Department of Justice announced coordinated actions against the Democratic People’s Republic of North Korea (DPRK) government’s schemes to fund its regime through the massive theft…” — Security Affairs",
+      "provenance": {
+        "article_source": "Security Affairs",
+        "article_url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1684",
+        "name": "Social Engineering",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1684"
+      }
+    },
+    {
+      "attack_ref": "INC-0382",
+      "confidence": "medium",
+      "description": "“The DOJ also pledged to use all available legal tools to seize the stolen funds and return them to their rightful owners.” — Security Affairs",
+      "provenance": {
+        "article_source": "Security Affairs",
+        "article_url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+        "attack_version": "20.1",
+        "method": "rule",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "Security Affairs: North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+          "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html"
         }
       ],
       "tactics": [

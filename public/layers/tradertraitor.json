@@ -6,7 +6,7 @@
       "#fff3e0ff",
       "#e65100ff"
     ],
-    "maxValue": 10,
+    "maxValue": 11,
     "minValue": 0
   },
   "hideDisabled": false,
@@ -22,7 +22,7 @@
     },
     {
       "name": "last_updated",
-      "value": "2026-11-13"
+      "value": "2026-11-14"
     }
   ],
   "name": "TraderTraitor (LOCAL-TRADERTRAITOR) - BFSI APT Intel",
@@ -414,6 +414,13 @@
       "enabled": true,
       "score": 1,
       "showSubtechniques": false,
+      "techniqueID": "T1218.007"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
       "techniqueID": "T1218.011"
     },
     {
@@ -636,7 +643,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 2,
+      "score": 3,
       "showSubtechniques": false,
       "techniqueID": "T1585.001"
     },
@@ -664,7 +671,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 1,
+      "score": 2,
       "showSubtechniques": false,
       "techniqueID": "T1593.001"
     },
@@ -692,7 +699,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 10,
+      "score": 11,
       "showSubtechniques": false,
       "techniqueID": "T1657"
     },
@@ -706,7 +713,7 @@
     {
       "comment": "sources: reviewed-automap",
       "enabled": true,
-      "score": 5,
+      "score": 6,
       "showSubtechniques": false,
       "techniqueID": "T1684"
     },

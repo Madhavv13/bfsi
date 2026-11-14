@@ -22,7 +22,7 @@
     },
     {
       "name": "last_updated",
-      "value": "2026-11-05"
+      "value": "2026-11-14"
     }
   ],
   "name": "Andariel (G0138) - BFSI APT Intel",
@@ -60,6 +60,13 @@
       "techniqueID": "T1057"
     },
     {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1071.001"
+    },
+    {
       "comment": "sources: mitre-attack",
       "enabled": true,
       "score": 1,
@@ -67,11 +74,25 @@
       "techniqueID": "T1105"
     },
     {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1140"
+    },
+    {
       "comment": "sources: mitre-attack",
       "enabled": true,
       "score": 1,
       "showSubtechniques": false,
       "techniqueID": "T1189"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1199"
     },
     {
       "comment": "sources: mitre-attack",
@@ -93,6 +114,13 @@
       "score": 1,
       "showSubtechniques": false,
       "techniqueID": "T1566.001"
+    },
+    {
+      "comment": "sources: reviewed-automap",
+      "enabled": true,
+      "score": 1,
+      "showSubtechniques": false,
+      "techniqueID": "T1567.002"
     },
     {
       "comment": "sources: mitre-attack",

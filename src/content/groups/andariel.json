@@ -18,6 +18,22 @@
       "references": [],
       "summary": null,
       "url": "https://attack.mitre.org/groups/G0138"
+    },
+    {
+      "first_seen": "2026-11-14",
+      "id": "INC-0383",
+      "kind": "reported_activity",
+      "last_seen": "2026-11-14",
+      "name": "Professional baseball club Wisconsin Timber Rattlers By qilin",
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: Professional baseball club Wisconsin Timber Rattlers By qilin",
+          "url": "https://www.ransomlook.io//group/qilin"
+        }
+      ],
+      "summary": null,
+      "url": null
     }
   ],
   "bfsi": {
@@ -27,9 +43,9 @@
   "country": "North Korea (DPRK)",
   "counts": {
     "attack_rows": 12,
-    "reviewed_rows": 0,
-    "rows": 12,
-    "techniques": 12
+    "reviewed_rows": 4,
+    "rows": 16,
+    "techniques": 16
   },
   "description": "Andariel is a North Korean state-sponsored threat group that has been active since at least 2009. Andariel has primarily focused its operations--which have included destructive attacks--against South Korean government agencies, military organizations, and a variety of domestic companies; they have also conducted cyber financial operations against ATMs, banks, and cryptocurrency exchanges. Andariel's notable activity includes Operation Black Mine, Operation GoldenAxe, and Campaign Rifle.\n\nAndariel is considered a sub-set of Lazarus Group, and has been attributed to North Korea's Reconnaissance General Bureau.\n\nNorth Korean group definitions are known to have significant overlap, and some security researchers report all North Korean state-sponsored cyber activity under the name Lazarus Group instead of tracking clusters or subgroups.",
   "description_references": [
@@ -72,7 +88,7 @@
     "navigator_url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fmadhavv13.github.io%2Fbfsi%2Flayers%2Fandariel.json"
   },
   "id": "G0138",
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-14",
   "motivation": "Espionage and financial gain",
   "name": "Andariel",
   "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.",
@@ -557,6 +573,158 @@
         "parent_id": null,
         "url": "https://attack.mitre.org/techniques/T1105"
       }
+    },
+    {
+      "attack_ref": "INC-0383",
+      "confidence": "medium",
+      "description": "“Our Louisville-based law firm is focused exclusively on providing counsel to injured clients th ... | | | | Omrin | Omrin is a leading waste management company in the Netherlands, dedicated to creating a clean and sustainable world.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/qilin",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: Professional baseball club Wisconsin Timber Rattlers By qilin",
+          "url": "https://www.ransomlook.io//group/qilin"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0001",
+          "name": "Initial Access",
+          "order": 2,
+          "shortname": "initial-access",
+          "url": "https://attack.mitre.org/tactics/TA0001"
+        }
+      ],
+      "technique": {
+        "id": "T1199",
+        "name": "Trusted Relationship",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1199"
+      }
+    },
+    {
+      "attack_ref": "INC-0383",
+      "confidence": "medium",
+      "description": "“The amount of downloaded data is unknown at the moment.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/qilin",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: Professional baseball club Wisconsin Timber Rattlers By qilin",
+          "url": "https://www.ransomlook.io//group/qilin"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0005",
+          "name": "Stealth",
+          "order": 6,
+          "shortname": "stealth",
+          "url": "https://attack.mitre.org/tactics/TA0005"
+        }
+      ],
+      "technique": {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files or Information",
+        "parent_id": null,
+        "url": "https://attack.mitre.org/techniques/T1140"
+      }
+    },
+    {
+      "attack_ref": "INC-0383",
+      "confidence": "medium",
+      "description": "“Description Aka Agenda Ransom notes3 Jabber1 | Jabber | |---| | qilin@exploit.im | Tox1 | Tox | |---| | 7C35408411AEEBD53CDBCEBAB167D7B22F1E66614E89DFCB62EE835416F60E1BCD6995152B68 | Affiliates1 | Affiliates | |---| | Ben | Urls9 | Url | | | | | |---|---|---|---|---| |…” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/qilin",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: Professional baseball club Wisconsin Timber Rattlers By qilin",
+          "url": "https://www.ransomlook.io//group/qilin"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0011",
+          "name": "Command and Control",
+          "order": 12,
+          "shortname": "command-and-control",
+          "url": "https://attack.mitre.org/tactics/TA0011"
+        }
+      ],
+      "technique": {
+        "id": "T1071.001",
+        "name": "Application Layer Protocol: Web Protocols",
+        "parent_id": "T1071",
+        "url": "https://attack.mitre.org/techniques/T1071/001"
+      }
+    },
+    {
+      "attack_ref": "INC-0383",
+      "confidence": "low",
+      "description": "“Over the course of our operation, we have exfiltrated approximately 8 terabytes of sensitive and confidential ... | | | | Mitrani Rynor Adamsky & Toland | The company has failed to contact us.” — RansomLook recent posts",
+      "provenance": {
+        "article_source": "RansomLook recent posts",
+        "article_url": "https://www.ransomlook.io//group/qilin",
+        "attack_version": "20.1",
+        "method": "similarity",
+        "relationship_id": null,
+        "relationship_modified": null,
+        "reviewed_at": "2026-11-14",
+        "source": "reviewed-automap",
+        "via_group": null
+      },
+      "references": [
+        {
+          "citation": null,
+          "source_name": "RansomLook recent posts: Professional baseball club Wisconsin Timber Rattlers By qilin",
+          "url": "https://www.ransomlook.io//group/qilin"
+        }
+      ],
+      "tactics": [
+        {
+          "id": "TA0010",
+          "name": "Exfiltration",
+          "order": 13,
+          "shortname": "exfiltration",
+          "url": "https://attack.mitre.org/tactics/TA0010"
+        }
+      ],
+      "technique": {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+        "parent_id": "T1567",
+        "url": "https://attack.mitre.org/techniques/T1567/002"
+      }
     }
   ],
   "schema_version": "1.0",
@@ -632,6 +800,13 @@
       "order": 12,
       "shortname": "command-and-control",
       "url": "https://attack.mitre.org/tactics/TA0011"
+    },
+    {
+      "id": "TA0010",
+      "name": "Exfiltration",
+      "order": 13,
+      "shortname": "exfiltration",
+      "url": "https://attack.mitre.org/tactics/TA0010"
     }
   ]
 }
